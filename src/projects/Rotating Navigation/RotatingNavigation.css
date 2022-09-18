@@ -1,0 +1,28 @@
+.rotating-navigation-body .container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.rotating-navigation-body .container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+.rotating-navigation-body .container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.rotating-navigation-body nav ul li svg {
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.rotating-navigation-body nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+.rotating-navigation-body nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}

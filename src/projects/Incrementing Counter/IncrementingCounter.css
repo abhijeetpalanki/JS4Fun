@@ -1,0 +1,5 @@
+@media (max-width: 580px) {
+  .incrementing-counter-body {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,21 @@
+.todos-body form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todos-body form .todos li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos-body form .todos li.completed {
+  color: #e6e6e6;
+  text-decoration: line-through;
+}
+
+.todos-body small {
+  color: #b5b5b5;
+  margin-top: 3rem;
+  text-align: center;
+}

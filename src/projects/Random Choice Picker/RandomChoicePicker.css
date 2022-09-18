@@ -1,0 +1,13 @@
+.random-choice-picker-body .container #tags .tag {
+  background-color: #f0932b;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.random-choice-picker-body .container #tags .tag.highlight {
+  background-color: #273c75;
+}

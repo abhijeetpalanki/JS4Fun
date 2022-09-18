@@ -1,0 +1,12 @@
+.hoverboard-body .container .square {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  transition: 2s ease;
+}
+
+.hoverboard-body .container .square:hover {
+  transition-duration: 0s;
+}

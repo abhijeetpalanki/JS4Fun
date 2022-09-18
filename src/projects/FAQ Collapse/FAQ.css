@@ -1,0 +1,26 @@
+.faq-body .faq-container .faq {
+  border: 1px solid #9fa4a8;
+  transition: 0.3s ease;
+}
+
+.faq-body .faq-container .faq.active {
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-body .faq-container .faq.active .faq-text {
+  display: block;
+}
+
+.faq-body .faq-container .faq .faq-toggle .times {
+  display: none;
+}
+
+.faq-body .faq-container .faq.active .faq-toggle .times {
+  display: block;
+  color: white;
+}
+
+.faq-body .faq-container .faq.active .faq-toggle .chevron {
+  display: none;
+}

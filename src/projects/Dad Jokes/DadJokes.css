@@ -1,0 +1,15 @@
+.dad-jokes-body .container {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dad-jokes-body .container .btn {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dad-jokes-body .container .btn:active {
+  transform: scale(0.98);
+}
+
+.dad-jokes-body .container .btn:focus {
+  outline: none;
+}

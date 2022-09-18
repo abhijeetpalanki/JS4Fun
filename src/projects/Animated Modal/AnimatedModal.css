@@ -1,0 +1,12 @@
+.modal {
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 300px);
+}
+
+.orange-gradient {
+  background: linear-gradient(10deg, #ffaa00, #ff6a00);
+}
+
+.save-button {
+  background: linear-gradient(10deg, #ffaa00, #ff6a00);
+}
