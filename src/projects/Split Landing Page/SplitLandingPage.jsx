@@ -7,7 +7,7 @@ const SplitLandingPage = () => {
   const [hoverClass, setHoverClass] = useState(false);
 
   return (
-    <div className="split-landing-page-body font-['Roboto'] h-[100vh] overflow-hidden m-0">
+    <div className="split-landing-page-body font-['Roboto'] h-screen overflow-hidden m-0">
       <div
         className={`container relative w-full h-full bg-[#333] ${
           hoverClass ? "hover-left" : "hover-right"

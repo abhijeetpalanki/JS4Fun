@@ -42,7 +42,7 @@ const FAQ = () => {
     setActiveId(faqs[index].id);
   };
   return (
-    <div className="faq-body font-['Muli'] bg-[#f0f0f0] h-[100vh] overflow-hidden m-0">
+    <div className="faq-body font-['Muli'] bg-[#f0f0f0] h-screen overflow-hidden m-0">
       <h1 className="mt-[15px] mb-[30px] mx-0 text-[32px] font-bold text-center">
         Frequently Asked Questions
       </h1>

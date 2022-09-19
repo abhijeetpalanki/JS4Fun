@@ -154,7 +154,7 @@ const BasicCalculator = () => {
   );
 
   return (
-    <div className="basic-calculator-body font-['Roboto'] flex flex-col items-center justify-center h-[100vh] m-0">
+    <div className="basic-calculator-body font-['Roboto'] flex flex-col items-center justify-center h-screen m-0">
       <div className="calculator-grid grid justify-center mt-[2rem]">
         <div className="output bg-black/75 flex flex-col items-end justify-around p-[0.75rem] break-all">
           <div className="previous-operand text-[1.5rem] text-white/75">

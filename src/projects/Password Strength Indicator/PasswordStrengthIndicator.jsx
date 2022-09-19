@@ -5,7 +5,7 @@ const PasswordStrengthIndicator = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="font-['Muli'] flex items-center justify-center h-[100vh] overflow-hidden m-0">
+    <div className="font-['Muli'] flex items-center justify-center h-screen overflow-hidden m-0">
       <div className="flex flex-col">
         <div className="mx-auto">
           <h3 className="my-4 text-center text-[20px] font-bold">

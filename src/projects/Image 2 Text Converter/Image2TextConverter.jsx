@@ -35,7 +35,7 @@ const Image2TextConverter = () => {
   };
 
   return (
-    <div className="h-[100vh] flex flex-col justify-center items-center font-['Roboto'] bg-[cadetblue] overflow-hidden">
+    <div className="h-screen flex flex-col justify-center items-center font-['Roboto'] bg-[cadetblue] overflow-hidden">
       <div className="max-w-[950px] my-0 mx-auto z-[1]">
         <h1 className="font-bold text-[3rem] mt-[4rem]">
           Image 2 Text Converter

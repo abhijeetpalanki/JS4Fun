@@ -90,7 +90,7 @@ const AlarmClock = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-[100vh] bg-[#4a98f7] font-['Poppins'] m-0 overflow-hidden">
+    <div className="flex flex-col items-center justify-center h-screen bg-[#4a98f7] font-['Poppins'] m-0 overflow-hidden">
       <div className="flex flex-col items-center justify-center w-[440px] bg-white py-[30px] pl-[30px] pr-[38px] rounded-[10px]">
         <img src={ClockSvg} alt="clock" className="max-w-[103px]" />
         <h1 className="text-[38px] font-medium my-[30px] mx-0"></h1>

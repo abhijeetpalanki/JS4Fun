@@ -36,7 +36,7 @@ const RollTheDice = () => {
     Math.floor(Math.random() * (max - min + 1)) + min;
 
   return (
-    <div className="flex flex-col items-center justify-center roll-the-dice-body h-[100vh]">
+    <div className="flex flex-col items-center justify-center roll-the-dice-body h-screen">
       <div className="flex flex-col items-center w-[400px] p-[50px] absolute -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%] bg-white rounded-[8px] shadow-[0_15px_35px_rgba(50, 50, 50, 0.2)] font-['Poppins']">
         <div className="dice-wrapper w-[90%] flex justify-around" ref={diceRef}>
           <img src={dieOne} alt={dieOne} className={isShaking ? "shake" : ""} />

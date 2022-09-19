@@ -45,7 +45,7 @@ const WordAssociations = () => {
   }, [chosenLevel]);
 
   return (
-    <div className="bg-[#4a98f7] font-['Oswald'] tracking-widest flex flex-col justify-start items-center h-[100vh] m-0">
+    <div className="bg-[#4a98f7] font-['Oswald'] tracking-widest flex flex-col justify-start items-center h-screen m-0">
       {chosenLevel === "0" ? (
         <div>
           <h1 className="text-[32px] font-bold text-white">

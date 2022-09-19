@@ -7,7 +7,7 @@ const UnsplashInfiniteGallery = () => {
   const { images, getImages } = useProjectsContext();
 
   return (
-    <div className="font-['Roboto'] h-[100vh] m-0">
+    <div className="font-['Roboto'] h-screen m-0">
       <header className="max-w-6xl mx-auto my-8 text-center">
         <h1 className="mb-4 font-['Oswald'] text-[2rem] font-bold">Unsplash</h1>
         <p>The internet's source of freely usable images.</p>

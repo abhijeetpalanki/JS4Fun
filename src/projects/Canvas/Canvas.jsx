@@ -96,7 +96,7 @@ const Canvas = () => {
   }, [drawCircle, drawLine]);
 
   return (
-    <div className="canvas-body bg-[#f5f5f5] font-['Roboto'] flex flex-col justify-center items-center h-[100vh] m-0">
+    <div className="canvas-body bg-[#f5f5f5] font-['Roboto'] flex flex-col justify-center items-center h-screen m-0">
       <canvas id="canvas" width="600px" height="600px" ref={canvasRef}></canvas>
       <div className="toolbox bg-[steelblue] flex w-[604px] p-4">
         <button id="decrease" ref={decreaseRef} onClick={decreaseSize}>

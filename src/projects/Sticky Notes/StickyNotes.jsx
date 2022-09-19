@@ -66,7 +66,7 @@ const StickyNotes = () => {
 
   return (
     <div
-      className="sticky-notes-body font-['Poppins'] h-[100vh] bg-brickWall bg-cover p-[50px] m-0 bg-gradient-to-r from-black/60 to-black/60"
+      className="sticky-notes-body font-['Poppins'] h-screen bg-brickWall bg-cover p-[50px] m-0 bg-gradient-to-r from-black/60 to-black/60"
       onDragOver={dragOver}
     >
       <h1 className="text-white text-[2rem]">

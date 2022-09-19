@@ -41,9 +41,9 @@ const VerticalSlider = () => {
   };
 
   return (
-    <div className="vertical-slider-body font-['Open Sans'] h-[100vh] overflow-hidden m-0 p-0">
+    <div className="vertical-slider-body font-['Open Sans'] h-screen overflow-hidden m-0 p-0">
       <div
-        className="slider-container relative w-[100vw] h-[100vh]"
+        className="slider-container relative w-[100vw] h-screen"
         ref={sliderContainerRef}
       >
         <div

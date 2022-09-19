@@ -49,19 +49,19 @@ const BackgroundImageSlider = () => {
 
   return (
     <div
-      className="background-image-slider-body bg-cover font-['Poppins'] h-[100vh] flex justify-center items-center m-0"
+      className="background-image-slider-body bg-cover font-['Poppins'] h-screen flex justify-center items-center m-0"
       ref={sliderBodyRef}
     >
       <div className="slider-container h-[70vh] w-[70vw] relative overflow-hidden">
         <div
-          className="slide bg-center active opacity-0 h-[100vh] w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
+          className="slide bg-center active opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')",
           }}
         ></div>
         <div
-          className="slide bg-center opacity-0 h-[100vh] w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
+          className="slide bg-center opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80')",
@@ -69,7 +69,7 @@ const BackgroundImageSlider = () => {
         ></div>
 
         <div
-          className="slide bg-center opacity-0 h-[100vh] w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
+          className="slide bg-center opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1495467033336-2effd8753d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')",
@@ -77,7 +77,7 @@ const BackgroundImageSlider = () => {
         ></div>
 
         <div
-          className="slide bg-center opacity-0 h-[100vh] w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
+          className="slide bg-center opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80')",
@@ -85,7 +85,7 @@ const BackgroundImageSlider = () => {
         ></div>
 
         <div
-          className="slide bg-center opacity-0 h-[100vh] w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
+          className="slide bg-center opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1559087867-ce4c91325525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')",

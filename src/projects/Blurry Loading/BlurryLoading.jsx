@@ -22,10 +22,10 @@ const BlurryLoading = () => {
   }, 30);
 
   return (
-    <div className="font-['Ubuntu'] w-[100vw] h-[100vh] flex justify-center items-center overflow-hidden m-0">
+    <div className="font-['Ubuntu'] w-[100vw] h-screen flex justify-center items-center overflow-hidden m-0">
       <section
         ref={bgRef}
-        className="bg absolute top-0 left-0 w-[100vw] h-[100vh] z-0 blur-none"
+        className="bg absolute top-0 left-0 w-[100vw] h-screen z-0 blur-none"
         style={{ background: `url(${rays}) no-repeat center center/cover` }}
       ></section>
       <div

@@ -24,7 +24,7 @@ const TheWeatherChannel = () => {
   };
 
   return (
-    <div className="h-[100vh] font-['Poppins'] flex justify-center items-center bg-gradient-to-r">
+    <div className="h-screen font-['Poppins'] flex justify-center items-center bg-gradient-to-r">
       <div className="wrapper text-[16px] w-[90vw] max-w-[28em] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] sm">
         <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-[50%] h-[13em] w-[13em] -right-[6.5em] top-[1.8em]"></div>
         <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-[50%] h-[11em] w-[11em] -bottom-[3.7em] -left-[2.5em]"></div>

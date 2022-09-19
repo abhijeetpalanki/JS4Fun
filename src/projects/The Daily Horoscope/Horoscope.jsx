@@ -15,7 +15,7 @@ const Horoscope = () => {
   };
 
   return (
-    <div className="horoscope-body bg-[darkslategrey] text-white font-['Montserrat'] flex flex-col justify-center items-center overflow-hidden h-[100vh] m-0">
+    <div className="horoscope-body bg-[darkslategrey] text-white font-['Montserrat'] flex flex-col justify-center items-center overflow-hidden h-screen m-0">
       <h1 className="text-[32px] font-bold">The Daily Horoscope</h1>
       {!selectedSign ? (
         <>

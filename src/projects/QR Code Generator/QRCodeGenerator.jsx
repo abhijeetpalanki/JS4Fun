@@ -46,7 +46,7 @@ const QRCodeGenerator = () => {
   };
 
   return (
-    <div className="bg-[#161c22] text-white font-['Poppins'] overflow-x-hidden h-[100vh] m-0">
+    <div className="bg-[#161c22] text-white font-['Poppins'] overflow-x-hidden h-screen m-0">
       <main>
         <div className="flex flex-col-reverse justify-center p-10 m-auto mt-10 align-center md:max-w-4xl md:flex-row">
           <div className="w-full mr-24 md:w-2/3">

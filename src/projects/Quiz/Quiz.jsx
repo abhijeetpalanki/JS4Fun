@@ -8,7 +8,7 @@ const Quiz = () => {
   const { gameState } = useProjectsContext();
 
   return (
-    <div className="quiz-body bg-[#b8c6db] bg-gradient-to-r from-[#b8c6db] to-[#f5f7fa] font-['Poppins'] flex flex-col items-center justify-center h-[100vh] m-0">
+    <div className="quiz-body bg-[#b8c6db] bg-gradient-to-r from-[#b8c6db] to-[#f5f7fa] font-['Poppins'] flex flex-col items-center justify-center h-screen m-0">
       {gameState === "menu" && <MainMenu />}
       {gameState === "quiz" && <QuizComp />}
       {gameState === "endScreen" && <EndScreen />}

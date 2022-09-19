@@ -67,7 +67,7 @@ const AgeCalculator = () => {
   };
 
   return (
-    <div className="h-[100vh] bg-[#0a6cf1] font-['Poppins'] flex justify-center items-center">
+    <div className="h-screen bg-[#0a6cf1] font-['Poppins'] flex justify-center items-center">
       <div className="w-[40%] min-w-[450px] py-[50px] px-[30px]">
         {/* Inputs Wrapper */}
         <div className="bg-[#080808] py-[30px] px-[25px] rounded-[8px] shadow-[0_15px_20px_rgba(0,0,0,0.3)] border-none outline-none mb-[50px]">

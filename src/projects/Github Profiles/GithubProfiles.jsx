@@ -48,7 +48,7 @@ const GithubProfiles = () => {
   }, [searchInput]);
 
   return (
-    <div className="github-profiles-body font-['Poppins'] text-white bg-[#2a2a72] flex flex-col items-center justify-center h-[100vh] overflow-hidden m-0 p-0">
+    <div className="github-profiles-body font-['Poppins'] text-white bg-[#2a2a72] flex flex-col items-center justify-center h-screen overflow-hidden m-0 p-0">
       <form
         className="user-form w-full max-w-[800px]"
         id="form"

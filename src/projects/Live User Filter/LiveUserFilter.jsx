@@ -7,7 +7,7 @@ const LiveUserFilter = () => {
   const { users, error, isLoaded } = useProjectsContext();
 
   return (
-    <div className="live-user-filter-body bg-[#f8f9fd] font-['Roboto'] flex items-center justify-center h-[100vh] m-0">
+    <div className="live-user-filter-body bg-[#f8f9fd] font-['Roboto'] flex items-center justify-center h-screen m-0">
       <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-[300px]">
         <header className="header bg-[#3e57db] text-white py-[30px] px-[20px]">
           <h4 className="title m-0 text-[1rem] font-bold">Live User Filter</h4>

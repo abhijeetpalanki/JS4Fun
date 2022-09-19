@@ -22,7 +22,7 @@ const MagicBox = () => {
   }, []);
 
   return (
-    <div className="magic-box-body bg-[#fafafa] font-['Roboto'] flex items-center justify-center h-[100vh] m-0">
+    <div className="magic-box-body bg-[#fafafa] font-['Roboto'] flex items-center justify-center h-screen m-0">
       <button
         className="magic bg-[#f9ca24] text-white font-['Poppins'] border-0 rounded-[3px] text-[16px] py-[12px] px-[20px] fixed top-[20px] tracking-[1px] z-[100] focus:outline-none"
         ref={magicBtnRef}

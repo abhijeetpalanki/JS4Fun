@@ -8,7 +8,7 @@ const RotatingNavigation = () => {
   return (
     <div className="rotating-navigation-body font-['Lato'] bg-[#333] text-[#222] overflow-x-hidden m-0">
       <div
-        className={`container bg-[#fafafa] origin-top-left transition-[transform] duration-[0.5s] ease-linear w-[100vw] min-h-[100vh] p-[50px] ${
+        className={`container bg-[#fafafa] origin-top-left transition-[transform] duration-[0.5s] ease-linear w-[100vw] min-h-screen p-[50px] ${
           open ? "show-nav" : ""
         }`}
       >

@@ -34,7 +34,7 @@ const Hoverboard = () => {
   };
 
   return (
-    <div className="hoverboard-body bg-[#111] flex flex-col justify-center items-center h-[100vh] m-0">
+    <div className="hoverboard-body bg-[#111] flex flex-col justify-center items-center h-screen m-0">
       <div
         className="container flex justify-center items-center flex-wrap max-w-[400px]"
         ref={containerRef}

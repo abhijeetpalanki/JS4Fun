@@ -54,7 +54,7 @@ const ContactUsForm = () => {
   );
 
   return (
-    <div className="contact-us-form-body font-['Roboto'] h-[100vh] m-0">
+    <div className="contact-us-form-body font-['Roboto'] h-screen m-0">
       <div className="bg-blue-300 lg:grid lg:grid-cols-2 lg:gap-6 lg:h-2/3">
         <div className="flex flex-col justify-center text-center lg:p-20 md:text-left">
           <p className="font-medium text-gray-500 uppercase opacity-40">

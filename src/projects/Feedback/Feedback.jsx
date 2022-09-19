@@ -26,7 +26,7 @@ const Feedback = () => {
   }, []);
 
   return (
-    <div className="feedback-body bg-[#fef9f2] font-['Montserrat'] flex items-center justify-center h-[100vh] m-0">
+    <div className="feedback-body bg-[#fef9f2] font-['Montserrat'] flex items-center justify-center h-screen m-0">
       {!clicked ? (
         <div className="panel-container" ref={panelRef}>
           <strong className="leading-5">

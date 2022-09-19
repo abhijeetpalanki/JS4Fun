@@ -41,7 +41,7 @@ const MinionEyes = () => {
   const textLeave = () => setCursorVariant("default");
 
   return (
-    <div className="h-[100vh] flex flex-col justify-center items-center bg-[#f5d60e]">
+    <div className="h-screen flex flex-col justify-center items-center bg-[#f5d60e]">
       {/* Quote */}
       <div className="flex">
         <h1

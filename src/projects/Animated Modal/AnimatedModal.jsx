@@ -8,7 +8,7 @@ const AnimatedModals = () => {
   const { modalOpen, close, open } = useModal();
 
   return (
-    <div className="h-[100vh] flex justify-center items-center flex-col bg-[#101315] font-['Montserrat'] overflow-hidden">
+    <div className="h-screen flex justify-center items-center flex-col bg-[#101315] font-['Montserrat'] overflow-hidden">
       <motion.main className="m-auto flex flex-col p-[2rem] items-center justify-center">
         <Header />
         <SubHeader text="Drop In Animation" />

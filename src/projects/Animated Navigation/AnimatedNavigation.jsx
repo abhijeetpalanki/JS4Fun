@@ -7,7 +7,7 @@ const AnimatedNavigation = () => {
   const toggleButton = () => navRef.current.classList.toggle("active");
 
   return (
-    <div className="animated-navigation-body font-['Muli'] bg-[#eafbff] flex items-center justify-center h-[100vh] m-0">
+    <div className="animated-navigation-body font-['Muli'] bg-[#eafbff] flex items-center justify-center h-screen m-0">
       <nav
         className="active bg-white p-5 w-20 flex items-center justify-center rounded-[3px]"
         id="nav"

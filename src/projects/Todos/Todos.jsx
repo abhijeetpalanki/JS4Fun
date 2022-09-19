@@ -68,7 +68,7 @@ const Todos = () => {
   };
 
   return (
-    <div className="bg-[#f5f5f5] text-[#444] font-['Poppins'] flex flex-col items-center justify-center h-[100vh] m-0">
+    <div className="bg-[#f5f5f5] text-[#444] font-['Poppins'] flex flex-col items-center justify-center h-screen m-0">
       <h1 className="text-[#b383e2] text-[10rem] text-center opacity-[0.4]">
         todos
       </h1>

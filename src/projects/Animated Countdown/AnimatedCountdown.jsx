@@ -49,7 +49,7 @@ const AnimatedCountdown = () => {
   };
 
   return (
-    <div className="animated-countdown-body h-[100vh] m-0 font-['Poppins']">
+    <div className="animated-countdown-body h-screen m-0 font-['Poppins']">
       <div
         className="fixed text-center counter top-1/2 left-1/2"
         ref={counterRef}
