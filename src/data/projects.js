@@ -6,7 +6,7 @@ import SplitLandingPage from "./../projects/Split Landing Page/SplitLandingPage"
 import SoundBoard from "./../projects/Sound Board/SoundBoard";
 import DadJokes from "./../projects/Dad Jokes/DadJokes";
 import FAQ from "../projects/FAQ Collapse/FAQ";
-import RandomChoicePicker from "./../projects/Random Choice Picker/RandomChoicePicker";
+import RandomNumberPicker from "../projects/Random Number Picker/RandomNumberPicker";
 import AnimatedNavigation from "./../projects/Animated Navigation/AnimatedNavigation";
 import IncrementingCounter from "./../projects/Incrementing Counter/IncrementingCounter";
 import MoviesHub from "./../projects/Movies Hub/MoviesHub";
@@ -168,7 +168,7 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Random Choice Picker",
+    title: "Random Number Picker",
     hashtags: [
       {
         id: 1,
@@ -179,7 +179,7 @@ export const projects = [
         name: "choices",
       },
     ],
-    component: <RandomChoicePicker></RandomChoicePicker>,
+    component: <RandomNumberPicker></RandomNumberPicker>,
   },
   {
     id: 10,

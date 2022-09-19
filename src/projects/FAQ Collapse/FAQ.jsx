@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./FAQ.css";
 import { data } from "./data";
 
 const FAQ = () => {
