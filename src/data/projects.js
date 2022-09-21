@@ -8,7 +8,6 @@ import DadJokes from "./../projects/Dad Jokes/DadJokes";
 import FAQ from "../projects/FAQ Collapse/FAQ";
 import RandomNumberPicker from "../projects/Random Number Picker/RandomNumberPicker";
 import AnimatedNavigation from "./../projects/Animated Navigation/AnimatedNavigation";
-import IncrementingCounter from "./../projects/Incrementing Counter/IncrementingCounter";
 import MoviesHub from "./../projects/Movies Hub/MoviesHub";
 import BackgroundImageSlider from "./../projects/Background Image Slider/BackgroundImageSlider";
 import ThemeClock from "./../projects/Theme Clock/ThemeClock";
@@ -18,6 +17,7 @@ import GithubProfiles from "../projects/Github Profiles/GithubProfiles";
 import PasswordGenerator from "../projects/Password Generator/PasswordGenerator";
 import StickyNotes from "./../projects/Sticky Notes/StickyNotes";
 import AnimatedCountdown from "../projects/Animated Countdown/AnimatedCountdown";
+import Pomodoro from "../projects/Pomodoro/PomodoroWrapper";
 import Hoverboard from "./../projects/Hoverboard/Hoverboard";
 import Pokedex from "../projects/Pokedex/Pokedex";
 import MagicBox from "../projects/Magic Box/MagicBox";
@@ -198,18 +198,18 @@ export const projects = [
   },
   {
     id: 11,
-    title: "Incrementing Counter",
+    title: "Pomodoro",
     hashtags: [
       {
         id: 1,
-        name: "counter",
+        name: "productivetimer",
       },
       {
         id: 2,
-        name: "incrementer",
+        name: "stressrelief",
       },
     ],
-    component: <IncrementingCounter></IncrementingCounter>,
+    component: <Pomodoro></Pomodoro>,
   },
   {
     id: 12,
