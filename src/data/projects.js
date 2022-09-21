@@ -16,7 +16,7 @@ import VerticalSlider from "./../projects/Vertical Slider/VerticalSlider";
 import GithubProfiles from "../projects/Github Profiles/GithubProfiles";
 import PasswordGenerator from "../projects/Password Generator/PasswordGenerator";
 import StickyNotes from "./../projects/Sticky Notes/StickyNotes";
-import AnimatedCountdown from "../projects/Animated Countdown/AnimatedCountdown";
+import Screenshot from "../projects/Screenshot/Screenshot";
 import Pomodoro from "../projects/Pomodoro/PomodoroWrapper";
 import Hoverboard from "./../projects/Hoverboard/Hoverboard";
 import Pokedex from "../projects/Pokedex/Pokedex";
@@ -333,18 +333,18 @@ export const projects = [
   },
   {
     id: 20,
-    title: "Animated Countdown",
+    title: "Screenshot",
     hashtags: [
       {
         id: 1,
-        name: "countdown",
+        name: "screencapture",
       },
       {
         id: 2,
-        name: "loading",
+        name: "snapshot",
       },
     ],
-    component: <AnimatedCountdown></AnimatedCountdown>,
+    component: <Screenshot></Screenshot>,
   },
   {
     id: 21,
