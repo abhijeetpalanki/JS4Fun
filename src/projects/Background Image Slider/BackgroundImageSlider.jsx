@@ -1,112 +1,55 @@
-import React, { useEffect, useRef } from "react";
-import "./BackgroundImageSlider.css";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import React, { useState } from "react";
+import { data } from "./data";
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 const BackgroundImageSlider = () => {
-  const sliderBodyRef = useRef(null);
+  const [slides, setSlides] = useState(data);
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
 
-  useEffect(() => {
-    const slides = document.querySelectorAll(".slide");
-    const leftBtn = document.getElementById("left");
-    const rightBtn = document.getElementById("right");
-    let activeSlide = 0;
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
 
-    const setBgToBody = () => {
-      sliderBodyRef.current.style.backgroundImage =
-        slides[activeSlide].style.backgroundImage;
-    };
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
 
-    const setActiveSlide = () => {
-      slides.forEach((slide) => slide.classList.remove("active"));
-
-      slides[activeSlide].classList.add("active");
-    };
-
-    leftBtn.addEventListener("click", () => {
-      activeSlide--;
-
-      if (activeSlide < 0) {
-        activeSlide = slides.length - 1;
-      }
-
-      setBgToBody();
-      setActiveSlide();
-    });
-
-    rightBtn.addEventListener("click", () => {
-      activeSlide++;
-
-      if (activeSlide > slides.length - 1) {
-        activeSlide = 0;
-      }
-
-      setBgToBody();
-      setActiveSlide();
-    });
-
-    setBgToBody();
-  }, []);
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
 
   return (
-    <div
-      className="background-image-slider-body bg-cover font-['Poppins'] h-screen flex justify-center items-center m-0"
-      ref={sliderBodyRef}
-    >
-      <div className="slider-container h-[70vh] w-[70vw] relative overflow-hidden">
-        <div
-          className="slide bg-center active opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')",
-          }}
-        ></div>
-        <div
-          className="slide bg-center opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80')",
-          }}
-        ></div>
-
-        <div
-          className="slide bg-center opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1495467033336-2effd8753d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')",
-          }}
-        ></div>
-
-        <div
-          className="slide bg-center opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80')",
-          }}
-        ></div>
-
-        <div
-          className="slide bg-center opacity-0 h-screen w-[100vw] bg-cover absolute -top-[15vh] -left-[15vw] z-[1000]"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1559087867-ce4c91325525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')",
-          }}
-        ></div>
-
-        <button
-          className="arrow left-arrow fixed bg-transparent p-5 text-3xl border-2 border-[orange] top-1/2 text-white z-[100]"
-          id="left"
-        >
-          <FaArrowLeft />
-        </button>
-
-        <button
-          className="arrow right-arrow fixed bg-transparent p-5 text-3xl border-2 border-[orange] top-1/2 text-white z-[100]"
-          id="right"
-        >
-          <FaArrowRight />
-        </button>
-      </div>
-    </div>
+    <section className="relative flex items-center justify-center h-screen">
+      <FaArrowAltCircleLeft
+        className="absolute top-[50%] left-8 text-5xl text-black z-10 cursor-pointer select-none"
+        onClick={prevSlide}
+      />
+      <FaArrowAltCircleRight
+        className="absolute top-[50%] right-8 text-5xl text-black z-10 cursor-pointer select-none"
+        onClick={nextSlide}
+      />
+      {slides.map((slide, index) => {
+        return (
+          <div
+            className={
+              index === current
+                ? "opacity-[1] duration-1000 scale-[1.08]"
+                : "opacity-0 duration-1000"
+            }
+            key={index}
+          >
+            {index === current && (
+              <img
+                src={slide.image}
+                alt="travel image"
+                className="w-[1000px] h-[600px] rounded-xl"
+              />
+            )}
+          </div>
+        );
+      })}
+    </section>
   );
 };
 
