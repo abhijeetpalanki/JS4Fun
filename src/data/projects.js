@@ -10,7 +10,7 @@ import RandomNumberPicker from "../projects/Random Number Picker/RandomNumberPic
 import AnimatedNavigation from "./../projects/Animated Navigation/AnimatedNavigation";
 import MoviesHub from "./../projects/Movies Hub/MoviesHub";
 import BackgroundImageSlider from "./../projects/Background Image Slider/BackgroundImageSlider";
-import ThemeClock from "./../projects/Theme Clock/ThemeClock";
+import Portal from "../projects/Portal/Portal";
 import Canvas from "../projects/Canvas/Canvas";
 import VerticalSlider from "./../projects/Vertical Slider/VerticalSlider";
 import GithubProfiles from "../projects/Github Profiles/GithubProfiles";
@@ -243,18 +243,18 @@ export const projects = [
   },
   {
     id: 14,
-    title: "Theme Clock",
+    title: "Portal",
     hashtags: [
       {
         id: 1,
-        name: "clock",
+        name: "modal",
       },
       {
         id: 2,
-        name: "darklightmode",
+        name: "popupbox",
       },
     ],
-    component: <ThemeClock></ThemeClock>,
+    component: <Portal></Portal>,
   },
   {
     id: 15,
