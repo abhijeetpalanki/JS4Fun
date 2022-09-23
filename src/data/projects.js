@@ -10,7 +10,7 @@ import RandomNumberPicker from "../projects/Random Number Picker/RandomNumberPic
 import AnimatedNavigation from "./../projects/Animated Navigation/AnimatedNavigation";
 import MoviesHub from "./../projects/Movies Hub/MoviesHub";
 import BackgroundImageSlider from "./../projects/Background Image Slider/BackgroundImageSlider";
-import Portal from "../projects/Portal/Portal";
+import RockPaperScissors from "../projects/Rock Paper Scissors/RockPaperScissors";
 import Canvas from "../projects/Canvas/Canvas";
 import VerticalSlider from "./../projects/Vertical Slider/VerticalSlider";
 import GithubProfiles from "../projects/Github Profiles/GithubProfiles";
@@ -243,7 +243,7 @@ export const projects = [
   },
   {
     id: 14,
-    title: "Portal",
+    title: "Rock Paper Scissors",
     hashtags: [
       {
         id: 1,
@@ -254,7 +254,7 @@ export const projects = [
         name: "popupbox",
       },
     ],
-    component: <Portal></Portal>,
+    component: <RockPaperScissors></RockPaperScissors>,
   },
   {
     id: 15,

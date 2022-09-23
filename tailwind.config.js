@@ -26,6 +26,17 @@ module.exports = {
       brickWall: "url('~/src/images/brick-wall.jpg')",
       postItNote: "url('~/src/images/post-it-note.png')",
     },
+    boxShadow: {
+      paperShadow: "inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 53%)",
+      paperBigShadow:
+        "inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 53%), 0px 0px 0px 50px rgba(#ffffff, .07), 0px 0px 0px 100px rgba(#ffffff, .05), 0px 0px 0px 150px rgba(#ffffff, .025)",
+      scissorsShadow: "inset 0px 5px 6px grey, 0px 8px hsl(39, 89%, 42%)",
+      scissorsBigShadow:
+        "inset 0px 5px 6px grey, 0px 8px hsl(39, 89%, 42%), 0px 0px 0px 50px rgba(#ffffff, .07), 0px 0px 0px 100px rgba(#ffffff, .05), 0px 0px 0px 150px rgba(#ffffff, .025)",
+      rockShadow: "inset 0px 5px 6px grey, 0px 8px hsl(349, 71%, 44%)",
+      rockBigShadow:
+        "inset 0px 5px 6px grey, 0px 8px hsl(349, 71%, 44%), 0px 0px 0px 50px rgba(#ffffff, .07), 0px 0px 0px 100px rgba(#ffffff, .05), 0px 0px 0px 150px rgba(#ffffff, .025)",
+    },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
 };
