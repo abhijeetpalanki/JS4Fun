@@ -49,6 +49,7 @@ import NewsletterLandingPage from "../projects/Newsletter Landing Page/Newslette
 import WikiSeeker from "../projects/Wiki Seeker/WikiSeeker";
 import DrumKit from "../projects/Drum Kit/DrumKit";
 import ColorPicker from "../projects/Color Picker/ColorPicker";
+import TypingAnimations from "../projects/Typing Animations/TypingAnimations";
 
 export const projects = [
   {
@@ -815,5 +816,20 @@ export const projects = [
       },
     ],
     component: <ColorPicker></ColorPicker>,
+  },
+  {
+    id: 52,
+    title: "Typing Animations",
+    hashtags: [
+      {
+        id: 1,
+        name: "typingbackground",
+      },
+      {
+        id: 2,
+        name: "animations",
+      },
+    ],
+    component: <TypingAnimations></TypingAnimations>,
   },
 ];
