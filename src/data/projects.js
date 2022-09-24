@@ -48,6 +48,7 @@ import DiscordNavbar from "../projects/Discord Navbar/DiscordNavbar";
 import NewsletterLandingPage from "../projects/Newsletter Landing Page/NewsletterLandingPage";
 import WikiSeeker from "../projects/Wiki Seeker/WikiSeeker";
 import DrumKit from "../projects/Drum Kit/DrumKit";
+import ColorPicker from "../projects/Color Picker/ColorPicker";
 
 export const projects = [
   {
@@ -799,5 +800,20 @@ export const projects = [
       },
     ],
     component: <DrumKit></DrumKit>,
+  },
+  {
+    id: 51,
+    title: "Color Picker",
+    hashtags: [
+      {
+        id: 1,
+        name: "backgroundchanger",
+      },
+      {
+        id: 2,
+        name: "colorpicker",
+      },
+    ],
+    component: <ColorPicker></ColorPicker>,
   },
 ];
