@@ -50,6 +50,7 @@ import WikiSeeker from "../projects/Wiki Seeker/WikiSeeker";
 import DrumKit from "../projects/Drum Kit/DrumKit";
 import ColorPicker from "../projects/Color Picker/ColorPicker";
 import TypingAnimations from "../projects/Typing Animations/TypingAnimations";
+import ImagePreview from "../projects/Image Preview/ImagePreview";
 
 export const projects = [
   {
@@ -831,5 +832,20 @@ export const projects = [
       },
     ],
     component: <TypingAnimations></TypingAnimations>,
+  },
+  {
+    id: 53,
+    title: "Image Preview",
+    hashtags: [
+      {
+        id: 1,
+        name: "previewer",
+      },
+      {
+        id: 2,
+        name: "customimage",
+      },
+    ],
+    component: <ImagePreview></ImagePreview>,
   },
 ];
