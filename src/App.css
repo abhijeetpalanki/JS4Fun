@@ -68,3 +68,39 @@
   font-weight: 700;
   color: #a84fff;
 }
+
+/* Screenshot */
+.spinner::before,
+.spinner::after {
+  position: absolute;
+  display: block;
+  content: "";
+  animation: spinner 1.8s ease-in-out infinite;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.spinner::before {
+  left: 10px;
+  top: -20px;
+  width: 40px;
+  background: #ef4836;
+}
+
+.spinner::after {
+  bottom: -20px;
+  width: 35px;
+  background: #f5ab35;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
