@@ -53,6 +53,7 @@ import TypingAnimations from "../projects/Typing Animations/TypingAnimations";
 import ImagePreview from "../projects/Image Preview/ImagePreview";
 import AnimatedLandingPage from "../projects/Animated Landing Page/AnimatedLandingPage";
 import HackerTyper from "../projects/Hacker Typer/HackerTyper";
+import HexGuesser from "../projects/Hex Guesser/HexGuesser";
 
 export const projects = [
   {
@@ -879,5 +880,20 @@ export const projects = [
       },
     ],
     component: <HackerTyper></HackerTyper>,
+  },
+  {
+    id: 56,
+    title: "Hex Guesser",
+    hashtags: [
+      {
+        id: 1,
+        name: "hexmcq",
+      },
+      {
+        id: 2,
+        name: "guessinggame",
+      },
+    ],
+    component: <HexGuesser></HexGuesser>,
   },
 ];
