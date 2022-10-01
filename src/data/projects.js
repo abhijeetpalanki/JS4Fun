@@ -52,6 +52,7 @@ import ColorPicker from "../projects/Color Picker/ColorPicker";
 import TypingAnimations from "../projects/Typing Animations/TypingAnimations";
 import ImagePreview from "../projects/Image Preview/ImagePreview";
 import AnimatedLandingPage from "../projects/Animated Landing Page/AnimatedLandingPage";
+import HackerTyper from "../projects/Hacker Typer/HackerTyper";
 
 export const projects = [
   {
@@ -863,5 +864,20 @@ export const projects = [
       },
     ],
     component: <AnimatedLandingPage></AnimatedLandingPage>,
+  },
+  {
+    id: 55,
+    title: "Hacker Typer",
+    hashtags: [
+      {
+        id: 1,
+        name: "hackers",
+      },
+      {
+        id: 2,
+        name: "faketyper",
+      },
+    ],
+    component: <HackerTyper></HackerTyper>,
   },
 ];

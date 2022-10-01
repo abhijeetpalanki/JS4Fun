@@ -105,3 +105,50 @@
     transform: translateX(40px);
   }
 }
+
+.blinker {
+  display: inline-block;
+  animation: blink 1s infinite;
+  font-weight: bold;
+  color: #10ff00;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.success {
+  color: #10ff00;
+  display: block;
+  animation: accessAnimation 0.5s linear infinite;
+}
+
+.denied {
+  color: red;
+  display: block;
+  animation: accessAnimation 0.5s linear infinite;
+}
+
+@keyframes accessAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
