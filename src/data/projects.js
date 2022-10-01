@@ -51,6 +51,7 @@ import DrumKit from "../projects/Drum Kit/DrumKit";
 import ColorPicker from "../projects/Color Picker/ColorPicker";
 import TypingAnimations from "../projects/Typing Animations/TypingAnimations";
 import ImagePreview from "../projects/Image Preview/ImagePreview";
+import AnimatedLandingPage from "../projects/Animated Landing Page/AnimatedLandingPage";
 
 export const projects = [
   {
@@ -847,5 +848,20 @@ export const projects = [
       },
     ],
     component: <ImagePreview></ImagePreview>,
+  },
+  {
+    id: 54,
+    title: "Animated Landing Page",
+    hashtags: [
+      {
+        id: 1,
+        name: "framermotion",
+      },
+      {
+        id: 2,
+        name: "landingpage",
+      },
+    ],
+    component: <AnimatedLandingPage></AnimatedLandingPage>,
   },
 ];
