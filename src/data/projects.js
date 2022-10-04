@@ -54,6 +54,7 @@ import ImagePreview from "../projects/Image Preview/ImagePreview";
 import AnimatedLandingPage from "../projects/Animated Landing Page/AnimatedLandingPage";
 import HackerTyper from "../projects/Hacker Typer/HackerTyper";
 import HexGuesser from "../projects/Hex Guesser/HexGuesser";
+import Musification from "../projects/Musification/Musification";
 
 export const projects = [
   {
@@ -895,5 +896,20 @@ export const projects = [
       },
     ],
     component: <HexGuesser></HexGuesser>,
+  },
+  {
+    id: 57,
+    title: "Musification",
+    hashtags: [
+      {
+        id: 1,
+        name: "musicapp",
+      },
+      {
+        id: 2,
+        name: "staticmusicplayer",
+      },
+    ],
+    component: <Musification></Musification>,
   },
 ];
