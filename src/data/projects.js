@@ -55,6 +55,7 @@ import AnimatedLandingPage from "../projects/Animated Landing Page/AnimatedLandi
 import HackerTyper from "../projects/Hacker Typer/HackerTyper";
 import HexGuesser from "../projects/Hex Guesser/HexGuesser";
 import Musification from "../projects/Musification/Musification";
+import MultiStepForm from "../projects/MultiStepForm/MultiStepForm";
 
 export const projects = [
   {
@@ -911,5 +912,20 @@ export const projects = [
       },
     ],
     component: <Musification></Musification>,
+  },
+  {
+    id: 58,
+    title: "Multi-Step Form",
+    hashtags: [
+      {
+        id: 1,
+        name: "multiplesteps",
+      },
+      {
+        id: 2,
+        name: "userform",
+      },
+    ],
+    component: <MultiStepForm></MultiStepForm>,
   },
 ];
