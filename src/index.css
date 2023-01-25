@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes snore {
+  30% {
+    transform: rotate(10deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(10deg) translateY(-7em);
+    opacity: 0.2;
+  }
+}
+
+@keyframes nod {
+  50% {
+    transform: rotate(0deg);
+  }
+}

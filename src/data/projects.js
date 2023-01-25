@@ -56,6 +56,7 @@ import HackerTyper from "../projects/Hacker Typer/HackerTyper";
 import HexGuesser from "../projects/Hex Guesser/HexGuesser";
 import Musification from "../projects/Musification/Musification";
 import MultiStepForm from "../projects/MultiStepForm/MultiStepForm";
+import RabbitLoader from "../projects/Rabbit Loader/RabbitLoader";
 
 export const projects = [
   {
@@ -927,5 +928,20 @@ export const projects = [
       },
     ],
     component: <MultiStepForm></MultiStepForm>,
+  },
+  {
+    id: 59,
+    title: "Rabbit Loader",
+    hashtags: [
+      {
+        id: 1,
+        name: "loading",
+      },
+      {
+        id: 2,
+        name: "cssanimation",
+      },
+    ],
+    component: <RabbitLoader></RabbitLoader>,
   },
 ];

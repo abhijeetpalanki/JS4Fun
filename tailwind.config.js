@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const colors = require("tailwindcss/colors");
-
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,tsx}"],
   theme: {
@@ -21,10 +19,16 @@ module.exports = {
         },
       },
     },
+    animation: {
+      snore: "snore 9s infinite linear forwards",
+      nod: "nod 5s ease-in-out infinite",
+    },
     backgroundImage: {
       relaxerBg: "url('~/src/images/relaxer-bg.jpg')",
       brickWall: "url('~/src/images/brick-wall.jpg')",
       postItNote: "url('~/src/images/post-it-note.png')",
+      rabbitGradient:
+        "radial-gradient(circle at 0 50%, #b5becd, #b5becd 60%, #d7dfed 61%)",
     },
     boxShadow: {
       paperShadow: "inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 53%)",
