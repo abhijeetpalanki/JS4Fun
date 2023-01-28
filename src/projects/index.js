@@ -57,6 +57,7 @@ import HexGuesser from "../projects/Hex Guesser/HexGuesser";
 import Musification from "../projects/Musification/Musification";
 import MultiStepForm from "../projects/MultiStepForm/MultiStepForm";
 import RabbitLoader from "../projects/Rabbit Loader/RabbitLoader";
+import Focus from "../projects/Focus/Focus";
 
 export {
   ExpandingCard,
@@ -118,4 +119,5 @@ export {
   Musification,
   MultiStepForm,
   RabbitLoader,
+  Focus,
 };

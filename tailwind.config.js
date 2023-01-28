@@ -29,6 +29,7 @@ module.exports = {
       postItNote: "url('~/src/images/post-it-note.png')",
       rabbitGradient:
         "radial-gradient(circle at 0 50%, #b5becd, #b5becd 60%, #d7dfed 61%)",
+      focusGradient: "linear-gradient(45deg,#ff0057,#2196f3)",
     },
     boxShadow: {
       paperShadow: "inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 53%)",

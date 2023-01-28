@@ -58,6 +58,7 @@ import {
   Musification,
   MultiStepForm,
   RabbitLoader,
+  Focus,
 } from "../projects";
 
 export const projects = [
@@ -945,5 +946,20 @@ export const projects = [
       },
     ],
     component: <RabbitLoader></RabbitLoader>,
+  },
+  {
+    id: 60,
+    title: "Focus",
+    hashtags: [
+      {
+        id: 1,
+        name: "texthover",
+      },
+      {
+        id: 2,
+        name: "transition",
+      },
+    ],
+    component: <Focus></Focus>,
   },
 ];
