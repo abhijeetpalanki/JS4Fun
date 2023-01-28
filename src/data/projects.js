@@ -59,6 +59,7 @@ import {
   MultiStepForm,
   RabbitLoader,
   Focus,
+  TextGenerator,
 } from "../projects";
 
 export const projects = [
@@ -961,5 +962,20 @@ export const projects = [
       },
     ],
     component: <Focus></Focus>,
+  },
+  {
+    id: 61,
+    title: "Text Generator",
+    hashtags: [
+      {
+        id: 1,
+        name: "text",
+      },
+      {
+        id: 2,
+        name: "generator",
+      },
+    ],
+    component: <TextGenerator></TextGenerator>,
   },
 ];

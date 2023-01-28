@@ -58,6 +58,7 @@ import Musification from "../projects/Musification/Musification";
 import MultiStepForm from "../projects/MultiStepForm/MultiStepForm";
 import RabbitLoader from "../projects/Rabbit Loader/RabbitLoader";
 import Focus from "../projects/Focus/Focus";
+import TextGenerator from "../projects/Text Generator/TextGenerator";
 
 export {
   ExpandingCard,
@@ -120,4 +121,5 @@ export {
   MultiStepForm,
   RabbitLoader,
   Focus,
+  TextGenerator,
 };
