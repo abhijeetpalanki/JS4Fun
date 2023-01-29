@@ -181,3 +181,89 @@
     margin-top: 2rem;
   }
 }
+
+/* Services Card */
+
+.card .lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(transparent, #45f3ff, #45f3ff, transparent);
+  animation-play-state: paused;
+}
+
+.card:hover .lines::before {
+  animation-play-state: running;
+}
+
+.card .lines::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #292929;
+}
+
+.card:hover .imgBx {
+  top: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.card .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    transparent,
+    #ff3c7b,
+    #ff3c7b,
+    #ff3c7b,
+    transparent
+  );
+  animation: imageExpand 6s linear infinite;
+  animation-play-state: paused;
+}
+
+.card:hover .imgBx::before {
+  animation-play-state: running;
+}
+
+@keyframes imageExpand {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.card .imgBx::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #292929;
+}
+
+.card:hover .imgBx img {
+  opacity: 1;
+}
+
+.card .content .details {
+  transform: translateY(145px);
+}
+
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+
+.card:hover .content .details p,
+.card:hover .content .details button {
+  opacity: 1;
+}

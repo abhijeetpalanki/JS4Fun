@@ -62,6 +62,7 @@ import {
   TextGenerator,
   CryptoPriceTracker,
   SimpleInterestCalculator,
+  ServicesCard,
 } from "../projects";
 
 export const projects = [
@@ -1009,5 +1010,20 @@ export const projects = [
       },
     ],
     component: <SimpleInterestCalculator></SimpleInterestCalculator>,
+  },
+  {
+    id: 64,
+    title: "Services Card",
+    hashtags: [
+      {
+        id: 1,
+        name: "animatedcard",
+      },
+      {
+        id: 2,
+        name: "servicessection",
+      },
+    ],
+    component: <ServicesCard></ServicesCard>,
   },
 ];

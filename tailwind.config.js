@@ -22,6 +22,8 @@ module.exports = {
     animation: {
       snore: "snore 9s infinite linear forwards",
       nod: "nod 5s ease-in-out infinite",
+      expand: "expand 4s linear infinite",
+      imageExpand: "imageExpand 6s linear infinite",
     },
     backgroundImage: {
       relaxerBg: "url('~/src/images/relaxer-bg.jpg')",
