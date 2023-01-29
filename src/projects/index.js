@@ -59,6 +59,7 @@ import MultiStepForm from "../projects/MultiStepForm/MultiStepForm";
 import RabbitLoader from "../projects/Rabbit Loader/RabbitLoader";
 import Focus from "../projects/Focus/Focus";
 import TextGenerator from "../projects/Text Generator/TextGenerator";
+import CryptoPriceTracker from "../projects/Crypto Price Tracker/CryptoPriceTracker";
 
 export {
   ExpandingCard,
@@ -122,4 +123,5 @@ export {
   RabbitLoader,
   Focus,
   TextGenerator,
+  CryptoPriceTracker,
 };

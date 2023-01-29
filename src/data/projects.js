@@ -60,6 +60,7 @@ import {
   RabbitLoader,
   Focus,
   TextGenerator,
+  CryptoPriceTracker,
 } from "../projects";
 
 export const projects = [
@@ -977,5 +978,20 @@ export const projects = [
       },
     ],
     component: <TextGenerator></TextGenerator>,
+  },
+  {
+    id: 62,
+    title: "Crypto Price Tracker",
+    hashtags: [
+      {
+        id: 1,
+        name: "cryptocurrency",
+      },
+      {
+        id: 2,
+        name: "tracker",
+      },
+    ],
+    component: <CryptoPriceTracker></CryptoPriceTracker>,
   },
 ];
