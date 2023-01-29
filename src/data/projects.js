@@ -61,6 +61,7 @@ import {
   Focus,
   TextGenerator,
   CryptoPriceTracker,
+  SimpleInterestCalculator,
 } from "../projects";
 
 export const projects = [
@@ -993,5 +994,20 @@ export const projects = [
       },
     ],
     component: <CryptoPriceTracker></CryptoPriceTracker>,
+  },
+  {
+    id: 63,
+    title: "Simple Interest Calculator",
+    hashtags: [
+      {
+        id: 1,
+        name: "simple interest",
+      },
+      {
+        id: 2,
+        name: "calculator",
+      },
+    ],
+    component: <SimpleInterestCalculator></SimpleInterestCalculator>,
   },
 ];
