@@ -63,6 +63,7 @@ import {
   CryptoPriceTracker,
   SimpleInterestCalculator,
   ServicesCard,
+  Notifications,
 } from "../projects";
 
 export const projects = [
@@ -1025,5 +1026,16 @@ export const projects = [
       },
     ],
     component: <ServicesCard></ServicesCard>,
+  },
+  {
+    id: 65,
+    title: "Notifications",
+    hashtags: [
+      {
+        id: 1,
+        name: "notificationbar",
+      },
+    ],
+    component: <Notifications></Notifications>,
   },
 ];

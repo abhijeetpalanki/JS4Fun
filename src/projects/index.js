@@ -62,6 +62,7 @@ import TextGenerator from "../projects/Text Generator/TextGenerator";
 import CryptoPriceTracker from "../projects/Crypto Price Tracker/CryptoPriceTracker";
 import SimpleInterestCalculator from "../projects/Simple Interest Calculator/SimpleInterestCalculator";
 import ServicesCard from "../projects/Services Card/ServicesCard";
+import Notifications from "../projects/Notifications/Notifications";
 
 export {
   ExpandingCard,
@@ -128,4 +129,5 @@ export {
   CryptoPriceTracker,
   SimpleInterestCalculator,
   ServicesCard,
+  Notifications,
 };
