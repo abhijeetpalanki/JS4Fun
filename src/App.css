@@ -268,3 +268,18 @@
 .card:hover .content .details button {
   opacity: 1;
 }
+
+/* Memory Game */
+.card .front {
+  transform: rotateY(90deg);
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}

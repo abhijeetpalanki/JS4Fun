@@ -64,6 +64,7 @@ import {
   SimpleInterestCalculator,
   ServicesCard,
   Notifications,
+  MemoryGame,
 } from "../projects";
 
 export const projects = [
@@ -1037,5 +1038,16 @@ export const projects = [
       },
     ],
     component: <Notifications></Notifications>,
+  },
+  {
+    id: 66,
+    title: "Memory Game",
+    hashtags: [
+      {
+        id: 1,
+        name: "puzzlegame",
+      },
+    ],
+    component: <MemoryGame></MemoryGame>,
   },
 ];

@@ -63,6 +63,7 @@ import CryptoPriceTracker from "../projects/Crypto Price Tracker/CryptoPriceTrac
 import SimpleInterestCalculator from "../projects/Simple Interest Calculator/SimpleInterestCalculator";
 import ServicesCard from "../projects/Services Card/ServicesCard";
 import Notifications from "../projects/Notifications/Notifications";
+import MemoryGame from "../projects/Memory Game/MemoryGame";
 
 export {
   ExpandingCard,
@@ -130,4 +131,5 @@ export {
   SimpleInterestCalculator,
   ServicesCard,
   Notifications,
+  MemoryGame,
 };
