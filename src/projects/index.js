@@ -65,6 +65,7 @@ import ServicesCard from "../projects/Services Card/ServicesCard";
 import Notifications from "../projects/Notifications/Notifications";
 import MemoryGame from "../projects/Memory Game/MemoryGame";
 import SphericalGallery from "../projects/Spherical Gallery/SphericalGallery";
+import Toastify from "../projects/Toastify/Toastify";
 
 export {
   ExpandingCard,
@@ -134,4 +135,5 @@ export {
   Notifications,
   MemoryGame,
   SphericalGallery,
+  Toastify,
 };

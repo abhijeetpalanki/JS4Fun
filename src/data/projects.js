@@ -66,6 +66,7 @@ import {
   Notifications,
   MemoryGame,
   SphericalGallery,
+  Toastify,
 } from "../projects";
 
 export const projects = [
@@ -1061,5 +1062,16 @@ export const projects = [
       },
     ],
     component: <SphericalGallery></SphericalGallery>,
+  },
+  {
+    id: 68,
+    title: "Toastify",
+    hashtags: [
+      {
+        id: 1,
+        name: "toastmessages",
+      },
+    ],
+    component: <Toastify></Toastify>,
   },
 ];
