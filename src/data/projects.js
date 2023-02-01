@@ -65,6 +65,7 @@ import {
   ServicesCard,
   Notifications,
   MemoryGame,
+  SphericalGallery,
 } from "../projects";
 
 export const projects = [
@@ -1049,5 +1050,16 @@ export const projects = [
       },
     ],
     component: <MemoryGame></MemoryGame>,
+  },
+  {
+    id: 67,
+    title: "Spherical Gallery",
+    hashtags: [
+      {
+        id: 1,
+        name: "gallery",
+      },
+    ],
+    component: <SphericalGallery></SphericalGallery>,
   },
 ];

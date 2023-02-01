@@ -64,6 +64,7 @@ import SimpleInterestCalculator from "../projects/Simple Interest Calculator/Sim
 import ServicesCard from "../projects/Services Card/ServicesCard";
 import Notifications from "../projects/Notifications/Notifications";
 import MemoryGame from "../projects/Memory Game/MemoryGame";
+import SphericalGallery from "../projects/Spherical Gallery/SphericalGallery";
 
 export {
   ExpandingCard,
@@ -132,4 +133,5 @@ export {
   ServicesCard,
   Notifications,
   MemoryGame,
+  SphericalGallery,
 };
