@@ -68,6 +68,7 @@ import {
   SphericalGallery,
   Toastify,
   BMICalculator,
+  PalindromeChecker,
 } from "../projects";
 
 export const projects = [
@@ -1085,5 +1086,16 @@ export const projects = [
       },
     ],
     component: <BMICalculator></BMICalculator>,
+  },
+  {
+    id: 70,
+    title: "Palindrome Checker",
+    hashtags: [
+      {
+        id: 1,
+        name: "palindrome",
+      },
+    ],
+    component: <PalindromeChecker></PalindromeChecker>,
   },
 ];
