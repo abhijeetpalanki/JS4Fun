@@ -67,6 +67,7 @@ import {
   MemoryGame,
   SphericalGallery,
   Toastify,
+  BMICalculator,
 } from "../projects";
 
 export const projects = [
@@ -1073,5 +1074,16 @@ export const projects = [
       },
     ],
     component: <Toastify></Toastify>,
+  },
+  {
+    id: 69,
+    title: "BMI Calculator",
+    hashtags: [
+      {
+        id: 1,
+        name: "bodymassindex",
+      },
+    ],
+    component: <BMICalculator></BMICalculator>,
   },
 ];

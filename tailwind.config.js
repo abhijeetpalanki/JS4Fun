@@ -29,6 +29,7 @@ module.exports = {
       relaxerBg: "url('~/src/images/relaxer-bg.jpg')",
       brickWall: "url('~/src/images/brick-wall.jpg')",
       postItNote: "url('~/src/images/post-it-note.png')",
+      bmiCalculatorBg: "url('https://digitshack.com/codepen/bmical/bg.png')",
       rabbitGradient:
         "radial-gradient(circle at 0 50%, #b5becd, #b5becd 60%, #d7dfed 61%)",
       focusGradient: "linear-gradient(45deg,#ff0057,#2196f3)",

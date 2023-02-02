@@ -66,6 +66,7 @@ import Notifications from "../projects/Notifications/Notifications";
 import MemoryGame from "../projects/Memory Game/MemoryGame";
 import SphericalGallery from "../projects/Spherical Gallery/SphericalGallery";
 import Toastify from "../projects/Toastify/Toastify";
+import BMICalculator from "../projects/BMI Calculator/BMICalculator";
 
 export {
   ExpandingCard,
@@ -136,4 +137,5 @@ export {
   MemoryGame,
   SphericalGallery,
   Toastify,
+  BMICalculator,
 };
