@@ -1,1 +1,1 @@
-Visit Here - https://abhijeetpalanki-js4fun.netlify.app/projects
+Visit Here - https://abhijeetpalanki-js4fun.netlify.app/
