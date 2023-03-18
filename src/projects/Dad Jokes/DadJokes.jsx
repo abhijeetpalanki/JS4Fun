@@ -1,9 +1,23 @@
-import React from "react";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
+import { useState } from "react";
 import "./DadJokes.css";
 
 const DadJokes = () => {
-  const { jokeObj, generateJoke } = useProjectsContext();
+  const [jokeObj, setJokeObj] = useState(
+    "What did the ocean say to the shore? Nothing, it just waved."
+  );
+
+  const generateJoke = async () => {
+    const config = {
+      headers: {
+        Accept: "application/json",
+      },
+    };
+
+    const res = await fetch("https://icanhazdadjoke.com", config);
+
+    const { joke } = await res.json();
+    setJokeObj(joke);
+  };
 
   return (
     <div className="dad-jokes-body bg-[#686de0] font-['Roboto'] flex justify-center items-center h-screen overflow-hidden m-0 p-5">

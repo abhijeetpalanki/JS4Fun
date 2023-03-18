@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import CountdownAnimation from "./CountdownAnimation";
 import Settings from "./Settings";
-import { SettingsContext } from "../../context/SettingsContext";
+import { SettingsContext } from "./SettingsContext";
 import { useContext } from "react";
 import Button from "./Button";
 

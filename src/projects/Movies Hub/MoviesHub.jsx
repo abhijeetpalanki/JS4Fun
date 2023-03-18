@@ -1,13 +1,20 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import "./MoviesHub.css";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
-
+const API_URL =
+  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=e37a86d6a2841832f55e125b53024051&page=1";
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_MOVIES_API_KEY}&query="`;
 
 const MoviesHub = () => {
-  const { movies, getMovies } = useProjectsContext();
+  const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+
+  const getMovies = async (url) => {
+    const res = await fetch(url);
+    const data = await res.json();
+    setMovies(data.results);
+  };
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +38,10 @@ const MoviesHub = () => {
       return "red";
     }
   };
+
+  useEffect(() => {
+    getMovies(API_URL);
+  }, []);
 
   return (
     <div className="movies-hub-body bg-[#22254b] font['Poppins'] m-0">

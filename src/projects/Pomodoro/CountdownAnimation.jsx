@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import { SettingsContext } from "./../../context/SettingsContext";
+import { SettingsContext } from "./SettingsContext";
 
 const CountdownAnimation = ({ keyValue, timer, animate, children }) => {
   const { stopTimer } = useContext(SettingsContext);

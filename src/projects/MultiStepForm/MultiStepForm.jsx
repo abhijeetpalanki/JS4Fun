@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { UseContextProvider } from "../../context/StepperContext";
+import { UseContextProvider } from "./StepperContext";
 import Stepper from "./Stepper";
 import StepperControl from "./StepperControl";
 import AccountInformation from "./steps/AccountInformation";
@@ -26,6 +26,8 @@ const MultiStepForm = () => {
         return <Payment />;
       case 4:
         return <Complete />;
+      default:
+        return;
     }
   };
 

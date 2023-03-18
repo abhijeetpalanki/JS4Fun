@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
 
-const Header = () => {
+const Header = ({ inputWord, setInputWord }) => {
   const [value, setValue] = useState("");
-  const { inputWord, setInputWord } = useProjectsContext();
 
   const handleInputChange = (e) => {
     setValue(e.target.value);
@@ -35,7 +33,7 @@ const Header = () => {
           <div className="flex border-2 border-gray-200 rounded">
             <input
               type="text"
-              className="px-4 py-2 md:w-80"
+              className="px-4 py-2 md:w-80 outline-none"
               placeholder="Search..."
               value={value}
               onChange={handleInputChange}

@@ -1,9 +1,4 @@
-import React from "react";
-import { useProjectsContext } from "../../../context/ProjectsContextProvider";
-
-const MainMenu = () => {
-  const { setGameState } = useProjectsContext();
-
+const MainMenu = ({ setGameState }) => {
   return (
     <div className="menu w-[500px] h-[500px] rounded-[10px] bg-[lightseagreen] text-white flex items-center justify-center flex-col">
       <button

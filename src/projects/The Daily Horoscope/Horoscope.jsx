@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import Detail from "./Detail";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
 
 const timeframes = ["yesterday", "today", "tomorrow"];
 
 const Horoscope = () => {
-  const { signs } = useProjectsContext();
+  const [signs, setSigns] = useState([]);
   const [selectedSign, setSelectedSign] = useState("");
   const [selectedTimeFrame, setSelectedTimeFrame] = useState("");
 
@@ -13,6 +12,18 @@ const Horoscope = () => {
     setSelectedSign("");
     setSelectedTimeFrame("");
   };
+
+  const getSigns = async () => {
+    const response = await fetch(
+      "http://sandipbgt.com/theastrologer/api/sunsigns/"
+    );
+    const data = await response.json();
+    setSigns(data);
+  };
+
+  useEffect(() => {
+    getSigns();
+  }, []);
 
   return (
     <div className="horoscope-body bg-[darkslategrey] text-white font-['Montserrat'] flex flex-col justify-center items-center overflow-hidden h-screen m-0">

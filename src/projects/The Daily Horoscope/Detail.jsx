@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
 
 const Detail = ({ sign, timeframe }) => {
-  const { getHoroscope } = useProjectsContext();
   const [horoscopeObj, setHoroscopeObj] = useState({});
   let date;
   const today = new Date().getDate();
@@ -16,6 +14,13 @@ const Detail = ({ sign, timeframe }) => {
   } else if (timeframe === "tomorrow") {
     date = tomorrow;
   }
+
+  const getHoroscope = async (sign, timeframe) => {
+    const response = await fetch(
+      `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/${timeframe}`
+    );
+    return await response.json();
+  };
 
   useEffect(() => {
     getHoroscope(sign, timeframe).then((data) => setHoroscopeObj(data));

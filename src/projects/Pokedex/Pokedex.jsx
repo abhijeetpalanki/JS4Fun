@@ -1,5 +1,4 @@
-import React from "react";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
+import { useState, useEffect } from "react";
 
 const colors = {
   fire: "#FDDFDF",
@@ -21,7 +20,21 @@ const colors = {
 const main_types = Object.keys(colors);
 
 const Pokedex = () => {
-  const { pokemonList } = useProjectsContext();
+  const pokemon_count = 150;
+  const [pokemonList, setPokemonList] = useState([]);
+
+  const getPokemons = async () => {
+    for (let i = 1; i <= pokemon_count; i++) {
+      const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+      const res = await fetch(url);
+      const data = await res.json();
+      setPokemonList((pokemonList) => [...pokemonList, data]);
+    }
+  };
+
+  useEffect(() => {
+    getPokemons();
+  }, []);
 
   return (
     <div className="pokedex-body bg-[#efefbb] bg-gradient-to-r from-[#d4d3dd] to-[#efefbb] font-['Lato'] flex flex-col items-center m-0">

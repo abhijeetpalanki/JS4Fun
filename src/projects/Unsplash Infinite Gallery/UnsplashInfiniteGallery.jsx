@@ -1,14 +1,27 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "./UnsplashInfiniteGallery.css";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
 
 const UnsplashInfiniteGallery = () => {
-  const { images, getImages } = useProjectsContext();
+  const [images, setImages] = useState([]);
+
+  const getImages = () => {
+    const apiRoute = "https://api.unsplash.com";
+    const accessKey = process.env.REACT_APP_ACCESS_KEY;
+
+    axios
+      .get(`${apiRoute}/photos/random?client_id=${accessKey}&count=10`)
+      .then((res) => setImages([...images, ...res.data]));
+  };
+
+  useEffect(() => {
+    getImages();
+  }, []);
 
   return (
-    <div className="font-['Roboto'] h-screen m-0">
-      <header className="max-w-6xl mx-auto my-8 text-center">
+    <div className="font-['Roboto'] m-0">
+      <header className="max-w-6xl mx-auto text-center">
         <h1 className="mb-4 font-['Oswald'] text-[2rem] font-bold">Unsplash</h1>
         <p>The internet's source of freely usable images.</p>
         <p>Powered by creators everywhere.</p>

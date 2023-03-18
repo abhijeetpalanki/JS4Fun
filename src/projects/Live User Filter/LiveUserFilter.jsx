@@ -1,10 +1,31 @@
 import React, { useState } from "react";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
+import { useEffect } from "react";
 import "./LiveUserFilter.css";
 
 const LiveUserFilter = () => {
   const [searchInput, setSearchInput] = useState("");
-  const { users, error, isLoaded } = useProjectsContext();
+  const [users, setUsers] = useState([]);
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const getData = async () => {
+    await fetch("https://randomuser.me/api?results=50")
+      .then((res) => res.json())
+      .then(
+        (data) => {
+          setIsLoaded(true);
+          setUsers(data.results);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <div className="live-user-filter-body bg-[#f8f9fd] font-['Roboto'] flex items-center justify-center h-screen m-0">

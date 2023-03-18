@@ -1,5 +1,5 @@
 import React from "react";
-import SettingsContextProvider from "../../context/SettingsContext";
+import SettingsContextProvider from "./SettingsContext";
 import PomodoroMain from "./PomodoroMain";
 
 const Pomodoro = () => {

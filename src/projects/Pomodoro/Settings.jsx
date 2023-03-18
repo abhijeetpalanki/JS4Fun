@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import { SettingsContext } from "./../../context/SettingsContext";
+import { SettingsContext } from "./SettingsContext";
 import { useContext } from "react";
 
 const Settings = () => {

@@ -1,13 +1,10 @@
 import React from "react";
-import { useProjectsContext } from "../../context/ProjectsContextProvider";
 import Meanings from "./Meanings";
 import Examples from "./Examples";
 import Synonyms from "./Synonyms";
 import Antonyms from "./Antonyms";
 
-const Results = () => {
-  const { loading, wordError, response } = useProjectsContext();
-
+const Results = ({ loading, wordError, response }) => {
   if (loading) {
     return (
       <div className="container flex flex-col max-w-2xl p-4 mx-auto space-y-3 animate-pulse">

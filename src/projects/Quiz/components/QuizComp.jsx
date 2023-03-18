@@ -1,15 +1,13 @@
-import React, { useState } from "react";
-import { useProjectsContext } from "../../../context/ProjectsContextProvider";
+import { useState } from "react";
 
-const QuizComp = () => {
-  const {
-    setGameState,
-    questions,
-    currentQuestion,
-    setCurrentQuestion,
-    score,
-    setScore,
-  } = useProjectsContext();
+const QuizComp = ({
+  setGameState,
+  questions,
+  currentQuestion,
+  setCurrentQuestion,
+  score,
+  setScore,
+}) => {
   const [chosenOption, setChosenOption] = useState(0);
 
   const nextQuestion = () => {
@@ -60,12 +58,18 @@ const QuizComp = () => {
         </button>
       </div>
 
-      {currentQuestion == questions.length - 1 ? (
-        <button onClick={finishQuiz} className="block w-full btn">
+      {currentQuestion === questions.length - 1 ? (
+        <button
+          onClick={finishQuiz}
+          className="block w-full h-[50px] m-[5px] border-0 text-[20px] bg-white text-black focus:bg-black focus:text-white"
+        >
           Finish Quiz
         </button>
       ) : (
-        <button onClick={nextQuestion} className="block w-full btn">
+        <button
+          onClick={nextQuestion}
+          className="block w-full h-[50px] m-[5px] border-0 text-[20px] bg-white text-black focus:bg-black focus:text-white"
+        >
           Next Question
         </button>
       )}

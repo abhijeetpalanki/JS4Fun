@@ -1,5 +1,5 @@
 import React from "react";
-import { useStepperContext } from "../../../context/StepperContext";
+import { useStepperContext } from "../StepperContext";
 
 const AccountInformation = () => {
   const { userData, setUserData } = useStepperContext();

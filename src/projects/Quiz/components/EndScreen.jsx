@@ -1,9 +1,4 @@
-import React from "react";
-import { useProjectsContext } from "../../../context/ProjectsContextProvider";
-
-const EndScreen = () => {
-  const { setGameState, questions, score, setScore } = useProjectsContext();
-
+const EndScreen = ({ setGameState, questions, score, setScore }) => {
   const restartQuiz = () => {
     setScore(0);
     setGameState("menu");
