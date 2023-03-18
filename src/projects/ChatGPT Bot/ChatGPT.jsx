@@ -50,7 +50,7 @@ const ChatGPT = () => {
       <Container.Inner>
         <div>
           <label className="block text-lg font-medium text-gray-700">
-            Ask Chat-GPT
+            Ask ChatGPT Bot
           </label>
           <div className="mt-1">
             <textarea

@@ -6,7 +6,14 @@ const OuterContainer = forwardRef(function OuterContainer(
   ref
 ) {
   return (
-    <div ref={ref} className={clsx("sm:px-8", className)} {...props}>
+    <div
+      ref={ref}
+      className={clsx(
+        "sm:px-8 h-screen flex flex-col justify-center items-center",
+        className
+      )}
+      {...props}
+    >
       <h1 className="text-center text-lg font-bold">ChatGPT Bot</h1>
       <div className="m-3 bg-zinc-200 rounded">{children}</div>
     </div>
