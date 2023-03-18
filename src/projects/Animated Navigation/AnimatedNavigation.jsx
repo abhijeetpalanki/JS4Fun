@@ -234,7 +234,7 @@ const AnimatedNavigation = () => {
           >
             <img
               src="https://picsum.photos/200"
-              alt="Profile Image"
+              alt="Profile Pic"
               onClick={handleProfileClick}
               className="max-w-[2.5rem] h-10 rounded-[50%] hover:border-2 hover:border-[#a4b2bc] hover:p-[2px]"
             />
@@ -266,7 +266,7 @@ const AnimatedNavigation = () => {
       </div>
 
       <div className="flex items-center justify-center w-screen h-screen">
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />

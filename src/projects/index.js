@@ -68,6 +68,7 @@ import SphericalGallery from "../projects/Spherical Gallery/SphericalGallery";
 import Toastify from "../projects/Toastify/Toastify";
 import BMICalculator from "../projects/BMI Calculator/BMICalculator";
 import PalindromeChecker from "../projects/Palindrome Checker/PalindromeChecker";
+import BookHub from "../projects/Book Hub/BookHub";
 
 export {
   ExpandingCard,
@@ -140,4 +141,5 @@ export {
   Toastify,
   BMICalculator,
   PalindromeChecker,
+  BookHub,
 };

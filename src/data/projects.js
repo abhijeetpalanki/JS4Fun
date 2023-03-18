@@ -69,6 +69,7 @@ import {
   Toastify,
   BMICalculator,
   PalindromeChecker,
+  BookHub,
 } from "../projects";
 
 export const projects = [
@@ -1097,5 +1098,16 @@ export const projects = [
       },
     ],
     component: <PalindromeChecker></PalindromeChecker>,
+  },
+  {
+    id: 71,
+    title: "Book Hub",
+    hashtags: [
+      {
+        id: 1,
+        name: "booksearch",
+      },
+    ],
+    component: <BookHub></BookHub>,
   },
 ];
