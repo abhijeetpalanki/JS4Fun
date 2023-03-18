@@ -69,6 +69,7 @@ import Toastify from "../projects/Toastify/Toastify";
 import BMICalculator from "../projects/BMI Calculator/BMICalculator";
 import PalindromeChecker from "../projects/Palindrome Checker/PalindromeChecker";
 import BookHub from "../projects/Book Hub/BookHub";
+import ChatGPT from "./ChatGPT Bot/ChatGPT";
 
 export {
   ExpandingCard,
@@ -142,4 +143,5 @@ export {
   BMICalculator,
   PalindromeChecker,
   BookHub,
+  ChatGPT,
 };

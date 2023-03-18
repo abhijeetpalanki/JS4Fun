@@ -70,6 +70,7 @@ import {
   BMICalculator,
   PalindromeChecker,
   BookHub,
+  ChatGPT,
 } from "../projects";
 
 export const projects = [
@@ -1109,5 +1110,16 @@ export const projects = [
       },
     ],
     component: <BookHub></BookHub>,
+  },
+  {
+    id: 72,
+    title: "ChatGPT Bot",
+    hashtags: [
+      {
+        id: 1,
+        name: "chatgpt",
+      },
+    ],
+    component: <ChatGPT></ChatGPT>,
   },
 ];
