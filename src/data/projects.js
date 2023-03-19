@@ -71,6 +71,7 @@ import {
   PalindromeChecker,
   BookHub,
   ChatGPT,
+  CurrencyConverter,
 } from "../projects";
 
 export const projects = [
@@ -1121,5 +1122,16 @@ export const projects = [
       },
     ],
     component: <ChatGPT></ChatGPT>,
+  },
+  {
+    id: 73,
+    title: "Currency Converter",
+    hashtags: [
+      {
+        id: 1,
+        name: "converter",
+      },
+    ],
+    component: <CurrencyConverter></CurrencyConverter>,
   },
 ];
