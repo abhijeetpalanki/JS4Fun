@@ -73,6 +73,7 @@ import {
   ChatGPT,
   CurrencyConverter,
   Ranker,
+  MemeGenerator,
 } from "../projects";
 
 export const projects = [
@@ -1145,5 +1146,16 @@ export const projects = [
       },
     ],
     component: <Ranker></Ranker>,
+  },
+  {
+    id: 75,
+    title: "Meme Generator",
+    hashtags: [
+      {
+        id: 1,
+        name: "memes",
+      },
+    ],
+    component: <MemeGenerator></MemeGenerator>,
   },
 ];

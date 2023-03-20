@@ -72,6 +72,7 @@ import BookHub from "../projects/Book Hub/BookHub";
 import ChatGPT from "./ChatGPT Bot/ChatGPT";
 import CurrencyConverter from "./Currency Converter/CurrencyConverter";
 import Ranker from "./Ranker/Ranker";
+import MemeGenerator from "./Meme Generator/MemeGenerator";
 
 export {
   ExpandingCard,
@@ -148,4 +149,5 @@ export {
   ChatGPT,
   CurrencyConverter,
   Ranker,
+  MemeGenerator,
 };
