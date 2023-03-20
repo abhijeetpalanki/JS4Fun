@@ -71,6 +71,7 @@ import PalindromeChecker from "../projects/Palindrome Checker/PalindromeChecker"
 import BookHub from "../projects/Book Hub/BookHub";
 import ChatGPT from "./ChatGPT Bot/ChatGPT";
 import CurrencyConverter from "./Currency Converter/CurrencyConverter";
+import Ranker from "./Ranker/Ranker";
 
 export {
   ExpandingCard,
@@ -146,4 +147,5 @@ export {
   BookHub,
   ChatGPT,
   CurrencyConverter,
+  Ranker,
 };

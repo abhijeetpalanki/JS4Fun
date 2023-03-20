@@ -72,6 +72,7 @@ import {
   BookHub,
   ChatGPT,
   CurrencyConverter,
+  Ranker,
 } from "../projects";
 
 export const projects = [
@@ -1133,5 +1134,16 @@ export const projects = [
       },
     ],
     component: <CurrencyConverter></CurrencyConverter>,
+  },
+  {
+    id: 74,
+    title: "Ranker",
+    hashtags: [
+      {
+        id: 1,
+        name: "pollandvote",
+      },
+    ],
+    component: <Ranker></Ranker>,
   },
 ];
