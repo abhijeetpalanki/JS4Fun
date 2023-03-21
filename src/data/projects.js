@@ -74,6 +74,7 @@ import {
   CurrencyConverter,
   Ranker,
   MemeGenerator,
+  FootballLiveScore,
 } from "../projects";
 
 export const projects = [
@@ -1157,5 +1158,20 @@ export const projects = [
       },
     ],
     component: <MemeGenerator></MemeGenerator>,
+  },
+  {
+    id: 76,
+    title: "Football Live Score",
+    hashtags: [
+      {
+        id: 1,
+        name: "livescore",
+      },
+      {
+        id: 2,
+        name: "footballfixtures",
+      },
+    ],
+    component: <FootballLiveScore></FootballLiveScore>,
   },
 ];

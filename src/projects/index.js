@@ -73,6 +73,7 @@ import ChatGPT from "./ChatGPT Bot/ChatGPT";
 import CurrencyConverter from "./Currency Converter/CurrencyConverter";
 import Ranker from "./Ranker/Ranker";
 import MemeGenerator from "./Meme Generator/MemeGenerator";
+import FootballLiveScore from "./Football Live Score/FootballLiveScore";
 
 export {
   ExpandingCard,
@@ -150,4 +151,5 @@ export {
   CurrencyConverter,
   Ranker,
   MemeGenerator,
+  FootballLiveScore,
 };
