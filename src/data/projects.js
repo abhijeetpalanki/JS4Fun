@@ -75,6 +75,7 @@ import {
   Ranker,
   MemeGenerator,
   FootballLiveScore,
+  TipCalculator,
 } from "../projects";
 
 export const projects = [
@@ -1173,5 +1174,20 @@ export const projects = [
       },
     ],
     component: <FootballLiveScore></FootballLiveScore>,
+  },
+  {
+    id: 77,
+    title: "Tip Calculator",
+    hashtags: [
+      {
+        id: 1,
+        name: "tip",
+      },
+      {
+        id: 2,
+        name: "calculator",
+      },
+    ],
+    component: <TipCalculator></TipCalculator>,
   },
 ];
