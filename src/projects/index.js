@@ -76,6 +76,7 @@ import MemeGenerator from "./Meme Generator/MemeGenerator";
 import FootballLiveScore from "./Football Live Score/FootballLiveScore";
 import TipCalculator from "./Tip Calculator/TipCalculator";
 import UniversityFinder from "./University Finder/UniversityFinder";
+import Captcha from "./Captcha/Captcha";
 
 export {
   ExpandingCard,
@@ -156,4 +157,5 @@ export {
   FootballLiveScore,
   TipCalculator,
   UniversityFinder,
+  Captcha,
 };

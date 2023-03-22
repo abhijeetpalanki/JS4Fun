@@ -77,6 +77,7 @@ import {
   FootballLiveScore,
   TipCalculator,
   UniversityFinder,
+  Captcha,
 } from "../projects";
 
 export const projects = [
@@ -1201,5 +1202,16 @@ export const projects = [
       },
     ],
     component: <UniversityFinder></UniversityFinder>,
+  },
+  {
+    id: 79,
+    title: "Captcha",
+    hashtags: [
+      {
+        id: 1,
+        name: "captcha",
+      },
+    ],
+    component: <Captcha></Captcha>,
   },
 ];
