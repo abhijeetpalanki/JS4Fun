@@ -75,6 +75,7 @@ import Ranker from "./Ranker/Ranker";
 import MemeGenerator from "./Meme Generator/MemeGenerator";
 import FootballLiveScore from "./Football Live Score/FootballLiveScore";
 import TipCalculator from "./Tip Calculator/TipCalculator";
+import UniversityFinder from "./University Finder/UniversityFinder";
 
 export {
   ExpandingCard,
@@ -154,4 +155,5 @@ export {
   MemeGenerator,
   FootballLiveScore,
   TipCalculator,
+  UniversityFinder,
 };

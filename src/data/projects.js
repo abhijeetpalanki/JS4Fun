@@ -76,6 +76,7 @@ import {
   MemeGenerator,
   FootballLiveScore,
   TipCalculator,
+  UniversityFinder,
 } from "../projects";
 
 export const projects = [
@@ -1189,5 +1190,16 @@ export const projects = [
       },
     ],
     component: <TipCalculator></TipCalculator>,
+  },
+  {
+    id: 78,
+    title: "University Finder",
+    hashtags: [
+      {
+        id: 1,
+        name: "universityfinder",
+      },
+    ],
+    component: <UniversityFinder></UniversityFinder>,
   },
 ];
