@@ -78,6 +78,7 @@ import {
   TipCalculator,
   UniversityFinder,
   Captcha,
+  EmotePicker,
 } from "../projects";
 
 export const projects = [
@@ -1213,5 +1214,20 @@ export const projects = [
       },
     ],
     component: <Captcha></Captcha>,
+  },
+  {
+    id: 80,
+    title: "Emote Picker",
+    hashtags: [
+      {
+        id: 1,
+        name: "emoji",
+      },
+      {
+        id: 2,
+        name: "picker",
+      },
+    ],
+    component: <EmotePicker></EmotePicker>,
   },
 ];

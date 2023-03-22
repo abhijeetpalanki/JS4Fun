@@ -77,6 +77,7 @@ import FootballLiveScore from "./Football Live Score/FootballLiveScore";
 import TipCalculator from "./Tip Calculator/TipCalculator";
 import UniversityFinder from "./University Finder/UniversityFinder";
 import Captcha from "./Captcha/Captcha";
+import EmotePicker from "./Emote Picker/EmotePicker";
 
 export {
   ExpandingCard,
@@ -158,4 +159,5 @@ export {
   TipCalculator,
   UniversityFinder,
   Captcha,
+  EmotePicker,
 };
