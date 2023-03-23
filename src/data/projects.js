@@ -79,6 +79,7 @@ import {
   UniversityFinder,
   Captcha,
   EmotePicker,
+  HeroSlider,
 } from "../projects";
 
 export const projects = [
@@ -1229,5 +1230,20 @@ export const projects = [
       },
     ],
     component: <EmotePicker></EmotePicker>,
+  },
+  {
+    id: 81,
+    title: "Hero Slider",
+    hashtags: [
+      {
+        id: 1,
+        name: "gsapanimations",
+      },
+      {
+        id: 2,
+        name: "slider",
+      },
+    ],
+    component: <HeroSlider></HeroSlider>,
   },
 ];

@@ -78,6 +78,7 @@ import TipCalculator from "./Tip Calculator/TipCalculator";
 import UniversityFinder from "./University Finder/UniversityFinder";
 import Captcha from "./Captcha/Captcha";
 import EmotePicker from "./Emote Picker/EmotePicker";
+import HeroSlider from "./Hero Slider/HeroSlider";
 
 export {
   ExpandingCard,
@@ -160,4 +161,5 @@ export {
   UniversityFinder,
   Captcha,
   EmotePicker,
+  HeroSlider,
 };
