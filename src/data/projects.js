@@ -80,6 +80,7 @@ import {
   Captcha,
   EmotePicker,
   HeroSlider,
+  ColorfulMousePointer,
 } from "../projects";
 
 export const projects = [
@@ -1245,5 +1246,20 @@ export const projects = [
       },
     ],
     component: <HeroSlider></HeroSlider>,
+  },
+  {
+    id: 82,
+    title: "Colorful Mouse Pointer",
+    hashtags: [
+      {
+        id: 1,
+        name: "mousepointer",
+      },
+      {
+        id: 2,
+        name: "colorful",
+      },
+    ],
+    component: <ColorfulMousePointer></ColorfulMousePointer>,
   },
 ];

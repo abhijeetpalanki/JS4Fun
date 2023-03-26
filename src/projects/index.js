@@ -79,6 +79,7 @@ import UniversityFinder from "./University Finder/UniversityFinder";
 import Captcha from "./Captcha/Captcha";
 import EmotePicker from "./Emote Picker/EmotePicker";
 import HeroSlider from "./Hero Slider/HeroSlider";
+import ColorfulMousePointer from "./Colorful Mouse Pointer/ColorfulMousePointer";
 
 export {
   ExpandingCard,
@@ -162,4 +163,5 @@ export {
   Captcha,
   EmotePicker,
   HeroSlider,
+  ColorfulMousePointer,
 };
