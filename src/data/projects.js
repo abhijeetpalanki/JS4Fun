@@ -81,6 +81,7 @@ import {
   EmotePicker,
   HeroSlider,
   ColorfulMousePointer,
+  PlaySnake,
 } from "../projects";
 
 export const projects = [
@@ -1261,5 +1262,16 @@ export const projects = [
       },
     ],
     component: <ColorfulMousePointer></ColorfulMousePointer>,
+  },
+  {
+    id: 83,
+    title: "Play Snake",
+    hashtags: [
+      {
+        id: 1,
+        name: "snakegame",
+      },
+    ],
+    component: <PlaySnake></PlaySnake>,
   },
 ];

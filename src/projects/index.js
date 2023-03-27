@@ -80,6 +80,7 @@ import Captcha from "./Captcha/Captcha";
 import EmotePicker from "./Emote Picker/EmotePicker";
 import HeroSlider from "./Hero Slider/HeroSlider";
 import ColorfulMousePointer from "./Colorful Mouse Pointer/ColorfulMousePointer";
+import PlaySnake from "./Play Snake/PlaySnake";
 
 export {
   ExpandingCard,
@@ -164,4 +165,5 @@ export {
   EmotePicker,
   HeroSlider,
   ColorfulMousePointer,
+  PlaySnake,
 };
