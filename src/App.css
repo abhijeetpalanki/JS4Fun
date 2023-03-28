@@ -205,3 +205,14 @@
   transform: rotateY(90deg);
   transition-delay: 0s;
 }
+
+/* Alarm Clock */
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}

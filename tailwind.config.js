@@ -27,6 +27,7 @@ module.exports = {
       expand: "expand 4s linear infinite",
       imageExpand: "imageExpand 6s linear infinite",
       colorSplash: "colorSplash 4s linear infinite",
+      alarm: "alarm 2s infinite alternate",
     },
     backgroundImage: {
       relaxerBg: "url('~/src/images/relaxer-bg.jpg')",
