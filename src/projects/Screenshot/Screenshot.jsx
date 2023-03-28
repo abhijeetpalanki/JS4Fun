@@ -67,7 +67,7 @@ const Screenshot = () => {
             )}
           </div>
         ) : !error && loading ? (
-          <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[50px] h-[10px] bg-[#3498db] rounded-md animate-[spinner_1.8s_ease-in-out_infinite] spinner"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50px] h-[10px] bg-[#3498db] rounded-md animate-spinner before:absolute before:content-[''] before:animate-spinner before:h-[10px] before:rounded-[5px] before:left-[10px] before:-top-[20px] before:w-10 before:bg-[#ef4836] after:absolute after:content-[''] after:animate-spinner after:h-[10px] after:rounded-[5px] after:-bottom-[20px] after:w-[35px] after:bg-[#f5ab35]"></div>
         ) : error ? (
           <div className="">
             <h2 className="text-red-500 text-[30px] leading-4">

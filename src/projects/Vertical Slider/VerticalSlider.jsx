@@ -98,13 +98,13 @@ const VerticalSlider = () => {
         </div>
         <div className="action-buttons">
           <button
-            className="down-button absolute left-[35%] top-[50%] z-[100] bg-white border-0 text-[#aaa] text-[16px] p-[15px] -translate-x-[100%] rounded-tl-[5px] rounded-bl-[5px] hover:text-[#222] focus:outline-none"
+            className="down-button absolute left-[35%] top-1/2 z-[100] bg-white border-0 text-[#aaa] text-[16px] p-[15px] -translate-x-[100%] rounded-tl-[5px] rounded-bl-[5px] hover:text-[#222] focus:outline-none"
             onClick={() => changeSlide("down")}
           >
             <FaArrowDown />
           </button>
           <button
-            className="up-button absolute left-[35%] top-[50%] z-[100] bg-white border-0 text-[#aaa] text-[16px] p-[15px] -translate-y-[100%] rounded-tr-[5px] rounded-br-[5px] hover:text-[#222] focus:outline-none"
+            className="up-button absolute left-[35%] top-1/2 z-[100] bg-white border-0 text-[#aaa] text-[16px] p-[15px] -translate-y-[100%] rounded-tr-[5px] rounded-br-[5px] hover:text-[#222] focus:outline-none"
             onClick={() => changeSlide("up")}
           >
             <FaArrowUp />

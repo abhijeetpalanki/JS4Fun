@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { data } from "./data";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 const BackgroundImageSlider = () => {
-  const [slides, setSlides] = useState(data);
+  const [slides] = useState(data);
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -22,11 +22,11 @@ const BackgroundImageSlider = () => {
   return (
     <section className="relative flex items-center justify-center h-screen">
       <FaArrowAltCircleLeft
-        className="absolute top-[50%] left-8 text-5xl text-black z-10 cursor-pointer select-none"
+        className="absolute top-1/2 left-8 text-5xl text-black z-10 cursor-pointer select-none"
         onClick={prevSlide}
       />
       <FaArrowAltCircleRight
-        className="absolute top-[50%] right-8 text-5xl text-black z-10 cursor-pointer select-none"
+        className="absolute top-1/2 right-8 text-5xl text-black z-10 cursor-pointer select-none"
         onClick={nextSlide}
       />
       {slides.map((slide, index) => {
@@ -42,7 +42,7 @@ const BackgroundImageSlider = () => {
             {index === current && (
               <img
                 src={slide.image}
-                alt="travel image"
+                alt="travel-pic"
                 className="w-[1000px] h-[600px] rounded-xl"
               />
             )}

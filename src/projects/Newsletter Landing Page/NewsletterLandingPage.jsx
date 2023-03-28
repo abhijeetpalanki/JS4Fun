@@ -48,6 +48,7 @@ const NewsletterLandingPage = () => {
             By subscribing, you agree with Revue's{" "}
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.getrevue.co/terms"
               className="duration-150 hover:opacity-80"
             >
@@ -56,6 +57,7 @@ const NewsletterLandingPage = () => {
             and{" "}
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.getrevue.co/privacy"
               className="duration-150 hover:opacity-80"
             >
@@ -70,15 +72,24 @@ const NewsletterLandingPage = () => {
         <p>Newsletter Landing Page</p>
 
         <div className="flex -mx-6">
-          <a href="#" className="mx-3 duration-150 hover:opacity-80">
+          <a
+            href="https://github.com/abhijeetpalanki"
+            className="mx-3 duration-150 hover:opacity-80"
+          >
             About Us
           </a>{" "}
           |
-          <a href="#" className="mx-3 duration-150 hover:opacity-80">
+          <a
+            href="https://github.com/abhijeetpalanki"
+            className="mx-3 duration-150 hover:opacity-80"
+          >
             Privacy
           </a>{" "}
           |
-          <a href="#" className="mx-3 duration-150 hover:opacity-80">
+          <a
+            href="https://github.com/abhijeetpalanki"
+            className="mx-3 duration-150 hover:opacity-80"
+          >
             Contact
           </a>
         </div>

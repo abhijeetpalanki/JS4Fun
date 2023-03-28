@@ -5,7 +5,7 @@ import axios from "axios";
 const GithubProfiles = () => {
   const [userInfo, setUserInfo] = useState({});
   const [repos, setRepos] = useState([]);
-  const [searchInput, setSearchInput] = useState("abhijeetpalanki");
+  const [searchInput] = useState("abhijeetpalanki");
   const [isError, setIsError] = useState(false);
   const [isRepoError, setIsRepoError] = useState(false);
 
@@ -69,7 +69,7 @@ const GithubProfiles = () => {
               <img
                 src={userInfo.avatar_url}
                 alt={userInfo.name}
-                className="avatar rounded-[50%]"
+                className="avatar rounded-1/2"
               />
             </div>
             <div className="user-info text-[#eee] ml-[2rem]">

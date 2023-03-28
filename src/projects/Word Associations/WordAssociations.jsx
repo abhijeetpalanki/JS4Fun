@@ -30,7 +30,7 @@ const WordAssociations = () => {
   };
 
   const checkAnswer = (option, index, correct) => {
-    if (index == correct) {
+    if (index === correct) {
       setCorrectAnswers([...correctAnswers, option]);
       setScore((score) => score + 1);
     } else {

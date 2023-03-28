@@ -54,7 +54,7 @@ const Pokedex = () => {
               className="pokemon bg-[#eee] rounded-[10px] m-[10px] p-[20px] text-center shadow-lg"
               style={{ backgroundColor: color }}
             >
-              <div className="img-container bg-white/60 rounded-[50%] w-[120px] h-[120px] text-center flex justify-center items-center">
+              <div className="img-container bg-white/60 rounded-full w-[120px] h-[120px] text-center flex justify-center items-center">
                 <img
                   className="mt-[20px]"
                   src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}

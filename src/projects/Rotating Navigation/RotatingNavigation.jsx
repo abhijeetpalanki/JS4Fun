@@ -13,16 +13,16 @@ const RotatingNavigation = () => {
         }`}
       >
         <div className="circle-container fixed -top-[100px] -left-[100px]">
-          <div className="circle bg-[#ff7979] h-[200px] w-[200px] rounded-[50%] relative transition-[transform] duration-[0.5s] ease-linear">
+          <div className="circle bg-[#ff7979] h-[200px] w-[200px] rounded-full relative transition-[transform] duration-[0.5s] ease-linear">
             <button
-              className="absolute top-[60%] left-[50%] h-[100px] bg-transparent border-0 text-[22px] text-white focus:outline-none rotate-[90deg] origin-top-left"
+              className="absolute top-[60%] left-1/2 h-[100px] bg-transparent border-0 text-[22px] text-white focus:outline-none rotate-[90deg] origin-top-left"
               id="close"
               onClick={() => setOpen(false)}
             >
               <FaTimes />
             </button>
             <button
-              className="absolute top-[50%] left-[60%] h-[100px] bg-transparent border-0 text-[22px] text-white focus:outline-none"
+              className="absolute top-1/2 left-[60%] h-[100px] bg-transparent border-0 text-[22px] text-white focus:outline-none"
               id="open"
               onClick={() => setOpen(true)}
             >

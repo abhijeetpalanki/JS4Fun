@@ -30,6 +30,8 @@ const notesReducer = (prevState, action) => {
 
       return newState;
     }
+    default:
+      return;
   }
 };
 

@@ -74,7 +74,7 @@ function reducer(state, { type, payload }) {
         return state;
       }
 
-      if (state.currentOperand.length == 1) {
+      if (state.currentOperand.length === 1) {
         return {
           ...state,
           currentOperand: null,
@@ -101,6 +101,8 @@ function reducer(state, { type, payload }) {
         currentOperand: evaluate(state),
         operation: null,
       };
+    default:
+      return;
   }
 }
 
@@ -126,6 +128,8 @@ function evaluate({ currentOperand, previousOperand, operation }) {
       break;
     case "÷":
       computation = prev / current;
+      break;
+    default:
       break;
   }
 

@@ -9,9 +9,8 @@ const Sphere = (props) => {
   const img = useRef(null);
   const animId = useRef(0);
 
-  let mouseShift = 0;
-
   useEffect(() => {
+    let mouseShift = 0;
     const items = el.current.children;
 
     if (items.length === 0) return;
@@ -36,13 +35,13 @@ const Sphere = (props) => {
 
         // Upper item
         const item = items[indexCount];
-        item.className = `photosphere-item`;
+        item.className = `w-[240px] h-[240px] origin-[100%_50%] absolute [backface-visibility:visible] -top-[120px] -left-[120px] border-4 border-[#111] rounded-full bg-[#111] bg-no-repeat bg-cover bg-center`;
         item.style.transform = `translateY(${ypos}px) translateX(${xp}px) translateZ(${zp}px)`;
         indexCount++;
 
         // Lower item
         const item2 = items[indexCount];
-        item2.className = `photosphere-item`;
+        item2.className = `w-[240px] h-[240px] origin-[100%_50%] absolute [backface-visibility:visible] -top-[120px] -left-[120px] border-4 border-[#111] rounded-full bg-[#111] bg-no-repeat bg-cover bg-center`;
         item2.style.transform = `translateY(${-ypos}px) translateX(${xp}px) translateZ(${zp}px)`;
         indexCount++;
 
@@ -79,7 +78,7 @@ const Sphere = (props) => {
 
     // calculate mouse shift
     const onMouseMove = (e) => {
-      mouseShift = (e.clientX / innerWidth - 0.5) * 0.01;
+      mouseShift = (e.clientX / window.innerWidth - 0.5) * 0.01;
     };
     document.addEventListener("mousemove", onMouseMove);
   }, [props.photos]);
@@ -90,14 +89,17 @@ const Sphere = (props) => {
   };
 
   return (
-    <div className="sphere-container py-4">
-      <div className="photosphere" ref={el}>
+    <div className="max-w-full w-full h-[660px] [perspective:1000] [-webkit-perspective:1000] [perspective-origin:50%_50%] [transform-style:preserve-3d] relative my-0 mx-auto overflow-hidden py-4">
+      <div
+        className="absolute top-1/2 left-1/2 [backface-visibility:visible] [transform:translateZ(-1200px)] transition-all duration-[0.25s] ease-out [transform-style:preserve-3d] origin-[50%_50%] cursor-pointer"
+        ref={el}
+      >
         {props.photos.map((it, index) => (
           <div
             onClick={() => pickImage(it)}
             key={index}
             style={{ backgroundImage: `url(${it})` }}
-            className="photosphere-item"
+            className="w-[240px] h-[240px] origin-[100%_50%] absolute [backface-visibility:visible] -top-[120px] -left-[120px] border-4 border-[#111] rounded-full bg-[#111] bg-no-repeat bg-cover bg-center"
           ></div>
         ))}
       </div>
@@ -105,7 +107,7 @@ const Sphere = (props) => {
         onClick={() => {
           img.current.style.transform = "scale(0.0, 0.0)";
         }}
-        className="image-display"
+        className="fixed cursor-pointer w-[1000px] h-[600px] top-1/2 left-1/2 -mt-[300px] -ml-[500px] border-2 border-white rounded-[4px] bg-no-repeat bg-cover bg-center transition-all duration-500 ease-out scale-0"
         ref={img}
       ></div>
     </div>

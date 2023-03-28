@@ -101,7 +101,7 @@ const AnimatedNavigation = () => {
     <div className="bg-[rgba(137,171,245,0.37)] h-screen font-['Poppins']">
       <div className="fixed">
         <button
-          className={`bg-[#09090c] border-none w-[2.5rem] h-[2.5rem] rounded-[50%] my-[0.5rem] mx-1 flex justify-center items-center relative after:transition-all after:duration-[0.3s] after:content-[''] after:absolute after:bg-white after:h-[2px] after:w-[1rem] before:content-[''] before:bg-white before:h-[2px] before:w-[1rem] before:absolute before:transition-all before:duration-[0.3s] ${
+          className={`bg-[#09090c] border-none w-[2.5rem] h-[2.5rem] rounded-full my-[0.5rem] mx-1 flex justify-center items-center relative after:transition-all after:duration-[0.3s] after:content-[''] after:absolute after:bg-white after:h-[2px] after:w-[1rem] before:content-[''] before:bg-white before:h-[2px] before:w-[1rem] before:absolute before:transition-all before:duration-[0.3s] ${
             isClicked
               ? "before:top-[1.2rem] before:rotate-[135deg] after:-rotate-[135deg] after:top-[1.2rem]"
               : "before:top-[1rem] before:rotate-[0deg] after:rotate-[0deg] after:top-[1.5rem]"
@@ -236,7 +236,7 @@ const AnimatedNavigation = () => {
               src="https://picsum.photos/200"
               alt="Profile Pic"
               onClick={handleProfileClick}
-              className="max-w-[2.5rem] h-10 rounded-[50%] hover:border-2 hover:border-[#a4b2bc] hover:p-[2px]"
+              className="max-w-[2.5rem] h-10 rounded-full hover:border-2 hover:border-[#a4b2bc] hover:p-[2px]"
             />
             <div
               className={`${
@@ -246,7 +246,7 @@ const AnimatedNavigation = () => {
               <div className="flex flex-col items-center justify-center px-6 py-0">
                 <h4 className="inline-block">John Doe</h4>
                 <a
-                  href="#"
+                  href="https://github.com/abhijeetpalanki"
                   className="text-[0.8rem] text-[#a4b2bc] hover:underline"
                 >
                   view profile

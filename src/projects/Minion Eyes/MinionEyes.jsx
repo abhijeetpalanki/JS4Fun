@@ -52,25 +52,25 @@ const MinionEyes = () => {
           C'est banana! Hahaha! Miam Miam! Huh?
         </h1>
         <motion.div
-          className="cursor cursor-none pointer-events-none bg-[#111] h-[32px] w-[32px] rounded-[50%] fixed top-0 left-0"
+          className="cursor cursor-none pointer-events-none bg-[#111] h-[32px] w-[32px] rounded-full fixed top-0 left-0"
           variants={variants}
           animate={cursorVariant}
         ></motion.div>
       </div>
 
       {/* Container */}
-      <div className="flex justify-center items-center before:absolute before:w-full before:h-[4em] before:bg-[#231f1e] before:-translate-x-[50%] before:-translate-y-[50%] before:top-[50%] before:left-[50%]">
+      <div className="flex justify-center items-center before:absolute before:w-full before:h-[4em] before:bg-[#231f1e] before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2">
         {/* Eyes Wrapper */}
         <div className="flex before:absolute before:w-[26em] before:h-[6em] before:bg-[#a8a7ac] before:m-auto before:left-0 before:right-0 before:top-0 before:bottom-0">
           {/* Eye */}
-          <div className="w-[12em] h-[12em] border-[15px] border-[#a6a4ad] bg-white rounded-[50%] z-10">
+          <div className="w-[12em] h-[12em] border-[15px] border-[#a6a4ad] bg-white rounded-full z-10">
             {/* Eyeball */}
-            <div className="h-[3.2em] w-[3.2em] rounded-[50%] my-[3.2em] mx-[3.5em] relative eyeball before:absolute before:bg-white before:h-[0.7em] before:w-[0.5em] before:rounded-[50%] before:top-[13px] before:left-[13px] before:rotate-[45deg]"></div>
+            <div className="h-[3.2em] w-[3.2em] rounded-full my-[3.2em] mx-[3.5em] relative eyeball before:absolute before:bg-white before:h-[0.7em] before:w-[0.5em] before:rounded-full before:top-[13px] before:left-[13px] before:rotate-[45deg]"></div>
           </div>
           {/* Eye */}
-          <div className="w-[12em] h-[12em] border-[15px] border-[#a6a4ad] bg-white rounded-[50%] z-10">
+          <div className="w-[12em] h-[12em] border-[15px] border-[#a6a4ad] bg-white rounded-full z-10">
             {/* Eyeball */}
-            <div className="h-[3.2em] w-[3.2em] rounded-[50%] my-[3.2em] mx-[3.5em] relative eyeball before:absolute before:bg-white before:h-[0.7em] before:w-[0.5em] before:rounded-[50%] before:top-[13px] before:left-[13px] before:rotate-[45deg]"></div>
+            <div className="h-[3.2em] w-[3.2em] rounded-full my-[3.2em] mx-[3.5em] relative eyeball before:absolute before:bg-white before:h-[0.7em] before:w-[0.5em] before:rounded-full before:top-[13px] before:left-[13px] before:rotate-[45deg]"></div>
           </div>
         </div>
       </div>

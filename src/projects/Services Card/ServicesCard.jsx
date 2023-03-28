@@ -7,7 +7,7 @@ const ServicesCard = () => {
       <div className="flex relative py-[80px] px-[40px] justify-center items-center flex-wrap gap-[80px]">
         <div className="relative w-[350px] h-[180px] bg-white duration-500 hover:h-[450px] card">
           <div className="absolute inset-0 overflow-hidden bg-black before:animate-expand lines"></div>
-          <div className="imgBx absolute w-[150px] h-[150px] bg-black duration-500 z-10 overflow-hidden flex justify-center items-center -top-[60px] left-[50%] -translate-x-[50%]">
+          <div className="imgBx absolute w-[150px] h-[150px] bg-black duration-500 z-10 overflow-hidden flex justify-center items-center -top-[60px] left-1/2 -translate-x-1/2">
             <img
               className="absolute z-[1] invert-[1] opacity-[0.5] w-[100px]"
               src={code}

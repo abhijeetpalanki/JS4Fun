@@ -34,10 +34,10 @@ const UnsplashInfiniteGallery = () => {
         loader={
           <div className="text-center">
             <div className="lds-ellipsis inline-block relative w-[80px] h-[80px]">
-              <div className="absolute top-[33px] w-[13px] h-[13px] rounded-[50%] bg-[#222] left-[8px]  ease-[cubic-bezier(0, 1, 1, 0)]"></div>
-              <div className="absolute top-[33px] w-[13px] h-[13px] rounded-[50%] bg-[#222] left-[8px] ease-[cubic-bezier(0, 1, 1, 0)]"></div>
-              <div className="absolute top-[33px] w-[13px] h-[13px] rounded-[50%] bg-[#222] left-[32px] ease-[cubic-bezier(0, 1, 1, 0)]"></div>
-              <div className="absolute top-[33px] w-[13px] h-[13px] rounded-[50%] bg-[#222] left-[56px] ease-[cubic-bezier(0, 1, 1, 0)]"></div>
+              <div className="absolute top-[33px] w-[13px] h-[13px] rounded-full bg-[#222] left-[8px]  ease-[cubic-bezier(0, 1, 1, 0)]"></div>
+              <div className="absolute top-[33px] w-[13px] h-[13px] rounded-full bg-[#222] left-[8px] ease-[cubic-bezier(0, 1, 1, 0)]"></div>
+              <div className="absolute top-[33px] w-[13px] h-[13px] rounded-full bg-[#222] left-[32px] ease-[cubic-bezier(0, 1, 1, 0)]"></div>
+              <div className="absolute top-[33px] w-[13px] h-[13px] rounded-full bg-[#222] left-[56px] ease-[cubic-bezier(0, 1, 1, 0)]"></div>
             </div>
           </div>
         }

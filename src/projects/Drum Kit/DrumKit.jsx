@@ -12,7 +12,7 @@ import tink from "./sounds/tink.wav";
 import tom from "./sounds/tom.wav";
 
 const DrumKit = () => {
-  const [sounds, setSounds] = useState([
+  const [sounds] = useState([
     {
       name: "boom",
       sound: boom,

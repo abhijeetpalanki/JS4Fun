@@ -12,7 +12,7 @@ const PlayerControls = ({ isPlaying, setIsPlaying, skipSong }) => {
       </button>
       <button
         onClick={() => setIsPlaying(!isPlaying)}
-        className="flex my-0 mx-[30px] p-5 rounded-[50%] shadow-[4px_4px_10px_rgba(0,0,0,0.8),-4px_-4px_10px_rgba(255,255,255,0.4),inset_-4px_-4px_10px_rgba(0,0,0,0.4),inset_4px_4px_10px_rgba(255,255,255,0.4)] border-none outline-none bg-[#ffce00] text-white text-2xl"
+        className="flex my-0 mx-[30px] p-5 rounded-full shadow-[4px_4px_10px_rgba(0,0,0,0.8),-4px_-4px_10px_rgba(255,255,255,0.4),inset_-4px_-4px_10px_rgba(0,0,0,0.4),inset_4px_4px_10px_rgba(255,255,255,0.4)] border-none outline-none bg-[#ffce00] text-white text-2xl"
       >
         {isPlaying ? <FaPause /> : <FaPlay />}
       </button>

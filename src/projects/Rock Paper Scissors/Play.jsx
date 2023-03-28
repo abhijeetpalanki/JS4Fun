@@ -22,7 +22,7 @@ const Play = ({ setMyChoice }) => {
       <div className="flex justify-center">
         <Link to={`/projects/${projectId}/game`}>
           <div
-            className="h-[160px] w-[160px] border-[18px] rounded-[50%] transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat border-[hsl(230,89%,62%)] translate-x-[1.5rem] hover:scale-[1.1] shadow-paperShadow"
+            className="h-[160px] w-[160px] border-[18px] rounded-full transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat border-[hsl(230,89%,62%)] translate-x-[1.5rem] hover:scale-[1.1] shadow-paperShadow"
             data-id="paper"
             style={{
               backgroundImage: `url(${Paper})`,
@@ -32,7 +32,7 @@ const Play = ({ setMyChoice }) => {
         </Link>
         <Link to={`/projects/${projectId}/game`}>
           <div
-            className="h-[160px] w-[160px] border-[18px] rounded-[50%] transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat border-[hsl(39,89%,49%)] translate-x-[8rem] hover:scale-[1.1] shadow-scissorsShadow"
+            className="h-[160px] w-[160px] border-[18px] rounded-full transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat border-[hsl(39,89%,49%)] translate-x-[8rem] hover:scale-[1.1] shadow-scissorsShadow"
             data-id="scissors"
             style={{ backgroundImage: `url(${Scissors})` }}
             onClick={setChoice}
@@ -40,7 +40,7 @@ const Play = ({ setMyChoice }) => {
         </Link>
         <Link to={`/projects/${projectId}/game`}>
           <div
-            className="h-[160px] w-[160px] border-[18px] rounded-[50%] transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat border-[hsl(349,71%,52%)] -translate-x-[10rem] translate-y-[13rem] hover:scale-[1.1] shadow-rockShadow"
+            className="h-[160px] w-[160px] border-[18px] rounded-full transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat border-[hsl(349,71%,52%)] -translate-x-[10rem] translate-y-[13rem] hover:scale-[1.1] shadow-rockShadow"
             data-id="rock"
             style={{ backgroundImage: `url(${Rock})` }}
             onClick={setChoice}

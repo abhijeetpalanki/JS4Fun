@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <footer className="w-full">
-        <div className="absolute left-[50%] -translate-x-[50%] -translate-y-[50%] bottom-4">
+        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bottom-4">
           Coded by{" "}
           <a
             href="https://github.com/abhijeetpalanki"

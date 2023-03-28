@@ -64,7 +64,9 @@ const HackerTyper = () => {
           id="source"
         >
           {content}
-          <span className="blinker">_</span>
+          <span className="inline-block animate-blink font-bold text-[#10ff00]">
+            _
+          </span>
         </div>
         <p ref={paraRef}></p>
         {isLocked && <Message type={messageType} />}

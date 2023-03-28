@@ -61,7 +61,7 @@ const HeroSlider = () => {
       >
         <div className="w-[1440px] min-w-[1440px] mx-auto">
           <div className="flex items-center justify-between mx-6 h-screen">
-            <div className="w-[50%]">
+            <div className="w-1/2">
               <div
                 className="w-[400px] mx-auto text-[#323232]"
                 ref={(element) => (contentRef = element)}
@@ -87,7 +87,7 @@ const HeroSlider = () => {
                 </p>
 
                 <div className="relative">
-                  <button className="border-none text-xs p-0 cursor-pointer uppercase font-bold tracking-[0.7px] flex items-center relative before:absolute before:content-[''] before:w-14 before:h-[1px] before:bg-[#dfdfdf] before:top-[50%] before:-left-[68px] focus:outline-none">
+                  <button className="border-none text-xs p-0 cursor-pointer uppercase font-bold tracking-[0.7px] flex items-center relative before:absolute before:content-[''] before:w-14 before:h-[1px] before:bg-[#dfdfdf] before:top-1/2 before:-left-[68px] focus:outline-none">
                     Explore
                     <div className="absolute flex items-center justify-center bg-[#007fff] h-[42px] w-[42px] rounded-full left-20">
                       <img src={arrow} alt="arrow" />
@@ -96,9 +96,9 @@ const HeroSlider = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[50%] h-screen relative">
+            <div className="w-1/2 h-screen relative">
               <div ref={(element) => (imagesRef = element)}>
-                <div className="absolute overflow-hidden top-0 right-0 w-[45%] h-[50%]">
+                <div className="absolute overflow-hidden top-0 right-0 w-[45%] h-1/2">
                   <img
                     src={bros}
                     alt="couple"

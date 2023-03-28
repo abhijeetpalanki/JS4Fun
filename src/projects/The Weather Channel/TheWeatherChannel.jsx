@@ -25,9 +25,9 @@ const TheWeatherChannel = () => {
 
   return (
     <div className="h-screen font-['Poppins'] flex justify-center items-center bg-gradient-to-r">
-      <div className="wrapper text-[16px] w-[90vw] max-w-[28em] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] sm">
-        <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-[50%] h-[13em] w-[13em] -right-[6.5em] top-[1.8em]"></div>
-        <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-[50%] h-[11em] w-[11em] -bottom-[3.7em] -left-[2.5em]"></div>
+      <div className="wrapper text-[16px] w-[90vw] max-w-[28em] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm">
+        <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-full h-[13em] w-[13em] -right-[6.5em] top-[1.8em]"></div>
+        <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-full h-[11em] w-[11em] -bottom-[3.7em] -left-[2.5em]"></div>
         <div className="w-full bg-white/10 py-[3em] px-[1.8em] border-[2px] border-white/10 backdrop-blur-[10px] rounded-[0.6em] shadow-[0_1.8em_3.7em_rgba(3, 46, 87, 0.2)] text-center">
           <div className="text-[1em] grid grid-cols-[9fr_3fr] gap-[1.25em]">
             <input
@@ -45,13 +45,13 @@ const TheWeatherChannel = () => {
             </button>
           </div>
           <div id="result">
-            {cityInput.length == 0 && (
+            {cityInput.length === 0 && (
               <h3 className="mt-[1.8em] text-white font-[500] uppercase tracking-[0.1em]">
                 Please enter a city name
               </h3>
             )}
 
-            {isError && cityInput.length != 0 && (
+            {isError && cityInput.length !== 0 && (
               <h3 className="mt-[1.8em] text-white font-[500] uppercase tracking-[0.1em]">
                 City not found
               </h3>

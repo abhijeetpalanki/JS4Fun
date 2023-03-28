@@ -81,7 +81,7 @@ const Game = ({ myChoice }) => {
           You Picked
         </span>
         <div
-          className={`${iconClass} rounded-[50%] transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat hover:scale-[1.1] h-[250px] w-[250px] border-[25px] bg-[length:50%]`}
+          className={`${iconClass} rounded-full transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat hover:scale-[1.1] h-[250px] w-[250px] border-[25px] bg-[length:50%]`}
           style={{ backgroundImage: imageClass }}
         ></div>
       </div>
@@ -111,11 +111,11 @@ const Game = ({ myChoice }) => {
         </span>
         {counter === 0 ? (
           <div
-            className={`${houseIconClass} rounded-[50%] transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat hover:scale-[1.1] h-[250px] w-[250px] border-[25px] bg-[length:50%]`}
+            className={`${houseIconClass} rounded-full transition-[transform] duration-[0.2s] bg-white bg-center bg-no-repeat hover:scale-[1.1] h-[250px] w-[250px] border-[25px] bg-[length:50%]`}
             style={{ backgroundImage: houseImageClass }}
           ></div>
         ) : (
-          <div className="h-[250px] w-[250px] rounded-[50%] bg-black/30 text-9xl flex flex-col justify-center">
+          <div className="h-[250px] w-[250px] rounded-full bg-black/30 text-9xl flex flex-col justify-center">
             {counter}
           </div>
         )}

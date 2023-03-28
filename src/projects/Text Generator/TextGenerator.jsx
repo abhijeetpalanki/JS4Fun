@@ -35,7 +35,7 @@ const TextGenerator = () => {
       <div className="max-w-[1000px] mx-auto p-[5rem_2rem_0]">
         <div className="rounded-[0.4rem] overflow-hidden">
           {/* Head */}
-          <div className="bg-[#f4f6f8] p-[2.8rem] border-[3px] border-[#d3dbe4] flex items-center justify-between generator-head">
+          <div className="bg-[#f4f6f8] p-[2.8rem] border-[3px] border-[#d3dbe4] flex flex-wrap items-center justify-between md:flex-nowrap">
             <form className="flex items-center">
               <div className="gen-value  mr-[1.4rem]">
                 <input
@@ -60,8 +60,7 @@ const TextGenerator = () => {
 
             <button
               type="button"
-              className="bg-[#ff6a67] border-none text-white uppercase font-semibold text-[1rem] tracking-[1px] py-[1.1rem] px-[1.2rem] rounded-md transition-all duration-300 ease-in-out hover:shadow-[0_0_7px_0_rgba(0,0,0,0.25)] flex justify-center items-center"
-              id="copy-btn"
+              className="bg-[#ff6a67] border-none text-white uppercase font-semibold text-[1rem] tracking-[1px] py-[1.1rem] px-[1.2rem] mt-8 md:mt-0 rounded-md transition-all duration-300 ease-in-out hover:shadow-[0_0_7px_0_rgba(0,0,0,0.25)] flex justify-center items-center"
               onClick={copyToClipboard}
             >
               <span>copy</span>

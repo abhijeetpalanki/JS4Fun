@@ -40,6 +40,7 @@ const PasswordGenerator = () => {
     }
 
     for (let i = 0; i < length; i += typesCount) {
+      // eslint-disable-next-line no-loop-func
       typesArr.forEach((type) => {
         const funcName = Object.keys(type)[0];
         generatedPassword += randomFunc[funcName]();

@@ -21,7 +21,9 @@ module.exports = {
     },
     animation: {
       snore: "snore 9s infinite linear forwards",
+      spinner: "spinner 1.8s ease-in-out infinite",
       nod: "nod 5s ease-in-out infinite",
+      blink: "blink 1s infinite",
       expand: "expand 4s linear infinite",
       imageExpand: "imageExpand 6s linear infinite",
       colorSplash: "colorSplash 4s linear infinite",

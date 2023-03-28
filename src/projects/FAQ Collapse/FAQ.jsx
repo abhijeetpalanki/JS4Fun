@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { data } from "./data";
 
 const FAQ = () => {
-  const [faqs, setFaqs] = useState(data);
+  const [faqs] = useState(data);
   const [selected, setSelected] = useState(null);
 
   const togglePanel = (id) => {

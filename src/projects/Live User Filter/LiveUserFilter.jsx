@@ -55,7 +55,7 @@ const LiveUserFilter = () => {
                 .map((user, index) => (
                   <li className="flex p-[20px]" key={index}>
                     <img
-                      className="rounded-[50%] object-cover h-[50px] w-[50px]"
+                      className="rounded-1/2 object-cover h-[50px] w-[50px]"
                       src={user.picture.large}
                       alt={user.name.first}
                     />
@@ -73,7 +73,7 @@ const LiveUserFilter = () => {
             : users.map((user, index) => (
                 <li className="flex p-[20px]" key={index}>
                   <img
-                    className="rounded-[50%] object-cover h-[50px] w-[50px]"
+                    className="rounded-full object-cover h-[50px] w-[50px]"
                     src={user.picture.large}
                     alt={user.name.first}
                   />

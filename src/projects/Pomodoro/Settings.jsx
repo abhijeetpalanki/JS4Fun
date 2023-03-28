@@ -48,21 +48,21 @@ const Settings = () => {
         <div className="m-6">
           <input
             type="number"
-            className="h-[100px] w-[100px] pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-[50%] mr-[0.3rem] text-center text-sm"
+            className="h-[100px] w-[100px] pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-sm"
             name="work"
             onChange={handleChange}
             value={newTimer.work}
           />
           <input
             type="number"
-            className="h-[100px] w-[100px] pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-[50%] mr-[0.3rem] text-center text-sm"
+            className="h-[100px] w-[100px] pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-sm"
             name="shortBreak"
             onChange={handleChange}
             value={newTimer.short}
           />
           <input
             type="number"
-            className="h-[100px] w-[100px] pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-[50%] mr-[0.3rem] text-center text-sm"
+            className="h-[100px] w-[100px] pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-sm"
             name="longBreak"
             onChange={handleChange}
             value={newTimer.long}

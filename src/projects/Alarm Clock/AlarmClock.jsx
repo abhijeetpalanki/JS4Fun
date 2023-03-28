@@ -25,7 +25,7 @@ const AlarmClock = () => {
     }
 
     for (let i = 2; i > 0; i--) {
-      let ampm = i == 1 ? "AM" : "PM";
+      let ampm = i === 1 ? "AM" : "PM";
       let option = `<option class="text-black" value="${ampm}">${ampm}</option>`;
       selectMenu[2].firstElementChild.insertAdjacentHTML("afterend", option);
     }
@@ -42,14 +42,14 @@ const AlarmClock = () => {
         ampm = "PM";
       }
 
-      h = h == 0 ? (h = 12) : h;
+      h = h === 0 ? (h = 12) : h;
       h = h < 10 ? "0" + h : h;
       m = m < 10 ? "0" + m : m;
       s = s < 10 ? "0" + s : s;
 
       currentTime.innerText = `${h}:${m}:${s} ${ampm}`;
 
-      if (alarmTimeToSet == `${h}:${m} ${ampm}`) {
+      if (alarmTimeToSet === `${h}:${m} ${ampm}`) {
         audio.play();
       }
     }, 1000);

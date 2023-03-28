@@ -23,10 +23,11 @@ const AgeCalculator = () => {
 
     if (
       birthDetails.year > currentYear ||
-      (birthDetails.month > currentMonth && birthDetails.year == currentYear) ||
+      (birthDetails.month > currentMonth &&
+        birthDetails.year === currentYear) ||
       (birthDetails.date > currentDate &&
-        birthDetails.month == currentMonth &&
-        birthDetails.year == currentYear)
+        birthDetails.month === currentMonth &&
+        birthDetails.year === currentYear)
     ) {
       alert("Not Born Yet!");
       setInputDate("");
@@ -59,7 +60,7 @@ const AgeCalculator = () => {
   };
 
   const leapYearChecker = (year) => {
-    if (year % 4 == 0 || (year % 100 == 0 && year % 400 == 0)) {
+    if (year % 4 === 0 || (year % 100 === 0 && year % 400 === 0)) {
       months[1] = 29;
     } else {
       months[1] = 28;
