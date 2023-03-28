@@ -82,6 +82,7 @@ import HeroSlider from "./Hero Slider/HeroSlider";
 import ColorfulMousePointer from "./Colorful Mouse Pointer/ColorfulMousePointer";
 import PlaySnake from "./Play Snake/PlaySnake";
 import MapsMarker from "./Maps Marker/MapsMarker";
+import VideoPlayer from "./Video Player/VideoPlayer";
 
 export {
   ExpandingCard,
@@ -168,4 +169,5 @@ export {
   ColorfulMousePointer,
   PlaySnake,
   MapsMarker,
+  VideoPlayer,
 };

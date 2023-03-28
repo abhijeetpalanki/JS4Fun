@@ -28,6 +28,7 @@ module.exports = {
       imageExpand: "imageExpand 6s linear infinite",
       colorSplash: "colorSplash 4s linear infinite",
       alarm: "alarm 2s infinite alternate",
+      progressBar: "progressBar linear forwards",
     },
     backgroundImage: {
       relaxerBg: "url('~/src/images/relaxer-bg.jpg')",

@@ -83,6 +83,7 @@ import {
   ColorfulMousePointer,
   PlaySnake,
   MapsMarker,
+  VideoPlayer,
 } from "../projects";
 
 export const projects = [
@@ -1285,5 +1286,16 @@ export const projects = [
       },
     ],
     component: <MapsMarker></MapsMarker>,
+  },
+  {
+    id: 85,
+    title: "Video Player",
+    hashtags: [
+      {
+        id: 1,
+        name: "videoplayer",
+      },
+    ],
+    component: <VideoPlayer></VideoPlayer>,
   },
 ];
