@@ -82,6 +82,7 @@ import {
   HeroSlider,
   ColorfulMousePointer,
   PlaySnake,
+  MapsMarker,
 } from "../projects";
 
 export const projects = [
@@ -1273,5 +1274,16 @@ export const projects = [
       },
     ],
     component: <PlaySnake></PlaySnake>,
+  },
+  {
+    id: 84,
+    title: "Maps Marker",
+    hashtags: [
+      {
+        id: 1,
+        name: "googlemaps",
+      },
+    ],
+    component: <MapsMarker></MapsMarker>,
   },
 ];

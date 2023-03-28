@@ -81,6 +81,7 @@ import EmotePicker from "./Emote Picker/EmotePicker";
 import HeroSlider from "./Hero Slider/HeroSlider";
 import ColorfulMousePointer from "./Colorful Mouse Pointer/ColorfulMousePointer";
 import PlaySnake from "./Play Snake/PlaySnake";
+import MapsMarker from "./Maps Marker/MapsMarker";
 
 export {
   ExpandingCard,
@@ -166,4 +167,5 @@ export {
   HeroSlider,
   ColorfulMousePointer,
   PlaySnake,
+  MapsMarker,
 };
