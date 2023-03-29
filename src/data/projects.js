@@ -84,6 +84,7 @@ import {
   PlaySnake,
   MapsMarker,
   VideoPlayer,
+  LinkTree,
 } from "../projects";
 
 export const projects = [
@@ -1297,5 +1298,16 @@ export const projects = [
       },
     ],
     component: <VideoPlayer></VideoPlayer>,
+  },
+  {
+    id: 86,
+    title: "Link Tree",
+    hashtags: [
+      {
+        id: 1,
+        name: "linktree",
+      },
+    ],
+    component: <LinkTree></LinkTree>,
   },
 ];

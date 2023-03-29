@@ -83,6 +83,7 @@ import ColorfulMousePointer from "./Colorful Mouse Pointer/ColorfulMousePointer"
 import PlaySnake from "./Play Snake/PlaySnake";
 import MapsMarker from "./Maps Marker/MapsMarker";
 import VideoPlayer from "./Video Player/VideoPlayer";
+import LinkTree from "./Link Tree/LinkTree";
 
 export {
   ExpandingCard,
@@ -170,4 +171,5 @@ export {
   PlaySnake,
   MapsMarker,
   VideoPlayer,
+  LinkTree,
 };
