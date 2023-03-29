@@ -29,6 +29,7 @@ module.exports = {
       colorSplash: "colorSplash 4s linear infinite",
       alarm: "alarm 2s infinite alternate",
       progressBar: "progressBar linear forwards",
+      orbitalSpin: "orbitalSpin linear infinite",
     },
     backgroundImage: {
       relaxerBg: "url('~/src/images/relaxer-bg.jpg')",

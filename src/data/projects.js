@@ -85,6 +85,7 @@ import {
   MapsMarker,
   VideoPlayer,
   LinkTree,
+  OrbitalLoadingPage,
 } from "../projects";
 
 export const projects = [
@@ -1309,5 +1310,16 @@ export const projects = [
       },
     ],
     component: <LinkTree></LinkTree>,
+  },
+  {
+    id: 87,
+    title: "Orbital Loading Page",
+    hashtags: [
+      {
+        id: 1,
+        name: "loadinganimation",
+      },
+    ],
+    component: <OrbitalLoadingPage></OrbitalLoadingPage>,
   },
 ];

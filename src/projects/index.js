@@ -84,6 +84,7 @@ import PlaySnake from "./Play Snake/PlaySnake";
 import MapsMarker from "./Maps Marker/MapsMarker";
 import VideoPlayer from "./Video Player/VideoPlayer";
 import LinkTree from "./Link Tree/LinkTree";
+import OrbitalLoadingPage from "./Orbital Loading Page/OrbitalLoadingPage";
 
 export {
   ExpandingCard,
@@ -172,4 +173,5 @@ export {
   MapsMarker,
   VideoPlayer,
   LinkTree,
+  OrbitalLoadingPage,
 };
