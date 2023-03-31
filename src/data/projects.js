@@ -86,6 +86,7 @@ import {
   VideoPlayer,
   LinkTree,
   OrbitalLoadingPage,
+  FacebookLoginButton,
 } from "../projects";
 
 export const projects = [
@@ -1321,5 +1322,20 @@ export const projects = [
       },
     ],
     component: <OrbitalLoadingPage></OrbitalLoadingPage>,
+  },
+  {
+    id: 88,
+    title: "Facebook Login Button",
+    hashtags: [
+      {
+        id: 1,
+        name: "facebookauth",
+      },
+      {
+        id: 2,
+        name: "loginpage",
+      },
+    ],
+    component: <FacebookLoginButton></FacebookLoginButton>,
   },
 ];

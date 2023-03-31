@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useInterval } from "./useInterval";
+import { useInterval } from "../../hooks/useInterval";
 
 const CANVAS_SIZE = [800, 800];
 const SNAKE_START = [

@@ -25,6 +25,7 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-countdown-circle-timer": "^3.0.9",
     "react-dom": "^18.2.0",
+    "react-facebook-login": "^4.1.1",
     "react-icons": "^4.4.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-leaf-polls": "^1.1.6",

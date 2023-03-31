@@ -85,6 +85,7 @@ import MapsMarker from "./Maps Marker/MapsMarker";
 import VideoPlayer from "./Video Player/VideoPlayer";
 import LinkTree from "./Link Tree/LinkTree";
 import OrbitalLoadingPage from "./Orbital Loading Page/OrbitalLoadingPage";
+import FacebookLoginButton from "./Facebook Login Button/FacebookLoginButton";
 
 export {
   ExpandingCard,
@@ -174,4 +175,5 @@ export {
   VideoPlayer,
   LinkTree,
   OrbitalLoadingPage,
+  FacebookLoginButton,
 };
