@@ -86,6 +86,7 @@ import VideoPlayer from "./Video Player/VideoPlayer";
 import LinkTree from "./Link Tree/LinkTree";
 import OrbitalLoadingPage from "./Orbital Loading Page/OrbitalLoadingPage";
 import FacebookLoginButton from "./Facebook Login Button/FacebookLoginButton";
+import AIKeywordExtractor from "./AI Keyword Extractor/AIKeywordExtractor";
 
 export {
   ExpandingCard,
@@ -176,4 +177,5 @@ export {
   LinkTree,
   OrbitalLoadingPage,
   FacebookLoginButton,
+  AIKeywordExtractor,
 };

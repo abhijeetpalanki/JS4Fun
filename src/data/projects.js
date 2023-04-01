@@ -87,6 +87,7 @@ import {
   LinkTree,
   OrbitalLoadingPage,
   FacebookLoginButton,
+  AIKeywordExtractor,
 } from "../projects";
 
 export const projects = [
@@ -1337,5 +1338,20 @@ export const projects = [
       },
     ],
     component: <FacebookLoginButton></FacebookLoginButton>,
+  },
+  {
+    id: 89,
+    title: "AI Keyword Extractor",
+    hashtags: [
+      {
+        id: 1,
+        name: "keywords",
+      },
+      {
+        id: 2,
+        name: "openapi",
+      },
+    ],
+    component: <AIKeywordExtractor></AIKeywordExtractor>,
   },
 ];
