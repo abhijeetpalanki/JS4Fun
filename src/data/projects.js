@@ -89,6 +89,7 @@ import {
   FacebookLoginButton,
   AIKeywordExtractor,
   MotionActivatedCard,
+  Connect4,
 } from "../projects";
 
 export const projects = [
@@ -1365,5 +1366,16 @@ export const projects = [
       },
     ],
     component: <MotionActivatedCard></MotionActivatedCard>,
+  },
+  {
+    id: 91,
+    title: "Connect 4",
+    hashtags: [
+      {
+        id: 1,
+        name: "connect4",
+      },
+    ],
+    component: <Connect4></Connect4>,
   },
 ];
