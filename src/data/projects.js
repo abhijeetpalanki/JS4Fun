@@ -88,6 +88,7 @@ import {
   OrbitalLoadingPage,
   FacebookLoginButton,
   AIKeywordExtractor,
+  MotionActivatedCard,
 } from "../projects";
 
 export const projects = [
@@ -1353,5 +1354,16 @@ export const projects = [
       },
     ],
     component: <AIKeywordExtractor></AIKeywordExtractor>,
+  },
+  {
+    id: 90,
+    title: "Motion Activated Card",
+    hashtags: [
+      {
+        id: 1,
+        name: "card",
+      },
+    ],
+    component: <MotionActivatedCard></MotionActivatedCard>,
   },
 ];
