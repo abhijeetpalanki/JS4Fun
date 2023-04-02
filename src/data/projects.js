@@ -90,6 +90,7 @@ import {
   AIKeywordExtractor,
   MotionActivatedCard,
   Connect4,
+  MysticSquare,
 } from "../projects";
 
 export const projects = [
@@ -1377,5 +1378,20 @@ export const projects = [
       },
     ],
     component: <Connect4></Connect4>,
+  },
+  {
+    id: 92,
+    title: "Mystic Square",
+    hashtags: [
+      {
+        id: 1,
+        name: "15puzzlegame",
+      },
+      {
+        id: 1,
+        name: "gempuzzle",
+      },
+    ],
+    component: <MysticSquare></MysticSquare>,
   },
 ];

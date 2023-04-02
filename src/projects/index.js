@@ -89,6 +89,7 @@ import FacebookLoginButton from "./Facebook Login Button/FacebookLoginButton";
 import AIKeywordExtractor from "./AI Keyword Extractor/AIKeywordExtractor";
 import MotionActivatedCard from "./Motion Activated Card/MotionActivatedCard";
 import Connect4 from "./Connect 4/Connect4";
+import MysticSquare from "./Mystic Square/MysticSquare";
 
 export {
   ExpandingCard,
@@ -182,4 +183,5 @@ export {
   AIKeywordExtractor,
   MotionActivatedCard,
   Connect4,
+  MysticSquare,
 };

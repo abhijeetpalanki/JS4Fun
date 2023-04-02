@@ -1,0 +1,64 @@
+.slot-0 {
+  left: 0px;
+  top: 0;
+}
+.slot-1 {
+  left: calc(100px);
+  top: 0;
+}
+.slot-2 {
+  left: calc(2 * 100px);
+  top: 0;
+}
+.slot-3 {
+  left: calc(3 * 100px);
+  top: 0;
+}
+.slot-4 {
+  left: 0;
+  top: calc(100px);
+}
+.slot-5 {
+  left: calc(100px);
+  top: calc(100px);
+}
+.slot-6 {
+  left: calc(2 * 100px);
+  top: calc(100px);
+}
+.slot-7 {
+  left: calc(3 * 100px);
+  top: calc(100px);
+}
+.slot-8 {
+  left: 0;
+  top: calc(2 * 100px);
+}
+.slot-9 {
+  left: calc(100px);
+  top: calc(2 * 100px);
+}
+.slot-10 {
+  left: calc(2 * 100px);
+  top: calc(2 * 100px);
+}
+.slot-11 {
+  left: calc(3 * 100px);
+  top: calc(2 * 100px);
+}
+.slot-12 {
+  left: 0;
+  top: calc(3 * 100px);
+}
+.slot-13 {
+  left: calc(100px);
+  top: calc(3 * 100px);
+}
+.slot-14 {
+  left: calc(2 * 100px);
+  top: calc(3 * 100px);
+}
+.slot-15 {
+  left: calc(3 * 100px);
+  top: calc(3 * 100px);
+}
