@@ -1,10 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
 import "../App.css";
 import autoAnimate from "@formkit/auto-animate";
 import { Link } from "react-router-dom";
 import { useProjectsContext } from "../context/ProjectsContextProvider";
 import Navbar from "./Navbar";
 import ReactPaginate from "react-paginate";
+import { particlesConfig } from "../data/particlesConfig";
 
 const Projects = () => {
   const { results: projects } = useProjectsContext();
@@ -27,6 +30,12 @@ const Projects = () => {
   useEffect(() => {
     parent.current && autoAnimate(parent.current);
   }, [parent]);
+
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
     <>
@@ -67,6 +76,12 @@ const Projects = () => {
         nextLinkClassName={"nextBtn"}
         disabledClassName={"paginationDisabled"}
         activeClassName={"paginationActive"}
+      />
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={particlesConfig}
       />
     </>
   );

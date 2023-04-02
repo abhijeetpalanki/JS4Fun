@@ -1388,7 +1388,7 @@ export const projects = [
         name: "15puzzlegame",
       },
       {
-        id: 1,
+        id: 2,
         name: "gempuzzle",
       },
     ],
