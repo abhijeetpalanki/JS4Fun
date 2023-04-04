@@ -17,7 +17,7 @@ const RabbitLoader = () => {
         </span>
 
         {/* Rabbit Body */}
-        <div className="bg-[#d7dfe7] h-[8.12em] w-[15.62em] rounded-[8.12em_8.12em_0_0] absolute m-auto left-0 right-0 top-[11.25em] bg-rabbitGradient z-[1]">
+        <div className="bg-[#d7dfe7] h-[8.12em] w-[15.62em] rounded-[8.12em_8.12em_0_0] absolute m-auto left-0 right-0 top-[11.25em] [background-image:radial-gradient(circle_at_0_50%,#b5becd,#b5becd_60%,#d7dfed_61%)] z-[1]">
           {/* Face Container */}
           <div className="-rotate-[10deg] origin-[0_100%] animate-nod">
             {/* Rabbit Face */}

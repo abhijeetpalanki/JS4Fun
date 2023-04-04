@@ -36,10 +36,6 @@ module.exports = {
         brickWall: "url('~/src/images/brick-wall.jpg')",
         postItNote: "url('~/src/images/post-it-note.png')",
         bmiCalculatorBg: "url('https://digitshack.com/codepen/bmical/bg.png')",
-        rabbitGradient:
-          "radial-gradient(circle at 0 50%, #b5becd, #b5becd 60%, #d7dfed 61%)",
-        focusGradient: "linear-gradient(45deg,#ff0057,#2196f3)",
-        captchaGradient: "linear-gradient(135deg,#8052ec,#d161ff)",
       },
       boxShadow: {
         paperShadow: "inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 53%)",

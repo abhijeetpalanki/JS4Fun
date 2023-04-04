@@ -15,7 +15,7 @@ const Captcha = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-captchaGradient">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-t from-[#8052ec] to-[#d161ff]">
       <div className="w-[512px] bg-white p-20 rounded-md shadow-[0_1em_2em_rgba(0,0,0,0.25)]">
         <div className="flex flex-col items-center justify-center mx-0 my-4">
           <h3 className="mb-5 text-sm font-light text-gray-600">
