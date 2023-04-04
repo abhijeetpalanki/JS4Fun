@@ -91,6 +91,7 @@ import {
   MotionActivatedCard,
   Connect4,
   MysticSquare,
+  ThreejsBackgroundAnimation,
 } from "../projects";
 
 export const projects = [
@@ -1393,5 +1394,20 @@ export const projects = [
       },
     ],
     component: <MysticSquare></MysticSquare>,
+  },
+  {
+    id: 93,
+    title: "Three.js Background Animation",
+    hashtags: [
+      {
+        id: 1,
+        name: "three.js",
+      },
+      {
+        id: 2,
+        name: "backgroundanimation",
+      },
+    ],
+    component: <ThreejsBackgroundAnimation></ThreejsBackgroundAnimation>,
   },
 ];

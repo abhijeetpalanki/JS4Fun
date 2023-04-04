@@ -90,6 +90,7 @@ import AIKeywordExtractor from "./AI Keyword Extractor/AIKeywordExtractor";
 import MotionActivatedCard from "./Motion Activated Card/MotionActivatedCard";
 import Connect4 from "./Connect 4/Connect4";
 import MysticSquare from "./Mystic Square/MysticSquare";
+import ThreejsBackgroundAnimation from "./Three.js Background Animation/ThreejsBackgroundAnimation";
 
 export {
   ExpandingCard,
@@ -184,4 +185,5 @@ export {
   MotionActivatedCard,
   Connect4,
   MysticSquare,
+  ThreejsBackgroundAnimation,
 };
