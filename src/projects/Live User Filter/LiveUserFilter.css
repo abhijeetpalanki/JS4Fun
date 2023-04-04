@@ -1,7 +1,0 @@
-.live-user-filter-body .container {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.live-user-filter-body .container .user-list li:not(:last-of-type) {
-  border-bottom: 1px solid #eee;
-}

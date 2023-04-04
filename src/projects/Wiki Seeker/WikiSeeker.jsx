@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const WikiSeeker = () => {
   const [search, setSearch] = useState("");
@@ -23,7 +23,7 @@ const WikiSeeker = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center font-['Fira_Sans'] bg-[#eee]">
+    <div className="min-h-screen flex flex-col items-center justify-center font-['Fira_Sans'] bg-black">
       <header className="flex flex-col items-center mb-8">
         <h1 className="text-[#888] text-[42px] uppercase text-center mb-4">
           Wiki Seeker
@@ -37,7 +37,7 @@ const WikiSeeker = () => {
             placeholder="What are you looking for?"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="block appearance-none outline-none border-none p-4 w-full duration-[0.4s]"
+            className="block text-black appearance-none outline-none border-none p-4 w-full duration-[0.4s]"
           />
         </form>
         {searchInfo.totalhits ? (

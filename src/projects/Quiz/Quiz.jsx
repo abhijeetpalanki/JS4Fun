@@ -44,7 +44,7 @@ const Quiz = () => {
   }, []);
 
   return (
-    <div className="quiz-body bg-[#b8c6db] bg-gradient-to-r from-[#b8c6db] to-[#f5f7fa] font-['Poppins'] flex flex-col items-center justify-center h-screen m-0">
+    <div className="quiz-body bg-black font-['Poppins'] flex flex-col items-center justify-center h-screen m-0">
       {gameState === "menu" && <MainMenu setGameState={setGameState} />}
       {gameState === "quiz" && (
         <QuizComp

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Drum = ({ sound, letter }) => {
   const [playing, setPlaying] = useState(false);

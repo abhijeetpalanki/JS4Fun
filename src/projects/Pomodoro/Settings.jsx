@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "./Button";
 import { SettingsContext } from "./SettingsContext";
 import { useContext } from "react";
@@ -33,6 +33,8 @@ const Settings = () => {
           ...newTimer,
           long: parseInt(value),
         });
+        break;
+      default:
         break;
     }
   };

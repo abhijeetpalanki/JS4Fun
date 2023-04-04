@@ -1,10 +1,10 @@
-import React, { useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import bg from "./library-management-bg.png";
 import loader from "./loader.svg";
 import coverNotFound from "./cover_not_found.jpg";
 
 const Loader = () => (
-  <div className="px-0 py-16 flex justify-center">
+  <div className="flex justify-center px-0 py-16">
     <img src={loader} alt="loader" className="w-[120px]" />
   </div>
 );
@@ -86,14 +86,14 @@ const BookHub = () => {
         style={{ backgroundImage: `url(${bg})` }}
         className="flex flex-col justify-center items-center h-[250px]"
       >
-        <h1 className="text-white text-3xl mb-5">Book Hub</h1>
+        <h1 className="mb-5 text-3xl text-white">Book Hub</h1>
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           onKeyDown={handleKeyDown}
           type="search"
           placeholder="Ex: The Lost World..."
-          className="h-[40px] w-[400px] outline-none p-2"
+          className="h-[40px] w-[400px] outline-none p-2 text-black"
         />
       </header>
 
@@ -108,7 +108,7 @@ const BookHub = () => {
               <div>
                 <h2 className="text-2xl font-bold uppercase">{resultTitle}</h2>
               </div>
-              <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8">
+              <div className="grid grid-cols-1 gap-12 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {booksWithCovers.slice(0, 30).map((item, index) => {
                   return (
                     <div
@@ -122,18 +122,18 @@ const BookHub = () => {
                           className="max-w-[180px] lg:max-w-[120px] mx-auto"
                         />
                       </div>
-                      <div className="mt-8 text-center">
-                        <div className="font-bold text-lg leading-snug mb-3">
+                      <div className="mt-8 text-center text-black">
+                        <div className="mb-3 text-lg font-bold leading-snug">
                           <span>{item.title}</span>
                         </div>
 
-                        <div className="leading-snug mb-1 text-base">
-                          <span className="uppercase font-bold">Author: </span>
+                        <div className="mb-1 text-base leading-snug">
+                          <span className="font-bold uppercase">Author: </span>
                           <span>{item.author.join(", ")}</span>
                         </div>
 
-                        <div className="edition-count text-base">
-                          <span className="uppercase font-bold">
+                        <div className="text-base edition-count">
+                          <span className="font-bold uppercase">
                             Total Editions:{" "}
                           </span>
                           <span className="opacity-80">
@@ -141,8 +141,8 @@ const BookHub = () => {
                           </span>
                         </div>
 
-                        <div className="opacity-60 italic text-sm">
-                          <span className="uppercase font-bold">
+                        <div className="text-sm italic opacity-60">
+                          <span className="font-bold uppercase">
                             First Publish Year:{" "}
                           </span>
                           <span className="opacity-80">

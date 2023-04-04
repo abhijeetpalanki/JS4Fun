@@ -1,4 +1,3 @@
-import React from "react";
 import Meanings from "./Meanings";
 import Examples from "./Examples";
 import Synonyms from "./Synonyms";

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Screenshot = () => {
   const [search, setSearch] = useState("https://github.com/abhijeetpalanki");
@@ -33,19 +33,19 @@ const Screenshot = () => {
 
   return (
     <div className="flex flex-col">
-      <nav className="w-full bg-[#333] py-5 px-0">
-        <div className="w-[1400px] my-0 mx-auto">
-          <form className="h-[34px] ml-5" onSubmit={searchScreenshots}>
+      <nav className="w-full bg-[#333] py-5 px-0 flex items-center justify-center">
+        <div className="mx-auto my-0">
+          <form onSubmit={searchScreenshots}>
             <input
               autoFocus
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className=" border-none outline-none py-0 px-[10px] h-full"
+              className="text-black border-none outline-none py-0 px-[10px] h-[34px]"
             />
             <button
               type="submit"
-              className="bg-[#5486e0] text-white cursor-pointer border-none outline-none py-0 px-[10px] h-full"
+              className="bg-[#5486e0] text-white cursor-pointer border-none outline-none py-0 px-[10px] h-[34px]"
             >
               Take screenshot
             </button>

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 
 const PlayerControls = ({ isPlaying, setIsPlaying, skipSong }) => {

@@ -1,4 +1,3 @@
-import React from "react";
 import { useContext } from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import { SettingsContext } from "./SettingsContext";

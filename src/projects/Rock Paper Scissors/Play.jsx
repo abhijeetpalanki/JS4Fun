@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useParams } from "react-router-dom";
 import TriangleImage from "./images/bg-triangle.svg";
 import Paper from "./images/icon-paper.svg";

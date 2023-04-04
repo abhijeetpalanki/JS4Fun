@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
-import rays from "../../images/rays.jpg";
-import { useInterval } from "./useInterval";
+import { useRef, useState } from "react";
+import rays from "./rays.jpg";
+import { useInterval } from "../../hooks/useInterval";
 
 const BlurryLoading = () => {
   const [loadCount, setLoadCount] = useState(0);

@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./SplitLandingPage.css";
-import ps from "../../images/ps.jpg";
-import xbox from "../../images/xbox.jpg";
+import ps from "./ps.jpg";
+import xbox from "./xbox.jpg";
 
 const SplitLandingPage = () => {
   const [hoverClass, setHoverClass] = useState(false);
 
   return (
-    <div className="split-landing-page-body font-['Roboto'] h-screen overflow-hidden m-0">
+    <div className="split-landing-page-body font-['Roboto'] h-screen flex justify-center items-center overflow-hidden m-0 before:absolute before:content-[''] before:w-full before:h-full before:bg-[rgba(87,84,236,0.7)]">
       <div
         className={`container relative w-full h-full bg-[#333] ${
           hoverClass ? "hover-left" : "hover-right"
         }`}
       >
         <div
-          className="split left absolute w-1/2 h-full overflow-hidden left-0 bg-no-repeat bg-cover"
+          className="absolute left-0 w-1/2 h-full overflow-hidden bg-no-repeat bg-cover split left"
           style={{ background: `url(${ps})` }}
           onMouseEnter={() => setHoverClass(true)}
           onMouseLeave={() => setHoverClass(false)}
@@ -24,7 +24,7 @@ const SplitLandingPage = () => {
           </h1>
           <a
             href="https://www.playstation.com/en-us/ps5/buy-now/"
-            className="btn"
+            className="absolute flex items-center justify-center left-1/2 top-[40%] -translate-x-1/2 uppercase text-white border-[0.2rem] border-white text-base font-bold w-[15rem] p-6 hover:bg-[rgba(87,84,236,1)] border-[rgba(87,84,236,1)]"
             target="_blank"
             rel="noreferrer"
           >
@@ -32,7 +32,7 @@ const SplitLandingPage = () => {
           </a>
         </div>
         <div
-          className="split right absolute w-1/2 h-full overflow-hidden right-0 bg-no-repeat bg-cover"
+          className="absolute right-0 w-1/2 h-full overflow-hidden bg-no-repeat bg-cover split right before:absolute before:content-[''] before:w-full before:h-full before:bg-[rgba(43,43,43,0.8)]"
           style={{ background: `url(${xbox})` }}
         >
           <h1 className="text-[4rem] text-white absolute left-1/2 top-[20%] -translate-x-1/2 whitespace-nowrap">
@@ -40,7 +40,7 @@ const SplitLandingPage = () => {
           </h1>
           <a
             href="https://www.xbox.com/en-US/consoles/xbox-series-x"
-            className="btn"
+            className="absolute flex items-center justify-center left-1/2 top-[40%] -translate-x-1/2 uppercase text-white border-[0.2rem] border-white text-base font-bold w-[15rem] p-6 hover:bg-[rgba(28,122,28,1)] border-[rgba(28,122,28,1)]"
             target="_blank"
             rel="noreferrer"
           >

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header = () => {
   return (
     <div className="border-[3px] border-[hsl(217,16%,45%)] w-[20rem] md:w-[43.75rem] mt-[1.875rem] rounded-2xl p-5">

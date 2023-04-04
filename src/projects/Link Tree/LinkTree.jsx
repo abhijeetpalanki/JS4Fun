@@ -44,34 +44,35 @@ const LinkTree = () => {
       },
     ],
   };
+
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center h-screen">
       <div className="bg-white rounded-md">
         <div className="px-2 py-4 text-center">
-          <div className="flex justify-center items-center">
+          <div className="flex items-center justify-center">
             <img
-              className="inline-block h-20 w-20 rounded-full"
+              className="inline-block w-20 h-20 rounded-full"
               src={data.image}
-              alt=""
+              alt="profile"
             />
-            <h1 className="text-2xl font-bold m-2">{data.name}</h1>
+            <h1 className="m-2 text-2xl font-bold text-black">{data.name}</h1>
           </div>
-          <div className="flex justify-center items-center w-[600px] my-4">
+          <div className="flex justify-center items-center text-black w-[600px] my-4">
             <p>{data.bio}</p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center bg-slate-700 rounded-md py-4">
+        <div className="flex flex-col items-center justify-center py-4 rounded-md bg-slate-700">
           {data.links.map((link) => (
             <button
               key={link.name}
-              className="group relative h-12 w-80 overflow-hidden rounded-lg bg-white text-lg shadow my-2"
+              className="relative h-12 my-2 overflow-hidden text-lg bg-white rounded-lg shadow group w-80"
             >
               <div
                 className="absolute inset-0 w-3 transition-all duration-[250ms] ease-out group-hover:w-full"
                 style={{ backgroundColor: link.color }}
               ></div>
               <div className="flex items-center justify-center">
-                <span className="relative text-black group-hover:text-white mx-2">
+                <span className="relative mx-2 text-black group-hover:text-white">
                   {link.icon}
                 </span>
                 <span className="relative text-black group-hover:text-white">

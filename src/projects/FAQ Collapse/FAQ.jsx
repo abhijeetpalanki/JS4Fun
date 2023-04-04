@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { data } from "./data";
 
 const FAQ = () => {
@@ -14,8 +14,8 @@ const FAQ = () => {
   };
 
   return (
-    <div className="font-['Muli'] bg-[#f0f0f0] h-screen flex flex-col justify-center items-center">
-      <h1 className="mt-[15px] mb-[30px] mx-0 text-[32px] font-bold text-center">
+    <div className="font-['Muli'] bg-black h-screen flex flex-col justify-center items-center">
+      <h1 className="mt-[15px] mb-[30px] mx-0 text-[32px] font-bold text-center text-[#f0f0f0]">
         Frequently Asked Questions
       </h1>
       <div className="w-[600px]">

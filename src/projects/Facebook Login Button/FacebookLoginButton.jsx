@@ -33,7 +33,7 @@ const FacebookLoginButton = () => {
           : "To get started, authenticate with Facebook."}
       </p>
       {details.isLogged ? (
-        <div className="w-[400px] bg-[#f4f4f4] p-5 flex flex-col justify-center items-center">
+        <div className="w-[400px] bg-[#f4f4f4] text-black p-5 flex flex-col justify-center items-center">
           <img src={details.picture} alt={details.name} />
           <h2 className="text-xl font-bold">Welcome, {details.name}</h2>
           Email: {details.email}

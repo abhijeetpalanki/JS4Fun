@@ -1,8 +1,6 @@
-import React from "react";
-
 const PlayerDetails = ({ song }) => {
   return (
-    <div className="c-player--details">
+    <div>
       <div className="relative w-fit my-[50px]  mx-auto">
         <img
           className="block my-0 mx-auto w-full max-w-[250px] rounded-full shadow-[6px_6px_12px_rgba(0,0,0,0.8),-6px_-6px_12px_rgba(255,255,255,0.4)]"

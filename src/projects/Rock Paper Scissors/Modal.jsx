@@ -1,4 +1,3 @@
-import React from "react";
 import Close from "./images/icon-close.svg";
 import ImageRules from "./images/image-rules.svg";
 
@@ -15,7 +14,7 @@ const Modal = ({ toggle }) => {
             <img src={Close} alt="close" className="w-full" />
           </button>
         </div>
-        <img src={ImageRules} alt="image-rules" />
+        <img src={ImageRules} alt="rules" />
       </div>
     </div>
   );

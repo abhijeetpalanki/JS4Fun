@@ -17,8 +17,8 @@ const Captcha = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-captchaGradient">
       <div className="w-[512px] bg-white p-20 rounded-md shadow-[0_1em_2em_rgba(0,0,0,0.25)]">
-        <div className="flex flex-col items-center justify-center my-4 mx-0">
-          <h3 className="font-light text-sm text-gray-600 mb-5">
+        <div className="flex flex-col items-center justify-center mx-0 my-4">
+          <h3 className="mb-5 text-sm font-light text-gray-600">
             Reload page to generate another Captcha
           </h3>
           <CaptchaTextGenerator
@@ -32,7 +32,7 @@ const Captcha = () => {
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
           placeholder="Enter the text in the image..."
-          className="font-['Roboto_Mono'] text-[1.05em] w-full py-[1em] px-[0.7em] border border-black rounded-md"
+          className="font-['Roboto_Mono'] text-black text-[1.05em] w-full py-[1em] px-[0.7em] border border-black rounded-md"
         />
         <button
           onClick={submitCaptcha}

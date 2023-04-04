@@ -27,7 +27,7 @@ const Modal = ({ handleClose, text }) => {
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="modal m-auto py-0 px-[2rem] rounded-[12px] flex flex-col justify-center items-center orange-gradient"
+        className="[width:clamp(50%,700px,90%)] [height:min(50%,300px)] m-auto py-0 px-[2rem] rounded-[12px] flex flex-col justify-around items-center [background:linear-gradient(10deg,#ffaa00,#ff6a00)]"
         variants={dropIn}
         initial="hidden"
         animate="visible"

@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Drum from "./Drum";
-
-import boom from "./sounds/boom.wav";
-import clap from "./sounds/clap.wav";
-import hihat from "./sounds/hihat.wav";
-import kick from "./sounds/kick.wav";
-import openhat from "./sounds/openhat.wav";
-import ride from "./sounds/ride.wav";
-import snare from "./sounds/snare.wav";
-import tink from "./sounds/tink.wav";
-import tom from "./sounds/tom.wav";
+import {
+  boom,
+  clap,
+  hihat,
+  kick,
+  openhat,
+  ride,
+  snare,
+  tink,
+  tom,
+} from "./sounds";
 
 const DrumKit = () => {
   const [sounds] = useState([
@@ -62,7 +63,7 @@ const DrumKit = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen font-['Fira_Sans']">
-      <h1 className="mb-8 text-5xl">React Drumkit</h1>
+      <h1 className="mb-8 text-5xl">Drum Kit</h1>
       <div className="flex items-center justify-center">
         {sounds.map((sound, i) => (
           <Drum key={i} letter={sound.key} sound={sound.sound} />

@@ -1,10 +1,4 @@
-import React from "react";
-import juice from "./images/juice.png";
-import leaf01 from "./images/leaf01.png";
-import leaf02 from "./images/leaf02.png";
-import leaf03 from "./images/leaf03.png";
-import leaf04 from "./images/leaf04.png";
-import leaf05 from "./images/leaf05.png";
+import { juice, leaf01, leaf02, leaf03, leaf04, leaf05 } from "./images";
 import Leaf from "./Leaf";
 import { motion } from "framer-motion";
 import {

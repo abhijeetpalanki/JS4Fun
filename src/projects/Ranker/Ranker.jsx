@@ -22,15 +22,15 @@ const Ranker = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-gray-100 text-gray-700 text-opacity-90 overflow-y-hidden">
-      <div className="max-w-screen-sm mx-auto py-8 px-4 overflow-y-auto transition-all duration-200 ease-out">
+    <div className="flex flex-col items-center justify-center h-screen overflow-y-hidden text-gray-700 bg-gray-100 text-opacity-90">
+      <div className="max-w-screen-sm px-4 py-8 mx-auto overflow-y-auto transition-all duration-200 ease-out">
         <div className="mb-3">
-          <h1 className="my-12 text-center text-2xl font-bold uppercase">
+          <h1 className="my-12 text-2xl font-bold text-center uppercase">
             Enter Poll Details
           </h1>
         </div>
 
-        <div className="mb-12">
+        <div>
           <LeafPoll
             type="multiple"
             question="How satisfied are you with JS4Fun?"

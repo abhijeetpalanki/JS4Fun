@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import "./GithubProfiles.css";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const GithubProfiles = () => {
@@ -50,26 +49,26 @@ const GithubProfiles = () => {
   return (
     <div className="github-profiles-body font-['Poppins'] text-white bg-[#2a2a72] flex flex-col items-center justify-center h-screen overflow-hidden m-0 p-0">
       <form
-        className="user-form w-full max-w-[800px]"
+        className="w-full max-w-[400px] sm:max-w-[800px]"
         id="form"
         onSubmit={submitUser}
       >
         <input
           type="text"
-          className="w-full block bg-[#4c2885] border-none rounded-[10px] text-white p-[1rem] mb-[2rem] text-[1rem] placeholder:text-[#bbb] focus:outline-none"
+          className="w-full block bg-[#4c2885] border-none rounded-[10px] text-white p-[1rem] mb-[2rem] text-[1rem] placeholder:text-[#bbb] focus:outline-none [box-shadow:0_5px_10px_rgba(154,160,185,0.05),0_15px_40px_rgba(0,0,0,0.1)]"
           id="search"
           placeholder="Search a Github User"
         />
       </form>
 
-      <main id="main">
+      <main>
         {!isError ? (
-          <div className="card max-w-[800px] bg-[#4c2885] rounded-[20px] flex items-center justify-center p-[3rem] my-0 mx-[1.5rem] md:flex-row">
+          <div className="max-w-[800px] bg-[#4c2885] rounded-[20px] flex flex-col md:flex-row items-center justify-center p-[3rem] my-0 mx-[1.5rem] [box-shadow:0_5px_10px_rgba(154,160,185,0.05),0_15px_40px_rgba(0,0,0,0.1)]">
             <div>
               <img
                 src={userInfo.avatar_url}
                 alt={userInfo.name}
-                className="avatar rounded-1/2"
+                className="rounded-1/2 border-[10px] border-[#2a2a72]"
               />
             </div>
             <div className="user-info text-[#eee] ml-[2rem]">
@@ -79,14 +78,17 @@ const GithubProfiles = () => {
                 Go To Portfolio
               </a>
               <ul className="list-none flex justify-between p-0 max-w-[400px] my-[16px] mx-0">
-                <li>
-                  {userInfo.followers} <strong>Followers</strong>
+                <li className="flex items-center mr-4">
+                  {userInfo.followers}{" "}
+                  <strong className="text-[0.9rem] ml-2">Followers</strong>
                 </li>
-                <li>
-                  {userInfo.following} <strong>Following</strong>
+                <li className="flex items-center mr-4">
+                  {userInfo.following}{" "}
+                  <strong className="text-[0.9rem] ml-2">Following</strong>
                 </li>
-                <li>
-                  {userInfo.public_repos} <strong>Repositories</strong>
+                <li className="flex items-center mr-4">
+                  {userInfo.public_repos}{" "}
+                  <strong className="text-[0.9rem] ml-2">Repositories</strong>
                 </li>
               </ul>
 
@@ -107,7 +109,7 @@ const GithubProfiles = () => {
           </div>
         ) : (
           isRepoError && (
-            <div className="card">
+            <div className="flex-col sm:flex-row">
               <h1>No profile with this username</h1>
             </div>
           )

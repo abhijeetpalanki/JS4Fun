@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect, useContext } from "react";
+import { SettingsContext } from "./SettingsContext";
 import CountdownAnimation from "./CountdownAnimation";
 import Settings from "./Settings";
-import { SettingsContext } from "./SettingsContext";
-import { useContext } from "react";
 import Button from "./Button";
 
 const PomodoroMain = () => {

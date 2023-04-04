@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import "./PasswordGenerator.css";
+import { useRef, useState } from "react";
 import { FaClipboard } from "react-icons/fa";
 
 const PasswordGenerator = () => {
@@ -68,7 +67,7 @@ const PasswordGenerator = () => {
 
     // toast notification
     const notif = document.createElement("div");
-    notif.classList.add("toast");
+    notif.className = "bg-black text-white rounded-[5px] py-4 px-8 m-2";
     notif.innerText = "Password copied to clipboard!";
     toastsEl.current.appendChild(notif);
 
@@ -107,20 +106,24 @@ const PasswordGenerator = () => {
 
   return (
     <div className="password-generator-body bg-[#3b3b98] text-white font-['Muli'] flex items-center justify-center h-screen overflow-hidden m-0 p-[10px]">
-      <div className="container flex flex-col items-center justify-center bg-[#23235b] p-[20px] w-[350px] max-w-full">
+      <div className="container flex flex-col items-center justify-center bg-[#23235b] p-[20px] w-[350px] max-w-full [box-shadow:0_2px_10px_rgba(255,255,255,0.2)]">
         <h2 className="text-[32px] text-center mx-0 mt-[10px] mb-[20px]">
           Password Generator
         </h2>
         <div className="result-container bg-black/40 flex justify-start items-center relative text-[18px] tracking-[1px] py-[12px] px-[10px] h-[50px] w-full">
           <span ref={resultEl}></span>
-          <button className="btn" onClick={copyPassword}>
+          <button
+            className="absolute top-[5px] right-[5px] w-[40px] h-[40px] text-xl border-none bg-[#3b3b98] text-white py-2 px-3 cursor-pointer active:scale-[0.98]"
+            onClick={copyPassword}
+          >
             <FaClipboard />
           </button>
         </div>
         <div className="w-full settings">
-          <div className="setting">
+          <div className="flex justify-between items-center my-[15px]">
             <label>Password Length</label>
             <input
+              className="text-xl border-none bg-[#3b3b98] text-white p-2"
               type="number"
               ref={lengthEl}
               min={4}
@@ -129,25 +132,48 @@ const PasswordGenerator = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="setting">
+          <div className="flex justify-between items-center my-[15px]">
             <label>Include Uppercase Letters</label>
-            <input type="checkbox" ref={uppercaseEl} defaultChecked />
+            <input
+              className="text-black"
+              type="checkbox"
+              ref={uppercaseEl}
+              defaultChecked
+            />
           </div>
-          <div className="setting">
+          <div className="flex justify-between items-center my-[15px]">
             <label>Include Lowercase Letters</label>
-            <input type="checkbox" ref={lowercaseEl} defaultChecked />
+            <input
+              className="text-black"
+              type="checkbox"
+              ref={lowercaseEl}
+              defaultChecked
+            />
           </div>
-          <div className="setting">
+          <div className="flex justify-between items-center my-[15px]">
             <label>Include Numbers</label>
-            <input type="checkbox" ref={numbersEl} defaultChecked />
+            <input
+              className="text-black"
+              type="checkbox"
+              ref={numbersEl}
+              defaultChecked
+            />
           </div>
-          <div className="setting">
+          <div className="flex justify-between items-center my-[15px]">
             <label>Include Symbols</label>
-            <input type="checkbox" ref={symbolsEl} defaultChecked />
+            <input
+              className="text-black"
+              type="checkbox"
+              ref={symbolsEl}
+              defaultChecked
+            />
           </div>
         </div>
 
-        <button className="btn btn-large" onClick={generatePassword}>
+        <button
+          className="w-full h-[40px] text-xl border-none bg-[#3b3b98] text-white py-2 px-3 cursor-pointer active:scale-[0.98] block"
+          onClick={generatePassword}
+        >
           Generate Password
         </button>
       </div>

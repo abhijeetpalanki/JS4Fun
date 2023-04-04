@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { UseContextProvider } from "./StepperContext";
 import Stepper from "./Stepper";
 import StepperControl from "./StepperControl";

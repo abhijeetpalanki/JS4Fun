@@ -13,10 +13,6 @@
   border-radius: 10px;
 }
 
-.sticky-notes-body .note .close:hover {
-  transform: scale(1.6);
-}
-
 .sticky-notes-body .note .text::-webkit-scrollbar {
   width: 5px;
   height: 5px;

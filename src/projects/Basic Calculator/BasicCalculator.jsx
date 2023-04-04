@@ -1,5 +1,4 @@
-import React, { useReducer } from "react";
-import "./BasicCalculator.css";
+import { useReducer } from "react";
 import DigitButton from "./DigitButton";
 import OperationButton from "./OperationButton";
 
@@ -158,9 +157,9 @@ const BasicCalculator = () => {
   );
 
   return (
-    <div className="basic-calculator-body font-['Roboto'] flex flex-col items-center justify-center h-screen m-0">
-      <div className="calculator-grid grid justify-center mt-[2rem]">
-        <div className="output bg-black/75 flex flex-col items-end justify-around p-[0.75rem] break-all">
+    <div className="font-['Roboto'] flex flex-col items-center justify-center h-screen m-0 bg-gradient-to-r from-[#00aaff] to-[#00ff6c]">
+      <div className="grid grid-cols-[repeat(4,6rem)] grid-rows-[minmax(7rem,auto)_repeat(5,6rem)] justify-center mt-[2rem]">
+        <div className="[grid-column:1/-1] break-words bg-black/75 flex flex-col items-end justify-around p-[0.75rem] break-all">
           <div className="previous-operand text-[1.5rem] text-white/75">
             {formatOperand(previousOperand)} {operation}
           </div>
@@ -169,13 +168,13 @@ const BasicCalculator = () => {
           </div>
         </div>
         <button
-          className="span-two text-[2rem]  outline-none bg-white/75"
+          className="[grid-column:span_2] text-[2rem] text-black outline-none bg-white/75 border border-white hover:bg-white/90 focus:bg-white/90"
           onClick={() => dispatch({ type: ACTIONS.CLEAR })}
         >
           AC
         </button>
         <button
-          className="text-[2rem] outline-none bg-white/75"
+          className="text-[2rem] text-black outline-none bg-white/75 border border-white hover:bg-white/90 focus:bg-white/90"
           onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}
         >
           DEL
@@ -196,7 +195,7 @@ const BasicCalculator = () => {
         <DigitButton digit="." dispatch={dispatch} />
         <DigitButton digit="0" dispatch={dispatch} />
         <button
-          className="span-two text-[2rem] outline-none bg-white/75"
+          className="[grid-column:span_2] text-[2rem] text-black outline-none bg-white/75 border border-white hover:bg-white/90 focus:bg-white/90"
           onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
         >
           =

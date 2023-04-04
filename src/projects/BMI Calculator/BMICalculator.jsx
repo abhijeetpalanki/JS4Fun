@@ -25,10 +25,12 @@ const BMICalculator = () => {
   };
 
   return (
-    <div className="font-['Nunito'] bg-bmiCalculatorBg bg-cover h-screen flex justify-center items-center overflow-hidden m-0">
-      <div className="flex justify-center items-center">
+    <div className="font-['Nunito'] bg-bmiCalculatorBg bg-cover h-screen flex justify-center items-center overflow-hidden">
+      <div className="flex items-center justify-center">
         <div className="min-w-[400px] bg-[#fafafa] rounded-[38px] text-center relative z-10 before:absolute before:content-[''] before:h-[110%] before:w-[110%] before:-left-[5%] before:-top-[5%] before:bg-white/30 before:[box-shadow:0px_0px_166px_-31px_rgba(0,0,0,0.15)] before:rounded-[60px] before:-z-[1]">
-          <h1 className="font-bold text-4xl py-[30px] px-0">BMI Calculator</h1>
+          <h1 className="text-black font-bold text-4xl py-[30px] px-0">
+            BMI Calculator
+          </h1>
           <form onSubmit={calc} className="py-0 px-[40px]">
             <div className="bg-white shadow-[0px_0px_95px_-30px_rgba(0,0,0,0.15)] rounded-[28px] py-[20px] px-0 mb-[20px]">
               <label className="block text-lg font-semibold text-black mb-[20px]">
@@ -38,7 +40,7 @@ const BMICalculator = () => {
                 type="number"
                 value={height}
                 onChange={(e) => setHeight(e.target.value)}
-                className="outline-none border-b border-b-[#4f7df9] w-[60%] text-center text-[28px]"
+                className="outline-none border-b border-b-[#4f7df9] w-[60%] text-center text-black text-[28px]"
               />
             </div>
             <div className="bg-white shadow-[0px_0px_95px_-30px_rgba(0,0,0,0.15)] rounded-[28px] py-[20px] px-0 mb-[20px]">
@@ -49,7 +51,7 @@ const BMICalculator = () => {
                 type="number"
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
-                className="outline-none border-b border-b-[#4f7df9] w-[60%] text-center text-[28px]"
+                className="outline-none border-b border-b-[#4f7df9] w-[60%] text-center text-black text-[28px]"
               />
             </div>
             <button
@@ -67,7 +69,7 @@ const BMICalculator = () => {
             <div className="text-[36px] font-black text-[#4f7df9] bg-[#eaeaea] inline-block py-[7px] px-[20px] rounded-[55px] mb-[25px]">
               {bmi}
             </div>
-            <p>
+            <p className="text-center text-black">
               Comment: You are{" "}
               <span className="text-[#4f7df9] font-extrabold">{comment}</span>
             </p>

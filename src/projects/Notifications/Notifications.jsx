@@ -1,12 +1,14 @@
 import { useState } from "react";
-import mark from "../../images/avatar-mark-webber.webp";
-import angela from "../../images/avatar-angela-gray.webp";
-import jacob from "../../images/avatar-jacob-thompson.webp";
-import rizky from "../../images/avatar-rizky-hasanuddin.webp";
-import kim from "../../images/avatar-kimberly-smith.webp";
-import nathan from "../../images/avatar-nathan-peterson.webp";
-import anna from "../../images/avatar-anna-kim.webp";
-import chessClub from "../../images/image-chess.webp";
+import {
+  mark,
+  angela,
+  jacob,
+  rizky,
+  kim,
+  nathan,
+  anna,
+  chessClub,
+} from "./images";
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([
@@ -123,9 +125,9 @@ const Notifications = () => {
   };
 
   return (
-    <div className="bg-[hsl(210,60%,98%)] text-[hsl(224,21%,14%)] text-[clamp(1.00rem,calc(0.85rem+0.73vw),1.38rem)] font-['Plus Jakarta Sans'] grid items-center p-8 m-0 leading-[1.5] select-none">
+    <div className="bg-[hsl(210,60%,98%)] text-[hsl(224,21%,14%)] text-[clamp(1.00rem,calc(0.85rem+0.73vw),1.38rem)] font-['Plus_Jakarta_Sans'] grid items-center p-8 m-0 leading-[1.5] select-none">
       <div className="grid gap-6 bg-white rounded-lg shadow-[0_4px_2rem_hsl(211,68%,94%)] py-[clamp(2.07rem,calc(1.57rem+2.50vw),3.36rem)] px-[clamp(1.44rem,calc(1.16rem+1.38vw),2.15rem)] max-w-[800px] mx-auto">
-        <header className="flex justify-between items-center">
+        <header className="flex items-center justify-between">
           <div className="flex items-center gap-2 p-4">
             <h1 className="text-[clamp(1.44rem,calc(1.16rem+1.38vw),2.15rem)] leading-none">
               Notifications

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import "./MinionEyes.css";
 
 const MinionEyes = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -65,12 +64,12 @@ const MinionEyes = () => {
           {/* Eye */}
           <div className="w-[12em] h-[12em] border-[15px] border-[#a6a4ad] bg-white rounded-full z-10">
             {/* Eyeball */}
-            <div className="h-[3.2em] w-[3.2em] rounded-full my-[3.2em] mx-[3.5em] relative eyeball before:absolute before:bg-white before:h-[0.7em] before:w-[0.5em] before:rounded-full before:top-[13px] before:left-[13px] before:rotate-[45deg]"></div>
+            <div className="h-[3.2em] w-[3.2em] rounded-full my-[3.2em] mx-[3.5em] relative [background:radial-gradient(#271e1e_35%,#935a29_37%)] before:absolute before:bg-white before:h-[0.7em] before:w-[0.5em] before:rounded-full before:top-[13px] before:left-[13px] before:rotate-[45deg]"></div>
           </div>
           {/* Eye */}
           <div className="w-[12em] h-[12em] border-[15px] border-[#a6a4ad] bg-white rounded-full z-10">
             {/* Eyeball */}
-            <div className="h-[3.2em] w-[3.2em] rounded-full my-[3.2em] mx-[3.5em] relative eyeball before:absolute before:bg-white before:h-[0.7em] before:w-[0.5em] before:rounded-full before:top-[13px] before:left-[13px] before:rotate-[45deg]"></div>
+            <div className="h-[3.2em] w-[3.2em] rounded-full my-[3.2em] mx-[3.5em] relative [background:radial-gradient(#271e1e_35%,#935a29_37%)] before:absolute before:bg-white before:h-[0.7em] before:w-[0.5em] before:rounded-full before:top-[13px] before:left-[13px] before:rotate-[45deg]"></div>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { createWorker } from "tesseract.js";
 
 const Image2TextConverter = () => {
@@ -36,7 +35,7 @@ const Image2TextConverter = () => {
 
   return (
     <div className="h-screen flex flex-col justify-center items-center font-['Roboto'] bg-[cadetblue] overflow-hidden">
-      <div className="max-w-[950px] my-0 mx-auto z-[1]">
+      <div className="max-w-[950px] flex flex-col justify-center items-center z-[1]">
         <h1 className="font-bold text-[3rem] mt-[4rem]">
           Image 2 Text Converter
         </h1>
@@ -57,7 +56,7 @@ const Image2TextConverter = () => {
             id="upload"
             accept="image/*"
             onChange={handleImageChange}
-            className="absolute left-[26px] top-[6px] text-[15px] text-[#1a1a1a] -z-[1]"
+            className="absolute left-[30px] top-[6px] text-[15px] text-[#1a1a1a] -z-[1]"
           />
         </div>
 

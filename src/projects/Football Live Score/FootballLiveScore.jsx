@@ -72,19 +72,19 @@ const FootballLiveScore = () => {
 
   return (
     <div className="font-['Poppins'] flex flex-col items-center justify-center h-screen">
-      <section className="flex flex-col justify-center items-center w-[500px] h-[500px] p-4 bg-white shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[14px] backdrop-saturate-[180%] rounded-2xl border border-black/20">
+      <section className="flex flex-col justify-center items-center w-[500px] h-[500px] p-4 bg-white shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[14px] backdrop-saturate-[180%] rounded-2xl border border-black/20 text-black">
         <div className="w-full">
           {matchData && (
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col items-center justify-center">
               <div className="flex flex-col items-center justify-center">
                 <img
                   src={matchData.logo}
                   alt="league_logo"
                   className="w-[150px]"
                 />
-                <h5 className="text-2xl py-1">({matchData.league})</h5>
+                <h5 className="py-1 text-2xl">({matchData.league})</h5>
               </div>
-              <div className="flex text-center justify-around w-full mt-10">
+              <div className="flex justify-around w-full mt-10 text-center">
                 <div>
                   <img
                     src={homeTeam.logo}

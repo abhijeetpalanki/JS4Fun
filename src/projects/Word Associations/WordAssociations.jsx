@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const WordAssociations = () => {
@@ -45,9 +45,9 @@ const WordAssociations = () => {
   }, [chosenLevel]);
 
   return (
-    <div className="bg-[#4a98f7] font-['Oswald'] tracking-widest flex flex-col justify-start items-center h-screen m-0">
+    <div className="bg-black font-['Oswald'] tracking-widest flex flex-col justify-center items-center h-screen">
       {chosenLevel === "0" ? (
-        <div>
+        <div className="flex flex-col items-center justify-center">
           <h1 className="text-[32px] font-bold text-white">
             Word Associations
           </h1>
@@ -78,7 +78,7 @@ const WordAssociations = () => {
             <div className="max-w-[1000px] flex flex-row flex-wrap justify-center items-center">
               {words.map(({ quiz, option, correct }, index) => (
                 <div key={index} className="flex items-center justify-center">
-                  <div className="question-box bg-[antiquewhite] p-[10px] rounded-[20px] m-[10px] text-center">
+                  <div className="question-box bg-[antiquewhite] text-black p-[10px] rounded-[20px] m-[10px] text-center">
                     {quiz.map((tip, t_index) => (
                       <p key={t_index}>{tip}</p>
                     ))}

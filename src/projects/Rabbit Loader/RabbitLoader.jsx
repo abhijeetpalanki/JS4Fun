@@ -1,5 +1,3 @@
-import React from "react";
-
 const RabbitLoader = () => {
   return (
     <div className="font-['Muli'] bg-[#e25a61] text-white h-screen flex flex-col items-center justify-center">

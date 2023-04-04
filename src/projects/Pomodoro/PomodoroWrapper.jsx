@@ -1,4 +1,3 @@
-import React from "react";
 import SettingsContextProvider from "./SettingsContext";
 import PomodoroMain from "./PomodoroMain";
 

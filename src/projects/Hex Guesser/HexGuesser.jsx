@@ -1,6 +1,4 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const getRandomColor = () => {
   const digits = [
@@ -59,7 +57,7 @@ const HexGuesser = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center h-screen">
       <div
         className="w-[200px] h-[200px] mb-5"
         style={{ background: color }}
@@ -69,7 +67,7 @@ const HexGuesser = () => {
         {answers.map((answer) => (
           <button
             onClick={() => handleAnswerClicked(answer)}
-            className="p-3 text-xl bg-black text-white m-1"
+            className="p-3 m-1 text-xl text-white bg-black"
             key={answer}
           >
             {answer}
@@ -78,12 +76,12 @@ const HexGuesser = () => {
       </div>
 
       {result === false && (
-        <div className="bg-red-500 text-2xl text-center text-white p-2">
+        <div className="p-2 text-2xl text-center text-white bg-red-500">
           Wrong Answer
         </div>
       )}
       {result === true && (
-        <div className="bg-green-500 text-2xl text-center text-white p-2">
+        <div className="p-2 text-2xl text-center text-white bg-green-500">
           Correct Answer
         </div>
       )}

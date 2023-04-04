@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import { useState, useReducer } from "react";
 import "./StickyNotes.css";
 import { FaPlus, FaTrashAlt } from "react-icons/fa";
 import { v4 as uuid } from "uuid";
@@ -68,7 +68,7 @@ const StickyNotes = () => {
 
   return (
     <div
-      className="sticky-notes-body font-['Poppins'] h-screen bg-brickWall bg-cover p-[50px] m-0 bg-gradient-to-r from-black/60 to-black/60"
+      className="sticky-notes-body font-['Poppins'] h-screen bg-brickWall bg-cover p-[50px] m-0 from-black/60 to-black/60"
       onDragOver={dragOver}
     >
       <h1 className="text-white text-[2rem]">
@@ -87,9 +87,9 @@ const StickyNotes = () => {
           value={noteInput}
           onChange={(e) => setNoteInput(e.target.value)}
           placeholder="Create a new note..."
-          className="min-w-full h-[100px] p-[10px] outline-none"
+          className="min-w-full h-[100px] p-[10px] outline-none text-black"
         ></textarea>
-        <button className="add w-full bg-[#fff27f] p-[10px] border-0 outline-none flex justify-center items-center hover:bg-[tomato] hover:text-white">
+        <button className="add w-full bg-[#fff27f] p-[10px] border-0 outline-none flex justify-center items-center text-black hover:bg-[tomato] hover:text-white">
           <FaPlus /> Add
         </button>
       </form>
@@ -103,12 +103,12 @@ const StickyNotes = () => {
           key={note.id}
         >
           <div
-            className="close h-[15px] w-[15px] absolute right-[15px] top-[15px] transition-[transform] duration-[0.3s] ease-in-out"
+            className="h-[15px] w-[15px] text-black absolute right-[15px] top-[15px] transition-[transform] duration-[0.3s] ease-in-out hover:scale-[1.6]"
             onClick={() => dispatch({ type: "DELETE_NOTE", payload: note })}
           >
             <FaTrashAlt />
           </div>
-          <pre className="w-full h-full overflow-y-scroll whitespace-pre-wrap text">
+          <pre className="w-full h-full overflow-y-scroll text-black whitespace-pre-wrap text">
             {note.text}
           </pre>
         </div>

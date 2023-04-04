@@ -12,7 +12,7 @@ import MoviesHub from "./../projects/Movies Hub/MoviesHub";
 import BackgroundImageSlider from "./../projects/Background Image Slider/BackgroundImageSlider";
 import RockPaperScissors from "../projects/Rock Paper Scissors/RockPaperScissors";
 import Canvas from "../projects/Canvas/Canvas";
-import VerticalSlider from "./../projects/Vertical Slider/VerticalSlider";
+import DoubleVerticalSlider from "./Double Vertical Slider/DoubleVerticalSlider";
 import GithubProfiles from "../projects/Github Profiles/GithubProfiles";
 import PasswordGenerator from "../projects/Password Generator/PasswordGenerator";
 import StickyNotes from "./../projects/Sticky Notes/StickyNotes";
@@ -106,7 +106,7 @@ export {
   BackgroundImageSlider,
   RockPaperScissors,
   Canvas,
-  VerticalSlider,
+  DoubleVerticalSlider,
   GithubProfiles,
   PasswordGenerator,
   StickyNotes,

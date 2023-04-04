@@ -1,4 +1,3 @@
-import React from "react";
 import Typist from "react-typist";
 import techBg from "./tech-bg.jpg";
 

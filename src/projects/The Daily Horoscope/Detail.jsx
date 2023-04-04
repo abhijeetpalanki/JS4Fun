@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Detail = ({ sign, timeframe }) => {
   const [horoscopeObj, setHoroscopeObj] = useState({});
@@ -27,7 +27,7 @@ const Detail = ({ sign, timeframe }) => {
   }, [sign, timeframe]);
 
   return (
-    <div className="detail p-[10px]">
+    <div className="p-[10px] w-[500px]">
       <h2 className="text-[20px] font-bold">
         {timeframe.charAt(0).toUpperCase() + timeframe.slice(1)}: {date}, your
         horoscope for {sign}:

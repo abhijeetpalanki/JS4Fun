@@ -78,7 +78,7 @@ const MemeGenerator = () => {
     <div className="font-['Oswald'] min-h-screen flex flex-col justify-center items-center bg-[#eee]">
       {generatedUrl.length ? (
         <div>
-          <h1 className="text-5xl mb-10">Your Generated Meme</h1>
+          <h1 className="mb-10 text-5xl">Your Generated Meme</h1>
           {generatedUrl && (
             <img
               alt="meme"
@@ -97,7 +97,9 @@ const MemeGenerator = () => {
         <div>
           {memes.length && (
             <>
-              <h1 className="text-5xl text-center mb-10">Meme Generator</h1>
+              <h1 className="mb-10 text-5xl text-center text-black">
+                Meme Generator
+              </h1>
               <div>
                 <button
                   onClick={() => setMemeIndex((index) => index + 1)}
@@ -115,7 +117,7 @@ const MemeGenerator = () => {
                     type="text"
                     key={index}
                     onChange={(e) => updateCaption(e, index)}
-                    className="block p-3 w-96 m-auto mb-4 outline-none"
+                    className="block p-3 m-auto mb-4 outline-none w-96"
                   />
                 ))}
                 <button

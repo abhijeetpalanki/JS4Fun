@@ -40,33 +40,33 @@ const TipCalculator = () => {
   return (
     <div className="h-screen font-['Poppins'] flex flex-col justify-center items-center bg-[#012] text-white">
       <div className="flex flex-col justify-start">
-        <label className="block uppercase text-sm leading-3 text-white/70">
+        <label className="block text-sm leading-3 uppercase text-white/70">
           Bill Total
         </label>
         <input
           type="text"
           placeholder="0.00"
-          className="bg-transparent border-none mb-3 text-white text-2xl placeholder:text-gray-600"
+          className="mb-3 text-2xl text-white bg-transparent border-none outline-none placeholder:text-gray-600"
           value={bill}
           onChange={handleBillChange}
         />
-        <label className="block uppercase text-sm leading-3 text-white/70">
+        <label className="block text-sm leading-3 uppercase text-white/70">
           Tip
         </label>
         <input
           type="text"
           placeholder="0.00"
-          className="bg-transparent border-none mb-3 text-white text-2xl placeholder:text-gray-600"
+          className="mb-3 text-2xl text-white bg-transparent border-none outline-none placeholder:text-gray-600"
           value={tip}
           onChange={handleTipChange}
         />
 
         <div className="bg-[#158] p-3 rounded-xl flex items-center justify-between text-3xl">
           <div className="split">
-            <label className="block uppercase text-base leading-6 text-white/70">
+            <label className="block text-base leading-6 uppercase text-white/70">
               Split
             </label>
-            <div className="split-control flex justify-center items-center">
+            <div className="flex items-center justify-center split-control">
               <button
                 onClick={splitSubtract}
                 className="bg-[#38d] rounded-full w-8 text-white disabled:bg-gray-500 disabled:cursor-not-allowed"
@@ -74,7 +74,7 @@ const TipCalculator = () => {
               >
                 -
               </button>
-              <span className="block py-0 px-1">{split}</span>
+              <span className="block px-1 py-0">{split}</span>
               <button
                 onClick={splitAdd}
                 className="bg-[#38d] rounded-full w-8 text-white"
@@ -84,7 +84,7 @@ const TipCalculator = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <label className="block uppercase text-base leading-6 text-white/70">
+            <label className="block text-base leading-6 uppercase text-white/70">
               Split Total
             </label>
             <span className="text-right">{total}</span>

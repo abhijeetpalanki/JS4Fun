@@ -66,7 +66,7 @@ const UniversityFinder = () => {
   }, [suggestionPart]);
 
   return (
-    <div className="h-screen font-['Poppins'] flex flex-col justify-center items-center">
+    <div className="h-screen font-['Poppins'] text-black flex flex-col justify-center items-center">
       <input
         type="text"
         value={`${userValue + suggestionPart}`}

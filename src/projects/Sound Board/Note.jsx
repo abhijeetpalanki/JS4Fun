@@ -1,5 +1,3 @@
-import React from "react";
-
 const Note = ({ note, color }) => {
   const handleClick = async (e) => {
     const sound = await import(`./sounds/piano_${e.currentTarget.value}.mp3`);

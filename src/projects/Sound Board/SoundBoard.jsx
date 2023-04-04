@@ -1,7 +1,4 @@
-import React from "react";
-import "./SoundBoard.css";
 import Octave from "./Octave";
-
 import { notes } from "./notes";
 
 const SoundBoard = () => {

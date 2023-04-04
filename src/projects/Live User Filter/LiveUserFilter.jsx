@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import "./LiveUserFilter.css";
+import { useState, useEffect } from "react";
 
 const LiveUserFilter = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -28,8 +26,8 @@ const LiveUserFilter = () => {
   }, []);
 
   return (
-    <div className="live-user-filter-body bg-[#f8f9fd] font-['Roboto'] flex items-center justify-center h-screen m-0">
-      <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-[300px]">
+    <div className="live-user-filter-body bg-black font-['Roboto'] flex items-center justify-center h-screen m-0">
+      <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-[300px] [box-shadow:3px_3px_10px_rgba(0,0,0,0.2)]">
         <header className="header bg-[#3e57db] text-white py-[30px] px-[20px]">
           <h4 className="title m-0 text-[1rem] font-bold">Live User Filter</h4>
           <small className="subtitle inline-block opacity-[0.8] mb-[20px] mt-[5px] mx-0">
@@ -53,13 +51,16 @@ const LiveUserFilter = () => {
                     .includes(searchInput.toLowerCase())
                 )
                 .map((user, index) => (
-                  <li className="flex p-[20px]" key={index}>
+                  <li
+                    className="flex p-[20px] gap-3 border border-[#eee]"
+                    key={index}
+                  >
                     <img
                       className="rounded-1/2 object-cover h-[50px] w-[50px]"
                       src={user.picture.large}
                       alt={user.name.first}
                     />
-                    <div className="user-info ml-[10px]">
+                    <div className="user-info ml-[10px] text-black">
                       <h4 className="mb-[10px] mx-0 mt-0 font-bold">
                         {user.name.first} {user.name.last}
                       </h4>
@@ -71,13 +72,16 @@ const LiveUserFilter = () => {
                   </li>
                 ))
             : users.map((user, index) => (
-                <li className="flex p-[20px]" key={index}>
+                <li
+                  className="flex p-[20px] gap-3 border border-[#eee]"
+                  key={index}
+                >
                   <img
                     className="rounded-full object-cover h-[50px] w-[50px]"
                     src={user.picture.large}
                     alt={user.name.first}
                   />
-                  <div className="user-info">
+                  <div className="text-black user-info">
                     <h4 className="mb-[10px] mx-0 mt-0 font-bold">
                       {user.name.first} {user.name.last}
                     </h4>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const StepperControl = ({ handleClick, currentStep, steps }) => {
   return (
     <div className="container flex justify-around mt-4 mb-8">

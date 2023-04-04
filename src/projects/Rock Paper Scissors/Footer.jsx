@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Modal from "./Modal";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <footer className="w-full">
-        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bottom-4">
+        <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-4">
           Coded by{" "}
           <a
             href="https://github.com/abhijeetpalanki"

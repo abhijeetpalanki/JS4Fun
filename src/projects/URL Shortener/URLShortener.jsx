@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BackgroundAnimation from "./BackgroundAnimation";
 import Input from "./Input";
 import Result from "./Result";

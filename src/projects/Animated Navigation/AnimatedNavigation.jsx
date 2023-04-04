@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import logo from "./assets/logo.svg";
-import HomeLogo from "./assets/home-solid.svg";
-import TeamLogo from "./assets/social.svg";
-import CalendarLogo from "./assets/scheduled.svg";
-import DocumentsLogo from "./assets/draft.svg";
-import ProjectsLogo from "./assets/starred.svg";
-import PowerOffLogo from "./assets/power-off-solid.svg";
+import { useState } from "react";
+import {
+  logo,
+  HomeLogo,
+  TeamLogo,
+  CalendarLogo,
+  DocumentsLogo,
+  ProjectsLogo,
+  PowerOffLogo,
+} from "./assets";
 import { NavLink, Route, Routes, useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -107,9 +109,7 @@ const AnimatedNavigation = () => {
               : "before:top-[1rem] before:rotate-[0deg] after:rotate-[0deg] after:top-[1.5rem]"
           }`}
           onClick={handleClick}
-        >
-          Click
-        </button>
+        ></button>
         <div className="bg-[#09090c] w-[3.5rem] h-[80vh] mt-4 rounded-[0_30px_30px_0] py-4 px-0 flex flex-col items-center justify-between relative">
           <div className="w-8">
             <img src={logo} alt="logo" className="w-full h-auto" />

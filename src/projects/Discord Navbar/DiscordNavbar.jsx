@@ -1,5 +1,3 @@
-import React from "react";
-
 import { BsPlus, BsFillLightningFill, BsGearFill } from "react-icons/bs";
 import { FaFire, FaAmazon } from "react-icons/fa";
 
@@ -7,13 +5,16 @@ const DiscordNavbar = () => {
   return (
     <div className="flex">
       <div className="fixed top-0 left-0 flex flex-col w-16 h-screen bg-white shadow-lg dark:bg-gray-900">
-        <SideBarIcon icon={<FaFire size="28" />} />
+        <SideBarIcon icon={<FaFire size="28" />} text="Discord" />
         <Divider />
-        <SideBarIcon icon={<BsFillLightningFill size="20" />} />
-        <SideBarIcon icon={<FaAmazon size="20" />} />
-        <SideBarIcon icon={<BsPlus size="32" />} />
+        <SideBarIcon
+          icon={<BsFillLightningFill size="20" />}
+          text="Lightning"
+        />
+        <SideBarIcon icon={<FaAmazon size="20" />} text="Amazon" />
+        <SideBarIcon icon={<BsPlus size="32" />} text="Add" />
         <Divider />
-        <SideBarIcon icon={<BsGearFill size="22" />} />
+        <SideBarIcon icon={<BsGearFill size="22" />} text="Settings" />
       </div>
 
       <div className="flex items-center justify-center w-screen h-screen">
@@ -23,7 +24,7 @@ const DiscordNavbar = () => {
   );
 };
 
-const SideBarIcon = ({ icon, text = "Tooltip" }) => (
+const SideBarIcon = ({ icon, text }) => (
   <div className="relative flex items-center justify-center w-12 h-12 mx-auto mt-2 mb-2 text-green-500 transition-all duration-300 ease-linear bg-gray-400 shadow-lg cursor-pointer hover:bg-green-600 dark:bg-gray-800 hover:text-white hover:rounded-xl rounded-3xl group">
     {icon}
     <span className="absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-left scale-0 bg-gray-900 rounded-md shadow-md min-w-max left-14 group-hover:scale-100">

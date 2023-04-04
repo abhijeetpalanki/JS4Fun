@@ -13,7 +13,7 @@ import {
   BackgroundImageSlider,
   RockPaperScissors,
   Canvas,
-  VerticalSlider,
+  DoubleVerticalSlider,
   GithubProfiles,
   PasswordGenerator,
   StickyNotes,
@@ -328,7 +328,7 @@ export const projects = [
         name: "images",
       },
     ],
-    component: <VerticalSlider></VerticalSlider>,
+    component: <DoubleVerticalSlider></DoubleVerticalSlider>,
   },
   {
     id: 17,

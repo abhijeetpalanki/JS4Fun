@@ -1,5 +1,4 @@
-import React from "react";
-import code from "../../images/code.png";
+import code from "./code.png";
 
 const ServicesCard = () => {
   return (
@@ -14,12 +13,12 @@ const ServicesCard = () => {
               alt=""
             />
           </div>
-          <div className="absolute w-full h-full flex justify-center items-center text-center overflow-hidden content">
+          <div className="absolute flex items-center justify-center w-full h-full overflow-hidden text-center content">
             <div className="p-[30px_20px] w-full duration-500 details">
               <h2 className="text-[1.5em] font-medium text-[#45f3ff] leading-[1.2em]">
                 Development
               </h2>
-              <p className="text-white opacity-0 duration-500">
+              <p className="text-white duration-500 opacity-0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                 minus, explicabo omnis tenetur iure perferendis quasi cumque
                 dolor praesentium facilis assumenda dicta deleniti commodi

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import images from "./images";
 
@@ -13,7 +13,7 @@ const AnimatedImageSlider = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-start justify-center overflow-hidden mx-[20%] my-[10%]">
+    <div className="flex flex-col items-start justify-center h-screen overflow-hidden">
       {/* Carousel */}
       <motion.div
         ref={carouselRef}

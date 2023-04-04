@@ -1,5 +1,3 @@
-import React from "react";
-
 const Antonyms = ({ response }) => {
   return (
     <div className="columns-2 md:columns-3">

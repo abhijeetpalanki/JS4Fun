@@ -1,11 +1,5 @@
-import React, { useState, useEffect } from "react";
-import helmet from "../../images/helmet-1.png";
-import potion from "../../images/potion-1.png";
-import ring from "../../images/ring-1.png";
-import scroll from "../../images/scroll-1.png";
-import shield from "../../images/shield-1.png";
-import sword from "../../images/sword-1.png";
-import fun from "../../images/fun.jpeg";
+import { useState, useEffect } from "react";
+import { helmet, potion, ring, scroll, shield, sword, fun } from "./images";
 
 const items = [
   {
@@ -103,13 +97,13 @@ const MemoryGame = () => {
         </button>
         <p className="mt-2">Turns: {turns}</p>
 
-        <div className="mt-10 grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-4 gap-5 mt-10">
           {cards.map((card) => {
             const flipped =
               card === firstChoice || card === secondChoice || card.matched;
 
             return (
-              <div key={card.id} className="card relative">
+              <div key={card.id} className="relative card">
                 <div className={flipped ? "flipped delay-200" : ""}>
                   <img
                     className="w-full block border-[2px] border-white rounded-md absolute transition-all ease-in duration-200 front"

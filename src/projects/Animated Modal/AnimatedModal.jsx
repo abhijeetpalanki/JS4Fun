@@ -1,8 +1,6 @@
-import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Modal from "./Modal";
 import useModal from "./useModal";
-import "./AnimatedModal.css";
 
 const AnimatedModals = () => {
   const { modalOpen, close, open } = useModal();
@@ -16,7 +14,7 @@ const AnimatedModals = () => {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="save-button text-[#101315] h-[3rem] rounded-[4px] font-[600] text-[1.25rem] tracking-[1.25px] py-0 px-[1rem]"
+          className="[background:linear-gradient(10deg,#ffaa00,#ff6a00)] text-[#101315] h-[3rem] rounded-[4px] font-[600] text-[1.25rem] tracking-[1.25px] py-0 px-[1rem]"
           onClick={open}
         >
           Launch modal
@@ -27,7 +25,7 @@ const AnimatedModals = () => {
         {modalOpen && (
           <Modal
             modalOpen={modalOpen}
-            text="dropIn"
+            text="Drop In Animation"
             type="dropIn"
             handleClose={close}
           />

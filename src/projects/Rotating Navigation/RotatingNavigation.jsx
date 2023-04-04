@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./RotatingNavigation.css";
 import { FaTimes, FaBars, FaHome, FaUserAlt, FaEnvelope } from "react-icons/fa";
 

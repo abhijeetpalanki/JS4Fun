@@ -1,9 +1,0 @@
-.bg-gradient-to-r {
-  background: linear-gradient(135deg, #62b8f5, #4475ef);
-}
-
-@media screen and (max-width: 450px) {
-  .wrapper {
-    font-size: 14px;
-  }
-}

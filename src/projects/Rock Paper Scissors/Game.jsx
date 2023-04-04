@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useEffect } from "react";
 import Paper from "./images/icon-paper.svg";
 import Scissors from "./images/icon-scissors.svg";

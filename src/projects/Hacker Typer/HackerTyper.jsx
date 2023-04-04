@@ -1,7 +1,4 @@
-import React from "react";
-import { useRef } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import code from "./code.txt";
 import Message from "./Message";
 
@@ -52,9 +49,9 @@ const HackerTyper = () => {
   };
 
   return (
-    <div className="bg-black h-screen font-mono">
+    <div className="h-screen font-mono bg-black">
       <div
-        className="h-screen w-full overflow-y-auto p-3 focus:outline-none relative"
+        className="relative w-full h-screen p-3 overflow-y-auto focus:outline-none"
         onKeyDown={handleKeyDown}
         tabIndex={0}
         ref={containerRef}

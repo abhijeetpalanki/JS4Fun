@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import { useProjectsContext } from "../context/ProjectsContextProvider";
 import Error from "./Error";

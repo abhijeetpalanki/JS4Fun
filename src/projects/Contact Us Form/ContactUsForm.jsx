@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
@@ -54,10 +54,10 @@ const ContactUsForm = () => {
   );
 
   return (
-    <div className="contact-us-form-body font-['Roboto'] h-screen m-0">
-      <div className="bg-blue-300 lg:grid lg:grid-cols-2 lg:gap-6 lg:h-2/3">
+    <div className="font-['Roboto'] flex items-center justify-center h-screen bg-blue-300 ">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-6 lg:h-2/3">
         <div className="flex flex-col justify-center text-center lg:p-20 md:text-left">
-          <p className="font-medium text-gray-500 uppercase opacity-40">
+          <p className="font-medium text-gray-800 uppercase opacity-40">
             Contact Us
           </p>
           <h1 className="text-4xl lg:text-6xl md:text-5xl">
@@ -101,14 +101,14 @@ const ContactUsForm = () => {
               />
             </div>
             <div className="mb-5">
-              <label htmlFor="role" className="text-sm text-gray-500">
+              <label htmlFor="role" className="text-sm text-gray-800">
                 Role
               </label>
               <select
                 onChange={handleChange}
                 defaultValue="role"
                 name="role"
-                className="w-full py-2 border-b-2 outline-none"
+                className="w-full py-2 text-gray-800 border-b-2 outline-none"
               >
                 <option value="role" disabled>
                   Choose Role

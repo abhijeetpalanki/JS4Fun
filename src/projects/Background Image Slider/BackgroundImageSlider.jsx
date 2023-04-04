@@ -22,11 +22,11 @@ const BackgroundImageSlider = () => {
   return (
     <section className="relative flex items-center justify-center h-screen">
       <FaArrowAltCircleLeft
-        className="absolute top-1/2 left-8 text-5xl text-black z-10 cursor-pointer select-none"
+        className="absolute z-10 text-5xl text-white cursor-pointer select-none top-1/2 left-8"
         onClick={prevSlide}
       />
       <FaArrowAltCircleRight
-        className="absolute top-1/2 right-8 text-5xl text-black z-10 cursor-pointer select-none"
+        className="absolute z-10 text-5xl text-white cursor-pointer select-none top-1/2 right-8"
         onClick={nextSlide}
       />
       {slides.map((slide, index) => {

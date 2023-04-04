@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { QRCodeCanvas } from "qrcode.react";
-import QRCode from "../../images/qr-code.svg";
+import QRCode from "./qr-code.svg";
 
 const QRCodeGenerator = () => {
   const [qrCode, setQrCode] = useState(null);
@@ -107,7 +107,7 @@ const QRCodeGenerator = () => {
           </div>
 
           {/* QR Code Output */}
-          <div className="flex flex-col justify-center m-auto align-center">
+          <div className="flex flex-col items-center justify-center m-auto">
             {qrCode && (
               <p className="mb-4">
                 Right click to "Save image as..." and save it for further use.

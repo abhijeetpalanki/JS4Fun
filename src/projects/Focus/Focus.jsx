@@ -1,5 +1,3 @@
-import React from "react";
-
 const Focus = () => {
   return (
     <div className="bg-focusGradient font-mono flex flex-col items-center justify-center h-screen m-0">

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Todos.css";
 
 const Todos = () => {
@@ -30,6 +30,8 @@ const Todos = () => {
 
     if (todoText) {
       const todoEl = document.createElement("li");
+      todoEl.className =
+        "border border-[#e5e5e5] cursor-pointer text-2xl py-4 px-8";
       if (todo && todo.completed) {
         todoEl.classList.add("completed");
       }
@@ -73,7 +75,10 @@ const Todos = () => {
         todos
       </h1>
 
-      <form className="max-w-full w-[400px]" ref={formRef}>
+      <form
+        className="max-w-full w-[400px] [box-shadow:0_4px_10px_rgba(0,0,0,0.1)]"
+        ref={formRef}
+      >
         <input
           type="text"
           className="input border-0 text-[#b383e2] text-[2rem] py-[1rem] px-[2rem] block w-full placeholder:text-[#d5d5d5] focus:outline-[#b383e2]"

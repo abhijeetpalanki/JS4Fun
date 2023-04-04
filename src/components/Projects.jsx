@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import "../App.css";
@@ -12,7 +12,7 @@ import { particlesConfig } from "../data/particlesConfig";
 const Projects = () => {
   const { results: projects } = useProjectsContext();
   const [currentPage, setCurrentPage] = useState(0);
-  const [projectsPerPage] = useState(10);
+  const [projectsPerPage] = useState(15);
   const parent = useRef(null);
 
   // Get current posts

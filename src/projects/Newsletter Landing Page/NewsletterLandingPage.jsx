@@ -1,5 +1,4 @@
-import React from "react";
-import bg from "./assets/bg.jpg";
+import bg from "./bg.jpg";
 
 const NewsletterLandingPage = () => {
   return (

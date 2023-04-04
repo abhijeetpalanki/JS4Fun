@@ -1,5 +1,3 @@
-import React from "react";
-
 const Winner = ({ numbers }) => {
   if (!numbers.every((n) => n.value === n.index + 1)) return null;
 
