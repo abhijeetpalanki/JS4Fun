@@ -92,6 +92,7 @@ import {
   Connect4,
   MysticSquare,
   ThreejsBackgroundAnimation,
+  ComingSoon,
 } from "../projects";
 
 export const projects = [
@@ -1409,5 +1410,20 @@ export const projects = [
       },
     ],
     component: <ThreejsBackgroundAnimation></ThreejsBackgroundAnimation>,
+  },
+  {
+    id: 94,
+    title: "Coming Soon",
+    hashtags: [
+      {
+        id: 1,
+        name: "startuppage",
+      },
+      {
+        id: 2,
+        name: "launchingsoon",
+      },
+    ],
+    component: <ComingSoon></ComingSoon>,
   },
 ];

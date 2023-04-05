@@ -16,6 +16,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 * {
   box-sizing: border-box;
@@ -203,4 +204,13 @@ select::-webkit-scrollbar-thumb {
   background: orange;
   border-radius: 8px;
   border-right: 2px solid #ffffff;
+}
+
+/* Coming Soon */
+@media (min-width: 1024px) {
+  .flip-clock {
+    --fcc-digit-block-width: 80px !important; /* width of digit card */
+    --fcc-digit-block-height: 120px !important; /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 60px !important; /* font size of digit */
+  }
 }
