@@ -92,6 +92,7 @@ import Connect4 from "./Connect 4/Connect4";
 import MysticSquare from "./Mystic Square/MysticSquare";
 import ThreejsBackgroundAnimation from "./Three.js Background Animation/ThreejsBackgroundAnimation";
 import ComingSoon from "./Coming Soon/ComingSoon";
+import Hangman from "./Hangman/Hangman";
 
 export {
   ExpandingCard,
@@ -188,4 +189,5 @@ export {
   MysticSquare,
   ThreejsBackgroundAnimation,
   ComingSoon,
+  Hangman,
 };

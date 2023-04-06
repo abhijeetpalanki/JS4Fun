@@ -214,3 +214,19 @@ select::-webkit-scrollbar-thumb {
     --fcc-digit-font-size: 60px !important; /* font size of digit */
   }
 }
+
+/* Hangman */
+.hangman svg {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 30vw;
+  height: 40vh;
+  transform: translate(-50%, -50%);
+}
+.hangman line,
+.hangman circle {
+  stroke: white;
+  stroke-width: 4;
+  fill: none;
+}

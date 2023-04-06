@@ -93,6 +93,7 @@ import {
   MysticSquare,
   ThreejsBackgroundAnimation,
   ComingSoon,
+  Hangman,
 } from "../projects";
 
 export const projects = [
@@ -1425,5 +1426,16 @@ export const projects = [
       },
     ],
     component: <ComingSoon></ComingSoon>,
+  },
+  {
+    id: 95,
+    title: "Hangman",
+    hashtags: [
+      {
+        id: 1,
+        name: "hangmangame",
+      },
+    ],
+    component: <Hangman></Hangman>,
   },
 ];
