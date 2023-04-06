@@ -30,6 +30,7 @@ module.exports = {
         progressBar: "progressBar linear forwards",
         orbitalSpin: "orbitalSpin linear infinite",
         diceShake: "diceShake 0.5s infinite",
+        flicker: "flicker 1.5s infinite alternate",
       },
       backgroundImage: {
         relaxerBg: "url('~/src/images/relaxer-bg.jpg')",

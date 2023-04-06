@@ -123,3 +123,20 @@
     transform: rotate(8deg);
   }
 }
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 25px #fea501, 0 0 75px #fea501, 0 0 150px #fea501;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}

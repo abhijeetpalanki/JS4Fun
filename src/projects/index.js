@@ -93,6 +93,7 @@ import MysticSquare from "./Mystic Square/MysticSquare";
 import ThreejsBackgroundAnimation from "./Three.js Background Animation/ThreejsBackgroundAnimation";
 import ComingSoon from "./Coming Soon/ComingSoon";
 import Hangman from "./Hangman/Hangman";
+import LightsOut from "./Lights Out/LightsOut";
 
 export {
   ExpandingCard,
@@ -190,4 +191,5 @@ export {
   ThreejsBackgroundAnimation,
   ComingSoon,
   Hangman,
+  LightsOut,
 };

@@ -94,6 +94,7 @@ import {
   ThreejsBackgroundAnimation,
   ComingSoon,
   Hangman,
+  LightsOut,
 } from "../projects";
 
 export const projects = [
@@ -1437,5 +1438,16 @@ export const projects = [
       },
     ],
     component: <Hangman></Hangman>,
+  },
+  {
+    id: 96,
+    title: "Lights Out",
+    hashtags: [
+      {
+        id: 1,
+        name: "lightsoutpuzzle",
+      },
+    ],
+    component: <LightsOut></LightsOut>,
   },
 ];
