@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { useErrorBoundary } from "react-error-boundary";
 
 const LiveUserFilter = () => {
+  const { showBoundary } = useErrorBoundary();
   const [searchInput, setSearchInput] = useState("");
   const [users, setUsers] = useState([]);
   const [error, setError] = useState(null);
@@ -18,7 +20,8 @@ const LiveUserFilter = () => {
           setIsLoaded(true);
           setError(error);
         }
-      );
+      )
+      .catch((err) => showBoundary(err.message));
   };
 
   useEffect(() => {

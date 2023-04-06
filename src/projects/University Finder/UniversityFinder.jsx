@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useState, useEffect, useRef } from "react";
+import { useErrorBoundary } from "react-error-boundary";
 
 const UniversityFinder = () => {
+  const { showBoundary } = useErrorBoundary();
   const [userValue, setUserValue] = useState("");
   const [suggestionPart, setSuggestionPart] = useState("");
   const inputRef = useRef(null);
@@ -23,18 +25,22 @@ const UniversityFinder = () => {
 
   const findSuggestionsFor = (phrase) => {
     return new Promise((resolve, reject) => {
-      axios
-        .get(`http://universities.hipolabs.com/search?name=${phrase}`)
-        .then((result) => {
-          const univFound = result.data.find(
-            (univ) => univ.name.indexOf(phrase) === 0
-          );
-          if (univFound) {
-            resolve(univFound.name);
-          } else {
-            reject();
-          }
-        });
+      try {
+        axios
+          .get(`http://universities.hipolabs.com/search?name=${phrase}`)
+          .then((result) => {
+            const univFound = result.data.find(
+              (univ) => univ.name.indexOf(phrase) === 0
+            );
+            if (univFound) {
+              resolve(univFound.name);
+            } else {
+              reject();
+            }
+          });
+      } catch (error) {
+        showBoundary(error.message);
+      }
     });
   };
 

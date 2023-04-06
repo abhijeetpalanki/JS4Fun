@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import Detail from "./Detail";
+import { useErrorBoundary } from "react-error-boundary";
 
 const timeframes = ["yesterday", "today", "tomorrow"];
 
 const Horoscope = () => {
+  const { showBoundary } = useErrorBoundary();
   const [signs, setSigns] = useState([]);
   const [selectedSign, setSelectedSign] = useState("");
   const [selectedTimeFrame, setSelectedTimeFrame] = useState("");
@@ -14,11 +16,15 @@ const Horoscope = () => {
   };
 
   const getSigns = async () => {
-    const response = await fetch(
-      "http://sandipbgt.com/theastrologer/api/sunsigns/"
-    );
-    const data = await response.json();
-    setSigns(data);
+    try {
+      const response = await fetch(
+        "http://sandipbgt.com/theastrologer/api/sunsigns/"
+      );
+      const data = await response.json();
+      setSigns(data);
+    } catch (error) {
+      showBoundary(error.message);
+    }
   };
 
   useEffect(() => {

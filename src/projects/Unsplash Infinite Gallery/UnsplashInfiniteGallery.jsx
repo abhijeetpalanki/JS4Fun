@@ -2,17 +2,23 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./UnsplashInfiniteGallery.css";
 import InfiniteScroll from "react-infinite-scroll-component";
+import { useErrorBoundary } from "react-error-boundary";
 
 const UnsplashInfiniteGallery = () => {
+  const { showBoundary } = useErrorBoundary();
   const [images, setImages] = useState([]);
 
   const getImages = () => {
     const apiRoute = "https://api.unsplash.com";
     const accessKey = process.env.REACT_APP_ACCESS_KEY;
 
-    axios
-      .get(`${apiRoute}/photos/random?client_id=${accessKey}&count=10`)
-      .then((res) => setImages([...images, ...res.data]));
+    try {
+      axios
+        .get(`${apiRoute}/photos/random?client_id=${accessKey}&count=10`)
+        .then((res) => setImages([...images, ...res.data]));
+    } catch (error) {
+      showBoundary(error.message);
+    }
   };
 
   useEffect(() => {

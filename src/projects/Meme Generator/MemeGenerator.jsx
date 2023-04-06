@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useErrorBoundary } from "react-error-boundary";
 import { useClipboard } from "use-clipboard-copy";
 
 const MemeGenerator = () => {
+  const { showBoundary } = useErrorBoundary();
   const [memes, setMemes] = useState([]);
   const [memeIndex, setMemeIndex] = useState(0);
   const [captions, setCaptions] = useState([]);
@@ -46,7 +48,8 @@ const MemeGenerator = () => {
         if (data.success) {
           setGeneratedUrl(data.data.url);
         }
-      });
+      })
+      .catch((err) => showBoundary(err.message));
   };
 
   const shuffleMemes = (array) => {
@@ -59,13 +62,15 @@ const MemeGenerator = () => {
   };
 
   useEffect(() => {
-    fetch("https://api.imgflip.com/get_memes").then((res) =>
-      res.json().then((data) => {
-        const memesData = data.data.memes;
-        shuffleMemes(memesData);
-        setMemes(memesData);
-      })
-    );
+    fetch("https://api.imgflip.com/get_memes")
+      .then((res) =>
+        res.json().then((data) => {
+          const memesData = data.data.memes;
+          shuffleMemes(memesData);
+          setMemes(memesData);
+        })
+      )
+      .catch((err) => showBoundary(err.message));
   }, []);
 
   useEffect(() => {

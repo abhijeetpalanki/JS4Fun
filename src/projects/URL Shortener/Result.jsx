@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { FaCopy } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import axios from "axios";
+import { useErrorBoundary } from "react-error-boundary";
 
 const Result = ({ inputValue }) => {
+  const { showBoundary } = useErrorBoundary();
   const [shortenedLink, setShortenedLink] = useState("");
   const [copied, setCopied] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -26,6 +28,7 @@ const Result = ({ inputValue }) => {
       setShortenedLink(res.data.result.full_short_link);
     } catch (error) {
       setError(error);
+      showBoundary(error.message);
     } finally {
       setLoading(false);
     }

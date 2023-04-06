@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { useErrorBoundary } from "react-error-boundary";
 import MainMenu from "./components/MainMenu";
 import QuizComp from "./components/QuizComp";
 import EndScreen from "./components/EndScreen";
 
 const Quiz = () => {
+  const { showBoundary } = useErrorBoundary();
   const [gameState, setGameState] = useState("menu");
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,30 +15,33 @@ const Quiz = () => {
     const res = await fetch(
       "https://opentdb.com/api.php?amount=5&category=9&type=multiple"
     );
-    await res.json().then((data) => {
-      let formattedQuestions = [];
+    await res
+      .json()
+      .then((data) => {
+        let formattedQuestions = [];
 
-      data.results.forEach((loadedQuestion) => {
-        const formattedQuestion = {
-          question: loadedQuestion.question,
-        };
+        data.results.forEach((loadedQuestion) => {
+          const formattedQuestion = {
+            question: loadedQuestion.question,
+          };
 
-        const answerChoices = [...loadedQuestion.incorrect_answers];
-        formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
-        answerChoices.splice(
-          formattedQuestion.answer - 1,
-          0,
-          loadedQuestion.correct_answer
-        );
+          const answerChoices = [...loadedQuestion.incorrect_answers];
+          formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
+          answerChoices.splice(
+            formattedQuestion.answer - 1,
+            0,
+            loadedQuestion.correct_answer
+          );
 
-        answerChoices.forEach((choice, index) => {
-          formattedQuestion["choice" + (index + 1)] = choice;
+          answerChoices.forEach((choice, index) => {
+            formattedQuestion["choice" + (index + 1)] = choice;
+          });
+          formattedQuestions.push(formattedQuestion);
         });
-        formattedQuestions.push(formattedQuestion);
-      });
 
-      setQuestions(formattedQuestions);
-    });
+        setQuestions(formattedQuestions);
+      })
+      .catch((err) => showBoundary(err.message));
   };
 
   useEffect(() => {

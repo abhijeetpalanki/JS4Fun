@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import copy from "copy-to-clipboard";
 import { FaCopy } from "react-icons/fa";
+import { useErrorBoundary } from "react-error-boundary";
 
 const TextGenerator = () => {
+  const { showBoundary } = useErrorBoundary();
   const [paras, setParas] = useState("4");
   const [text, setText] = useState("");
 
@@ -19,7 +21,7 @@ const TextGenerator = () => {
       .then((res) => {
         setText(res.data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => showBoundary(err.message));
   };
 
   const copyToClipboard = () => {

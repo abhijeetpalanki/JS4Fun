@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useErrorBoundary } from "react-error-boundary";
 
 const API_URL =
   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
 const CryptoPriceTracker = () => {
+  const { showBoundary } = useErrorBoundary();
   const [coins, setCoins] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -14,7 +16,7 @@ const CryptoPriceTracker = () => {
       .then((res) => {
         setCoins(res.data);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => showBoundary(error.message));
   }, []);
 
   const handleChange = (e) => {
@@ -28,8 +30,8 @@ const CryptoPriceTracker = () => {
   return (
     <div className="font-['Montserrat'] bg-[#1a1a1c] text-white m-0">
       <div className="flex flex-col items-center pt-16">
-        <div className="mb-16 flex flex-col justify-center items-center">
-          <h1 className="mb-8 text-center text-3xl">Search a currency</h1>
+        <div className="flex flex-col items-center justify-center mb-16">
+          <h1 className="mb-8 text-3xl text-center">Search a currency</h1>
           <form>
             <input
               type="text"
@@ -55,7 +57,7 @@ const CryptoPriceTracker = () => {
                 <p className="uppercase">{coin.symbol}</p>
               </div>
               {/* Coin Data */}
-              <div className="flex justify-between text-center w-full">
+              <div className="flex justify-between w-full text-center">
                 <p className="w-[110px]">${coin.current_price}</p>
                 <p className="w-[200px]">
                   ${coin.total_volume.toLocaleString()}

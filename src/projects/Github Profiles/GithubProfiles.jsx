@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useErrorBoundary } from "react-error-boundary";
 
 const GithubProfiles = () => {
+  const { showBoundary } = useErrorBoundary();
   const [userInfo, setUserInfo] = useState({});
   const [repos, setRepos] = useState([]);
   const [searchInput] = useState("abhijeetpalanki");
@@ -14,6 +16,7 @@ const GithubProfiles = () => {
     try {
       await axios(APIURL + username).then((res) => setUserInfo(res.data));
     } catch (err) {
+      showBoundary(err.message);
       if (err.response.status === 404) {
         setIsError(true);
       }
@@ -26,6 +29,7 @@ const GithubProfiles = () => {
         APIURL + username + "/repos?sort=updated&direction=desc"
       ).then((res) => setRepos(res.data));
     } catch (err) {
+      showBoundary(err.message);
       setIsError(true);
       setIsRepoError(true);
     }
