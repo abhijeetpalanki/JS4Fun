@@ -94,6 +94,7 @@ import ThreejsBackgroundAnimation from "./Three.js Background Animation/ThreejsB
 import ComingSoon from "./Coming Soon/ComingSoon";
 import Hangman from "./Hangman/Hangman";
 import LightsOut from "./Lights Out/LightsOut";
+import ThreeDimensionWorld from "./Three Dimension World/ThreeDimensionWorld";
 
 export {
   ExpandingCard,
@@ -192,4 +193,5 @@ export {
   ComingSoon,
   Hangman,
   LightsOut,
+  ThreeDimensionWorld,
 };

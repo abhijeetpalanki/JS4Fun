@@ -95,6 +95,8 @@ import {
   ComingSoon,
   Hangman,
   LightsOut,
+  AnimatedPhone,
+  ThreeDimensionWorld,
 } from "../projects";
 
 export const projects = [
@@ -1449,5 +1451,20 @@ export const projects = [
       },
     ],
     component: <LightsOut></LightsOut>,
+  },
+  {
+    id: 97,
+    title: "Three Dimension World",
+    hashtags: [
+      {
+        id: 1,
+        name: "3dworld",
+      },
+      {
+        id: 2,
+        name: "reactfiber",
+      },
+    ],
+    component: <ThreeDimensionWorld></ThreeDimensionWorld>,
   },
 ];
