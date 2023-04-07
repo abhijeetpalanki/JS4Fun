@@ -98,6 +98,7 @@ import {
   AnimatedPhone,
   ThreeDimensionWorld,
   SkeletonLayout,
+  TrelloAnimatedChecklist,
 } from "../projects";
 
 export const projects = [
@@ -1478,5 +1479,20 @@ export const projects = [
       },
     ],
     component: <SkeletonLayout></SkeletonLayout>,
+  },
+  {
+    id: 99,
+    title: "Trello's Animated Checklist",
+    hashtags: [
+      {
+        id: 1,
+        name: "trellochecklist",
+      },
+      {
+        id: 2,
+        name: "framermotion",
+      },
+    ],
+    component: <TrelloAnimatedChecklist></TrelloAnimatedChecklist>,
   },
 ];

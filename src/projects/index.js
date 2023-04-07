@@ -96,6 +96,7 @@ import Hangman from "./Hangman/Hangman";
 import LightsOut from "./Lights Out/LightsOut";
 import ThreeDimensionWorld from "./Three Dimension World/ThreeDimensionWorld";
 import SkeletonLayout from "./Skeleton Layout/SkeletonLayout";
+import TrelloAnimatedChecklist from "./Trello Animated Checklist/TrelloAnimatedChecklist";
 
 export {
   ExpandingCard,
@@ -196,4 +197,5 @@ export {
   LightsOut,
   ThreeDimensionWorld,
   SkeletonLayout,
+  TrelloAnimatedChecklist,
 };
