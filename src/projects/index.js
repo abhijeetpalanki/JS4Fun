@@ -95,6 +95,7 @@ import ComingSoon from "./Coming Soon/ComingSoon";
 import Hangman from "./Hangman/Hangman";
 import LightsOut from "./Lights Out/LightsOut";
 import ThreeDimensionWorld from "./Three Dimension World/ThreeDimensionWorld";
+import SkeletonLayout from "./Skeleton Layout/SkeletonLayout";
 
 export {
   ExpandingCard,
@@ -194,4 +195,5 @@ export {
   Hangman,
   LightsOut,
   ThreeDimensionWorld,
+  SkeletonLayout,
 };

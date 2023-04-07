@@ -97,6 +97,7 @@ import {
   LightsOut,
   AnimatedPhone,
   ThreeDimensionWorld,
+  SkeletonLayout,
 } from "../projects";
 
 export const projects = [
@@ -1466,5 +1467,16 @@ export const projects = [
       },
     ],
     component: <ThreeDimensionWorld></ThreeDimensionWorld>,
+  },
+  {
+    id: 98,
+    title: "Skeleton Layout",
+    hashtags: [
+      {
+        id: 1,
+        name: "skeletonlayoutscreens",
+      },
+    ],
+    component: <SkeletonLayout></SkeletonLayout>,
   },
 ];
