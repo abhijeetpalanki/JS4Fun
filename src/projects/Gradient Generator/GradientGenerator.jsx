@@ -1,5 +1,4 @@
 import { useState } from "react";
-import copy from "react-copy-to-clipboard";
 
 const gradientDirectionsList = [
   { directionId: "TOP", value: "to top", displayText: "Top" },
