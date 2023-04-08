@@ -95,7 +95,6 @@ import {
   ComingSoon,
   Hangman,
   LightsOut,
-  AnimatedPhone,
   ThreeDimensionWorld,
   SkeletonLayout,
   TrelloAnimatedChecklist,
