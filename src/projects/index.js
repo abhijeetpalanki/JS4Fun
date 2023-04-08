@@ -97,6 +97,7 @@ import LightsOut from "./Lights Out/LightsOut";
 import ThreeDimensionWorld from "./Three Dimension World/ThreeDimensionWorld";
 import SkeletonLayout from "./Skeleton Layout/SkeletonLayout";
 import TrelloAnimatedChecklist from "./Trello Animated Checklist/TrelloAnimatedChecklist";
+import GradientGenerator from "./Gradient Generator/GradientGenerator";
 
 export {
   ExpandingCard,
@@ -198,4 +199,5 @@ export {
   ThreeDimensionWorld,
   SkeletonLayout,
   TrelloAnimatedChecklist,
+  GradientGenerator,
 };

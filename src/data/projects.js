@@ -99,6 +99,7 @@ import {
   ThreeDimensionWorld,
   SkeletonLayout,
   TrelloAnimatedChecklist,
+  GradientGenerator,
 } from "../projects";
 
 export const projects = [
@@ -1494,5 +1495,16 @@ export const projects = [
       },
     ],
     component: <TrelloAnimatedChecklist></TrelloAnimatedChecklist>,
+  },
+  {
+    id: 100,
+    title: "Gradient Generator",
+    hashtags: [
+      {
+        id: 1,
+        name: "colorgradient",
+      },
+    ],
+    component: <GradientGenerator></GradientGenerator>,
   },
 ];
