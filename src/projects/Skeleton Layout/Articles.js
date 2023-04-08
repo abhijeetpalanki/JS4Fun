@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 import SkeletonArticle from "./SkeletonArticle";
 
 const Articles = () => {
-  const { showBoundary } = useErrorBoundary();
   const [articles, setArticles] = useState(null);
 
   useEffect(() => {
@@ -13,7 +11,7 @@ const Articles = () => {
         const data = await res.json();
         setArticles(data);
       } catch (error) {
-        showBoundary(error.message);
+        console.log(error.message);
       }
     }, 5000);
   }, []);

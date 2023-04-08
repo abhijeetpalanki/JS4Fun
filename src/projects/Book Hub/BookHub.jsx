@@ -2,7 +2,6 @@ import { useCallback, useState } from "react";
 import bg from "./library-management-bg.png";
 import loader from "./loader.svg";
 import coverNotFound from "./cover_not_found.jpg";
-import { useErrorBoundary } from "react-error-boundary";
 
 const Loader = () => (
   <div className="flex justify-center px-0 py-16">
@@ -11,7 +10,6 @@ const Loader = () => (
 );
 
 const BookHub = () => {
-  const { showBoundary } = useErrorBoundary();
   const [searchTerm, setSearchTerm] = useState("");
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -71,7 +69,7 @@ const BookHub = () => {
 
       setLoading(false);
     } catch (error) {
-      showBoundary(error.message);
+      console.log(error.message);
     } finally {
       setLoading(false);
     }

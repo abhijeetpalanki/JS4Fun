@@ -1,9 +1,7 @@
 import axios from "axios";
 import { useRef } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 
 const SearchInput = (props) => {
-  const { showBoundary } = useErrorBoundary();
   const timeout = useRef(0);
   const changeHandler = (e) => {
     clearTimeout(timeout.current);
@@ -24,7 +22,7 @@ const SearchInput = (props) => {
 
           props.setImageData(res.data.hits.map((it) => it.webformatURL));
         } catch (error) {
-          showBoundary(error.message);
+          console.log(error.message);
         }
       }
     }, 600);

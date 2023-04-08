@@ -1,4 +1,3 @@
-import { useErrorBoundary } from "react-error-boundary";
 import { useState, useEffect, useRef } from "react";
 import code from "./code.txt";
 import Message from "./Message";
@@ -6,7 +5,6 @@ import Message from "./Message";
 const CHARS_PER_STROKES = 5;
 
 const HackerTyper = () => {
-  const { showBoundary } = useErrorBoundary();
   const [sourceCode, setSourceCode] = useState("");
   const [content, setContent] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +19,7 @@ const HackerTyper = () => {
     fetch(code)
       .then((res) => res.text())
       .then((text) => setSourceCode(text))
-      .catch((err) => showBoundary(err.message));
+      .catch((err) => console.log(err.message));
   }, []);
 
   const runScript = () => {

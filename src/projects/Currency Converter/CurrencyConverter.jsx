@@ -1,10 +1,8 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 import Input from "./Input";
 
 const CurrencyConverter = () => {
-  const { showBoundary } = useErrorBoundary();
   const [amount1, setAmount1] = useState(1);
   const [amount2, setAmount2] = useState(1);
   const [currency1, setCurrency1] = useState("USD");
@@ -45,7 +43,7 @@ const CurrencyConverter = () => {
           setRates(response.data.rates);
         });
     } catch (error) {
-      showBoundary(error.message);
+      console.log(error.message);
     }
   }, []);
 

@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 
 const DadJokes = () => {
-  const { showBoundary } = useErrorBoundary();
   const [jokeObj, setJokeObj] = useState(
     "What did the ocean say to the shore? Nothing, it just waved."
   );
@@ -20,7 +18,7 @@ const DadJokes = () => {
       const { joke } = await res.json();
       setJokeObj(joke);
     } catch (error) {
-      showBoundary(error.message);
+      console.log(error.message);
     }
   };
 

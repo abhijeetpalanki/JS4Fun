@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 
 const TheWeatherChannel = () => {
-  const { showBoundary } = useErrorBoundary();
   const [cityInput, setCityInput] = useState("");
   const [isError, setIsError] = useState(false);
   const [weatherData, setWeatherData] = useState(null);
@@ -21,7 +19,7 @@ const TheWeatherChannel = () => {
       })
       .catch((error) => {
         setIsError(true);
-        showBoundary(error.message);
+        console.log(error.message);
       });
   };
 

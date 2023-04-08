@@ -29,7 +29,6 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-countdown-circle-timer": "^3.2.1",
     "react-dom": "^18.2.0",
-    "react-error-boundary": "^4.0.3",
     "react-facebook-login": "^4.1.1",
     "react-icons": "^4.8.0",
     "react-infinite-scroll-component": "^6.1.0",

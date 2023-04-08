@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 
 const Screenshot = () => {
-  const { showBoundary } = useErrorBoundary();
   const [search, setSearch] = useState("https://github.com/abhijeetpalanki");
   const [img, setImg] = useState("");
   const [error, setError] = useState(false);
@@ -20,7 +18,7 @@ const Screenshot = () => {
       setLoading(false);
     } else {
       setError(true);
-      showBoundary(error.message);
+      console.log(error.message);
     }
   };
 

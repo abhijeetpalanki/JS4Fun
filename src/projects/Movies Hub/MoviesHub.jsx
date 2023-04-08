@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 
 const API_URL =
   "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=e37a86d6a2841832f55e125b53024051&page=1";
@@ -7,7 +6,6 @@ const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_MOVIES_API_KEY}&query="`;
 
 const MoviesHub = () => {
-  const { showBoundary } = useErrorBoundary();
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -17,7 +15,7 @@ const MoviesHub = () => {
       const data = await res.json();
       setMovies(data.results);
     } catch (error) {
-      showBoundary(error.message);
+      console.log(error.message);
     }
   };
 

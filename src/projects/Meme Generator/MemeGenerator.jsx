@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 import { useClipboard } from "use-clipboard-copy";
 
 const MemeGenerator = () => {
-  const { showBoundary } = useErrorBoundary();
   const [memes, setMemes] = useState([]);
   const [memeIndex, setMemeIndex] = useState(0);
   const [captions, setCaptions] = useState([]);
@@ -49,7 +47,7 @@ const MemeGenerator = () => {
           setGeneratedUrl(data.data.url);
         }
       })
-      .catch((err) => showBoundary(err.message));
+      .catch((err) => console.log(err.message));
   };
 
   const shuffleMemes = (array) => {
@@ -70,7 +68,7 @@ const MemeGenerator = () => {
           setMemes(memesData);
         })
       )
-      .catch((err) => showBoundary(err.message));
+      .catch((err) => console.log(err.message));
   }, []);
 
   useEffect(() => {

@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useErrorBoundary } from "react-error-boundary";
 
 const WordAssociations = () => {
-  const { showBoundary } = useErrorBoundary();
   const [chosenLevel, setChosenLevel] = useState("0");
   const [words, setWords] = useState(null);
   const [correctAnswers, setCorrectAnswers] = useState([]);
@@ -27,7 +25,7 @@ const WordAssociations = () => {
         setWords(response.data.quizlist);
       })
       .catch((error) => {
-        showBoundary(error.message);
+        console.log(error.message);
       });
   };
 

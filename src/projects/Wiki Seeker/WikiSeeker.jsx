@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 
 const WikiSeeker = () => {
-  const { showBoundary } = useErrorBoundary();
   const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
   const [searchInfo, setSearchInfo] = useState({});
@@ -16,7 +14,7 @@ const WikiSeeker = () => {
 
     const response = await fetch(endpoint);
     if (!response.ok) {
-      showBoundary(response.statusText);
+      console.log(response.statusText);
       throw Error(response.statusText);
     }
 

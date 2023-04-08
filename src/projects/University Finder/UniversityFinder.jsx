@@ -1,9 +1,7 @@
 import axios from "axios";
 import { useState, useEffect, useRef } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 
 const UniversityFinder = () => {
-  const { showBoundary } = useErrorBoundary();
   const [userValue, setUserValue] = useState("");
   const [suggestionPart, setSuggestionPart] = useState("");
   const inputRef = useRef(null);
@@ -39,7 +37,7 @@ const UniversityFinder = () => {
             }
           });
       } catch (error) {
-        showBoundary(error.message);
+        console.log(error.message);
       }
     });
   };

@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 import MainMenu from "./components/MainMenu";
 import QuizComp from "./components/QuizComp";
 import EndScreen from "./components/EndScreen";
 
 const Quiz = () => {
-  const { showBoundary } = useErrorBoundary();
   const [gameState, setGameState] = useState("menu");
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -41,7 +39,7 @@ const Quiz = () => {
 
         setQuestions(formattedQuestions);
       })
-      .catch((err) => showBoundary(err.message));
+      .catch((err) => console.log(err.message));
   };
 
   useEffect(() => {

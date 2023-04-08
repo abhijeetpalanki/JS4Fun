@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 
 const options = {
   method: "GET",
@@ -10,7 +9,6 @@ const options = {
 };
 
 const FootballLiveScore = () => {
-  const { showBoundary } = useErrorBoundary();
   const [homeTeam, setHomeTeam] = useState({});
   const [awayTeam, setAwayTeam] = useState({});
   const [matchData, setMatchData] = useState({});
@@ -65,7 +63,7 @@ const FootballLiveScore = () => {
           }));
         });
       })
-      .catch((err) => showBoundary(err.message));
+      .catch((err) => console.log(err.message));
   };
 
   useEffect(() => {

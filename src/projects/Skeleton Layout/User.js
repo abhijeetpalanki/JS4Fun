@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
-import { useErrorBoundary } from "react-error-boundary";
 import SkeletonUser from "./SkeletonUser";
 
 const User = () => {
-  const { showBoundary } = useErrorBoundary();
   const [profile, setProfile] = useState(null);
 
   useEffect(() => {
@@ -13,7 +11,7 @@ const User = () => {
         const data = await res.json();
         setProfile(data);
       } catch (error) {
-        showBoundary(error.message);
+        console.log(error.message);
       }
     }, 5000);
   }, []);
