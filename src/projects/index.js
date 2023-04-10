@@ -99,6 +99,7 @@ import SkeletonLayout from "./Skeleton Layout/SkeletonLayout";
 import TrelloAnimatedChecklist from "./Trello Animated Checklist/TrelloAnimatedChecklist";
 import GradientGenerator from "./Gradient Generator/GradientGenerator";
 import LineChart from "./Line Chart/LineChart";
+import CustomCalendar from "./Custom Calendar/CustomCalendar";
 
 export {
   ExpandingCard,
@@ -202,4 +203,5 @@ export {
   TrelloAnimatedChecklist,
   GradientGenerator,
   LineChart,
+  CustomCalendar,
 };

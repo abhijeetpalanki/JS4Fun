@@ -100,6 +100,7 @@ import {
   TrelloAnimatedChecklist,
   GradientGenerator,
   LineChart,
+  CustomCalendar,
 } from "../projects";
 
 export const projects = [
@@ -1521,5 +1522,16 @@ export const projects = [
       },
     ],
     component: <LineChart></LineChart>,
+  },
+  {
+    id: 102,
+    title: "Custom Calendar",
+    hashtags: [
+      {
+        id: 1,
+        name: "calendar",
+      },
+    ],
+    component: <CustomCalendar></CustomCalendar>,
   },
 ];
