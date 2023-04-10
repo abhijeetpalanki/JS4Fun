@@ -98,6 +98,7 @@ import ThreeDimensionWorld from "./Three Dimension World/ThreeDimensionWorld";
 import SkeletonLayout from "./Skeleton Layout/SkeletonLayout";
 import TrelloAnimatedChecklist from "./Trello Animated Checklist/TrelloAnimatedChecklist";
 import GradientGenerator from "./Gradient Generator/GradientGenerator";
+import LineChart from "./Line Chart/LineChart";
 
 export {
   ExpandingCard,
@@ -200,4 +201,5 @@ export {
   SkeletonLayout,
   TrelloAnimatedChecklist,
   GradientGenerator,
+  LineChart,
 };

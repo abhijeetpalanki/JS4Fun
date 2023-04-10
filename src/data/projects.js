@@ -99,6 +99,7 @@ import {
   SkeletonLayout,
   TrelloAnimatedChecklist,
   GradientGenerator,
+  LineChart,
 } from "../projects";
 
 export const projects = [
@@ -1505,5 +1506,20 @@ export const projects = [
       },
     ],
     component: <GradientGenerator></GradientGenerator>,
+  },
+  {
+    id: 101,
+    title: "Line Chart",
+    hashtags: [
+      {
+        id: 1,
+        name: "linechart",
+      },
+      {
+        id: 2,
+        name: "framermotion",
+      },
+    ],
+    component: <LineChart></LineChart>,
   },
 ];
