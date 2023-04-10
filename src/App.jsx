@@ -4,7 +4,7 @@ import AppRoutes from "./components/AppRoutes";
 const App = () => {
   return (
     <div>
-      <div className="font-['Lato'] min-h-screen bg-black text-white">
+      <div className="font-['Caveat'] min-h-screen bg-appBg">
         <AppRoutes />
       </div>
     </div>

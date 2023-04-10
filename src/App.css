@@ -23,38 +23,20 @@
   box-sizing: border-box;
 }
 
-.paginationButtons {
-  height: 40px;
-  display: flex;
-  justify-content: center;
+/* Scrollbar */
+body {
+  overflow: overlay;
 }
 
-.paginationButtons a {
-  padding: 10px;
-  margin: 8px;
-  border-radius: 5px;
-  border: 1px solid #2f3137;
-  color: white;
-  cursor: pointer;
+body::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-.paginationButtons a:hover {
-  color: #2f3137;
-  background-color: white;
-  border: 1px solid white;
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#facc15, #ef4444);
+  border-radius: 4px;
 }
 
-.paginationActive a {
-  color: white;
-  background-color: #2f3137;
-}
-
-.paginationDisabled a {
-  color: white;
-  pointer-events: none;
-  background-color: gray;
-  border: none;
-}
 /* Hacker Typer */
 .success {
   color: #10ff00;

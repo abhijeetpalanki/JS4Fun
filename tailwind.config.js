@@ -33,6 +33,8 @@ module.exports = {
         flicker: "flicker 1.5s infinite alternate",
       },
       backgroundImage: {
+        appBg:
+          "linear-gradient(109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1%)",
         relaxerBg: "url('~/src/images/relaxer-bg.jpg')",
         brickWall: "url('~/src/images/brick-wall.jpg')",
         postItNote: "url('~/src/images/post-it-note.png')",
