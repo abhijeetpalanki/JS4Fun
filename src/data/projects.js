@@ -101,6 +101,7 @@ import {
   GradientGenerator,
   LineChart,
   CustomCalendar,
+  IncomeTracker,
 } from "../projects";
 
 export const projects = [
@@ -1533,5 +1534,16 @@ export const projects = [
       },
     ],
     component: <CustomCalendar></CustomCalendar>,
+  },
+  {
+    id: 103,
+    title: "Income Tracker",
+    hashtags: [
+      {
+        id: 1,
+        name: "incometracker",
+      },
+    ],
+    component: <IncomeTracker></IncomeTracker>,
   },
 ];

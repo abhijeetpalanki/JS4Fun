@@ -100,6 +100,7 @@ import TrelloAnimatedChecklist from "./Trello Animated Checklist/TrelloAnimatedC
 import GradientGenerator from "./Gradient Generator/GradientGenerator";
 import LineChart from "./Line Chart/LineChart";
 import CustomCalendar from "./Custom Calendar/CustomCalendar";
+import IncomeTracker from "./Income Tracker/IncomeTracker";
 
 export {
   ExpandingCard,
@@ -204,4 +205,5 @@ export {
   GradientGenerator,
   LineChart,
   CustomCalendar,
+  IncomeTracker,
 };
