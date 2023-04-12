@@ -102,6 +102,7 @@ import {
   LineChart,
   CustomCalendar,
   IncomeTracker,
+  DraggableList,
 } from "../projects";
 
 export const projects = [
@@ -1545,5 +1546,16 @@ export const projects = [
       },
     ],
     component: <IncomeTracker></IncomeTracker>,
+  },
+  {
+    id: 104,
+    title: "Draggable List",
+    hashtags: [
+      {
+        id: 1,
+        name: "draggablelist",
+      },
+    ],
+    component: <DraggableList></DraggableList>,
   },
 ];

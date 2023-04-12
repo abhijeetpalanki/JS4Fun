@@ -101,6 +101,7 @@ import GradientGenerator from "./Gradient Generator/GradientGenerator";
 import LineChart from "./Line Chart/LineChart";
 import CustomCalendar from "./Custom Calendar/CustomCalendar";
 import IncomeTracker from "./Income Tracker/IncomeTracker";
+import DraggableList from "./Draggable List/DraggableList";
 
 export {
   ExpandingCard,
@@ -206,4 +207,5 @@ export {
   LineChart,
   CustomCalendar,
   IncomeTracker,
+  DraggableList,
 };

@@ -213,3 +213,8 @@ select::-webkit-scrollbar-thumb {
   stroke-width: 4;
   fill: none;
 }
+
+/* Draggable List */
+.item.dragging :where(.details, svg) {
+  opacity: 0;
+}
