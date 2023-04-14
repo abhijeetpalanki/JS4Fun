@@ -1,84 +1,60 @@
-import axios from "axios";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 const UniversityFinder = () => {
   const [userValue, setUserValue] = useState("");
-  const [suggestionPart, setSuggestionPart] = useState("");
-  const inputRef = useRef(null);
-  const userValueRef = useRef(null);
-  userValueRef.current = userValue;
-
-  const handleUserInputValueChange = (e) => {
-    const newUserValue = e.target.value;
-    const diff = newUserValue.substr(userValue.length);
-
-    if (suggestionPart.indexOf(diff) === 0) {
-      setSuggestionPart(suggestionPart.substr(diff.length));
-    } else {
-      setSuggestionPart("");
-    }
-
-    setUserValue(newUserValue);
-  };
-
-  const findSuggestionsFor = (phrase) => {
-    return new Promise((resolve, reject) => {
-      try {
-        axios
-          .get(`http://universities.hipolabs.com/search?name=${phrase}`)
-          .then((result) => {
-            const univFound = result.data.find(
-              (univ) => univ.name.indexOf(phrase) === 0
-            );
-            if (univFound) {
-              resolve(univFound.name);
-            } else {
-              reject();
-            }
-          });
-      } catch (error) {
-        console.log(error.message);
-      }
-    });
-  };
-
-  useEffect(() => {
-    if (userValue.length > 0) {
-      findSuggestionsFor(userValue)
-        .then((universityName) => {
-          const stillFits = universityName.indexOf(userValueRef.current) === 0;
-          if (stillFits) {
-            setSuggestionPart(
-              universityName.substr(userValueRef.current.length)
-            );
-          } else {
-            setSuggestionPart("");
-          }
-        })
-        .catch(() => {
-          setSuggestionPart("");
-        });
-    } else {
-      setSuggestionPart("");
-    }
-  }, [userValue]);
-
-  useEffect(() => {
-    inputRef.current.selectionStart = userValueRef.current.length;
-    inputRef.current.selectionEnd =
-      userValueRef.current.length + suggestionPart.length;
-  }, [suggestionPart]);
+  const [universities] = useState([
+    {
+      id: 1,
+      location: "Cambridge",
+      name: "Massachusetts Institute of Technology",
+    },
+    { id: 2, location: "Cambridge", name: "Harvard University" },
+    {
+      id: 3,
+      location: "Stanford",
+      name: "Stanford University",
+    },
+    {
+      id: 4,
+      location: "Ithaca",
+      name: "Cornell University",
+    },
+    {
+      id: 5,
+      location: "Berkeley",
+      name: "University of California, Berkeley",
+    },
+  ]);
 
   return (
     <div className="h-screen font-['Poppins'] text-black flex flex-col justify-center items-center">
       <input
-        type="text"
-        value={`${userValue + suggestionPart}`}
-        onChange={handleUserInputValueChange}
-        ref={inputRef}
-        placeholder="Search University..."
-        className="w-[350px] md:w-[500px] h-10 rounded-md px-2 py-4 outline-none border-none"
+        className="my-5 p-[10px] text-[20px] outline-none border-none rounded"
+        placeholder="Search Name..."
+        onChange={(e) => setUserValue(e.target.value.toLowerCase())}
       />
+
+      <table className="w-[900px] my-[50px] mx-0 border-spacing-[15px] text-[#444]">
+        <tbody>
+          <tr className="mb-5">
+            <th className="w-[250px] text-xl">Location</th>
+            <th className="w-[250px] text-xl">Name</th>
+          </tr>
+          {universities.length > 0 &&
+            universities
+              .filter((uni) =>
+                uni.name.toLowerCase().includes(userValue.toLowerCase())
+              )
+              .map((item) => (
+                <tr className="mb-5" key={item.id}>
+                  <td className="w-[250px] text-center text-xl">
+                    {item.location}
+                  </td>
+                  <td className="w-[250px] text-center text-xl">{item.name}</td>
+                </tr>
+              ))}
+        </tbody>
+      </table>
     </div>
   );
 };
