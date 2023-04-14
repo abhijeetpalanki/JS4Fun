@@ -45,13 +45,11 @@ const WordAssociations = () => {
   }, [chosenLevel]);
 
   return (
-    <div className="bg-black font-['Oswald'] tracking-widest flex flex-col justify-center items-center h-screen">
+    <div className="font-['Oswald'] tracking-widest flex flex-col justify-center items-center h-full md:h-screen">
       {chosenLevel === "0" ? (
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[32px] font-bold text-white">
-            Word Associations
-          </h1>
-          <p className="text-[16px] font-bold text-gray-300">
+          <h1 className="text-[32px] font-bold">Word Associations</h1>
+          <p className="text-[16px] font-bold text-gray-700">
             Select your level to start
           </p>
           <select
@@ -59,7 +57,7 @@ const WordAssociations = () => {
             id="levels"
             value={chosenLevel}
             onChange={(e) => setChosenLevel(e.target.value)}
-            className="m-[5px] p-[8px] rounded-[5px] border-none bg-[darkcyan] text-white"
+            className="m-[5px] p-[8px] rounded-[5px] border-none bg-white"
           >
             <option value="0">Select a Level</option>
             <option value="1">Level 1</option>
@@ -70,7 +68,7 @@ const WordAssociations = () => {
       ) : (
         words && (
           <>
-            <h1 className="text-[32px] font-bold text-white">
+            <h1 className="text-[32px] font-bold">
               Welcome to level: {chosenLevel}
             </h1>
             <h3 className="text-[20px] font-bold">Your score is: {score}</h3>
@@ -78,7 +76,7 @@ const WordAssociations = () => {
             <div className="max-w-[1000px] flex flex-row flex-wrap justify-center items-center">
               {words.map(({ quiz, option, correct }, index) => (
                 <div key={index} className="flex items-center justify-center">
-                  <div className="question-box bg-[antiquewhite] text-black p-[10px] rounded-[20px] m-[10px] text-center">
+                  <div className="question-box bg-[antiquewhite] p-[10px] rounded-[20px] m-[10px] text-center">
                     {quiz.map((tip, t_index) => (
                       <p key={t_index}>{tip}</p>
                     ))}
@@ -90,7 +88,7 @@ const WordAssociations = () => {
                             onClick={() =>
                               checkAnswer(option, o_index + 1, correct)
                             }
-                            className="m-[5px] p-[8px] rounded-[5px] border-0 bg-[darkcyan] text-white disabled:bg-[darkgrey] disabled:text-[darkolivegreen]"
+                            className="m-[5px] p-[8px] rounded-[5px] border-0 bg-black text-white disabled:bg-[darkgrey] disabled:text-[darkolivegreen]"
                           >
                             {option}
                           </button>
@@ -103,7 +101,7 @@ const WordAssociations = () => {
               ))}
             </div>
             <button
-              className="m-[5px] p-[8px] rounded-[5px] border-0 bg-[darkcyan] text-white disabled:bg-[darkgrey] disabled:text-[darkolivegreen]"
+              className="m-[5px] p-[8px] rounded-[5px] border-0 bg-black text-white disabled:bg-[darkgrey] disabled:text-[darkolivegreen]"
               onClick={() => setChosenLevel("0")}
             >
               Go Back

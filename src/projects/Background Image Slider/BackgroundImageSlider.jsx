@@ -44,6 +44,7 @@ const BackgroundImageSlider = () => {
                 src={slide.image}
                 alt="travel-pic"
                 className="w-[1000px] h-[600px] rounded-xl"
+                loading="lazy"
               />
             )}
           </div>

@@ -10,7 +10,7 @@ const MotionActivatedCard = () => {
   const rotateY = useTransform(x, [-100, 100], [-30, 30]);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-white">
+    <div className="flex items-center justify-center h-screen">
       <div
         className={`w-full [perspective:2000] flex items-center justify-center`}
       >

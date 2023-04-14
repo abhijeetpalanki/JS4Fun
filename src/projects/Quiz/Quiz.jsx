@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { decode } from "html-entities";
 import MainMenu from "./components/MainMenu";
 import QuizComp from "./components/QuizComp";
 import EndScreen from "./components/EndScreen";
@@ -20,7 +21,7 @@ const Quiz = () => {
 
         data.results.forEach((loadedQuestion) => {
           const formattedQuestion = {
-            question: loadedQuestion.question,
+            question: decode(loadedQuestion.question),
           };
 
           const answerChoices = [...loadedQuestion.incorrect_answers];
@@ -47,7 +48,7 @@ const Quiz = () => {
   }, []);
 
   return (
-    <div className="quiz-body bg-black font-['Poppins'] flex flex-col items-center justify-center h-screen m-0">
+    <div className="font-['Poppins'] flex flex-col items-center justify-center h-screen">
       {gameState === "menu" && <MainMenu setGameState={setGameState} />}
       {gameState === "quiz" && (
         <QuizComp
@@ -65,6 +66,7 @@ const Quiz = () => {
           questions={questions}
           score={score}
           setScore={setScore}
+          getQuizData={getQuizData}
         />
       )}
     </div>

@@ -27,11 +27,11 @@ const LiveUserFilter = () => {
   }, []);
 
   return (
-    <div className="live-user-filter-body bg-black font-['Roboto'] flex items-center justify-center h-screen m-0">
-      <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-[300px] [box-shadow:3px_3px_10px_rgba(0,0,0,0.2)]">
-        <header className="header bg-[#3e57db] text-white py-[30px] px-[20px]">
-          <h4 className="title m-0 text-[1rem] font-bold">Live User Filter</h4>
-          <small className="subtitle inline-block opacity-[0.8] mb-[20px] mt-[5px] mx-0">
+    <div className="font-['Roboto'] flex items-center justify-center h-screen">
+      <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-[300px] shadow-[3px_3px_10px_rgba(0,0,0,0.2)]">
+        <header className="bg-[#3e57db] text-white text-center py-[30px] px-[20px]">
+          <h4 className="m-0 text-[1rem] font-bold">Live User Filter</h4>
+          <small className="inline-block opacity-80 mb-[20px] mt-[5px] mx-0">
             Search by name and/or location
           </small>
           <input
@@ -43,7 +43,7 @@ const LiveUserFilter = () => {
           />
         </header>
 
-        <ul className="user-list bg-white list-none m-0 p-0 max-h-[400px] overflow-y-auto">
+        <ul className="bg-white list-none m-0 p-0 max-h-[400px] overflow-y-auto">
           {searchInput
             ? users
                 .filter((user) =>
@@ -61,7 +61,7 @@ const LiveUserFilter = () => {
                       src={user.picture.large}
                       alt={user.name.first}
                     />
-                    <div className="user-info ml-[10px] text-black">
+                    <div className="ml-[10px] text-black">
                       <h4 className="mb-[10px] mx-0 mt-0 font-bold">
                         {user.name.first} {user.name.last}
                       </h4>

@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import "./Hoverboard.css";
 import colors from "./colors";
 
 const Hoverboard = () => {
@@ -10,7 +9,7 @@ const Hoverboard = () => {
     for (let i = 0; i < SQUARES; i++) {
       const square = document.createElement("div");
       square.className =
-        "bg-[#1d1d1d] [box-shadow:0_0_2px_#000] h-4 w-4 m-[2px] square";
+        "bg-[#1d1d1d] shadow-[0_0_2px_#000] h-4 w-4 m-[2px] duration-500 ease-in hover:duration-0";
 
       square.addEventListener("mouseover", () => setColor(square));
       square.addEventListener("mouseout", () => removeColor(square));
@@ -35,7 +34,7 @@ const Hoverboard = () => {
   };
 
   return (
-    <div className="hoverboard-body bg-[#111] flex flex-col justify-center items-center h-screen m-0">
+    <div className="bg-[#111] flex flex-col justify-center items-center h-screen">
       <div
         className="container flex justify-center items-center flex-wrap max-w-[400px]"
         ref={containerRef}

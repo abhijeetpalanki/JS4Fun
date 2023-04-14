@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./ExpandingCard.css";
 import { data } from "./data";
 
 const ExpandingCard = () => {
@@ -14,20 +13,20 @@ const ExpandingCard = () => {
   };
 
   return (
-    <div className="expanding-card-body font-['Muli'] flex justify-center items-center h-[80vh] overflow-hidden">
-      <div className="container flex">
+    <div className="font-['Muli'] flex justify-center items-center h-[80vh] overflow-hidden">
+      <div className="flex w-screen sm:w-full">
         {panels.map((panel) => (
           <div
             key={panel.id}
-            className={`panel bg-cover bg-center bg-no-repeat h-[70vh] rounded-[50px] text-white cursor-pointer flex-[0.5] m-[10px] relative ${
-              panel.active && "active"
+            className={`transition-[flex] duration-700 ease-in bg-cover bg-center bg-no-repeat h-[70vh] rounded-[50px] text-white cursor-pointer flex-[0.5] m-[10px] relative ${
+              panel.active && "flex-[5] group"
             }`}
             style={{
               backgroundImage: `url(${panel.image})`,
             }}
             onClick={() => togglePanel(panel.id)}
           >
-            <h3 className="text-[24px] absolute bottom-6 left-5 m-0 opacity-0">
+            <h3 className="text-[24px] absolute bottom-6 left-5 m-0 opacity-0 group-hover:opacity-100 group-hover:transition-opacity group-hover:duration-300 group-hover:ease-in">
               {panel.title}
             </h3>
           </div>

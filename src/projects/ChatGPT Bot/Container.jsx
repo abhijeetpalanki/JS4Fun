@@ -14,8 +14,8 @@ const OuterContainer = forwardRef(function OuterContainer(
       )}
       {...props}
     >
-      <h1 className="text-center text-lg font-bold">ChatGPT Bot</h1>
-      <div className="m-3 bg-zinc-200 rounded">{children}</div>
+      <h1 className="text-lg font-bold text-center">ChatGPT Bot</h1>
+      <div className="m-3 rounded bg-zinc-200">{children}</div>
     </div>
   );
 });
@@ -28,7 +28,7 @@ const InnerContainer = forwardRef(function InnerContainer(
     <div
       ref={ref}
       className={clsx(
-        "flex-col m-3 space-y-5 min-w-[400px] min-h-[400px]",
+        "flex-col m-3 space-y-5 w-[350px] h-[350px] md:min-w-[400px] md:min-h-[400px]",
         className
       )}
       {...props}

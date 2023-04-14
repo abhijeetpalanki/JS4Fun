@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "416px",
+      },
       colors: {
         primary: "#202225",
         secondary: "#5865f2",
@@ -33,23 +36,11 @@ module.exports = {
         flicker: "flicker 1.5s infinite alternate",
       },
       backgroundImage: {
-        appBg:
-          "linear-gradient(109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1%)",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         relaxerBg: "url('~/src/images/relaxer-bg.jpg')",
         brickWall: "url('~/src/images/brick-wall.jpg')",
         postItNote: "url('~/src/images/post-it-note.png')",
         bmiCalculatorBg: "url('https://digitshack.com/codepen/bmical/bg.png')",
-      },
-      boxShadow: {
-        paperShadow: "inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 53%)",
-        paperBigShadow:
-          "inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 53%), 0px 0px 0px 50px rgba(#ffffff, .07), 0px 0px 0px 100px rgba(#ffffff, .05), 0px 0px 0px 150px rgba(#ffffff, .025)",
-        scissorsShadow: "inset 0px 5px 6px grey, 0px 8px hsl(39, 89%, 42%)",
-        scissorsBigShadow:
-          "inset 0px 5px 6px grey, 0px 8px hsl(39, 89%, 42%), 0px 0px 0px 50px rgba(#ffffff, .07), 0px 0px 0px 100px rgba(#ffffff, .05), 0px 0px 0px 150px rgba(#ffffff, .025)",
-        rockShadow: "inset 0px 5px 6px grey, 0px 8px hsl(349, 71%, 44%)",
-        rockBigShadow:
-          "inset 0px 5px 6px grey, 0px 8px hsl(349, 71%, 44%), 0px 0px 0px 50px rgba(#ffffff, .07), 0px 0px 0px 100px rgba(#ffffff, .05), 0px 0px 0px 150px rgba(#ffffff, .025)",
       },
     },
   },

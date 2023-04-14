@@ -19,18 +19,12 @@ const PomodoroMain = () => {
 
   useEffect(() => {
     updateExecute(executing);
-  }, [executing, startAnimate]);
+  }, [executing, startAnimate, updateExecute]);
 
   return (
-    <div
-      className="font-['Roboto Mono'] text-[#c9ccea] flex flex-col items-center justify-center min-h-screen"
-      style={{
-        background: "rgb(39, 42, 85)",
-        background: "radial-gradient(circle, #1e2140 0%, #151932 55%)",
-      }}
-    >
-      <h1 className="text-[2.6rem] mb-[0.2rem]">Pomodoro</h1>
-      <small>Be productive the right way.</small>
+    <div className="font-['Roboto Mono'] text-[#c9ccea] flex flex-col items-center justify-center min-h-screen bg-[rgb(39,42,85)] bg-gradient-radial from-[#1e2140] to-[#151932]">
+      <h1 className="text-5xl mb-[0.2rem] leading-normal">Pomodoro</h1>
+      <small className="text-xl">Be productive the right way.</small>
 
       {pomodoro === 0 ? (
         <Settings />

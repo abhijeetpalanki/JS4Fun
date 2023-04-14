@@ -44,7 +44,7 @@ const ColorfulMousePointer = () => {
       let y = e.pageY - e.target.offsetTop;
 
       let splash = document.createElement("span");
-      splash.className = `absolute pointer-events-none w-[300px] h-[300px] animate-colorSplash`;
+      splash.className = `absolute pointer-events-none w-[100px] h-[100px] md:w-[300px] md:h-[300px] animate-colorSplash`;
       let bg = `url('${images[Math.floor(Math.random() * images.length)]}')`;
       splash.style.backgroundImage = bg;
       splash.style.backgroundSize = "contain";

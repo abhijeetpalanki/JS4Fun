@@ -31,13 +31,13 @@ const TextGenerator = () => {
   };
 
   return (
-    <div className="font-['Poppins'] flex flex-col justify-center items-center overflow-hidden h-screen m-0 leading-[1.6] bg-[#556271]">
-      <div className="max-w-[1000px] mx-auto p-[5rem_2rem_0]">
+    <div className="font-['Poppins'] flex flex-col justify-center items-center h-screen leading-[1.6] bg-[#556271]">
+      <div className="max-w-[400px] md:max-w-[1000px] mx-auto p-[5rem_2rem_0]">
         <div className="rounded-[0.4rem] overflow-hidden">
           {/* Head */}
           <div className="bg-[#f4f6f8] p-[2.8rem] border-[3px] border-[#d3dbe4] flex flex-wrap items-center justify-between md:flex-nowrap">
             <form className="flex items-center">
-              <div className="gen-value  mr-[1.4rem]">
+              <div className="gen-value mr-[1.4rem]">
                 <input
                   type="number"
                   name="gen_count"

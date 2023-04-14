@@ -41,8 +41,8 @@ const PalindromeChecker = () => {
   };
 
   return (
-    <div className="font-['Poppins'] bg-[#aa57cc] flex items-center justify-center h-screen overflow-hidden m-0">
-      <div className="bg-white max-w-[500px] rounded-[7px] p-[20px_25px_15px]">
+    <div className="font-['Poppins'] bg-[#aa57cc] flex items-center justify-center h-screen">
+      <div className="bg-white max-w-[350px] md:max-w-[500px] rounded-[7px] p-[20px_25px_15px]">
         <header>
           <h1 className="text-[27px] font-medium">Palindrome Checker</h1>
           <p className="mt-[5px] text-[18px] text-[#474747]">

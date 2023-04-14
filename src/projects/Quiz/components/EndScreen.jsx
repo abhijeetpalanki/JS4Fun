@@ -1,11 +1,18 @@
-const EndScreen = ({ setGameState, questions, score, setScore }) => {
+const EndScreen = ({
+  setGameState,
+  questions,
+  score,
+  setScore,
+  getQuizData,
+}) => {
   const restartQuiz = () => {
     setScore(0);
+    getQuizData();
     setGameState("menu");
   };
 
   return (
-    <div className="end-screen w-[500px] h-[500px] rounded-[10px] bg-[lightseagreen] text-white flex items-center justify-center flex-col">
+    <div className="flex flex-col items-center justify-center text-black">
       <h1 className="text-[2rem] font-bold">Congratulations!!!</h1>
       <h3 className="text-[1rem] font-bold">
         You answered correctly at {score}/{questions.length} questions correctly

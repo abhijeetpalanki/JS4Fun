@@ -85,7 +85,7 @@ const AIKeywordExtractor = () => {
 
   return (
     <div className="relative flex justify-center h-screen text-white bg-blue-600">
-      <div className="mt-32">
+      <div className="p-5 mt-0 md:mt-32 md:p-0">
         <div className="max-w-3xl">
           {/* Header */}
           <div className="flex flex-col items-center">

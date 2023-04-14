@@ -6,8 +6,8 @@ const AnimatedModals = () => {
   const { modalOpen, close, open } = useModal();
 
   return (
-    <div className="h-screen flex justify-center items-center flex-col bg-[#101315] font-['Montserrat'] overflow-hidden">
-      <motion.main className="m-auto flex flex-col p-[2rem] items-center justify-center">
+    <div className="h-screen flex justify-center items-center flex-col bg-[#101315] font-['Montserrat']">
+      <motion.main className="flex flex-col items-center justify-center p-8 m-auto">
         <Header />
         <SubHeader text="Drop In Animation" />
 
@@ -36,7 +36,7 @@ const AnimatedModals = () => {
 };
 
 const Header = () => (
-  <motion.h1 className="text-[#c273ff] text-[175%] lg:text-[250%] font-[400]font-['Montserrat']">
+  <motion.h1 className="text-[#c273ff] text-[175%] lg:text-[250%] text-center font-[400]font-['Montserrat']">
     Framer Motion
     <span className="text-[#00b7ff]"> ⚛️ Animated Modal</span>
   </motion.h1>

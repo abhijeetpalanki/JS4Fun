@@ -10,8 +10,8 @@ const SphericalGallery = () => {
   };
 
   return (
-    <div className="font-['Roboto'] bg-[#242424] p-2 flex flex-col items-center h-screen overflow-hidden m-0">
-      <h1 className="text-gray-300 text-center font-bold text-2xl m-2">
+    <div className="font-['Roboto'] bg-[#242424] p-2 flex flex-col items-center h-screen">
+      <h1 className="m-2 text-2xl font-bold text-center text-gray-300">
         Spherical Gallery
       </h1>
       <SearchInput setImageData={setImageData} />

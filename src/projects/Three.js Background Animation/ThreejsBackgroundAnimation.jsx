@@ -54,9 +54,9 @@ const ThreejsBackgroundAnimation = () => {
   return (
     <div className="relative w-full h-screen bg-[#111] text-white overflow-hidden bg-cover bg-no-repeat">
       <div className="three-bg"></div>
-      <header className="absolute top-4 left-[60%]">
+      <header className="absolute top-4 left-[50%] md:left-[60%]">
         <div className="nav">
-          <ul className="flex gap-8">
+          <ul className="flex flex-col gap-8 md:flex-row">
             <li className="text-xl font-bold">
               <button className="">
                 <span>Home</span>
@@ -86,8 +86,8 @@ const ThreejsBackgroundAnimation = () => {
         </div>
       </header>
 
-      <div className="absolute text-center top-[30%] left-[5rem] w-full h-[60%]">
-        <h2 className="text-[80px] w-full pt-4">
+      <div className="absolute text-center top-[50%] md:top-[30%] left-[2rem] md:left-[5rem] w-full md:h-[60%]">
+        <h2 className="text-[30px] md:text-[80px] w-full pt-4">
           Three.js
           <br />
           Background Animation

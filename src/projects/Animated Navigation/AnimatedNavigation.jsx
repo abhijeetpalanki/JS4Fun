@@ -100,7 +100,7 @@ const AnimatedNavigation = () => {
   const { projectId } = useParams();
 
   return (
-    <div className="bg-[rgba(137,171,245,0.37)] h-screen font-['Poppins']">
+    <div className="h-screen font-['Poppins']">
       <div className="fixed">
         <button
           className={`bg-[#09090c] border-none w-[2.5rem] h-[2.5rem] rounded-full my-[0.5rem] mx-1 flex justify-center items-center relative after:transition-all after:duration-[0.3s] after:content-[''] after:absolute after:bg-white after:h-[2px] after:w-[1rem] before:content-[''] before:bg-white before:h-[2px] before:w-[1rem] before:absolute before:transition-all before:duration-[0.3s] ${
@@ -112,7 +112,12 @@ const AnimatedNavigation = () => {
         ></button>
         <div className="bg-[#09090c] w-[3.5rem] h-[80vh] mt-4 rounded-[0_30px_30px_0] py-4 px-0 flex flex-col items-center justify-between relative">
           <div className="w-8">
-            <img src={logo} alt="logo" className="w-full h-auto" />
+            <img
+              src={logo}
+              alt="logo"
+              className="w-full h-auto"
+              loading="lazy"
+            />
           </div>
 
           <ul
@@ -132,6 +137,7 @@ const AnimatedNavigation = () => {
                 src={HomeLogo}
                 alt="Home"
                 className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%] hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                loading="lazy"
               />
               <span
                 className={`overflow-hidden transition-all ${
@@ -153,6 +159,7 @@ const AnimatedNavigation = () => {
                 src={TeamLogo}
                 alt="Team"
                 className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%]  hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                loading="lazy"
               />
               <span
                 className={`overflow-hidden transition-all ${
@@ -174,6 +181,7 @@ const AnimatedNavigation = () => {
                 src={CalendarLogo}
                 alt="Calendar"
                 className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%]  hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                loading="lazy"
               />
               <span
                 className={`overflow-hidden transition-all ${
@@ -195,6 +203,7 @@ const AnimatedNavigation = () => {
                 src={DocumentsLogo}
                 alt="Documents"
                 className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%]  hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                loading="lazy"
               />
               <span
                 className={`overflow-hidden transition-all ${
@@ -216,6 +225,7 @@ const AnimatedNavigation = () => {
                 src={ProjectsLogo}
                 alt="Projects"
                 className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%]  hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                loading="lazy"
               />
               <span
                 className={`overflow-hidden transition-all ${
@@ -237,6 +247,7 @@ const AnimatedNavigation = () => {
               alt="Profile Pic"
               onClick={handleProfileClick}
               className="max-w-[2.5rem] h-10 rounded-full hover:border-2 hover:border-[#a4b2bc] hover:p-[2px]"
+              loading="lazy"
             />
             <div
               className={`${
@@ -258,6 +269,7 @@ const AnimatedNavigation = () => {
                   src={PowerOffLogo}
                   alt="logout"
                   className="w-full h-auto invert-[15%] sepia-[70%] saturate-[6573%] hue-rotate-[2deg] brightness-[100%] contrast-[126%] transition-all duration-[0.3s] hover:border-none hover:p-0 hover:opacity-[0.5] hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                  loading="lazy"
                 />
               </button>
             </div>

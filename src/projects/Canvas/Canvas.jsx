@@ -95,7 +95,7 @@ const Canvas = () => {
   }, [drawCircle, drawLine]);
 
   return (
-    <div className="canvas-body bg-[#f5f5f5] font-['Roboto'] flex flex-col justify-center items-center h-screen m-0">
+    <div className="canvas-body bg-[#f5f5f5] font-['Roboto'] flex flex-col justify-center items-center h-screen">
       <canvas
         id="canvas"
         width="600px"

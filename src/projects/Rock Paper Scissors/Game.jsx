@@ -1,9 +1,8 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 import Paper from "./images/icon-paper.svg";
 import Scissors from "./images/icon-scissors.svg";
 import Rock from "./images/icon-rock.svg";
-import { Link, useParams } from "react-router-dom";
 
 const Game = ({ myChoice }) => {
   let iconClass, imageClass;
@@ -36,25 +35,34 @@ const Game = ({ myChoice }) => {
   };
 
   if (myChoice === "paper") {
-    iconClass = "border-[hsl(230,89%,62%)] shadow-paperShadow";
+    iconClass =
+      "border-[hsl(230,89%,62%)] shadow-[inset_0_5px_6px_grey,0_8px_hsl(230,89%,53%),0_0_0_50px_rgba(#ffffff,0.07),0_0_0_100px_rgba(#ffffff,0.05),0_0_0_150px_rgba(#ffffff,0.025)]";
     imageClass = `url(${Paper})`;
   } else if (myChoice === "scissors") {
-    iconClass = "border-[hsl(39,89%,49%)] shadow-scissorsShadow";
+    iconClass =
+      "border-[hsl(39,89%,49%)] shadow-[inset_0_5px_6px_grey,0_8px_hsl(39,89%,42%),0_0_0_50px_rgba(#ffffff,0.07),0_0_0_100px_rgba(#ffffff,0.05),0_0_0_150px_rgba(#ffffff,0.025)]";
     imageClass = `url(${Scissors})`;
   } else if (myChoice === "rock") {
-    iconClass = "border-[hsl(349,71%,52%)] shadow-rockShadow";
+    iconClass =
+      "border-[hsl(349,71%,52%)] shadow-[inset_0_5px_6px_grey,0_8px_hsl(349,71%,44%),0_0_0_50px_rgba(#ffffff,0.07),0_0_0_100px_rgba(#ffffff,0.05),0_0_0_150px_rgba(#ffffff,0.025)]";
     imageClass = `url(${Rock})`;
   }
 
   const applyHouseStyles = () => {
     if (house === "paper") {
-      setHouseIconClass("border-[hsl(230,89%,62%)] shadow-paperShadow");
+      setHouseIconClass(
+        "border-[hsl(230,89%,62%)] shadow-[inset_0_5px_6px_grey,0_8px_hsl(230,89%,53%),0_0_0_50px_rgba(#ffffff,0.07),0_0_0_100px_rgba(#ffffff,0.05),0_0_0_150px_rgba(#ffffff,0.025)]"
+      );
       setHouseImageClass(`url(${Paper})`);
     } else if (house === "scissors") {
-      setHouseIconClass("border-[hsl(39,89%,49%)] shadow-scissorsShadow");
+      setHouseIconClass(
+        "border-[hsl(39,89%,49%)] shadow-[inset_0_5px_6px_grey,0_8px_hsl(39,89%,42%),0_0_0_50px_rgba(#ffffff,0.07),0_0_0_100px_rgba(#ffffff,0.05),0_0_0_150px_rgba(#ffffff,0.025)]"
+      );
       setHouseImageClass(`url(${Scissors})`);
     } else if (house === "rock") {
-      setHouseIconClass("border-[hsl(349,71%,52%)] shadow-rockShadow");
+      setHouseIconClass(
+        "border-[hsl(349,71%,52%)] shadow-[inset_0_5px_6px_grey,0_8px_hsl(349,71%,44%),0_0_0_50px_rgba(#ffffff,0.07),0_0_0_100px_rgba(#ffffff,0.05),0_0_0_150px_rgba(#ffffff,0.025)]"
+      );
       setHouseImageClass(`url(${Rock})`);
     }
   };

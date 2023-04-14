@@ -30,6 +30,10 @@ const ChatGPT = () => {
         model: "gpt-3.5-turbo",
         messages: [{ role: "user", content: prompt }],
       });
+      console.log(
+        "🚀 ~ file: ChatGPT.jsx:33 ~ getChatGPTResponse ~ response:",
+        response
+      );
       setResponse(response.data.choices[0].message.content);
       setLoading(false);
     } catch (error) {

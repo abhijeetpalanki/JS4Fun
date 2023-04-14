@@ -19,11 +19,11 @@ const Toastify = () => {
   const [theme] = useState(["light", "dark", "colored"]);
 
   return (
-    <div className="font-['Poppins'] flex flex-col gap-2 items-center justify-center h-screen m-0">
+    <div className="font-['Poppins'] flex flex-col gap-2 items-center justify-center h-screen">
       <>
-        <div className="flex justify-center items-center gap-2">
-          <div className="w-[500px] h-64 px-5 py-10 drop-shadow mt-10 border rounded">
-            <label className="block text-center text-white mb-2 text-xs lg:text-sm xl:text-base">
+        <div className="flex flex-col items-center justify-center gap-2 md:flex-row">
+          <div className="w-[350px] md:w-[500px] h-64 px-5 py-10 drop-shadow mt-10 border rounded">
+            <label className="block mb-2 text-xs text-center text-white lg:text-sm xl:text-base">
               Position
             </label>
             <div className="grid grid-cols-3 gap-2">
@@ -52,8 +52,8 @@ const Toastify = () => {
             </div>
           </div>
 
-          <div className="w-[500px] h-64 px-5 py-10 drop-shadow mt-10 border rounded">
-            <label className="block text-center text-white mb-2 text-xs lg:text-sm xl:text-base">
+          <div className="w-[350px] md:w-[500px] h-32 md:h-64 px-5 py-10 drop-shadow mt-10 border rounded">
+            <label className="block mb-2 text-xs text-center text-white lg:text-sm xl:text-base">
               Theme
             </label>
             <div className="grid grid-cols-3 gap-2">
@@ -83,9 +83,9 @@ const Toastify = () => {
           </div>
         </div>
 
-        <div className="w-96 h-64 flex gap-2 justify-center items-center">
+        <div className="flex flex-col items-center justify-center h-64 gap-2 mt-10 md:mt-0 md:flex-row w-96">
           <button
-            className="bg-white text-gray-800 p-4 rounded-md"
+            className="p-4 text-gray-800 bg-white rounded-md"
             onClick={() =>
               toast("🦄 Wow so easy!", {
                 position: selectedPosition,
@@ -102,7 +102,7 @@ const Toastify = () => {
             Click for Toast!
           </button>
           <button
-            className="bg-blue-800 text-white p-4 rounded-md"
+            className="p-4 text-white bg-blue-800 rounded-md"
             onClick={() =>
               toast.info("🦄 Wow so easy!", {
                 position: selectedPosition,
@@ -119,7 +119,7 @@ const Toastify = () => {
             Click for Toast!
           </button>
           <button
-            className="bg-green-800 text-white p-4 rounded-md"
+            className="p-4 text-white bg-green-800 rounded-md"
             onClick={() =>
               toast.success("🦄 Wow so easy!", {
                 position: selectedPosition,
@@ -136,7 +136,7 @@ const Toastify = () => {
             Click for Toast!
           </button>
           <button
-            className="bg-yellow-800 text-white p-4 rounded-md"
+            className="p-4 text-white bg-yellow-800 rounded-md"
             onClick={() =>
               toast.warning("🦄 Wow so easy!", {
                 position: selectedPosition,
@@ -153,7 +153,7 @@ const Toastify = () => {
             Click for Toast!
           </button>
           <button
-            className="bg-red-800 text-white p-4 rounded-md"
+            className="p-4 text-white bg-red-800 rounded-md"
             onClick={() =>
               toast.error("🦄 Wow so easy!", {
                 position: selectedPosition,

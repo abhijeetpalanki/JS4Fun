@@ -9,6 +9,7 @@ import {
   FAQ,
   RandomNumberPicker,
   AnimatedNavigation,
+  Pomodoro,
   MoviesHub,
   BackgroundImageSlider,
   RockPaperScissors,
@@ -18,7 +19,6 @@ import {
   PasswordGenerator,
   StickyNotes,
   Screenshot,
-  Pomodoro,
   Hoverboard,
   Pokedex,
   MagicBox,
@@ -41,9 +41,9 @@ import {
   RollTheDice,
   AgeCalculator,
   TheWeatherChannel,
-  MinionEyes,
+  Doraemon,
   AnimatedModal,
-  AnimatedImageSlider,
+  HorizonalImageCarousel,
   Image2TextConverter,
   DiscordNavbar,
   NewsletterLandingPage,
@@ -86,7 +86,7 @@ import {
   VideoPlayer,
   LinkTree,
   OrbitalLoadingPage,
-  FacebookLoginButton,
+  GoogleLoginButton,
   AIKeywordExtractor,
   MotionActivatedCard,
   Connect4,
@@ -183,11 +183,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "sound",
+        name: "octaveboard",
       },
       {
         id: 2,
-        name: "board",
+        name: "onlydesktop",
       },
     ],
     component: <SoundBoard></SoundBoard>,
@@ -303,11 +303,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "modal",
+        name: "rockpaperscissorsgame",
       },
       {
         id: 2,
-        name: "popupbox",
+        name: "onlydesktop",
       },
     ],
     component: <RockPaperScissors></RockPaperScissors>,
@@ -318,11 +318,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "drawing",
+        name: "drawingcanvas",
       },
       {
         id: 2,
-        name: "canvas",
+        name: "onlydesktop",
       },
     ],
     component: <Canvas></Canvas>,
@@ -378,11 +378,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "sticky",
+        name: "stickynotes",
       },
       {
         id: 2,
-        name: "notepad",
+        name: "onlydesktop",
       },
     ],
     component: <StickyNotes></StickyNotes>,
@@ -397,7 +397,7 @@ export const projects = [
       },
       {
         id: 2,
-        name: "snapshot",
+        name: "onlydesktop",
       },
     ],
     component: <Screenshot></Screenshot>,
@@ -412,7 +412,7 @@ export const projects = [
       },
       {
         id: 2,
-        name: "colorfulboard",
+        name: "onlydesktop",
       },
     ],
     component: <Hoverboard></Hoverboard>,
@@ -438,7 +438,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "magic",
+        name: "magicboxes",
       },
       {
         id: 2,
@@ -446,7 +446,7 @@ export const projects = [
       },
       {
         id: 3,
-        name: "boxes",
+        name: "onlydesktop",
       },
     ],
     component: <MagicBox></MagicBox>,
@@ -506,7 +506,7 @@ export const projects = [
       },
       {
         id: 2,
-        name: "reminders",
+        name: "onlydesktop",
       },
     ],
     component: <Todos></Todos>,
@@ -518,10 +518,6 @@ export const projects = [
       {
         id: 1,
         name: "breatheinandout",
-      },
-      {
-        id: 2,
-        name: "relaxer",
       },
     ],
     component: <Relaxer></Relaxer>,
@@ -536,7 +532,7 @@ export const projects = [
       },
       {
         id: 2,
-        name: "speedtyping",
+        name: "onlydesktop",
       },
     ],
     component: <Typer></Typer>,
@@ -738,18 +734,18 @@ export const projects = [
   },
   {
     id: 43,
-    title: "Minion Eyes",
+    title: "Doraemon",
     hashtags: [
       {
         id: 1,
-        name: "minioneyes",
+        name: "followcursor",
       },
       {
         id: 2,
-        name: "followmouse",
+        name: "onlydesktop",
       },
     ],
-    component: <MinionEyes></MinionEyes>,
+    component: <Doraemon></Doraemon>,
   },
   {
     id: 44,
@@ -768,7 +764,7 @@ export const projects = [
   },
   {
     id: 45,
-    title: "Animated Image Slider",
+    title: "Horizonal Image Carousel",
     hashtags: [
       {
         id: 1,
@@ -779,7 +775,7 @@ export const projects = [
         name: "animationslider",
       },
     ],
-    component: <AnimatedImageSlider></AnimatedImageSlider>,
+    component: <HorizonalImageCarousel></HorizonalImageCarousel>,
   },
   {
     id: 46,
@@ -1027,11 +1023,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "cryptocurrency",
+        name: "cryptocurrencytracker",
       },
       {
         id: 2,
-        name: "tracker",
+        name: "onlydesktop",
       },
     ],
     component: <CryptoPriceTracker></CryptoPriceTracker>,
@@ -1096,6 +1092,10 @@ export const projects = [
         id: 1,
         name: "gallery",
       },
+      {
+        id: 2,
+        name: "onlydesktop",
+      },
     ],
     component: <SphericalGallery></SphericalGallery>,
   },
@@ -1150,6 +1150,10 @@ export const projects = [
       {
         id: 1,
         name: "chatgpt",
+      },
+      {
+        id: 2,
+        name: "openaiapi",
       },
     ],
     component: <ChatGPT></ChatGPT>,
@@ -1266,6 +1270,10 @@ export const projects = [
         id: 2,
         name: "slider",
       },
+      {
+        id: 3,
+        name: "onlydesktop",
+      },
     ],
     component: <HeroSlider></HeroSlider>,
   },
@@ -1291,6 +1299,10 @@ export const projects = [
       {
         id: 1,
         name: "snakegame",
+      },
+      {
+        id: 2,
+        name: "onlydesktop",
       },
     ],
     component: <PlaySnake></PlaySnake>,
@@ -1341,18 +1353,18 @@ export const projects = [
   },
   {
     id: 88,
-    title: "Facebook Login Button",
+    title: "Google Login Button",
     hashtags: [
       {
         id: 1,
-        name: "facebookauth",
+        name: "googleauth2",
       },
       {
         id: 2,
         name: "loginpage",
       },
     ],
-    component: <FacebookLoginButton></FacebookLoginButton>,
+    component: <GoogleLoginButton></GoogleLoginButton>,
   },
   {
     id: 89,
@@ -1365,6 +1377,10 @@ export const projects = [
       {
         id: 2,
         name: "openapi",
+      },
+      {
+        id: 3,
+        name: "openaiapi",
       },
     ],
     component: <AIKeywordExtractor></AIKeywordExtractor>,
@@ -1387,6 +1403,10 @@ export const projects = [
       {
         id: 1,
         name: "connect4",
+      },
+      {
+        id: 2,
+        name: "onlydesktop",
       },
     ],
     component: <Connect4></Connect4>,
@@ -1533,6 +1553,10 @@ export const projects = [
         id: 1,
         name: "calendar",
       },
+      {
+        id: 2,
+        name: "onlydesktop",
+      },
     ],
     component: <CustomCalendar></CustomCalendar>,
   },
@@ -1554,6 +1578,10 @@ export const projects = [
       {
         id: 1,
         name: "draggablelist",
+      },
+      {
+        id: 2,
+        name: "onlydesktop",
       },
     ],
     component: <DraggableList></DraggableList>,

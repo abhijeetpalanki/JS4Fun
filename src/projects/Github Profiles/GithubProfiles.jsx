@@ -49,15 +49,15 @@ const GithubProfiles = () => {
   }, [searchInput]);
 
   return (
-    <div className="github-profiles-body font-['Poppins'] text-white bg-[#2a2a72] flex flex-col items-center justify-center h-screen overflow-hidden m-0 p-0">
+    <div className="font-['Poppins'] text-white flex flex-col items-center justify-center h-screen">
       <form
-        className="w-full max-w-[400px] sm:max-w-[800px]"
+        className="w-full max-w-[400px] sm:max-w-3xl"
         id="form"
         onSubmit={submitUser}
       >
         <input
           type="text"
-          className="w-full block bg-[#4c2885] border-none rounded-[10px] text-white p-[1rem] mb-[2rem] text-[1rem] placeholder:text-[#bbb] focus:outline-none [box-shadow:0_5px_10px_rgba(154,160,185,0.05),0_15px_40px_rgba(0,0,0,0.1)]"
+          className="w-full block bg-[#4c2885] border-none rounded-[10px] text-white p-4 mb-8 text-base placeholder:text-[#bbb] focus:outline-none shadow-[0_5px_10px_rgba(154,160,185,0.05),0_15px_40px_rgba(0,0,0,0.1)]"
           id="search"
           placeholder="Search a Github User"
         />
@@ -65,18 +65,24 @@ const GithubProfiles = () => {
 
       <main>
         {!isError ? (
-          <div className="max-w-[800px] bg-[#4c2885] rounded-[20px] flex flex-col md:flex-row items-center justify-center p-[3rem] my-0 mx-[1.5rem] [box-shadow:0_5px_10px_rgba(154,160,185,0.05),0_15px_40px_rgba(0,0,0,0.1)]">
+          <div className="max-w-3xl bg-[#4c2885] rounded-[20px] flex flex-col md:flex-row items-center justify-center p-2 md:p-12 m-0 md:mx-6 shadow-[0_5px_10px_rgba(154,160,185,0.05),0_15px_40px_rgba(0,0,0,0.1)]">
             <div>
               <img
                 src={userInfo.avatar_url}
                 alt={userInfo.name}
-                className="rounded-1/2 border-[10px] border-[#2a2a72]"
+                className="rounded-full border-[10px] border-[#2a2a72]"
+                loading="lazy"
               />
             </div>
-            <div className="user-info text-[#eee] ml-[2rem]">
-              <h2 className="text-[32px] font-bold mt-0">{userInfo.name}</h2>
-              <p className="my-[16px] mx-0">{userInfo.company}</p>
-              <a href={userInfo.html_url} target="_blank" rel="noreferrer">
+            <div className="text-[#eee] ml-8 text-center">
+              <h2 className="mt-0 text-3xl font-bold">{userInfo.name}</h2>
+              <p className="mx-0 my-4">{userInfo.company}</p>
+              <a
+                className="no-underline text-white bg-[#2a2a72] text-xl rounded-lg py-1.5 px-2.5 mr-2.5 mb-2.5"
+                href={userInfo.html_url}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Go To Portfolio
               </a>
               <ul className="list-none flex justify-between p-0 max-w-[400px] my-[16px] mx-0">
@@ -94,14 +100,14 @@ const GithubProfiles = () => {
                 </li>
               </ul>
 
-              <div id="repos">
+              <div>
                 {repos.slice(0, 5).map((repo, index) => (
                   <a
                     key={index}
                     href={repo.svn_url}
                     target="_blank"
                     rel="noreferrer"
-                    className="repo no-underline text-white bg-[#2a2a72] text-[0.7rem] py-[0.25rem] px-[0.5rem] mr-[0.5rem] mb-[0.5rem] inline-block"
+                    className="no-underline text-white bg-[#2a2a72] text-[0.7rem] py-1.5 px-2.5 mr-2.5 mb-2.5 inline-block"
                   >
                     {repo.full_name}
                   </a>

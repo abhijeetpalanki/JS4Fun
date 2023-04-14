@@ -58,6 +58,7 @@ const HexGuesser = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="mb-3 text-3xl font-bold md:text-6xl">Hex Guesser</h1>
       <div
         className="w-[200px] h-[200px] mb-5"
         style={{ background: color }}

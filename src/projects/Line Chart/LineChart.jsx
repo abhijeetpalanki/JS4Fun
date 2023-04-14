@@ -84,7 +84,7 @@ const LineChart = () => {
             },
           ],
         }}
-        className="py-[5rem] px-[10rem]"
+        className="md:py-[5rem] md:px-[10rem] p-0"
       />
     </div>
   );

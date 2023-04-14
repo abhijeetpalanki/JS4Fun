@@ -1,96 +1,72 @@
 import { useEffect, useRef, useState } from "react";
-import "./Feedback.css";
-import { FaHeart } from "react-icons/fa";
+import { FaHeart, FaSadTear, FaSmileBeam, FaMeh } from "react-icons/fa";
+
+const resources = {
+  emojis: [
+    {
+      id: 0,
+      name: "Sad",
+      imageUrl: <FaSadTear size={70} />,
+    },
+    {
+      id: 1,
+      name: "None",
+      imageUrl: <FaMeh size={70} />,
+    },
+    {
+      id: 2,
+      name: "Happy",
+      imageUrl: <FaSmileBeam size={70} />,
+    },
+  ],
+  loveEmojiUrl: <FaHeart size={70} />,
+};
 
 const Feedback = () => {
-  const [clicked, setClicked] = useState(false);
-  const [selectedRating, setSelectedRating] = useState("Satisfied");
-  const panelRef = useRef(null);
-  const buttonRef = useRef(null);
-  const ratingsRef = useRef(null);
+  const { emojis, loveEmojiUrl } = resources;
+  const [isFeedback, setIsFeedback] = useState(true);
 
-  useEffect(() => {
-    ratingsRef.current.addEventListener("click", (e) => {
-      if (e.target.parentNode.classList.contains("rating")) {
-        for (let i = 0; i < ratingsRef.current.childNodes.length; i++) {
-          ratingsRef.current.childNodes[i].classList.remove("active");
-        }
-        e.target.parentNode.classList.add("active");
-        setSelectedRating(e.target.nextElementSibling.innerHTML);
-      }
-    });
-
-    buttonRef.current.addEventListener("click", (e) => {
-      setClicked(true);
-    });
-  }, []);
+  const handleFeedbackRating = () => {
+    setIsFeedback(false);
+  };
 
   return (
-    <div className="feedback-body bg-black text-black font-['Montserrat'] flex items-center justify-center h-screen m-0">
-      {!clicked ? (
-        <div className="panel-container" ref={panelRef}>
-          <strong className="leading-5">
-            How satisfied are you with our <br /> customer support performance?
-          </strong>
-
-          <div className="flex mx-0 my-5 ratings-container" ref={ratingsRef}>
-            <div className="rating">
-              <img
-                src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-6.png"
-                alt=""
-              />
-              <small>Boring</small>
-            </div>
-
-            <div className="rating">
-              <img
-                src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png"
-                alt=""
-              />
-              <small>Unhappy</small>
-            </div>
-
-            <div className="rating">
-              <img
-                src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png"
-                alt=""
-              />
-              <small>Neutral</small>
-            </div>
-
-            <div className="rating">
-              <img
-                src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-35.png"
-                alt=""
-              />
-              <small>Happy</small>
-            </div>
-
-            <div className="rating active">
-              <img
-                src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png"
-                alt=""
-              />
-              <small>Satisfied</small>
-            </div>
+    <div className="text-black font-['Montserrat'] flex items-center justify-center h-screen">
+      <div className="flex flex-col items-center justify-center">
+        {isFeedback ? (
+          <div className="flex flex-col items-center justify-center">
+            <h1>
+              How satisfied are you with our
+              <br />
+              customer support performance?
+            </h1>
+            <ul className="flex bg-white rounded-[7px] border-0 p-[35px] items-center justify-center">
+              {emojis.map((emoji) => (
+                <li key={emoji.id} className="p-2 hover:shadow-md">
+                  <button
+                    type="button"
+                    onClick={handleFeedbackRating}
+                    className="bg-transparent border-0"
+                  >
+                    <div className="h-[10vh]">{emoji.imageUrl}</div>
+                    <p>{emoji.name}</p>
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
-
-          <button
-            className="btn bg-[#302d2b] text-white border-0 rounded-[4px] py-[12px] px-[30px] focus:outline-0"
-            ref={buttonRef}
-          >
-            Send Review
-          </button>
-        </div>
-      ) : (
-        <div className="panel-container" ref={panelRef}>
-          <FaHeart color="red" fontSize={30} style={{ marginBottom: "10px" }} />
-          <strong>Thank You!</strong>
-          <br />
-          <strong>Feedback: {selectedRating}</strong>
-          <p>We'll use your feedback to improve our customer support</p>
-        </div>
-      )}
+        ) : (
+          <div className="flex flex-col text-center bg-white rounded-[7px] border-0 p-[35px] items-center justify-center">
+            <div className="h-[10vh]">{loveEmojiUrl}</div>
+            <h1>Thank You</h1>
+            <p>
+              we will use your feedback to improve our customer support
+              <br />
+              performance.
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

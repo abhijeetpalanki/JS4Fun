@@ -62,9 +62,9 @@ const DrumKit = () => {
   ]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen font-['Fira_Sans']">
+    <div className="flex flex-col items-center justify-center font-['Fira_Sans']">
       <h1 className="mb-8 text-5xl">Drum Kit</h1>
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center md:flex-row">
         {sounds.map((sound, i) => (
           <Drum key={i} letter={sound.key} sound={sound.sound} />
         ))}

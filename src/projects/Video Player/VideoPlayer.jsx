@@ -41,16 +41,15 @@ const VideoPlayer = () => {
   return (
     <div className="h-screen flex justify-center items-center bg-[#0F0F0F]">
       <main className="flex flex-col justify-center">
-        <section className="py-12 text-center text-white px-8">
-          <div></div>
+        <section className="px-0 py-0 text-center text-white md:py-12 md:px-8">
           <header>
             <img
               src="/logo.png"
               alt="logo"
-              className="mx-auto md:w-auto w-[126px]"
+              className="mx-auto md:w-auto w-[126px] rounded-full"
             />
           </header>
-          <div className="relative w-[967px]">
+          <div className="relative w-[250px] md:w-[967px]">
             <video
               ref={videoRef}
               preload="metadata"
@@ -61,11 +60,11 @@ const VideoPlayer = () => {
               }}
               onTimeUpdate={onTimeUpdate}
               onEnded={() => setIsPlaying(false)}
-              className="w-full max-w-[967px] h-[500px] mx-auto my-8"
+              className="w-full max-w-[250px] md:max-w-[967px] h-[500px] mx-auto my-8"
             >
               <source src={video} type="video/mp4" />
             </video>
-            <div className="absolute w-full h-full left-0 right-0 bottom-0 flex flex-col justify-end">
+            <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-end w-full h-full">
               <div>{isLoading && "Calm down and grab a cup of coffee"}</div>
               <div className="bg-white h-[4px] w-[98%] m-auto mb-[18px]">
                 <div

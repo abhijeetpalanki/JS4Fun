@@ -18,10 +18,10 @@ const FAQ = () => {
       <h1 className="text-[32px] font-bold text-center text-[#f0f0f0]">
         Frequently Asked Questions
       </h1>
-      <p className="mb-[15px] text-[26px] text-gray-500">
+      <p className="mb-[15px] text-[26px] text-gray-500 text-center">
         Let's answer some of your questions.
       </p>
-      <div className="w-[600px]">
+      <div className="w-[250px] md:w-[600px]">
         {faqs.map((faq) => (
           <div
             className="bg-[#f0ebe1] mb-[5px] py-[10px] px-[20px]"

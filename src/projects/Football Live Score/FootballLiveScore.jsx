@@ -72,7 +72,7 @@ const FootballLiveScore = () => {
 
   return (
     <div className="font-['Poppins'] flex flex-col items-center justify-center h-screen">
-      <section className="flex flex-col justify-center items-center w-[500px] h-[500px] p-4 bg-white shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[14px] backdrop-saturate-[180%] rounded-2xl border border-black/20 text-black">
+      <section className="flex flex-col justify-center items-center w-[350px] h-[350px] md:w-[500px] md:h-[500px] p-4 bg-white shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[14px] backdrop-saturate-[180%] rounded-2xl border border-black/20 text-black">
         <div className="w-full">
           {matchData && (
             <div className="flex flex-col items-center justify-center">

@@ -8,7 +8,7 @@ const URLShortener = () => {
   const [inputValue, setInputValue] = useState("");
 
   return (
-    <div className="url-shortener-body font-['Playfair Display'] flex flex-col items-center justify-center h-screen overflow-hidden m-0">
+    <div className="url-shortener-body font-['Playfair_Display'] flex flex-col items-center justify-center h-screen">
       <Input setInputValue={setInputValue} />
       <BackgroundAnimation />
       <Result inputValue={inputValue} />

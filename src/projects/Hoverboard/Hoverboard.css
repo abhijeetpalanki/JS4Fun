@@ -1,7 +1,0 @@
-.hoverboard-body .container .square {
-  transition: 2s ease;
-}
-
-.hoverboard-body .container .square:hover {
-  transition-duration: 0s;
-}

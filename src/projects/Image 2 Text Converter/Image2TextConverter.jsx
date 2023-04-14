@@ -1,24 +1,21 @@
 import { useEffect, useState, useCallback } from "react";
-import { createWorker } from "tesseract.js";
+import Tesseract from "tesseract.js";
 
 const Image2TextConverter = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [textResult, setTextResult] = useState("");
 
-  const worker = createWorker();
-
   const convertImageToText = useCallback(async () => {
     if (!selectedImage) {
       return;
     }
-    await worker.load();
-    await worker.loadLanguage("eng");
-    await worker.initialize("eng");
-    const {
-      data: { text },
-    } = await worker.recognize(selectedImage);
-    setTextResult(text);
-  }, [worker, selectedImage]);
+
+    Tesseract.recognize(selectedImage, "eng")
+      .then((res) => {
+        setTextResult(res.data.text);
+      })
+      .catch((error) => console.log(error));
+  }, [selectedImage]);
 
   useEffect(() => {
     convertImageToText();
@@ -34,8 +31,8 @@ const Image2TextConverter = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center font-['Roboto'] bg-[cadetblue] overflow-hidden">
-      <div className="max-w-[950px] flex flex-col justify-center items-center z-[1]">
+    <div className="h-screen flex flex-col justify-center items-center font-['Roboto']">
+      <div className="max-w-[950px] flex flex-col justify-center items-center text-center z-[1]">
         <h1 className="font-bold text-[3rem] mt-[4rem]">
           Image 2 Text Converter
         </h1>

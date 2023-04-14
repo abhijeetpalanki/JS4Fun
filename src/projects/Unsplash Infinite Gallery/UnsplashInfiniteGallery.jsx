@@ -24,7 +24,7 @@ const UnsplashInfiniteGallery = () => {
   }, []);
 
   return (
-    <div className="font-['Roboto'] m-0">
+    <div className="font-['Roboto']">
       <header className="max-w-6xl mx-auto text-center">
         <h1 className="mb-4 font-['Oswald'] text-[2rem] font-bold">Unsplash</h1>
         <p>The internet's source of freely usable images.</p>
@@ -53,6 +53,7 @@ const UnsplashInfiniteGallery = () => {
               key={index}
               src={image.urls.thumb}
               alt={image.description}
+              loading="lazy"
             />
           ))}
         </section>

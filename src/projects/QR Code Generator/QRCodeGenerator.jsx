@@ -46,7 +46,7 @@ const QRCodeGenerator = () => {
   };
 
   return (
-    <div className="bg-[#161c22] text-white font-['Poppins'] overflow-x-hidden h-screen m-0">
+    <div className="text-black font-['Poppins'] overflow-x-hidden h-screen">
       <main>
         <div className="flex flex-col-reverse justify-center p-10 m-auto mt-10 align-center md:max-w-4xl md:flex-row">
           <div className="w-full mr-24 md:w-2/3">
@@ -69,8 +69,8 @@ const QRCodeGenerator = () => {
                 className="w-full p-3 mb-5 mr-2 text-gray-900 border-2 border-gray-200 rounded focus:outline-none"
               />
               <button
-                className={`w-full px-4 py-3 mt-5 text-white bg-gray-600 rounded ${
-                  url && "hover:bg-black"
+                className={`w-full px-4 py-3 mt-5 text-black bg-white rounded ${
+                  url && "hover:bg-black hover:text-white"
                 }`}
                 type="submit"
                 disabled={!url}

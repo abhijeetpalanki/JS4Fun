@@ -18,6 +18,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Poiret+One&family=Sulphur+Point:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -199,14 +200,6 @@ select::-webkit-scrollbar-thumb {
 }
 
 /* Hangman */
-.hangman svg {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  width: 30vw;
-  height: 40vh;
-  transform: translate(-50%, -50%);
-}
 .hangman line,
 .hangman circle {
   stroke: white;

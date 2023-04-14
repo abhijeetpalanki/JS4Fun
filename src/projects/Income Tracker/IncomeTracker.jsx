@@ -46,7 +46,7 @@ const IncomeTracker = () => {
 
   return (
     <div className="p-[30px] h-screen bg-[#f8f8f8]">
-      <header className="flex justify-between p-[15px]">
+      <header className="flex flex-col md:flex-row justify-between p-[15px]">
         <h1 className="text-[#888] text-[32px] font-semibold text-left">
           Income Tracker
         </h1>
@@ -57,9 +57,9 @@ const IncomeTracker = () => {
 
       <form
         onSubmit={addIncome}
-        className="block m-[15px] relative after:absolute after:content-[''] after:top-0 after:bottom-0 after:left-0 after:right-0 after:z-0 after:bg-gradient-to-r after:from-[#ffce00] after:to-[#fe4880] after:rounded-[10px] after:duration-200 focus-within:after:-top-[3px] focus-within:after:-left-[3px] focus-within:after:-right-[3px] focus-within:after:-bottom-[3px]"
+        className="inline-flex md:block m-[15px] relative after:absolute after:content-[''] after:top-0 after:bottom-0 after:left-0 after:right-0 after:z-0 after:bg-gradient-to-r after:from-[#ffce00] after:to-[#fe4880] after:rounded-[10px] after:duration-200 focus-within:after:-top-[3px] focus-within:after:-left-[3px] focus-within:after:-right-[3px] focus-within:after:-bottom-[3px]"
       >
-        <div className="relative z-[1] flex justify-center duration-[400ms] rounded-lg">
+        <div className="relative z-[1] flex flex-col md:flex-row justify-center duration-[400ms] rounded-lg">
           <input
             ref={descriptionRef}
             type="text"

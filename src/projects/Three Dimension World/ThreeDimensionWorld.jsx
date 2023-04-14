@@ -24,7 +24,7 @@ function Box(props) {
 
 const ThreeDimensionWorld = () => {
   return (
-    <div className="flex items-center justify-center h-screen font-['Poppins']">
+    <div className="flex items-center justify-center h-screen font-['Poppins'] bg-black">
       <Canvas>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />

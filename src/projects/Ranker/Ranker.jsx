@@ -22,7 +22,7 @@ const Ranker = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen overflow-y-hidden text-gray-700 bg-gray-100 text-opacity-90">
+    <div className="flex flex-col items-center justify-center h-screen text-gray-700 bg-gray-100 text-opacity-90">
       <div className="max-w-screen-sm px-4 py-8 mx-auto overflow-y-auto transition-all duration-200 ease-out">
         <div className="mb-3">
           <h1 className="my-12 text-2xl font-bold text-center uppercase">

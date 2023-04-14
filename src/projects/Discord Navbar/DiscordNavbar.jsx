@@ -18,7 +18,9 @@ const DiscordNavbar = () => {
       </div>
 
       <div className="flex items-center justify-center w-screen h-screen">
-        <h1 className="text-5xl font-bold font-['Muli']">Discord Navbar</h1>
+        <h1 className="text-xl ml-16 md:text-5xl font-bold font-['Muli']">
+          Discord Navbar
+        </h1>
       </div>
     </div>
   );

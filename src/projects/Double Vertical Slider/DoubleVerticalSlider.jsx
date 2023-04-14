@@ -40,9 +40,9 @@ const DoubleVerticalSlider = () => {
   };
 
   return (
-    <div className="vertical-slider-body font-['Open Sans'] h-screen overflow-hidden m-0 p-0">
+    <div className="font-['Open_Sans'] h-screen">
       <div
-        className="slider-container relative w-[100vw] h-screen"
+        className="relative w-screen h-screen slider-container"
         ref={sliderContainerRef}
       >
         <div
@@ -53,28 +53,36 @@ const DoubleVerticalSlider = () => {
             style={{ backgroundColor: "#fd3555" }}
             className="flex flex-col items-center justify-center w-full h-full text-white"
           >
-            <h1 className="text-[40px] mb-[10px] -mt-[30px]">Nature flower</h1>
+            <h1 className="text-lg md:text-[40px] mb-[10px] -mt-[100px] md:-mt-[30px]">
+              Nature flower
+            </h1>
             <p>All in pink</p>
           </div>
           <div
             style={{ backgroundColor: "#2A86BA" }}
             className="flex flex-col items-center justify-center w-full h-full text-white"
           >
-            <h1 className="text-[40px] mb-[10px] -mt-[30px]">Bluuue Sky</h1>
+            <h1 className="text-lg md:text-[40px] mb-[10px] -mt-[100px] md:-mt-[30px]">
+              Bluuue Sky
+            </h1>
             <p>with it's mountains</p>
           </div>
           <div
             style={{ backgroundColor: "#252E33" }}
             className="flex flex-col items-center justify-center w-full h-full text-white"
           >
-            <h1 className="text-[40px] mb-[10px] -mt-[30px]">Lonely castle</h1>
+            <h1 className="text-lg md:text-[40px] mb-[10px] -mt-[100px] md:-mt-[30px]">
+              Lonely castle
+            </h1>
             <p>in the wilderness</p>
           </div>
           <div
             style={{ backgroundColor: "#FFB866" }}
             className="flex flex-col items-center justify-center w-full h-full text-white"
           >
-            <h1 className="text-[40px] mb-[10px] -mt-[30px]">Flying eagle</h1>
+            <h1 className="text-lg md:text-[40px] mb-[10px] -mt-[100px] md:-mt-[30px]">
+              Flying eagle
+            </h1>
             <p>in the sunset</p>
           </div>
         </div>

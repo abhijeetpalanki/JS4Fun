@@ -1,76 +1,126 @@
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
-import { useState, useMemo } from "react";
-import usePlacesAutocomplete, {
-  getGeocode,
-  getLatLng,
-} from "use-places-autocomplete";
+import { useState, useRef } from "react";
+import { FaLocationArrow, FaTimes } from "react-icons/fa";
 import {
-  Combobox,
-  ComboboxInput,
-  ComboboxPopover,
-  ComboboxList,
-  ComboboxOption,
-} from "@reach/combobox";
-import "@reach/combobox/styles.css";
+  useJsApiLoader,
+  GoogleMap,
+  Marker,
+  Autocomplete,
+  DirectionsRenderer,
+} from "@react-google-maps/api";
 
+const center = { lat: 36.345188, lng: -94.206749 };
 const libraries = ["places"];
 
 const MapsMarker = () => {
-  const { isLoaded } = useLoadScript({
+  const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_MAPS_API_KEY,
     libraries,
   });
-  const {
-    ready,
-    value,
-    setValue,
-    suggestions: { status, data },
-    clearSuggestions,
-  } = usePlacesAutocomplete();
-  const location = useMemo(() => ({ lat: 36.34519, lng: -94.20675 }), []);
-  const [selected, setSelected] = useState(location);
-  const mapContainer = "w-full h-screen";
-
-  const handleSelect = async (address) => {
-    setValue(address, false);
-    clearSuggestions();
-
-    const results = await getGeocode({ address });
-    const { lat, lng } = await getLatLng(results[0]);
-    setSelected({ lat, lng });
-  };
+  const [map, setMap] = useState(null);
+  const [directionsResponse, setDirectionsResponse] = useState(null);
+  const [distance, setDistance] = useState("");
+  const [duration, setDuration] = useState("");
+  const originRef = useRef();
+  const destinationRef = useRef();
 
   if (!isLoaded) return <div>Loading...</div>;
 
-  return (
-    <div>
-      <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 w-[300px]">
-        <Combobox onSelect={handleSelect}>
-          <ComboboxInput
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            disabled={!ready}
-            className="w-full p-2"
-            placeholder="Search an address"
-          />
-          <ComboboxPopover>
-            <ComboboxList>
-              {status === "OK" &&
-                data.map(({ place_id, description }) => (
-                  <ComboboxOption key={place_id} value={description} />
-                ))}
-            </ComboboxList>
-          </ComboboxPopover>
-        </Combobox>
-      </div>
+  const calculateRoute = async () => {
+    if (originRef.current.value === "" || destinationRef.current.value === "") {
+      return;
+    }
+    // eslint-disable-next-line no-undef
+    const directionsService = new google.maps.DirectionsService();
+    const results = await directionsService.route({
+      origin: originRef.current.value,
+      destination: destinationRef.current.value,
+      // eslint-disable-next-line no-undef
+      travelMode: google.maps.TravelMode.DRIVING,
+    });
+    setDirectionsResponse(results);
+    setDistance(results.routes[0].legs[0].distance.text);
+    setDuration(results.routes[0].legs[0].duration.text);
+  };
 
-      <GoogleMap
-        zoom={10}
-        center={selected}
-        mapContainerClassName={mapContainer}
-      >
-        {selected && <Marker position={selected} />}
-      </GoogleMap>
+  const clearRoute = () => {
+    setDirectionsResponse(null);
+    setDistance("");
+    setDuration("");
+    originRef.current.value = "";
+    destinationRef.current.value = "";
+  };
+
+  return (
+    <div className="relative flex flex-col items-start justify-center w-screen h-screen">
+      <div className="absolute top-0 left-0 w-full h-full">
+        <GoogleMap
+          center={center}
+          zoom={15}
+          mapContainerStyle={{ width: "100%", height: "100%" }}
+          options={{
+            zoomControl: false,
+            streetViewControl: false,
+            mapTypeControl: false,
+            fullscreenControl: false,
+          }}
+          onLoad={(map) => setMap(map)}
+        >
+          <Marker position={center} />
+          {directionsResponse && (
+            <DirectionsRenderer directions={directionsResponse} />
+          )}
+        </GoogleMap>
+      </div>
+      <div className="absolute top-0 z-10 p-4 m-4 bg-white rounded-lg shadow w-60 md:w-96">
+        <div className="flex flex-col items-center justify-center">
+          <Autocomplete>
+            <input
+              className="w-[200px] md:w-[350px] p-2 m-2 border border-gray-500 rounded outline-none"
+              type="text"
+              placeholder="Origin"
+              ref={originRef}
+            />
+          </Autocomplete>
+          <Autocomplete>
+            <input
+              className="w-[200px] md:w-[350px] p-2 m-2 border border-gray-500 rounded outline-none"
+              type="text"
+              placeholder="Destination"
+              ref={destinationRef}
+            />
+          </Autocomplete>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <button
+            className="p-2 text-white bg-black rounded"
+            type="submit"
+            onClick={calculateRoute}
+          >
+            Calculate Route
+          </button>
+          <button
+            className="p-2 text-white bg-gray-500 rounded"
+            onClick={() => {
+              map.panTo(center);
+              map.setZoom(15);
+            }}
+          >
+            <FaLocationArrow />
+          </button>
+          <button
+            className="p-2 text-white bg-gray-500 rounded"
+            onClick={clearRoute}
+          >
+            <FaTimes />
+          </button>
+        </div>
+
+        <div className="flex flex-col items-center justify-center mt-4 border-t border-t-gray-500">
+          <p className="text-xl font-bold uppercase">Distance: {distance} </p>
+          <p className="text-xl font-bold uppercase">Duration: {duration} </p>
+        </div>
+      </div>
     </div>
   );
 };

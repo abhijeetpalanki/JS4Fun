@@ -19,7 +19,7 @@ const OrbitalLoadingPage = () => {
       const randomWidth = Math.random() * 600 + 0.8 * 400; // width between 400 and 1000
 
       span.className =
-        "absolute bg-transparent top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-orbitalSpin";
+        "absolute -translate-x-1/2 -translate-y-1/2 bg-transparent top-1/2 left-1/2 animate-orbitalSpin";
       span.style.height = `${randomHeight}px`;
       span.style.width = `${randomWidth}px`;
 
@@ -45,16 +45,16 @@ const OrbitalLoadingPage = () => {
   }, []);
 
   return (
-    <div className="bg-[#0f172a] text-white font-['Jost']">
-      <div className="h-screen py-[100px] px-[10px]">
+    <div className="bg-[#0f172a] text-white font-['Jost'] overflow-hidden">
+      <div className="h-screen py-[200px] px-[10px]">
         <div
           ref={squareRef}
-          className="h-[720px] w-[1280px] flex flex-col justify-center items-center my-0 mx-auto relative"
+          className="h-[450px] w-[350px] md:h-[720px] md:w-[1280px] flex flex-col justify-center items-center my-0 mx-auto relative"
         >
-          <h1 className="uppercase text-[7rem] font-extrabold relative z-10">
+          <h1 className="uppercase text-xl md:text-[7rem] md:mb-12 font-extrabold relative z-10">
             Orbital
           </h1>
-          <p className="uppercase text-[4rem] font-normal leading-4 relative z-10">
+          <p className="uppercase text-xl md:text-[4rem] font-normal leading-4 relative z-10">
             Loading Page
           </p>
         </div>

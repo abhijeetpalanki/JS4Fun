@@ -23,7 +23,7 @@ const Hangman = () => {
   };
 
   const reset = () => {
-    randomizeWord();
+    setWord(randomizeWord());
     setCorrectLetters([]);
     setWrongLetters([]);
     setStatus("");
@@ -35,7 +35,7 @@ const Hangman = () => {
       word.split("").every((letter) => correctLetters.includes(letter))
     )
       setStatus("win");
-  }, [correctLetters]);
+  }, [correctLetters, word]);
 
   useEffect(() => {
     if (wrongLetters.length === 10) setStatus("lost");
@@ -47,14 +47,14 @@ const Hangman = () => {
 
   return (
     <div className="flex flex-col items-center justify-start h-screen text-center bg-pink-300">
-      <div className="">
-        <p className="mb-[30px] text-[3em] text-[#870849] tracking-widest">
+      <div>
+        <p className="mb-0 md:mb-[30px] text-[3em] text-[#870849] tracking-widest">
           {word
             .split("")
             .map((letter) => (correctLetters.includes(letter) ? letter : "_"))
             .join(" ")}
         </p>
-        <div className="my-[30px] w-[600px]">
+        <div className="my-0 md:my-[30px] w-[300px] md:w-[600px]">
           {alphabets.map((letter, index) => (
             <button
               onClick={() => onGuess(letter)}
@@ -71,7 +71,7 @@ const Hangman = () => {
         <Progress count={wrongLetters.length} />
 
         {!status ? null : (
-          <div className="absolute top-[60%] right-[60%] bg-[#aa477a64] flex flex-col justify-evenly items-center">
+          <div className="absolute top-[75%] md:top-[60%] right-[60%] bg-[#aa477a64] flex flex-col justify-evenly items-center">
             <p className="m-[10px]">You {status}!</p>
             <p className="m-[10px]">
               The word was{" "}

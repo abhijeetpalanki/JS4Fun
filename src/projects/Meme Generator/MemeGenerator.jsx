@@ -78,7 +78,7 @@ const MemeGenerator = () => {
   }, [memeIndex, memes]);
 
   return (
-    <div className="font-['Oswald'] min-h-screen flex flex-col justify-center items-center bg-[#eee]">
+    <div className="font-['Oswald'] h-screen flex flex-col justify-center items-center">
       {generatedUrl.length ? (
         <div>
           <h1 className="mb-10 text-5xl">Your Generated Meme</h1>
@@ -86,12 +86,12 @@ const MemeGenerator = () => {
             <img
               alt="meme"
               src={generatedUrl}
-              className="max-w-lg max-h-96 m-auto block rounded-md shadow-[0px_0px_10px_#000] my-5"
+              className="max-w-sm md:max-w-lg max-h-96 m-auto block rounded-md shadow-[0px_0px_10px_#000] my-5"
             />
           )}
           <button
             onClick={copyLink}
-            className="block cursor-pointer w-96 p-3 m-auto text-white border-none rounded-md uppercase focus-visible:outline-none bg-[#0275d8]"
+            className="block cursor-pointer w-60 md:w-96 p-3 m-auto text-white border-none rounded-md uppercase focus-visible:outline-none bg-[#0275d8]"
           >
             {copied ? "Link copied!" : "Copy link"}
           </button>

@@ -9,8 +9,8 @@ const ColorPicker = () => {
     default: {
       picker: {
         position: "absolute",
-        bottom: "30px",
-        left: "100px",
+        bottom: "50px",
+        left: "-50px",
       },
     },
   };

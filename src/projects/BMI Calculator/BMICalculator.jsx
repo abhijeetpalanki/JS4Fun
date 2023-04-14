@@ -25,9 +25,9 @@ const BMICalculator = () => {
   };
 
   return (
-    <div className="font-['Nunito'] bg-bmiCalculatorBg bg-cover h-screen flex justify-center items-center overflow-hidden">
+    <div className="font-['Nunito'] bg-bmiCalculatorBg bg-cover h-screen flex justify-center items-center">
       <div className="flex items-center justify-center">
-        <div className="min-w-[400px] bg-[#fafafa] rounded-[38px] text-center relative z-10 before:absolute before:content-[''] before:h-[110%] before:w-[110%] before:-left-[5%] before:-top-[5%] before:bg-white/30 before:[box-shadow:0px_0px_166px_-31px_rgba(0,0,0,0.15)] before:rounded-[60px] before:-z-[1]">
+        <div className="w-[350px] md:min-w-[400px] bg-[#fafafa] rounded-[38px] text-center relative z-10 before:absolute before:content-[''] before:h-[110%] before:w-[110%] before:-left-[5%] before:-top-[5%] before:bg-white/30 before:[box-shadow:0px_0px_166px_-31px_rgba(0,0,0,0.15)] before:rounded-[60px] before:-z-[1]">
           <h1 className="text-black font-bold text-4xl py-[30px] px-0">
             BMI Calculator
           </h1>

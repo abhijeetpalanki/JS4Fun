@@ -30,7 +30,7 @@ const Horoscope = () => {
   }, []);
 
   return (
-    <div className="bg-[darkslategrey] text-white font-['Montserrat'] flex flex-col justify-center items-center overflow-hidden h-screen m-0">
+    <div className="text-black font-['Montserrat'] flex flex-col justify-center items-center h-screen">
       <h1 className="text-[32px] font-bold">The Daily Horoscope</h1>
       {!selectedSign ? (
         <>
@@ -38,7 +38,7 @@ const Horoscope = () => {
           <div className="grid grid-cols-3 gap-[10px]">
             {signs.map((sign, index) => (
               <button
-                className="p-[10px] text-[20px] bg-black rounded-[10px] hover:bg-white hover:text-black"
+                className="p-[10px] text-[20px] bg-white text-black rounded-[10px] hover:bg-black hover:text-white"
                 key={index}
                 onClick={() => setSelectedSign(sign)}
               >
@@ -54,7 +54,7 @@ const Horoscope = () => {
             <div className="grid grid-cols-3 gap-[10px]">
               {timeframes.map((timeframe, index) => (
                 <button
-                  className="p-[10px] text-[20px] bg-black rounded-[10px] hover:bg-white hover:text-black"
+                  className="p-[10px] text-[20px] bg-white text-black rounded-[10px] hover:bg-black hover:text-white"
                   key={index}
                   onClick={() => setSelectedTimeFrame(timeframe)}
                 >
@@ -70,7 +70,7 @@ const Horoscope = () => {
       )}
       {selectedSign && (
         <button
-          className="p-[10px] text-[20px] bg-black rounded-[10px] mt-[10px] hover:bg-white hover:text-black"
+          className="p-[10px] text-[20px] bg-black text-white rounded-[10px] mt-[10px] hover:bg-black hover:text-white"
           onClick={restart}
         >
           Restart

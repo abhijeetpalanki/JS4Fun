@@ -40,9 +40,9 @@ import URLShortener from "./../projects/URL Shortener/URLShortener";
 import RollTheDice from "./../projects/Roll The Dice/RollTheDice";
 import AgeCalculator from "../projects/Age Calculator/AgeCalculator";
 import TheWeatherChannel from "../projects/The Weather Channel/TheWeatherChannel";
-import MinionEyes from "../projects/Minion Eyes/MinionEyes";
+import Doraemon from "../projects/Doraemon/Doraemon";
 import AnimatedModal from "../projects/Animated Modal/AnimatedModal";
-import AnimatedImageSlider from "../projects/Animated Image Slider/AnimatedImageSlider";
+import HorizonalImageCarousel from "./Horizonal Image Carousel/HorizonalImageCarousel";
 import Image2TextConverter from "../projects/Image 2 Text Converter/Image2TextConverter";
 import DiscordNavbar from "../projects/Discord Navbar/DiscordNavbar";
 import NewsletterLandingPage from "../projects/Newsletter Landing Page/NewsletterLandingPage";
@@ -85,7 +85,7 @@ import MapsMarker from "./Maps Marker/MapsMarker";
 import VideoPlayer from "./Video Player/VideoPlayer";
 import LinkTree from "./Link Tree/LinkTree";
 import OrbitalLoadingPage from "./Orbital Loading Page/OrbitalLoadingPage";
-import FacebookLoginButton from "./Facebook Login Button/FacebookLoginButton";
+import GoogleLoginButton from "./Google Login Button/GoogleLoginButton";
 import AIKeywordExtractor from "./AI Keyword Extractor/AIKeywordExtractor";
 import MotionActivatedCard from "./Motion Activated Card/MotionActivatedCard";
 import Connect4 from "./Connect 4/Connect4";
@@ -146,9 +146,9 @@ export {
   RollTheDice,
   AgeCalculator,
   TheWeatherChannel,
-  MinionEyes,
+  Doraemon,
   AnimatedModal,
-  AnimatedImageSlider,
+  HorizonalImageCarousel,
   Image2TextConverter,
   DiscordNavbar,
   NewsletterLandingPage,
@@ -191,7 +191,7 @@ export {
   VideoPlayer,
   LinkTree,
   OrbitalLoadingPage,
-  FacebookLoginButton,
+  GoogleLoginButton,
   AIKeywordExtractor,
   MotionActivatedCard,
   Connect4,

@@ -77,7 +77,7 @@ const UniversityFinder = () => {
         onChange={handleUserInputValueChange}
         ref={inputRef}
         placeholder="Search University..."
-        className="w-[500px] h-10 rounded-md px-2 py-4 outline-none border-none"
+        className="w-[350px] md:w-[500px] h-10 rounded-md px-2 py-4 outline-none border-none"
       />
     </div>
   );

@@ -11,12 +11,12 @@ const Input = ({
         type="text"
         value={amount}
         onChange={(ev) => onAmountChange(ev.target.value)}
-        className="bg-transparent border-none text-white pl-3"
+        className="pl-3 text-white bg-transparent border-none outline-none focus:outline-none"
       />
       <select
         value={currency}
         onChange={(ev) => onCurrencyChange(ev.target.value)}
-        className="bg-transparent border-none text-white p-4"
+        className="p-4 text-white bg-transparent border-none"
       >
         {Object.keys(rates).map((currency) => (
           <option key={currency} value={currency} className="bg-[#335]">

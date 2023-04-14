@@ -157,7 +157,7 @@ const BasicCalculator = () => {
   );
 
   return (
-    <div className="font-['Roboto'] flex flex-col items-center justify-center h-screen m-0 bg-gradient-to-r from-[#00aaff] to-[#00ff6c]">
+    <div className="font-['Roboto'] flex flex-col items-center justify-center h-screen">
       <div className="grid grid-cols-[repeat(4,6rem)] grid-rows-[minmax(7rem,auto)_repeat(5,6rem)] justify-center mt-[2rem]">
         <div className="[grid-column:1/-1] break-words bg-black/75 flex flex-col items-end justify-around p-[0.75rem] break-all">
           <div className="previous-operand text-[1.5rem] text-white/75">

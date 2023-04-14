@@ -20,8 +20,8 @@ const ImagePreview = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-[#35297a]">
-      <div className="m-auto w-full max-w-[600px]">
+    <div className="flex items-center justify-center h-screen">
+      <div className="m-auto w-[400px] md:w-full max-w-[600px]">
         {error && (
           <p className="text-red-500 text-2xl my-[3px] mx-0">
             File Not Supported!
@@ -57,7 +57,7 @@ const ImagePreview = () => {
         </div>
         {imagePreview && (
           <button
-            className="border-none outline-none w-full mt-[10px] py-[14px] px-[10px] bg-[#55d6d6] text-[#0a0a0a] text-[17px] font-semibold"
+            className="border-none outline-none w-full mt-[10px] py-[14px] px-[10px] bg-black text-white text-[17px] font-semibold"
             onClick={() => setImagePreview(null)}
           >
             Remove Image

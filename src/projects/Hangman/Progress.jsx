@@ -14,7 +14,10 @@ const Progress = ({ count }) => {
 
   return (
     <div className="hangman">
-      <svg xmlns="http://www.w3.org/2000/svg">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-[30vw] h-[10vh] md:h-[40vh] absolute -translate-x-1/2 -translate-y-1/2 md:top-[70%] md:left-1/2 left-[60%] top-[85%]"
+      >
         {hangmanParts.slice(0, count)}
       </svg>
     </div>

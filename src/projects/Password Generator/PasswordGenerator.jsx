@@ -105,21 +105,21 @@ const PasswordGenerator = () => {
   };
 
   return (
-    <div className="password-generator-body bg-[#3b3b98] text-white font-['Muli'] flex items-center justify-center h-screen overflow-hidden m-0 p-[10px]">
-      <div className="container flex flex-col items-center justify-center bg-[#23235b] p-[20px] w-[350px] max-w-full [box-shadow:0_2px_10px_rgba(255,255,255,0.2)]">
+    <div className="text-white font-['Muli'] flex items-center justify-center h-screen p-3">
+      <div className="container flex flex-col items-center justify-center bg-[#23235b] p-[20px] w-[350px] max-w-full shadow-[0_2px_10px_rgba(255,255,255,0.2)] rounded-md">
         <h2 className="text-[32px] text-center mx-0 mt-[10px] mb-[20px]">
           Password Generator
         </h2>
-        <div className="result-container bg-black/40 flex justify-start items-center relative text-[18px] tracking-[1px] py-[12px] px-[10px] h-[50px] w-full">
+        <div className="bg-black/40 flex justify-start items-center relative text-[18px] tracking-[1px] py-[12px] px-[10px] h-[50px] w-full rounded-md">
           <span ref={resultEl}></span>
           <button
-            className="absolute top-[5px] right-[5px] w-[40px] h-[40px] text-xl border-none bg-[#3b3b98] text-white py-2 px-3 cursor-pointer active:scale-[0.98]"
+            className="absolute top-[5px] right-[5px] w-[40px] h-[40px] text-xl border-none bg-[#3b3b98] text-white py-2 px-3 cursor-pointer active:scale-[0.98] rounded-md"
             onClick={copyPassword}
           >
             <FaClipboard />
           </button>
         </div>
-        <div className="w-full settings">
+        <div className="w-full">
           <div className="flex justify-between items-center my-[15px]">
             <label>Password Length</label>
             <input
@@ -171,7 +171,7 @@ const PasswordGenerator = () => {
         </div>
 
         <button
-          className="w-full h-[40px] text-xl border-none bg-[#3b3b98] text-white py-2 px-3 cursor-pointer active:scale-[0.98] block"
+          className="w-full h-[40px] text-xl border-none bg-[#3b3b98] text-white py-2 px-3 cursor-pointer active:scale-[0.98] block rounded-md"
           onClick={generatePassword}
         >
           Generate Password

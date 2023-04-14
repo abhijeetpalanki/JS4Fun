@@ -24,9 +24,9 @@ const TheWeatherChannel = () => {
   };
 
   return (
-    <div className="h-screen font-['Poppins'] flex justify-center items-center [background:linear-gradient(135deg,#62b8f5,#4475ef)]">
+    <div className="h-screen font-['Poppins'] flex justify-center items-center bg-gradient-to-bl from-[#62b8f5] to-[#4475ef]">
       <div className="text-[14px] md:text-[16px] w-[90vw] max-w-[28em] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm">
-        <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-full h-[13em] w-[13em] -right-[6.5em] top-[1.8em]"></div>
+        <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-full h-[13em] w-[13em] -right-[1em] md:-right-[6.5em] top-[1.8em]"></div>
         <div className="absolute bg-white/25 backdrop-blur-[1.2em] border-[2px] border-white/10 rounded-full h-[11em] w-[11em] -bottom-[3.7em] -left-[2.5em]"></div>
         <div className="w-full bg-white/10 py-[3em] px-[1.8em] border-[2px] border-white/10 backdrop-blur-[10px] rounded-[0.6em] shadow-[0_1.8em_3.7em_rgba(3, 46, 87, 0.2)] text-center">
           <div className="text-[1em] grid grid-cols-[9fr_3fr] gap-[1.25em]">

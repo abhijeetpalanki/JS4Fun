@@ -98,7 +98,14 @@ const Connect4 = () => {
   }, [dropped.length]);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-white">
+    <div className="flex flex-col items-center justify-center h-screen bg-white">
+      <div className="flex flex-col items-center justify-center text-white bg-black">
+        <h2>Instructions to play</h2>
+
+        <p>use Arrow keys to move the coin</p>
+        <p>use Enter key to drop it to the desired position</p>
+      </div>
+
       <div className="grid place-content-center">
         {/* Dropzone */}
         <div className="h-[calc(100px*1.5)] relative">

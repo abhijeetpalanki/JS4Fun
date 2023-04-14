@@ -23,20 +23,16 @@ const DadJokes = () => {
   };
 
   return (
-    <div className="dad-jokes-body bg-black font-['Roboto'] flex justify-center items-center h-screen overflow-hidden m-0 p-5">
-      <div className="bg-white flex justify-center items-center flex-col rounded-[10px] py-[50px] px-[20px] text-center max-w-full w-[800px] [box-shadow:0_10px_20px_rgba(0,0,0,0.1),0_6px_6px_rgba(0,0,0,0.1)]">
+    <div className="font-['Roboto'] flex justify-center items-center h-screen">
+      <div className="bg-white flex justify-center items-center flex-col rounded-[10px] py-[50px] px-[20px] text-center max-w-full w-[800px] shadow-[0_10px_20px_rgba(0,0,0,0.1),0_6px_6px_rgba(0,0,0,0.1)]">
         <h3 className="m-0 opacity-50 tracking-[2px] text-black">
           Don't Laugh Challenge
         </h3>
-        <div
-          id="joke"
-          className="joke text-[30px] tracking-[1px] leading-[40px] my-[50px] mx-auto max-w-[600px] text-black"
-        >
+        <div className="text-[30px] tracking-[1px] leading-[40px] my-[50px] mx-auto max-w-[600px] text-black">
           {jokeObj}
         </div>
         <button
-          id="joke-btn"
-          className="bg-[#9f68e0] text-white border-0 rounded-[10px] py-[14px] px-[40px] text-[16px] [box-shadow:0_5px_15px_rgba(0,0,0,0.1),0_6px_6px_rgba(0,0,0,0.1)] active:scale-[0.98] focus:outline-none"
+          className="bg-[#9f68e0] text-white border-0 rounded-[10px] py-[14px] px-[40px] text-[16px] shadow-[0_5px_15px_rgba(0,0,0,0.1),0_6px_6px_rgba(0,0,0,0.1)] active:scale-[0.98] focus:outline-none"
           onClick={generateJoke}
         >
           Get Another Joke

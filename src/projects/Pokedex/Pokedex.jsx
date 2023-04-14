@@ -37,7 +37,7 @@ const Pokedex = () => {
   }, []);
 
   return (
-    <div className="font-['Lato'] flex flex-col items-center m-0">
+    <div className="font-['Lato'] flex flex-col items-center">
       <h1 className="text-[2rem] font-bold tracking-[3px]">Pokedex</h1>
       <div className="flex flex-wrap justify-center my-0 mx-auto max-w-[1200px]">
         {pokemonList.map((pokemon, index) => {

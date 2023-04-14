@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import EmojiPicker from "emoji-picker-react";
 
 const EmotePicker = () => {
@@ -9,7 +9,7 @@ const EmotePicker = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-slate-900 text-white">
+    <div className="flex flex-col items-center justify-center h-screen text-white">
       <EmojiPicker
         onEmojiClick={handleEmoteClick}
         theme="dark"

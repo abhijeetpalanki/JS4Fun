@@ -27,7 +27,7 @@ const Detail = ({ sign, timeframe }) => {
   }, [sign, timeframe]);
 
   return (
-    <div className="p-[10px] w-[500px]">
+    <div className="p-[10px] w-[350px] md:w-[500px]">
       <h2 className="text-[20px] font-bold">
         {timeframe.charAt(0).toUpperCase() + timeframe.slice(1)}: {date}, your
         horoscope for {sign}:

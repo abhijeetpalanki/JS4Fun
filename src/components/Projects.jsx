@@ -41,7 +41,7 @@ const Projects = () => {
                 <div className="px-6 pt-4 pb-2">
                   {proj.hashtags.map((tag) => (
                     <span
-                      className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
+                      className="inline-block px-3 py-1 mb-2 mr-2 text-base font-semibold text-gray-700 bg-gray-200 rounded-full"
                       key={tag.id}
                     >
                       #{tag.name}
