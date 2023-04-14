@@ -1,98 +1,48 @@
 import bg from "./bg.jpg";
+import bookLover from "./book-lover.svg";
 
 const NewsletterLandingPage = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen text-white"
+      className="flex flex-col items-center justify-center h-screen"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
         backgroundPosition: "top center",
       }}
     >
-      <main className="container flex-1 px-6 pt-16 mx-auto text-center">
-        <h2 className="text-2xl uppercase md:text-4xl lg:text-6xl">
-          Welcome to
-        </h2>
-
-        <h1 className="mb-8 text-3xl font-black uppercase md:text-6xl lg:text-8xl">
-          Projects for fun
-        </h1>
-
-        <div className="px-4 py-2 mx-auto mb-8 text-lg bg-white rounded-full md:text-2xl lg:text-3xl md:py-4 md:px-10 lg:py-6 lg:px-12 bg-opacity-10 w-fit">
-          942,243 members
+      <div className="md:w-[1100px] w-[400px] h-[200px] md:h-[500px] flex flex-col md:flex-row rounded-[26px] relative border-2 border-white bg-white/20 backdrop-blur-[10px]">
+        <div className="flex flex-col items-center justify-center flex-1 h-full">
+          <div className="flex flex-col max-w-[80%]">
+            <h1 className="m-0 text-[#262fec] font-bold text-[22px] md:text-[45px]">
+              Hey, wait...
+            </h1>
+            <h3 className="my-[10px] mx-0 text-black font-bold text-sm md:text-[24px]">
+              Subscribe to our newsletter!
+            </h3>
+            <p className="text-black font-medium text-xs md:text-[20px]">
+              You will never miss our podcasts, latest news, etc. Our newsletter
+              is once a week, every wednesday.
+            </p>
+            <div className="flex relative h-[53px] mt-[1em]">
+              <input
+                className="placeholder:text-[#272727] outline-none border-none bg-white pl-[1.5em] pr-[4em] md:pr-[10em] rounded-[17px] text-[20px] text-black h-full"
+                type="text"
+                placeholder="example@email.com"
+              />
+              <button className="absolute -right-[10px] top-0 h-full border-none outline-none text-white bg-[#262fec] text-[20px] font-medium cursor-pointer transition-all duration-300 ease-in-out rounded-bl-[16px] rounded-br-[16px] rounded-tr-[16px] py-0 px-[10px] hover:bg-[#1820bb]">
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
 
-        <form
-          action="https://www.getrevue.co/profile/ajpalanki/add_subscriber"
-          method="post"
-          target="_blank"
-        >
-          <div className="flex flex-col justify-center mb-4 md:flex-row">
-            <input
-              placeholder="E.g. example@example.com"
-              type="email"
-              name="member[email]"
-              className="px-6 py-4 mb-4 text-lg duration-150 bg-white rounded-full outline-none md:text-2xl placeholder:text-gray-400 placeholder:italic md:px-10 lg:px-12 bg-opacity-10 focus:bg-opacity-20 md:rounded-tr-none md:rounded-br-none md:mb-0"
-            />
-            <input
-              type="submit"
-              value="Join today"
-              name="member[subscribe]"
-              className="px-6 py-4 text-lg duration-150 rounded-full cursor-pointer bg-[#ff7088] md:rounded-tl-none md:rounded-bl-none md:text-2xl hover:opacity-75 md:px-10 lg:py-6 lg:px-12"
-            />
+        <div className="hidden md:max-w-[55%] md:flex items-center justify-center flex-1 relative bg-gradient-to-bl from-[#9493f7] to-[#d2c2dd] rounded-tr-[26px] rounded-br-[26px] [clip-path:polygon(0_0,100%_15%,100%_100%,0%_100%)] md:[clip-path:polygon(0_0,100%_0,100%_100%,15%_100%)]">
+          <div className="w-auto h-[30em]">
+            <img src={bookLover} alt="book-lover" className="w-auto h-full" />
           </div>
-
-          <div className="italic opacity-75">
-            By subscribing, you agree with Revue's{" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.getrevue.co/terms"
-              className="duration-150 hover:opacity-80"
-            >
-              Terms of Service
-            </a>{" "}
-            and{" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.getrevue.co/privacy"
-              className="duration-150 hover:opacity-80"
-            >
-              Privacy Policy
-            </a>
-            .
-          </div>
-        </form>
-      </main>
-
-      <footer className="container flex flex-col items-center justify-between p-6 mx-auto md:flex-row">
-        <p>Newsletter Landing Page</p>
-
-        <div className="flex -mx-6">
-          <a
-            href="https://github.com/abhijeetpalanki"
-            className="mx-3 duration-150 hover:opacity-80"
-          >
-            About Us
-          </a>{" "}
-          |
-          <a
-            href="https://github.com/abhijeetpalanki"
-            className="mx-3 duration-150 hover:opacity-80"
-          >
-            Privacy
-          </a>{" "}
-          |
-          <a
-            href="https://github.com/abhijeetpalanki"
-            className="mx-3 duration-150 hover:opacity-80"
-          >
-            Contact
-          </a>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };
