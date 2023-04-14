@@ -34,7 +34,7 @@ const UniversityFinder = () => {
         onChange={(e) => setUserValue(e.target.value.toLowerCase())}
       />
 
-      <table className="w-[900px] my-[50px] mx-0 border-spacing-[15px] text-[#444]">
+      <table className="w-[350px] md:w-[900px] my-[50px] mx-0 border-spacing-[15px] text-[#444]">
         <tbody>
           <tr className="mb-5">
             <th className="w-[250px] text-xl">Location</th>
