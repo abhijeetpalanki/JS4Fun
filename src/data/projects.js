@@ -104,6 +104,7 @@ import {
   IncomeTracker,
   DraggableList,
   Timeline,
+  BinaryClock,
 } from "../projects";
 
 export const projects = [
@@ -1597,5 +1598,16 @@ export const projects = [
       },
     ],
     component: <Timeline></Timeline>,
+  },
+  {
+    id: 106,
+    title: "Binary Clock",
+    hashtags: [
+      {
+        id: 1,
+        name: "binaryclock",
+      },
+    ],
+    component: <BinaryClock></BinaryClock>,
   },
 ];

@@ -211,3 +211,9 @@ select::-webkit-scrollbar-thumb {
 .item.dragging :where(.details, svg) {
   opacity: 0;
 }
+
+/* Binary Clock */
+
+.binary:nth-child(2n) {
+  margin-right: 20px;
+}

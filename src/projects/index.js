@@ -103,6 +103,7 @@ import CustomCalendar from "./Custom Calendar/CustomCalendar";
 import IncomeTracker from "./Income Tracker/IncomeTracker";
 import DraggableList from "./Draggable List/DraggableList";
 import Timeline from "./Timeline/Timeline";
+import BinaryClock from "./Binary Clock/BinaryClock";
 
 export {
   ExpandingCard,
@@ -210,4 +211,5 @@ export {
   IncomeTracker,
   DraggableList,
   Timeline,
+  BinaryClock,
 };
