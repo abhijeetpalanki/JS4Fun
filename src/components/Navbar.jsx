@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import fun from "../images/fun.jpeg";
+import useReadingProgressBar from "../hooks/useReadingProgressBar";
 
 const Navbar = ({ searchTerm, setSearchTerm }) => {
+  const completion = useReadingProgressBar();
+
   return (
     <>
-      <div className="flex flex-wrap items-center justify-center p-5 pb-2 border-b border-gray-200 sm:justify-center">
+      <div className="sticky top-0 z-50 flex flex-wrap items-center justify-center p-5 pb-2 text-white bg-black sm:justify-center">
         <div className="flex flex-col items-center justify-between w-screen space-x-0 md:space-x-5 md:flex-row">
           <Link
             to="/"
@@ -28,6 +31,11 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
+
+        <span
+          className="absolute bottom-0 w-full h-1 bg-yellow-400"
+          style={{ transform: `translateX(${completion - 100}%)` }}
+        />
       </div>
     </>
   );
