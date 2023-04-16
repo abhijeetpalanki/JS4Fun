@@ -102,6 +102,7 @@ import LineChart from "./Line Chart/LineChart";
 import CustomCalendar from "./Custom Calendar/CustomCalendar";
 import IncomeTracker from "./Income Tracker/IncomeTracker";
 import DraggableList from "./Draggable List/DraggableList";
+import Timeline from "./Timeline/Timeline";
 
 export {
   ExpandingCard,
@@ -208,4 +209,5 @@ export {
   CustomCalendar,
   IncomeTracker,
   DraggableList,
+  Timeline,
 };
