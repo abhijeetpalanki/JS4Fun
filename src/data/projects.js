@@ -105,6 +105,7 @@ import {
   DraggableList,
   Timeline,
   BinaryClock,
+  AppleMessages,
 } from "../projects";
 
 export const projects = [
@@ -1609,5 +1610,16 @@ export const projects = [
       },
     ],
     component: <BinaryClock></BinaryClock>,
+  },
+  {
+    id: 107,
+    title: "Apple Messages",
+    hashtags: [
+      {
+        id: 1,
+        name: "iMessageanimations",
+      },
+    ],
+    component: <AppleMessages></AppleMessages>,
   },
 ];

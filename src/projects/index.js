@@ -104,6 +104,7 @@ import IncomeTracker from "./Income Tracker/IncomeTracker";
 import DraggableList from "./Draggable List/DraggableList";
 import Timeline from "./Timeline/Timeline";
 import BinaryClock from "./Binary Clock/BinaryClock";
+import AppleMessages from "./Apple Messages/AppleMessages";
 
 export {
   ExpandingCard,
@@ -212,4 +213,5 @@ export {
   DraggableList,
   Timeline,
   BinaryClock,
+  AppleMessages,
 };
