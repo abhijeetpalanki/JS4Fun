@@ -115,11 +115,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "card",
-      },
-      {
-        id: 2,
-        name: "slider",
+        name: "transitions",
       },
     ],
     component: <ExpandingCard />,
@@ -130,11 +126,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "rotating",
-      },
-      {
-        id: 2,
-        name: "navbar",
+        name: "transitions",
       },
     ],
     component: <RotatingNavigation></RotatingNavigation>,
@@ -145,7 +137,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "loading",
+        name: "landingpages",
       },
     ],
     component: <BlurryLoading></BlurryLoading>,
@@ -158,10 +150,6 @@ export const projects = [
         id: 1,
         name: "scroll",
       },
-      {
-        id: 2,
-        name: "animation",
-      },
     ],
     component: <ScrollAnimation></ScrollAnimation>,
   },
@@ -171,11 +159,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "landingpage",
-      },
-      {
-        id: 2,
-        name: "splitpage",
+        name: "landingpages",
       },
     ],
     component: <SplitLandingPage></SplitLandingPage>,
@@ -186,10 +170,6 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "octaveboard",
-      },
-      {
-        id: 2,
         name: "onlydesktop",
       },
     ],
@@ -200,12 +180,8 @@ export const projects = [
     title: "Dad Jokes",
     hashtags: [
       {
-        id: 1,
-        name: "jokes",
-      },
-      {
         id: 2,
-        name: "poordad",
+        name: "apidata",
       },
     ],
     component: <DadJokes></DadJokes>,
@@ -216,11 +192,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "faqs",
-      },
-      {
-        id: 2,
-        name: "collapsiblecard",
+        name: "transitions",
       },
     ],
     component: <FAQ></FAQ>,
@@ -231,11 +203,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "randomizer",
-      },
-      {
-        id: 2,
-        name: "choices",
+        name: "basicjavascript",
       },
     ],
     component: <RandomNumberPicker></RandomNumberPicker>,
@@ -246,11 +214,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "navbar",
+        name: "framermotion",
       },
       {
         id: 2,
-        name: "nav-animation",
+        name: "externalpackages",
       },
     ],
     component: <AnimatedNavigation></AnimatedNavigation>,
@@ -261,11 +229,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "productivetimer",
+        name: "basicjavascript",
       },
       {
         id: 2,
-        name: "stressrelief",
+        name: "reactcontextapi",
       },
     ],
     component: <Pomodoro></Pomodoro>,
@@ -276,11 +244,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "movies",
-      },
-      {
-        id: 2,
-        name: "hub",
+        name: "apidata",
       },
     ],
     component: <MoviesHub></MoviesHub>,
@@ -291,11 +255,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "imageslider",
-      },
-      {
-        id: 2,
-        name: "carousel",
+        name: "basicjavascript",
       },
     ],
     component: <BackgroundImageSlider></BackgroundImageSlider>,
@@ -306,7 +266,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "rockpaperscissorsgame",
+        name: "react.js",
       },
       {
         id: 2,
@@ -321,7 +281,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "drawingcanvas",
+        name: "basicjavascript",
       },
       {
         id: 2,
@@ -336,11 +296,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "slider",
-      },
-      {
-        id: 2,
-        name: "images",
+        name: "basicjavascript",
       },
     ],
     component: <DoubleVerticalSlider></DoubleVerticalSlider>,
@@ -351,11 +307,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "github",
-      },
-      {
-        id: 2,
-        name: "users",
+        name: "apidata",
       },
     ],
     component: <GithubProfiles></GithubProfiles>,
@@ -366,11 +318,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "password",
-      },
-      {
-        id: 2,
-        name: "generator",
+        name: "basicjavascript",
       },
     ],
     component: <PasswordGenerator></PasswordGenerator>,
@@ -381,11 +329,15 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "stickynotes",
+        name: "basicjavascript",
       },
       {
         id: 2,
         name: "onlydesktop",
+      },
+      {
+        id: 3,
+        name: "reducers",
       },
     ],
     component: <StickyNotes></StickyNotes>,
@@ -396,7 +348,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "screencapture",
+        name: "apidata",
       },
       {
         id: 2,
@@ -411,7 +363,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "hoverandpaint",
+        name: "basicjavascript",
       },
       {
         id: 2,
@@ -426,11 +378,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "pokemon",
-      },
-      {
-        id: 2,
-        name: "dex",
+        name: "apidata",
       },
     ],
     component: <Pokedex></Pokedex>,
@@ -441,14 +389,10 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "magicboxes",
+        name: "css",
       },
       {
         id: 2,
-        name: "3danimation",
-      },
-      {
-        id: 3,
         name: "onlydesktop",
       },
     ],
@@ -460,11 +404,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "users",
-      },
-      {
-        id: 2,
-        name: "filter",
+        name: "apidata",
       },
     ],
     component: <LiveUserFilter></LiveUserFilter>,
@@ -475,11 +415,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "design",
-      },
-      {
-        id: 2,
-        name: "feedback",
+        name: "css",
       },
     ],
     component: <Feedback></Feedback>,
@@ -490,11 +426,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "quiz",
-      },
-      {
-        id: 2,
-        name: "mcq",
+        name: "apidata",
       },
     ],
     component: <Quiz></Quiz>,
@@ -505,7 +437,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "todolist",
+        name: "basicjavascript",
       },
       {
         id: 2,
@@ -520,7 +452,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "breatheinandout",
+        name: "basicjavascript",
       },
     ],
     component: <Relaxer></Relaxer>,
@@ -531,7 +463,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "typinggame",
+        name: "basicjavascript",
       },
       {
         id: 2,
@@ -546,11 +478,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "zodiacsigns",
-      },
-      {
-        id: 2,
-        name: "horoscopes",
+        name: "apidata",
       },
     ],
     component: <Horoscope></Horoscope>,
@@ -561,11 +489,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "qrcode",
-      },
-      {
-        id: 2,
-        name: "qrgenerator",
+        name: "basicjavascript",
       },
     ],
     component: <QRCodeGenerator></QRCodeGenerator>,
@@ -576,11 +500,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "alarm",
-      },
-      {
-        id: 2,
-        name: "clock",
+        name: "reactcontextapi",
       },
     ],
     component: <AlarmClock></AlarmClock>,
@@ -591,11 +511,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "words",
-      },
-      {
-        id: 2,
-        name: "associationgame",
+        name: "apidata",
       },
     ],
     component: <WordAssociations></WordAssociations>,
@@ -606,11 +522,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "form",
-      },
-      {
-        id: 2,
-        name: "contactus",
+        name: "css",
       },
     ],
     component: <ContactUsForm></ContactUsForm>,
@@ -621,11 +533,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "infinitescroll",
-      },
-      {
-        id: 2,
-        name: "unsplashapigallery",
+        name: "apidata",
       },
     ],
     component: <UnsplashInfiniteGallery></UnsplashInfiniteGallery>,
@@ -636,11 +544,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "calculator",
+        name: "basicjavascript",
       },
       {
         id: 2,
-        name: "simpleoperations",
+        name: "reducers",
       },
     ],
     component: <BasicCalculator></BasicCalculator>,
@@ -651,11 +559,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "lexicon",
-      },
-      {
-        id: 2,
-        name: "vocabulary",
+        name: "apidata",
       },
     ],
     component: <Dictionary></Dictionary>,
@@ -666,11 +570,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "passwordstrength",
+        name: "react.js",
       },
       {
         id: 2,
-        name: "indicator",
+        name: "externalpackages",
       },
     ],
     component: <PasswordStrengthIndicator></PasswordStrengthIndicator>,
@@ -681,11 +585,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "tinyurl",
-      },
-      {
-        id: 2,
-        name: "shorturl",
+        name: "apidata",
       },
     ],
     component: <URLShortener></URLShortener>,
@@ -696,11 +596,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "dice",
-      },
-      {
-        id: 2,
-        name: "rollingprobability",
+        name: "react.js",
       },
     ],
     component: <RollTheDice></RollTheDice>,
@@ -711,11 +607,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "agecalculator",
-      },
-      {
-        id: 2,
-        name: "whatsyourage",
+        name: "react.js",
       },
     ],
     component: <AgeCalculator></AgeCalculator>,
@@ -726,11 +618,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "weather",
-      },
-      {
-        id: 2,
-        name: "climatechange",
+        name: "apidata",
       },
     ],
     component: <TheWeatherChannel></TheWeatherChannel>,
@@ -741,7 +629,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "followcursor",
+        name: "css",
       },
       {
         id: 2,
@@ -756,11 +644,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "modals",
+        name: "framermotion",
       },
       {
         id: 2,
-        name: "popups",
+        name: "externalpackages",
       },
     ],
     component: <AnimatedModal></AnimatedModal>,
@@ -771,11 +659,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "framermotionslider",
+        name: "framermotion",
       },
       {
         id: 2,
-        name: "animationslider",
+        name: "externalpackages",
       },
     ],
     component: <HorizonalImageCarousel></HorizonalImageCarousel>,
@@ -786,11 +674,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "converter",
+        name: "react.js",
       },
       {
         id: 2,
-        name: "imagetotext",
+        name: "externalpackages",
       },
     ],
     component: <Image2TextConverter></Image2TextConverter>,
@@ -801,11 +689,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "discordstyle",
-      },
-      {
-        id: 2,
-        name: "animatednavbar",
+        name: "css",
       },
     ],
     component: <DiscordNavbar></DiscordNavbar>,
@@ -816,11 +700,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "newsletter",
+        name: "css",
       },
       {
         id: 2,
-        name: "landingpage",
+        name: "landingpages",
       },
     ],
     component: <NewsletterLandingPage></NewsletterLandingPage>,
@@ -831,11 +715,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "wikipedia",
-      },
-      {
-        id: 2,
-        name: "searchengine",
+        name: "apidata",
       },
     ],
     component: <WikiSeeker></WikiSeeker>,
@@ -846,11 +726,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "drumsandsound",
+        name: "css",
       },
       {
         id: 2,
-        name: "soundbar",
+        name: "react.js",
       },
     ],
     component: <DrumKit></DrumKit>,
@@ -861,11 +741,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "backgroundchanger",
+        name: "css",
       },
       {
         id: 2,
-        name: "colorpicker",
+        name: "externalpackages",
       },
     ],
     component: <ColorPicker></ColorPicker>,
@@ -876,11 +756,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "typingbackground",
+        name: "css",
       },
       {
         id: 2,
-        name: "animations",
+        name: "externalpackages",
       },
     ],
     component: <TypingAnimations></TypingAnimations>,
@@ -891,11 +771,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "previewer",
-      },
-      {
-        id: 2,
-        name: "customimage",
+        name: "react.js",
       },
     ],
     component: <ImagePreview></ImagePreview>,
@@ -910,7 +786,7 @@ export const projects = [
       },
       {
         id: 2,
-        name: "landingpage",
+        name: "externalpackages",
       },
     ],
     component: <AnimatedLandingPage></AnimatedLandingPage>,
@@ -921,11 +797,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "hackers",
-      },
-      {
-        id: 2,
-        name: "faketyper",
+        name: "basicjavascript",
       },
     ],
     component: <HackerTyper></HackerTyper>,
@@ -936,11 +808,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "hexmcq",
-      },
-      {
-        id: 2,
-        name: "guessinggame",
+        name: "basicjavascript",
       },
     ],
     component: <HexGuesser></HexGuesser>,
@@ -951,11 +819,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "musicapp",
+        name: "css",
       },
       {
         id: 2,
-        name: "staticmusicplayer",
+        name: "react.js",
       },
     ],
     component: <Musification></Musification>,
@@ -966,11 +834,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "multiplesteps",
+        name: "framermotion",
       },
       {
         id: 2,
-        name: "userform",
+        name: "externalpackages",
       },
     ],
     component: <MultiStepForm></MultiStepForm>,
@@ -981,11 +849,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "loading",
+        name: "landingpages",
       },
       {
         id: 2,
-        name: "cssanimation",
+        name: "css",
       },
     ],
     component: <RabbitLoader></RabbitLoader>,
@@ -996,11 +864,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "texthover",
+        name: "css",
       },
       {
         id: 2,
-        name: "transition",
+        name: "transitions",
       },
     ],
     component: <Focus></Focus>,
@@ -1011,11 +879,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "text",
-      },
-      {
-        id: 2,
-        name: "generator",
+        name: "apidata",
       },
     ],
     component: <TextGenerator></TextGenerator>,
@@ -1026,7 +890,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "cryptocurrencytracker",
+        name: "apidata",
       },
       {
         id: 2,
@@ -1041,11 +905,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "simple interest",
-      },
-      {
-        id: 2,
-        name: "calculator",
+        name: "react.js",
       },
     ],
     component: <SimpleInterestCalculator></SimpleInterestCalculator>,
@@ -1056,11 +916,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "animatedcard",
-      },
-      {
-        id: 2,
-        name: "servicessection",
+        name: "css",
       },
     ],
     component: <ServicesCard></ServicesCard>,
@@ -1071,7 +927,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "notificationbar",
+        name: "css",
       },
     ],
     component: <Notifications></Notifications>,
@@ -1082,7 +938,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "puzzlegame",
+        name: "react.js",
       },
     ],
     component: <MemoryGame></MemoryGame>,
@@ -1093,7 +949,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "gallery",
+        name: "apidata",
       },
       {
         id: 2,
@@ -1108,7 +964,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "toastmessages",
+        name: "externalpackages",
       },
     ],
     component: <Toastify></Toastify>,
@@ -1119,7 +975,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "bodymassindex",
+        name: "basicjavascript",
       },
     ],
     component: <BMICalculator></BMICalculator>,
@@ -1130,7 +986,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "palindrome",
+        name: "basicjavascript",
       },
     ],
     component: <PalindromeChecker></PalindromeChecker>,
@@ -1141,7 +997,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "booksearch",
+        name: "apidata",
       },
     ],
     component: <BookHub></BookHub>,
@@ -1152,11 +1008,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "chatgpt",
+        name: "apidata",
       },
       {
         id: 2,
-        name: "openaiapi",
+        name: "externalpackages",
       },
     ],
     component: <ChatGPT></ChatGPT>,
@@ -1167,7 +1023,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "converter",
+        name: "apidata",
       },
     ],
     component: <CurrencyConverter></CurrencyConverter>,
@@ -1178,7 +1034,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "pollandvote",
+        name: "externalpackages",
       },
     ],
     component: <Ranker></Ranker>,
@@ -1189,7 +1045,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "memes",
+        name: "apidata",
       },
     ],
     component: <MemeGenerator></MemeGenerator>,
@@ -1200,11 +1056,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "livescore",
-      },
-      {
-        id: 2,
-        name: "footballfixtures",
+        name: "apidata",
       },
     ],
     component: <FootballLiveScore></FootballLiveScore>,
@@ -1215,11 +1067,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "tip",
+        name: "basicjavascript",
       },
       {
         id: 2,
-        name: "calculator",
+        name: "css",
       },
     ],
     component: <TipCalculator></TipCalculator>,
@@ -1230,7 +1082,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "universityfinder",
+        name: "react.js",
       },
     ],
     component: <UniversityFinder></UniversityFinder>,
@@ -1241,7 +1093,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "captcha",
+        name: "externalpackages",
       },
     ],
     component: <Captcha></Captcha>,
@@ -1252,11 +1104,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "emoji",
+        name: "react.js",
       },
       {
         id: 2,
-        name: "picker",
+        name: "externalpackages",
       },
     ],
     component: <EmotePicker></EmotePicker>,
@@ -1267,14 +1119,10 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "gsapanimations",
+        name: "gsap",
       },
       {
         id: 2,
-        name: "slider",
-      },
-      {
-        id: 3,
         name: "onlydesktop",
       },
     ],
@@ -1286,11 +1134,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "mousepointer",
+        name: "basicjavascript",
       },
       {
         id: 2,
-        name: "colorful",
+        name: "css",
       },
     ],
     component: <ColorfulMousePointer></ColorfulMousePointer>,
@@ -1301,10 +1149,6 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "snakegame",
-      },
-      {
-        id: 2,
         name: "onlydesktop",
       },
     ],
@@ -1316,7 +1160,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "googlemaps",
+        name: "externalpackages",
       },
     ],
     component: <MapsMarker></MapsMarker>,
@@ -1327,7 +1171,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "videoplayer",
+        name: "basicjavascript",
       },
     ],
     component: <VideoPlayer></VideoPlayer>,
@@ -1338,7 +1182,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "linktree",
+        name: "react.js",
       },
     ],
     component: <LinkTree></LinkTree>,
@@ -1349,7 +1193,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "loadinganimation",
+        name: "landingpages",
       },
     ],
     component: <OrbitalLoadingPage></OrbitalLoadingPage>,
@@ -1360,11 +1204,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "googleauth2",
+        name: "react.js",
       },
       {
         id: 2,
-        name: "loginpage",
+        name: "externalpackages",
       },
     ],
     component: <GoogleLoginButton></GoogleLoginButton>,
@@ -1375,15 +1219,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "keywords",
+        name: "externalpackages",
       },
       {
         id: 2,
-        name: "openapi",
-      },
-      {
-        id: 3,
-        name: "openaiapi",
+        name: "apidata",
       },
     ],
     component: <AIKeywordExtractor></AIKeywordExtractor>,
@@ -1394,7 +1234,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "card",
+        name: "framermotion",
+      },
+      {
+        id: 2,
+        name: "externalpackages",
       },
     ],
     component: <MotionActivatedCard></MotionActivatedCard>,
@@ -1405,7 +1249,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "connect4",
+        name: "basicjavascript",
       },
       {
         id: 2,
@@ -1420,11 +1264,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "15puzzlegame",
+        name: "css",
       },
       {
         id: 2,
-        name: "gempuzzle",
+        name: "basicjavascript",
       },
     ],
     component: <MysticSquare></MysticSquare>,
@@ -1439,7 +1283,7 @@ export const projects = [
       },
       {
         id: 2,
-        name: "backgroundanimation",
+        name: "landingpages",
       },
     ],
     component: <ThreejsBackgroundAnimation></ThreejsBackgroundAnimation>,
@@ -1450,11 +1294,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "startuppage",
+        name: "landingpages",
       },
       {
         id: 2,
-        name: "launchingsoon",
+        name: "externalpackages",
       },
     ],
     component: <ComingSoon></ComingSoon>,
@@ -1465,7 +1309,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "hangmangame",
+        name: "react.js",
       },
     ],
     component: <Hangman></Hangman>,
@@ -1476,7 +1320,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "lightsoutpuzzle",
+        name: "react.js",
       },
     ],
     component: <LightsOut></LightsOut>,
@@ -1487,11 +1331,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "3dworld",
+        name: "externalpackages",
       },
       {
         id: 2,
-        name: "reactfiber",
+        name: "three.js",
       },
     ],
     component: <ThreeDimensionWorld></ThreeDimensionWorld>,
@@ -1502,7 +1346,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "skeletonlayoutscreens",
+        name: "landingpages",
+      },
+      {
+        id: 2,
+        name: "apidata",
       },
     ],
     component: <SkeletonLayout></SkeletonLayout>,
@@ -1513,11 +1361,15 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "trellochecklist",
+        name: "css",
       },
       {
         id: 2,
         name: "framermotion",
+      },
+      {
+        id: 3,
+        name: "externalpackages",
       },
     ],
     component: <TrelloAnimatedChecklist></TrelloAnimatedChecklist>,
@@ -1528,7 +1380,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "colorgradient",
+        name: "basicjavascript",
       },
     ],
     component: <GradientGenerator></GradientGenerator>,
@@ -1539,11 +1391,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "linechart",
+        name: "framermotion",
       },
       {
         id: 2,
-        name: "framermotion",
+        name: "externalpackages",
       },
     ],
     component: <LineChart></LineChart>,
@@ -1554,7 +1406,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "calendar",
+        name: "react.js",
       },
       {
         id: 2,
@@ -1569,7 +1421,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "incometracker",
+        name: "react.js",
       },
     ],
     component: <IncomeTracker></IncomeTracker>,
@@ -1580,7 +1432,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "draggablelist",
+        name: "react.js",
       },
       {
         id: 2,
@@ -1595,7 +1447,11 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "timeline",
+        name: "css",
+      },
+      {
+        id: 2,
+        name: "react.js",
       },
     ],
     component: <Timeline></Timeline>,
@@ -1606,7 +1462,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "binaryclock",
+        name: "basicjavascript",
       },
     ],
     component: <BinaryClock></BinaryClock>,
@@ -1617,7 +1473,7 @@ export const projects = [
     hashtags: [
       {
         id: 1,
-        name: "iMessageanimations",
+        name: "framermotion",
       },
     ],
     component: <AppleMessages></AppleMessages>,

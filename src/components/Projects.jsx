@@ -6,16 +6,21 @@ import { useProjectsContext } from "../context/ProjectsContextProvider";
 import Navbar from "./Navbar";
 
 const Projects = () => {
-  const { results: projects } = useProjectsContext();
+  const { results: projects, hashtags } = useProjectsContext();
   const [searchTerm, setSearchTerm] = useState("");
+  const [activeTag, setActiveTag] = useState("all");
   const parent = useRef(null);
 
   const search_parameters = Object.keys(Object.assign({}, ...projects));
   const search = (data) => {
     var retval = data.filter((item) =>
-      search_parameters.some((parameter) =>
-        item[parameter].toString().toLowerCase().includes(searchTerm)
-      )
+      searchTerm !== ""
+        ? search_parameters.some((parameter) =>
+            item[parameter].toString().toLowerCase().includes(searchTerm)
+          )
+        : activeTag !== "all"
+        ? item.hashtags.find((hashtag) => hashtag.name === activeTag)
+        : search_parameters.flat()
     );
     return retval;
   };
@@ -26,7 +31,13 @@ const Projects = () => {
 
   return (
     <>
-      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Navbar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        activeTag={activeTag}
+        setActiveTag={setActiveTag}
+        hashtags={hashtags}
+      />
       <div
         className="grid grid-cols-1 gap-5 p-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
         ref={parent}

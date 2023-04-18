@@ -1,8 +1,15 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import fun from "../images/fun.jpeg";
 import useReadingProgressBar from "../hooks/useReadingProgressBar";
 
-const Navbar = ({ searchTerm, setSearchTerm }) => {
+const Navbar = ({
+  searchTerm,
+  setSearchTerm,
+  activeTag,
+  setActiveTag,
+  hashtags,
+}) => {
   const completion = useReadingProgressBar();
 
   return (
@@ -32,8 +39,24 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
           />
         </div>
 
+        <div>
+          {hashtags.map((tag) => (
+            <button
+              key={tag}
+              className={`capitalize mr-4 tracking-widest min-w-[5rem] py-2 px-4 border-none rounded-2xl border-2 border-white font-bold my-2 hover:bg-[#facc15] hover:text-black transition-all duration-300 ease-in-out ${
+                activeTag === tag
+                  ? "bg-[#facc15] text-black"
+                  : "bg-[#ef4444] text-white"
+              }`}
+              onClick={() => setActiveTag(tag)}
+            >
+              {tag}
+            </button>
+          ))}
+        </div>
+
         <span
-          className="absolute bottom-0 w-full h-1 bg-yellow-400"
+          className="absolute bottom-0 w-full h-1 bg-[#ef4444]"
           style={{ transform: `translateX(${completion - 100}%)` }}
         />
       </div>

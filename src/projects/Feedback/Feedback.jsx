@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { FaHeart, FaSadTear, FaSmileBeam, FaMeh } from "react-icons/fa";
 
 const resources = {
