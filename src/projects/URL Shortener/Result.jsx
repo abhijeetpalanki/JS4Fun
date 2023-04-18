@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaCopy } from "react-icons/fa";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import copy from "copy-to-clipboard";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 
 const Result = ({ inputValue }) => {
   const [shortenedLink, setShortenedLink] = useState("");
@@ -38,6 +39,23 @@ const Result = ({ inputValue }) => {
     }
   }, [inputValue]);
 
+  const copyToClipboard = () => {
+    const displayText = shortenedLink
+      .split("</p>")
+      .map((t, index) => t.replace("<p>", `${index + 1}. `));
+    copy(displayText);
+    toast.success(`You have copied "${displayText}"`, {
+      position: "bottom-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
+
   if (loading) {
     return (
       <p className="loading-data text-white font-[1rem] z-[100]">Loading...</p>
@@ -59,17 +77,17 @@ const Result = ({ inputValue }) => {
           <p className="text-white mr-[1rem] py-[0.45rem] px-[1rem] border-[#3e1e68] border-[1px]">
             {shortenedLink}
           </p>
-          <CopyToClipboard text={shortenedLink} onCopy={() => setCopied(true)}>
-            <button
-              className={`py-[0.8rem] px-[1rem] text-white bg-[#3e1e68] border-0 ${
-                copied ? "copied bg-white text-[#3e1e68]" : ""
-              }`}
-            >
-              <FaCopy />
-            </button>
-          </CopyToClipboard>
+          <button
+            onClick={copyToClipboard}
+            className={`py-[0.8rem] px-[1rem] text-white bg-[#3e1e68] border-0 ${
+              copied ? "copied bg-white text-[#3e1e68]" : ""
+            }`}
+          >
+            <FaCopy />
+          </button>
         </div>
       )}
+      <ToastContainer />
     </>
   );
 };

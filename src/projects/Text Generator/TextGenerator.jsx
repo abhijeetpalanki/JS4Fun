@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import copy from "copy-to-clipboard";
 import { FaCopy } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
 
 const TextGenerator = () => {
   const [paras, setParas] = useState("4");
@@ -27,7 +28,16 @@ const TextGenerator = () => {
       .split("</p>")
       .map((t, index) => t.replace("<p>", `${index + 1}. `));
     copy(displayText);
-    alert(`You have copied "${displayText}"`);
+    toast.success("You have successfully copied the text to clipboard!", {
+      position: "bottom-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   };
 
   return (
@@ -81,6 +91,7 @@ const TextGenerator = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

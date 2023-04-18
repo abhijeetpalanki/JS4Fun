@@ -1,18 +1,26 @@
 import { useState, useEffect } from "react";
-import { useClipboard } from "use-clipboard-copy";
+import copy from "copy-to-clipboard";
+import { FaCopy } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
 
 const MemeGenerator = () => {
   const [memes, setMemes] = useState([]);
   const [memeIndex, setMemeIndex] = useState(0);
   const [captions, setCaptions] = useState([]);
   const [generatedUrl, setGeneratedUrl] = useState("");
-  const [copied, setCopied] = useState(false);
 
-  const clipboard = useClipboard();
-
-  const copyLink = () => {
-    clipboard.copy(generatedUrl);
-    setCopied(true);
+  const copyToClipboard = () => {
+    copy(generatedUrl);
+    toast.success("You have successfully copied the url link to clipboard!", {
+      position: "bottom-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   };
 
   const updateCaption = (event, index) => {
@@ -90,10 +98,10 @@ const MemeGenerator = () => {
             />
           )}
           <button
-            onClick={copyLink}
-            className="block cursor-pointer w-60 md:w-96 p-3 m-auto text-white border-none rounded-md uppercase focus-visible:outline-none bg-[#0275d8]"
+            onClick={copyToClipboard}
+            className="flex justify-center items-center p-3 m-auto text-white border-none rounded-md uppercase focus-visible:outline-none bg-[#0275d8]"
           >
-            {copied ? "Link copied!" : "Copy link"}
+            <FaCopy />
           </button>
         </div>
       ) : (
@@ -134,6 +142,7 @@ const MemeGenerator = () => {
           )}
         </div>
       )}
+      <ToastContainer />
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import { useState, useReducer } from "react";
 import "./StickyNotes.css";
 import { FaPlus, FaTrashAlt } from "react-icons/fa";
-import { v4 as uuid } from "uuid";
 
 const initialNotesState = {
   lastNoteCreated: null,
@@ -47,7 +46,7 @@ const StickyNotes = () => {
     }
 
     const newNote = {
-      id: uuid(),
+      id: Math.floor(Math.random() * Date.now()),
       text: noteInput,
       rotate: Math.floor(Math.random() * 20),
     };

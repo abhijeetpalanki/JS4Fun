@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
-import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 const ContactUsForm = () => {
   const [values, setValues] = useState({
@@ -9,15 +9,6 @@ const ContactUsForm = () => {
     role: "",
     message: "",
   });
-  const [status, setStatus] = useState("");
-
-  useEffect(() => {
-    if (status === "SUCCESS") {
-      setTimeout(() => {
-        setStatus("");
-      }, 3000);
-    }
-  }, [status]);
 
   const handleChange = (e) => {
     setValues((values) => ({
@@ -26,32 +17,27 @@ const ContactUsForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    emailjs
-      .send("service_owaoayq", "template_9m6p7k1", values, "WpFlSyq8UmP6vme5r")
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response);
-          setValues({
-            fullName: "",
-            email: "",
-            role: "",
-            message: "",
-          });
-          setStatus("SUCCESS");
-        },
-        (error) => {
-          console.log("FAILED...", error);
-        }
-      );
-  };
 
-  const renderAlert = () => (
-    <div className="px-4 py-3 mb-5 leading-normal text-center text-blue-700 bg-blue-100 rounded">
-      <p>Your message submitted successfully</p>
-    </div>
-  );
+    toast.success("Your message submitted successfully!", {
+      position: "bottom-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+
+    setValues({
+      fullName: "",
+      email: "",
+      role: "",
+      message: "",
+    });
+  };
 
   return (
     <div className="font-['Roboto'] flex items-center justify-center h-screen">
@@ -67,7 +53,6 @@ const ContactUsForm = () => {
 
         {/* Form */}
         <div className="p-5 pt-6 pb-4 bg-white rounded shadow-xl lg:mt-16 lg:mr-28">
-          {status && renderAlert()}
           <form onSubmit={handleSubmit}>
             <h3 className="text-xl font-semibold text-gray-700 mb-7">
               Send us a message
@@ -145,6 +130,8 @@ const ContactUsForm = () => {
           </form>
         </div>
       </div>
+
+      <ToastContainer />
     </div>
   );
 };
