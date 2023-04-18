@@ -105,6 +105,7 @@ import DraggableList from "../projects/Draggable List/DraggableList";
 import Timeline from "../projects/Timeline/Timeline";
 import BinaryClock from "../projects/Binary Clock/BinaryClock";
 import AppleMessages from "../projects/Apple Messages/AppleMessages";
+import FormValidator from "../projects/Form Validator/FormValidator";
 
 export const projects = [
   {
@@ -1475,5 +1476,20 @@ export const projects = [
       },
     ],
     component: <AppleMessages></AppleMessages>,
+  },
+  {
+    id: 108,
+    title: "Form Validator",
+    hashtags: [
+      {
+        id: 1,
+        name: "externalpackages",
+      },
+      {
+        id: 2,
+        name: "react.js",
+      },
+    ],
+    component: <FormValidator></FormValidator>,
   },
 ];
