@@ -106,6 +106,7 @@ import Timeline from "../projects/Timeline/Timeline";
 import BinaryClock from "../projects/Binary Clock/BinaryClock";
 import AppleMessages from "../projects/Apple Messages/AppleMessages";
 import FormValidator from "../projects/Form Validator/FormValidator";
+import RemoveBg from "../projects/Remove Bg/RemoveBg";
 
 export const projects = [
   {
@@ -1491,5 +1492,16 @@ export const projects = [
       },
     ],
     component: <FormValidator></FormValidator>,
+  },
+  {
+    id: 109,
+    title: "Remove.bg",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+    ],
+    component: <RemoveBg></RemoveBg>,
   },
 ];
