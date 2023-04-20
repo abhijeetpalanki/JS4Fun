@@ -1,68 +1,75 @@
-import { useState, useEffect } from "react";
-import { img1, img2, img3, img4, img5, img6 } from "./images";
-import { MdDragIndicator } from "react-icons/md";
+import { useState } from "react";
+import { data, statuses } from "./data";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import DropWrapper from "./DropWrapper";
+import Column from "./Column";
+import Item from "./Item";
 
 const DraggableList = () => {
-  const [items] = useState([
-    { src: img1, name: "Kristina Zasiadko", dragging: false },
-    { src: img2, name: "Gabrielle Wilson", dragging: false },
-    { src: img3, name: "Ronelle Casicon", dragging: false },
-    { src: img4, name: "James Khosravi", dragging: false },
-    { src: img5, name: "Annika Hayden", dragging: false },
-    { src: img6, name: "Donald Horton", dragging: false },
-  ]);
+  const [items, setItems] = useState(data);
 
-  useEffect(() => {
-    const sortableList = document.querySelector(".sortable-list");
-    const items = document.querySelectorAll(".item");
+  const onDrop = (item, monitor, status) => {
+    const mapping = statuses.find((si) => si.status === status);
 
-    items.forEach((item) => {
-      item.addEventListener("dragstart", () => {
-        setTimeout(() => item.classList.add("dragging"), 0);
-      });
-
-      item.addEventListener("dragend", () => {
-        item.classList.remove("dragging");
-      });
+    setItems((prevState) => {
+      const newItems = prevState
+        .filter((i) => i.id !== item.id)
+        .concat({ ...item, status, icon: mapping.icon });
+      return [...newItems];
     });
+  };
 
-    sortableList.addEventListener("dragover", (e) => {
-      e.preventDefault();
-      const draggingItem = sortableList.querySelector(".dragging");
-      const siblings = [
-        ...sortableList.querySelectorAll(".item:not(.dragging)"),
-      ];
-
-      let nextSibling = siblings.find((sibling) => {
-        return e.clientY <= sibling.offsetTop + sibling.offsetHeight / 2;
-      });
-
-      sortableList.insertBefore(draggingItem, nextSibling);
+  const moveItem = (dragIndex, hoverIndex) => {
+    const item = items[dragIndex];
+    setItems((prevState) => {
+      const newItems = prevState.filter((i, idx) => idx !== dragIndex);
+      newItems.splice(hoverIndex, 0, item);
+      return [...newItems];
     });
+  };
 
-    sortableList.addEventListener("dragenter", (e) => e.preventDefault());
-  }, []);
   return (
-    <div className="flex items-center justify-center h-screen font-['Poppins']">
-      <ul className="bg-white w-[445px] pt-[30px] px-[25px] pb-[20px] rounded-md sortable-list">
-        {items.map((item, idx) => (
-          <li
-            className="item flex items-center justify-between border border-[#ccc] mb-[11px] py-[10px] px-[13px] rounded-[5px] hover:cursor-move"
-            draggable
-            key={idx}
-          >
-            <div className="flex items-center details">
-              <img
-                className="w-[43px] h-[43px] object-cover rounded-full mr-3"
-                src={item.src}
-                alt="1"
-              />
-              <span className="text-[1.13rem]">{item.name}</span>
-            </div>
-            <MdDragIndicator color="#474747" className="text-[1.13rem]" />
-          </li>
-        ))}
-      </ul>
+    <div className="flex flex-col items-center md:justify-center xl:h-screen font-['Poppins'] bg-gradient-to-b from-[rgba(0,73,191,1)] via-[rgba(190,190,255,1)] to-[rgba(0,212,255,1)] text-[#172b4d]">
+      <DndProvider backend={HTML5Backend}>
+        {/* Header */}
+        <div className="flex justify-center">
+          <p className="bg-[#054f7c] p-5 text-white text-3xl flex-[1_100%] mt-0 text-center my-[10px] break-words">
+            Draggable List 🗂️
+          </p>
+        </div>
+
+        {/* Main */}
+        <div className="flex flex-col justify-center xl:flex-row">
+          {statuses.map((s) => {
+            return (
+              <div
+                key={s.status}
+                className="flex flex-col m-5 p-5 bg-[#f5eaea] rounded-[5px]"
+              >
+                <h2 className="mt-0 mb-5 text-xl font-semibold">
+                  {s.status.toUpperCase()}
+                </h2>
+                <DropWrapper onDrop={onDrop} status={s.status}>
+                  <Column>
+                    {items
+                      .filter((i) => i.status === s.status)
+                      .map((i, idx) => (
+                        <Item
+                          key={i.id}
+                          item={i}
+                          index={idx}
+                          moveItem={moveItem}
+                          status={s}
+                        />
+                      ))}
+                  </Column>
+                </DropWrapper>
+              </div>
+            );
+          })}
+        </div>
+      </DndProvider>
     </div>
   );
 };
