@@ -107,6 +107,7 @@ import BinaryClock from "../projects/Binary Clock/BinaryClock";
 import AppleMessages from "../projects/Apple Messages/AppleMessages";
 import FormValidator from "../projects/Form Validator/FormValidator";
 import RemoveBg from "../projects/Remove Bg/RemoveBg";
+import TypewriterAnimation from "../projects/Typewriter Animation/TypewriterAnimation";
 
 export const projects = [
   {
@@ -1503,5 +1504,20 @@ export const projects = [
       },
     ],
     component: <RemoveBg></RemoveBg>,
+  },
+  {
+    id: 110,
+    title: "Typewriter Animation",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+      {
+        id: 2,
+        name: "externalpackages",
+      },
+    ],
+    component: <TypewriterAnimation></TypewriterAnimation>,
   },
 ];
