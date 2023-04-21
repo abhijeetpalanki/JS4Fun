@@ -108,6 +108,7 @@ import AppleMessages from "../projects/Apple Messages/AppleMessages";
 import FormValidator from "../projects/Form Validator/FormValidator";
 import RemoveBg from "../projects/Remove Bg/RemoveBg";
 import TypewriterAnimation from "../projects/Typewriter Animation/TypewriterAnimation";
+import AnimatedTabs from "../projects/Animated Tabs/AnimatedTabs";
 
 export const projects = [
   {
@@ -1629,5 +1630,17 @@ export const projects = [
     ],
     component: <TypewriterAnimation></TypewriterAnimation>,
     tab: "packages",
+  },
+  {
+    id: 111,
+    title: "Animated Tabs",
+    hashtags: [
+      {
+        id: 1,
+        name: "framermotion",
+      },
+    ],
+    component: <AnimatedTabs></AnimatedTabs>,
+    tab: "framer motion",
   },
 ];
