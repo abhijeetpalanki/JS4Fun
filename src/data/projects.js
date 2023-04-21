@@ -120,6 +120,7 @@ export const projects = [
       },
     ],
     component: <ExpandingCard />,
+    tab: "css",
   },
   {
     id: 2,
@@ -131,6 +132,7 @@ export const projects = [
       },
     ],
     component: <RotatingNavigation></RotatingNavigation>,
+    tab: "css",
   },
   {
     id: 3,
@@ -142,6 +144,7 @@ export const projects = [
       },
     ],
     component: <BlurryLoading></BlurryLoading>,
+    tab: "css",
   },
   {
     id: 4,
@@ -153,6 +156,7 @@ export const projects = [
       },
     ],
     component: <ScrollAnimation></ScrollAnimation>,
+    tab: "3d",
   },
   {
     id: 5,
@@ -164,6 +168,7 @@ export const projects = [
       },
     ],
     component: <SplitLandingPage></SplitLandingPage>,
+    tab: "css",
   },
   {
     id: 6,
@@ -175,6 +180,7 @@ export const projects = [
       },
     ],
     component: <SoundBoard></SoundBoard>,
+    tab: "react",
   },
   {
     id: 7,
@@ -186,6 +192,7 @@ export const projects = [
       },
     ],
     component: <DadJokes></DadJokes>,
+    tab: "api",
   },
   {
     id: 8,
@@ -197,6 +204,7 @@ export const projects = [
       },
     ],
     component: <FAQ></FAQ>,
+    tab: "css",
   },
   {
     id: 9,
@@ -208,6 +216,7 @@ export const projects = [
       },
     ],
     component: <RandomNumberPicker></RandomNumberPicker>,
+    tab: "javascript",
   },
   {
     id: 10,
@@ -223,6 +232,7 @@ export const projects = [
       },
     ],
     component: <AnimatedNavigation></AnimatedNavigation>,
+    tab: "framer motion",
   },
   {
     id: 11,
@@ -238,6 +248,7 @@ export const projects = [
       },
     ],
     component: <Pomodoro></Pomodoro>,
+    tab: "javascript",
   },
   {
     id: 12,
@@ -249,6 +260,7 @@ export const projects = [
       },
     ],
     component: <MoviesHub></MoviesHub>,
+    tab: "api",
   },
   {
     id: 13,
@@ -260,6 +272,7 @@ export const projects = [
       },
     ],
     component: <BackgroundImageSlider></BackgroundImageSlider>,
+    tab: "javascript",
   },
   {
     id: 14,
@@ -275,6 +288,7 @@ export const projects = [
       },
     ],
     component: <RockPaperScissors></RockPaperScissors>,
+    tab: "desktop",
   },
   {
     id: 15,
@@ -290,6 +304,7 @@ export const projects = [
       },
     ],
     component: <Canvas></Canvas>,
+    tab: "desktop",
   },
   {
     id: 16,
@@ -301,6 +316,7 @@ export const projects = [
       },
     ],
     component: <DoubleVerticalSlider></DoubleVerticalSlider>,
+    tab: "javascript",
   },
   {
     id: 17,
@@ -312,6 +328,7 @@ export const projects = [
       },
     ],
     component: <GithubProfiles></GithubProfiles>,
+    tab: "api",
   },
   {
     id: 18,
@@ -323,6 +340,7 @@ export const projects = [
       },
     ],
     component: <PasswordGenerator></PasswordGenerator>,
+    tab: "javascript",
   },
   {
     id: 19,
@@ -342,6 +360,7 @@ export const projects = [
       },
     ],
     component: <StickyNotes></StickyNotes>,
+    tab: "desktop",
   },
   {
     id: 20,
@@ -357,6 +376,7 @@ export const projects = [
       },
     ],
     component: <Screenshot></Screenshot>,
+    tab: "desktop",
   },
   {
     id: 21,
@@ -372,6 +392,7 @@ export const projects = [
       },
     ],
     component: <Hoverboard></Hoverboard>,
+    tab: "desktop",
   },
   {
     id: 22,
@@ -383,6 +404,7 @@ export const projects = [
       },
     ],
     component: <Pokedex></Pokedex>,
+    tab: "api",
   },
   {
     id: 23,
@@ -398,6 +420,7 @@ export const projects = [
       },
     ],
     component: <MagicBox></MagicBox>,
+    tab: "desktop",
   },
   {
     id: 24,
@@ -409,6 +432,7 @@ export const projects = [
       },
     ],
     component: <LiveUserFilter></LiveUserFilter>,
+    tab: "api",
   },
   {
     id: 25,
@@ -420,6 +444,7 @@ export const projects = [
       },
     ],
     component: <Feedback></Feedback>,
+    tab: "css",
   },
   {
     id: 26,
@@ -431,6 +456,7 @@ export const projects = [
       },
     ],
     component: <Quiz></Quiz>,
+    tab: "api",
   },
   {
     id: 27,
@@ -446,6 +472,7 @@ export const projects = [
       },
     ],
     component: <Todos></Todos>,
+    tab: "desktop",
   },
   {
     id: 28,
@@ -457,6 +484,7 @@ export const projects = [
       },
     ],
     component: <Relaxer></Relaxer>,
+    tab: "javascript",
   },
   {
     id: 29,
@@ -472,6 +500,7 @@ export const projects = [
       },
     ],
     component: <Typer></Typer>,
+    tab: "desktop",
   },
   {
     id: 30,
@@ -483,6 +512,7 @@ export const projects = [
       },
     ],
     component: <Horoscope></Horoscope>,
+    tab: "api",
   },
   {
     id: 31,
@@ -494,6 +524,7 @@ export const projects = [
       },
     ],
     component: <QRCodeGenerator></QRCodeGenerator>,
+    tab: "javascript",
   },
   {
     id: 32,
@@ -505,6 +536,7 @@ export const projects = [
       },
     ],
     component: <AlarmClock></AlarmClock>,
+    tab: "react",
   },
   {
     id: 33,
@@ -516,6 +548,7 @@ export const projects = [
       },
     ],
     component: <WordAssociations></WordAssociations>,
+    tab: "api",
   },
   {
     id: 34,
@@ -527,6 +560,7 @@ export const projects = [
       },
     ],
     component: <ContactUsForm></ContactUsForm>,
+    tab: "css",
   },
   {
     id: 35,
@@ -538,6 +572,7 @@ export const projects = [
       },
     ],
     component: <UnsplashInfiniteGallery></UnsplashInfiniteGallery>,
+    tab: "api",
   },
   {
     id: 36,
@@ -553,6 +588,7 @@ export const projects = [
       },
     ],
     component: <BasicCalculator></BasicCalculator>,
+    tab: "javascript",
   },
   {
     id: 37,
@@ -564,6 +600,7 @@ export const projects = [
       },
     ],
     component: <Dictionary></Dictionary>,
+    tab: "api",
   },
   {
     id: 38,
@@ -579,6 +616,7 @@ export const projects = [
       },
     ],
     component: <PasswordStrengthIndicator></PasswordStrengthIndicator>,
+    tab: "react",
   },
   {
     id: 39,
@@ -590,6 +628,7 @@ export const projects = [
       },
     ],
     component: <URLShortener></URLShortener>,
+    tab: "react",
   },
   {
     id: 40,
@@ -601,6 +640,7 @@ export const projects = [
       },
     ],
     component: <RollTheDice></RollTheDice>,
+    tab: "react",
   },
   {
     id: 41,
@@ -612,6 +652,7 @@ export const projects = [
       },
     ],
     component: <AgeCalculator></AgeCalculator>,
+    tab: "react",
   },
   {
     id: 42,
@@ -623,6 +664,7 @@ export const projects = [
       },
     ],
     component: <TheWeatherChannel></TheWeatherChannel>,
+    tab: "api",
   },
   {
     id: 43,
@@ -638,6 +680,7 @@ export const projects = [
       },
     ],
     component: <Doraemon></Doraemon>,
+    tab: "desktop",
   },
   {
     id: 44,
@@ -653,6 +696,7 @@ export const projects = [
       },
     ],
     component: <AnimatedModal></AnimatedModal>,
+    tab: "framer motion",
   },
   {
     id: 45,
@@ -668,6 +712,7 @@ export const projects = [
       },
     ],
     component: <HorizonalImageCarousel></HorizonalImageCarousel>,
+    tab: "framer motion",
   },
   {
     id: 46,
@@ -683,6 +728,7 @@ export const projects = [
       },
     ],
     component: <Image2TextConverter></Image2TextConverter>,
+    tab: "api",
   },
   {
     id: 47,
@@ -694,6 +740,7 @@ export const projects = [
       },
     ],
     component: <DiscordNavbar></DiscordNavbar>,
+    tab: "css",
   },
   {
     id: 48,
@@ -709,6 +756,7 @@ export const projects = [
       },
     ],
     component: <NewsletterLandingPage></NewsletterLandingPage>,
+    tab: "css",
   },
   {
     id: 49,
@@ -720,6 +768,7 @@ export const projects = [
       },
     ],
     component: <WikiSeeker></WikiSeeker>,
+    tab: "api",
   },
   {
     id: 50,
@@ -735,6 +784,7 @@ export const projects = [
       },
     ],
     component: <DrumKit></DrumKit>,
+    tab: "css",
   },
   {
     id: 51,
@@ -750,6 +800,7 @@ export const projects = [
       },
     ],
     component: <ColorPicker></ColorPicker>,
+    tab: "api",
   },
   {
     id: 52,
@@ -765,6 +816,7 @@ export const projects = [
       },
     ],
     component: <TypingAnimations></TypingAnimations>,
+    tab: "css",
   },
   {
     id: 53,
@@ -776,6 +828,7 @@ export const projects = [
       },
     ],
     component: <ImagePreview></ImagePreview>,
+    tab: "react",
   },
   {
     id: 54,
@@ -791,6 +844,7 @@ export const projects = [
       },
     ],
     component: <AnimatedLandingPage></AnimatedLandingPage>,
+    tab: "framer motion",
   },
   {
     id: 55,
@@ -802,6 +856,7 @@ export const projects = [
       },
     ],
     component: <HackerTyper></HackerTyper>,
+    tab: "javascript",
   },
   {
     id: 56,
@@ -813,6 +868,7 @@ export const projects = [
       },
     ],
     component: <HexGuesser></HexGuesser>,
+    tab: "javascript",
   },
   {
     id: 57,
@@ -828,6 +884,7 @@ export const projects = [
       },
     ],
     component: <Musification></Musification>,
+    tab: "react",
   },
   {
     id: 58,
@@ -843,6 +900,7 @@ export const projects = [
       },
     ],
     component: <MultiStepForm></MultiStepForm>,
+    tab: "framer motion",
   },
   {
     id: 59,
@@ -858,6 +916,7 @@ export const projects = [
       },
     ],
     component: <RabbitLoader></RabbitLoader>,
+    tab: "css",
   },
   {
     id: 60,
@@ -873,6 +932,7 @@ export const projects = [
       },
     ],
     component: <Focus></Focus>,
+    tab: "css",
   },
   {
     id: 61,
@@ -884,6 +944,7 @@ export const projects = [
       },
     ],
     component: <TextGenerator></TextGenerator>,
+    tab: "api",
   },
   {
     id: 62,
@@ -899,6 +960,7 @@ export const projects = [
       },
     ],
     component: <CryptoPriceTracker></CryptoPriceTracker>,
+    tab: "desktop",
   },
   {
     id: 63,
@@ -910,6 +972,7 @@ export const projects = [
       },
     ],
     component: <SimpleInterestCalculator></SimpleInterestCalculator>,
+    tab: "react",
   },
   {
     id: 64,
@@ -921,6 +984,7 @@ export const projects = [
       },
     ],
     component: <ServicesCard></ServicesCard>,
+    tab: "css",
   },
   {
     id: 65,
@@ -932,6 +996,7 @@ export const projects = [
       },
     ],
     component: <Notifications></Notifications>,
+    tab: "css",
   },
   {
     id: 66,
@@ -943,6 +1008,7 @@ export const projects = [
       },
     ],
     component: <MemoryGame></MemoryGame>,
+    tab: "react",
   },
   {
     id: 67,
@@ -958,6 +1024,7 @@ export const projects = [
       },
     ],
     component: <SphericalGallery></SphericalGallery>,
+    tab: "desktop",
   },
   {
     id: 68,
@@ -969,6 +1036,7 @@ export const projects = [
       },
     ],
     component: <Toastify></Toastify>,
+    tab: "packages",
   },
   {
     id: 69,
@@ -980,6 +1048,7 @@ export const projects = [
       },
     ],
     component: <BMICalculator></BMICalculator>,
+    tab: "javascript",
   },
   {
     id: 70,
@@ -991,6 +1060,7 @@ export const projects = [
       },
     ],
     component: <PalindromeChecker></PalindromeChecker>,
+    tab: "javascript",
   },
   {
     id: 71,
@@ -1002,6 +1072,7 @@ export const projects = [
       },
     ],
     component: <BookHub></BookHub>,
+    tab: "api",
   },
   {
     id: 72,
@@ -1017,6 +1088,7 @@ export const projects = [
       },
     ],
     component: <ChatGPT></ChatGPT>,
+    tab: "packages",
   },
   {
     id: 73,
@@ -1028,6 +1100,7 @@ export const projects = [
       },
     ],
     component: <CurrencyConverter></CurrencyConverter>,
+    tab: "api",
   },
   {
     id: 74,
@@ -1039,6 +1112,7 @@ export const projects = [
       },
     ],
     component: <Ranker></Ranker>,
+    tab: "packages",
   },
   {
     id: 75,
@@ -1050,6 +1124,7 @@ export const projects = [
       },
     ],
     component: <MemeGenerator></MemeGenerator>,
+    tab: "api",
   },
   {
     id: 76,
@@ -1061,6 +1136,7 @@ export const projects = [
       },
     ],
     component: <FootballLiveScore></FootballLiveScore>,
+    tab: "api",
   },
   {
     id: 77,
@@ -1076,6 +1152,7 @@ export const projects = [
       },
     ],
     component: <TipCalculator></TipCalculator>,
+    tab: "javascript",
   },
   {
     id: 78,
@@ -1087,6 +1164,7 @@ export const projects = [
       },
     ],
     component: <UniversityFinder></UniversityFinder>,
+    tab: "react",
   },
   {
     id: 79,
@@ -1098,6 +1176,7 @@ export const projects = [
       },
     ],
     component: <Captcha></Captcha>,
+    tab: "packages",
   },
   {
     id: 80,
@@ -1113,6 +1192,7 @@ export const projects = [
       },
     ],
     component: <EmotePicker></EmotePicker>,
+    tab: "packages",
   },
   {
     id: 81,
@@ -1128,6 +1208,7 @@ export const projects = [
       },
     ],
     component: <HeroSlider></HeroSlider>,
+    tab: "desktop",
   },
   {
     id: 82,
@@ -1143,6 +1224,7 @@ export const projects = [
       },
     ],
     component: <ColorfulMousePointer></ColorfulMousePointer>,
+    tab: "javascript",
   },
   {
     id: 83,
@@ -1154,6 +1236,7 @@ export const projects = [
       },
     ],
     component: <PlaySnake></PlaySnake>,
+    tab: "desktop",
   },
   {
     id: 84,
@@ -1165,6 +1248,7 @@ export const projects = [
       },
     ],
     component: <MapsMarker></MapsMarker>,
+    tab: "packages",
   },
   {
     id: 85,
@@ -1176,6 +1260,7 @@ export const projects = [
       },
     ],
     component: <VideoPlayer></VideoPlayer>,
+    tab: "javascript",
   },
   {
     id: 86,
@@ -1187,6 +1272,7 @@ export const projects = [
       },
     ],
     component: <LinkTree></LinkTree>,
+    tab: "react",
   },
   {
     id: 87,
@@ -1198,6 +1284,7 @@ export const projects = [
       },
     ],
     component: <OrbitalLoadingPage></OrbitalLoadingPage>,
+    tab: "css",
   },
   {
     id: 88,
@@ -1213,6 +1300,7 @@ export const projects = [
       },
     ],
     component: <GoogleLoginButton></GoogleLoginButton>,
+    tab: "packages",
   },
   {
     id: 89,
@@ -1228,6 +1316,7 @@ export const projects = [
       },
     ],
     component: <AIKeywordExtractor></AIKeywordExtractor>,
+    tab: "packages",
   },
   {
     id: 90,
@@ -1243,6 +1332,7 @@ export const projects = [
       },
     ],
     component: <MotionActivatedCard></MotionActivatedCard>,
+    tab: "framer motion",
   },
   {
     id: 91,
@@ -1258,6 +1348,7 @@ export const projects = [
       },
     ],
     component: <Connect4></Connect4>,
+    tab: "desktop",
   },
   {
     id: 92,
@@ -1273,6 +1364,7 @@ export const projects = [
       },
     ],
     component: <MysticSquare></MysticSquare>,
+    tab: "javascript",
   },
   {
     id: 93,
@@ -1288,6 +1380,7 @@ export const projects = [
       },
     ],
     component: <ThreejsBackgroundAnimation></ThreejsBackgroundAnimation>,
+    tab: "3d",
   },
   {
     id: 94,
@@ -1303,6 +1396,7 @@ export const projects = [
       },
     ],
     component: <ComingSoon></ComingSoon>,
+    tab: "packages",
   },
   {
     id: 95,
@@ -1314,6 +1408,7 @@ export const projects = [
       },
     ],
     component: <Hangman></Hangman>,
+    tab: "react",
   },
   {
     id: 96,
@@ -1325,6 +1420,7 @@ export const projects = [
       },
     ],
     component: <LightsOut></LightsOut>,
+    tab: "react",
   },
   {
     id: 97,
@@ -1340,6 +1436,7 @@ export const projects = [
       },
     ],
     component: <ThreeDimensionWorld></ThreeDimensionWorld>,
+    tab: "3d",
   },
   {
     id: 98,
@@ -1355,6 +1452,7 @@ export const projects = [
       },
     ],
     component: <SkeletonLayout></SkeletonLayout>,
+    tab: "api",
   },
   {
     id: 99,
@@ -1374,6 +1472,7 @@ export const projects = [
       },
     ],
     component: <TrelloAnimatedChecklist></TrelloAnimatedChecklist>,
+    tab: "framer motion",
   },
   {
     id: 100,
@@ -1385,6 +1484,7 @@ export const projects = [
       },
     ],
     component: <GradientGenerator></GradientGenerator>,
+    tab: "javascript",
   },
   {
     id: 101,
@@ -1400,6 +1500,7 @@ export const projects = [
       },
     ],
     component: <LineChart></LineChart>,
+    tab: "framer motion",
   },
   {
     id: 102,
@@ -1415,6 +1516,7 @@ export const projects = [
       },
     ],
     component: <CustomCalendar></CustomCalendar>,
+    tab: "desktop",
   },
   {
     id: 103,
@@ -1426,6 +1528,7 @@ export const projects = [
       },
     ],
     component: <IncomeTracker></IncomeTracker>,
+    tab: "react",
   },
   {
     id: 104,
@@ -1441,6 +1544,7 @@ export const projects = [
       },
     ],
     component: <DraggableList></DraggableList>,
+    tab: "desktop",
   },
   {
     id: 105,
@@ -1456,6 +1560,7 @@ export const projects = [
       },
     ],
     component: <Timeline></Timeline>,
+    tab: "css",
   },
   {
     id: 106,
@@ -1467,6 +1572,7 @@ export const projects = [
       },
     ],
     component: <BinaryClock></BinaryClock>,
+    tab: "javascript",
   },
   {
     id: 107,
@@ -1478,6 +1584,7 @@ export const projects = [
       },
     ],
     component: <AppleMessages></AppleMessages>,
+    tab: "framer motion",
   },
   {
     id: 108,
@@ -1493,6 +1600,7 @@ export const projects = [
       },
     ],
     component: <FormValidator></FormValidator>,
+    tab: "packages",
   },
   {
     id: 109,
@@ -1504,6 +1612,7 @@ export const projects = [
       },
     ],
     component: <RemoveBg></RemoveBg>,
+    tab: "react",
   },
   {
     id: 110,
@@ -1519,5 +1628,6 @@ export const projects = [
       },
     ],
     component: <TypewriterAnimation></TypewriterAnimation>,
+    tab: "packages",
   },
 ];
