@@ -109,6 +109,7 @@ import FormValidator from "../projects/Form Validator/FormValidator";
 import RemoveBg from "../projects/Remove Bg/RemoveBg";
 import TypewriterAnimation from "../projects/Typewriter Animation/TypewriterAnimation";
 import AnimatedTabs from "../projects/Animated Tabs/AnimatedTabs";
+import JobsListing from "../projects/Jobs Listing/JobsListing";
 
 export const projects = [
   {
@@ -1642,5 +1643,17 @@ export const projects = [
     ],
     component: <AnimatedTabs></AnimatedTabs>,
     tab: "framer motion",
+  },
+  {
+    id: 112,
+    title: "Jobs Listing",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+    ],
+    component: <JobsListing></JobsListing>,
+    tab: "react",
   },
 ];
