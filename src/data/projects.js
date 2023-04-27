@@ -110,6 +110,7 @@ import RemoveBg from "../projects/Remove Bg/RemoveBg";
 import TypewriterAnimation from "../projects/Typewriter Animation/TypewriterAnimation";
 import AnimatedTabs from "../projects/Animated Tabs/AnimatedTabs";
 import JobsListing from "../projects/Jobs Listing/JobsListing";
+import SearchableTable from "../projects/Searchable Table/SearchableTable";
 
 export const projects = [
   {
@@ -1655,5 +1656,17 @@ export const projects = [
     ],
     component: <JobsListing></JobsListing>,
     tab: "react",
+  },
+  {
+    id: 113,
+    title: "Searchable Table",
+    hashtags: [
+      {
+        id: 1,
+        name: "css",
+      },
+    ],
+    component: <SearchableTable></SearchableTable>,
+    tab: "css",
   },
 ];
