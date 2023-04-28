@@ -34,6 +34,7 @@ module.exports = {
         orbitalSpin: "orbitalSpin linear infinite",
         diceShake: "diceShake 0.5s infinite",
         flicker: "flicker 1.5s infinite alternate",
+        slideLeft: "slideLeft 14s linear infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

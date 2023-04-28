@@ -140,3 +140,9 @@
     text-shadow: none;
   }
 }
+
+@keyframes slideLeft {
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}

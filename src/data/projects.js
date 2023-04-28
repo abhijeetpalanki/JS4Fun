@@ -111,6 +111,7 @@ import TypewriterAnimation from "../projects/Typewriter Animation/TypewriterAnim
 import AnimatedTabs from "../projects/Animated Tabs/AnimatedTabs";
 import JobsListing from "../projects/Jobs Listing/JobsListing";
 import SearchableTable from "../projects/Searchable Table/SearchableTable";
+import BrandSlider from "../projects/Brand Slider/BrandSlider";
 
 export const projects = [
   {
@@ -1667,6 +1668,18 @@ export const projects = [
       },
     ],
     component: <SearchableTable></SearchableTable>,
+    tab: "css",
+  },
+  {
+    id: 114,
+    title: "Brand Slider",
+    hashtags: [
+      {
+        id: 1,
+        name: "css",
+      },
+    ],
+    component: <BrandSlider></BrandSlider>,
     tab: "css",
   },
 ];
