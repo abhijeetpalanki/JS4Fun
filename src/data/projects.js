@@ -112,6 +112,7 @@ import AnimatedTabs from "../projects/Animated Tabs/AnimatedTabs";
 import JobsListing from "../projects/Jobs Listing/JobsListing";
 import SearchableTable from "../projects/Searchable Table/SearchableTable";
 import BrandSlider from "../projects/Brand Slider/BrandSlider";
+import StopwatchTimer from "../projects/Stopwatch Timer/StopwatchTimer";
 
 export const projects = [
   {
@@ -1681,5 +1682,17 @@ export const projects = [
     ],
     component: <BrandSlider></BrandSlider>,
     tab: "css",
+  },
+  {
+    id: 115,
+    title: "Stopwatch Timer",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+    ],
+    component: <StopwatchTimer></StopwatchTimer>,
+    tab: "react",
   },
 ];
