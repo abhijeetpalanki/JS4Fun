@@ -113,6 +113,7 @@ import JobsListing from "../projects/Jobs Listing/JobsListing";
 import SearchableTable from "../projects/Searchable Table/SearchableTable";
 import BrandSlider from "../projects/Brand Slider/BrandSlider";
 import StopwatchTimer from "../projects/Stopwatch Timer/StopwatchTimer";
+import DynamicInputs from "../projects/Dynamic Inputs/DynamicInputs";
 
 export const projects = [
   {
@@ -1693,6 +1694,18 @@ export const projects = [
       },
     ],
     component: <StopwatchTimer></StopwatchTimer>,
+    tab: "react",
+  },
+  {
+    id: 116,
+    title: "Dynamic Inputs",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+    ],
+    component: <DynamicInputs></DynamicInputs>,
     tab: "react",
   },
 ];
