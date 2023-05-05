@@ -114,6 +114,7 @@ import SearchableTable from "../projects/Searchable Table/SearchableTable";
 import BrandSlider from "../projects/Brand Slider/BrandSlider";
 import StopwatchTimer from "../projects/Stopwatch Timer/StopwatchTimer";
 import DynamicInputs from "../projects/Dynamic Inputs/DynamicInputs";
+import AnimeList from "../projects/Anime List/AnimeList";
 
 export const projects = [
   {
@@ -1707,5 +1708,21 @@ export const projects = [
     ],
     component: <DynamicInputs></DynamicInputs>,
     tab: "react",
+  },
+  {
+    id: 117,
+    title: "Anime List",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+      {
+        id: 2,
+        name: "apidata",
+      },
+    ],
+    component: <AnimeList></AnimeList>,
+    tab: "api",
   },
 ];
