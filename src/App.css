@@ -39,6 +39,20 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 
+/* Atmos 3D Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.23);
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  height: 10%;
+}
+
 /* Hacker Typer */
 .success {
   color: #10ff00;

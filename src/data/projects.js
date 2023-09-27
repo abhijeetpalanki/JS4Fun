@@ -115,6 +115,7 @@ import BrandSlider from "../projects/Brand Slider/BrandSlider";
 import StopwatchTimer from "../projects/Stopwatch Timer/StopwatchTimer";
 import DynamicInputs from "../projects/Dynamic Inputs/DynamicInputs";
 import AnimeList from "../projects/Anime List/AnimeList";
+import Atmos3D from "../projects/Atmos 3D/Atmos3D";
 
 export const projects = [
   {
@@ -1724,5 +1725,21 @@ export const projects = [
     ],
     component: <AnimeList></AnimeList>,
     tab: "api",
+  },
+  {
+    id: 118,
+    title: "Atmos 3D",
+    hashtags: [
+      {
+        id: 1,
+        name: "three.js",
+      },
+      {
+        id: 2,
+        name: "landingpages",
+      },
+    ],
+    component: <Atmos3D></Atmos3D>,
+    tab: "3d",
   },
 ];
