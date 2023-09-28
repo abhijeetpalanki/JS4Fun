@@ -117,6 +117,7 @@ import DynamicInputs from "../projects/Dynamic Inputs/DynamicInputs";
 import AnimeList from "../projects/Anime List/AnimeList";
 import Atmos3D from "../projects/Atmos 3D/Atmos3D";
 import CardHover from "../projects/Card Hover/CardHover";
+import BetterHealth from "../projects/Better Health/BetterHealth";
 
 export const projects = [
   {
@@ -1754,5 +1755,21 @@ export const projects = [
     ],
     component: <CardHover></CardHover>,
     tab: "css",
+  },
+  {
+    id: 120,
+    title: "Better Health",
+    hashtags: [
+      {
+        id: 1,
+        name: "three.js",
+      },
+      {
+        id: 2,
+        name: "landingpages",
+      },
+    ],
+    component: <BetterHealth></BetterHealth>,
+    tab: "3d",
   },
 ];
