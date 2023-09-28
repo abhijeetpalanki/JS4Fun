@@ -116,6 +116,7 @@ import StopwatchTimer from "../projects/Stopwatch Timer/StopwatchTimer";
 import DynamicInputs from "../projects/Dynamic Inputs/DynamicInputs";
 import AnimeList from "../projects/Anime List/AnimeList";
 import Atmos3D from "../projects/Atmos 3D/Atmos3D";
+import CardHover from "../projects/Card Hover/CardHover";
 
 export const projects = [
   {
@@ -1741,5 +1742,17 @@ export const projects = [
     ],
     component: <Atmos3D></Atmos3D>,
     tab: "3d",
+  },
+  {
+    id: 119,
+    title: "Card Hover",
+    hashtags: [
+      {
+        id: 1,
+        name: "css",
+      },
+    ],
+    component: <CardHover></CardHover>,
+    tab: "css",
   },
 ];
