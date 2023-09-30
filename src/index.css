@@ -146,3 +146,12 @@
     transform: translateX(calc(-100% / 2));
   }
 }
+
+@keyframes confetti {
+  25% {
+    translate: 0 -25vh;
+  }
+  100% {
+    translate: 0 -25vh;
+  }
+}

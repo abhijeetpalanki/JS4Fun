@@ -119,6 +119,7 @@ import Atmos3D from "../projects/Atmos 3D/Atmos3D";
 import CardHover from "../projects/Card Hover/CardHover";
 import BetterHealth from "../projects/Better Health/BetterHealth";
 import YoutubeTabAnimation from "../projects/Youtube Tab Animation/YoutubeTabAnimation";
+import ConfettiCelebration from "../projects/Confetti Celebration/ConfettiCelebration";
 
 export const projects = [
   {
@@ -1783,6 +1784,18 @@ export const projects = [
       },
     ],
     component: <YoutubeTabAnimation></YoutubeTabAnimation>,
+    tab: "css",
+  },
+  {
+    id: 122,
+    title: "Confetti Celebration",
+    hashtags: [
+      {
+        id: 1,
+        name: "css",
+      },
+    ],
+    component: <ConfettiCelebration></ConfettiCelebration>,
     tab: "css",
   },
 ];

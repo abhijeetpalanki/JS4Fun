@@ -35,6 +35,7 @@ module.exports = {
         diceShake: "diceShake 0.5s infinite",
         flicker: "flicker 1.5s infinite alternate",
         slideLeft: "slideLeft 14s linear infinite",
+        confetti: "confetti 1ms 10s forwards",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -48,5 +49,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/aspect-ratio"),
     require("tailwind-scrollbar")({ nocompatible: true }),
+    require("tailwindcss-3d"),
   ],
 };
