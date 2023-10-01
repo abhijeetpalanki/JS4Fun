@@ -120,6 +120,7 @@ import CardHover from "../projects/Card Hover/CardHover";
 import BetterHealth from "../projects/Better Health/BetterHealth";
 import YoutubeTabAnimation from "../projects/Youtube Tab Animation/YoutubeTabAnimation";
 import ConfettiCelebration from "../projects/Confetti Celebration/ConfettiCelebration";
+import Threads from "../projects/Threads/Threads";
 
 export const projects = [
   {
@@ -1797,5 +1798,21 @@ export const projects = [
     ],
     component: <ConfettiCelebration></ConfettiCelebration>,
     tab: "css",
+  },
+  {
+    id: 123,
+    title: "Threads",
+    hashtags: [
+      {
+        id: 1,
+        name: "three.js",
+      },
+      {
+        id: 2,
+        name: "landingpages",
+      },
+    ],
+    component: <Threads></Threads>,
+    tab: "3d",
   },
 ];
