@@ -121,6 +121,7 @@ import BetterHealth from "../projects/Better Health/BetterHealth";
 import YoutubeTabAnimation from "../projects/Youtube Tab Animation/YoutubeTabAnimation";
 import ConfettiCelebration from "../projects/Confetti Celebration/ConfettiCelebration";
 import Threads from "../projects/Threads/Threads";
+import CurvedMenu from "../projects/Curved Menu/CurvedMenu";
 
 export const projects = [
   {
@@ -1814,5 +1815,17 @@ export const projects = [
     ],
     component: <Threads></Threads>,
     tab: "3d",
+  },
+  {
+    id: 124,
+    title: "Curved Menu",
+    hashtags: [
+      {
+        id: 1,
+        name: "framermotion",
+      },
+    ],
+    component: <CurvedMenu></CurvedMenu>,
+    tab: "framer motion",
   },
 ];
