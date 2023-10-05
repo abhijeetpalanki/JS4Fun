@@ -119,6 +119,7 @@ import YoutubeTabAnimation from "../projects/Youtube Tab Animation/YoutubeTabAni
 import ConfettiCelebration from "../projects/Confetti Celebration/ConfettiCelebration";
 import Threads from "../projects/Threads/Threads";
 import CurvedMenu from "../projects/Curved Menu/CurvedMenu";
+import Android from "../projects/Android/Android";
 
 export const projects = [
   {
@@ -1122,6 +1123,22 @@ export const projects = [
     tab: "api",
   },
   {
+    id: 76,
+    title: "Android",
+    hashtags: [
+      {
+        id: 1,
+        name: "framermotion",
+      },
+      {
+        id: 2,
+        name: "landingpages",
+      },
+    ],
+    component: <Android></Android>,
+    tab: "framer motion",
+  },
+  {
     id: 77,
     title: "Tip Calculator",
     hashtags: [
@@ -1284,6 +1301,13 @@ export const projects = [
     ],
     component: <GoogleLoginButton></GoogleLoginButton>,
     tab: "packages",
+  },
+  {
+    id: 89,
+    title: "TODO",
+    hashtags: [],
+    component: <></>,
+    tab: "",
   },
   {
     id: 90,
