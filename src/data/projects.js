@@ -120,6 +120,7 @@ import ConfettiCelebration from "../projects/Confetti Celebration/ConfettiCelebr
 import Threads from "../projects/Threads/Threads";
 import CurvedMenu from "../projects/Curved Menu/CurvedMenu";
 import Android from "../projects/Android/Android";
+import StaggeredGrid from "../projects/Staggered Grid/StaggeredGrid";
 
 export const projects = [
   {
@@ -1304,10 +1305,15 @@ export const projects = [
   },
   {
     id: 89,
-    title: "TODO",
-    hashtags: [],
-    component: <></>,
-    tab: "",
+    title: "Staggered Grid",
+    hashtags: [
+      {
+        id: 1,
+        name: "anime.js",
+      },
+    ],
+    component: <StaggeredGrid></StaggeredGrid>,
+    tab: "anime",
   },
   {
     id: 90,

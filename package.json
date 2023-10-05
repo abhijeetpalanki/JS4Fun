@@ -14,6 +14,7 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.5.1",
     "@types/three": "^0.156.0",
+    "animejs": "^3.2.1",
     "axios": "^1.5.1",
     "captcha-text-generator": "^1.0.0",
     "chart.js": "^4.4.0",
