@@ -54,7 +54,7 @@ const CurrencyConverter = () => {
   }, [rates]);
 
   return (
-    <div className="h-screen font-['Montserrat'] flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl text-[#eef] text-center mb-10">
         <span className="text-black">Currency</span> Converter
       </h1>

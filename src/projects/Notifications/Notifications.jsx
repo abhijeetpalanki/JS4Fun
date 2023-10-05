@@ -125,8 +125,8 @@ const Notifications = () => {
   };
 
   return (
-    <div className="bg-[hsl(210,60%,98%)] text-[hsl(224,21%,14%)] text-[clamp(1.00rem,calc(0.85rem+0.73vw),1.38rem)] font-['Plus_Jakarta_Sans'] grid items-center p-8 m-0 leading-[1.5] select-none">
-      <div className="grid gap-6 bg-white rounded-lg shadow-[0_4px_2rem_hsl(211,68%,94%)] py-[clamp(2.07rem,calc(1.57rem+2.50vw),3.36rem)] px-[clamp(1.44rem,calc(1.16rem+1.38vw),2.15rem)] max-w-[800px] mx-auto">
+    <div className="bg-[#f7fafd] text-[#1c202b] text-[clamp(1.00rem,calc(0.85rem+0.73vw),1.38rem)] grid items-center p-8 m-0 leading-[1.5] select-none">
+      <div className="grid gap-6 bg-white rounded-lg shadow-[0_4px_2rem_#e5effa] py-[clamp(2.07rem,calc(1.57rem+2.50vw),3.36rem)] px-[clamp(1.44rem,calc(1.16rem+1.38vw),2.15rem)] max-w-[800px] mx-auto">
         <header className="flex items-center justify-between">
           <div className="flex items-center gap-2 p-4">
             <h1 className="text-[clamp(1.44rem,calc(1.16rem+1.38vw),2.15rem)] leading-none">
@@ -137,7 +137,7 @@ const Notifications = () => {
             </span>
           </div>
           <button
-            className="border-none text-[hsl(224,21%,14%)] transition-colors duration-200 ease-in-out hover:text-[hsl(219,85%,26%)] focus:text-[hsl(219,85%,26%)]"
+            className="border-none text-[#1c202b] transition-colors duration-200 ease-in-out hover:text-[#0a317b] focus:text-[#0a317b]"
             onClick={markAllRead}
           >
             Mark all as read
@@ -164,7 +164,7 @@ const Notifications = () => {
                       <div>
                         <a
                           href={n.author.href}
-                          className="font-bold text-[hsl(224,21%,14%)] transition-colors duration-200 ease-in-out hover:text-[hsl(219,85%,26%)] focus:text-[hsl(219,85%,26%)] mr-1"
+                          className="font-bold text-[#1c202b] transition-colors duration-200 ease-in-out hover:text-[#0a317b] focus:text-[#0a317b] mr-1"
                         >
                           {n.author.name}
                         </a>
@@ -172,7 +172,7 @@ const Notifications = () => {
                         {n.link && (
                           <a
                             href={n.link.href}
-                            className="font-bold text-[hsl(224,21%,14%)] transition-colors duration-200 ease-in-out hover:text-[hsl(219,85%,26%)] focus:text-[hsl(219,85%,26%)] ml-1"
+                            className="font-bold text-[#1c202b] transition-colors duration-200 ease-in-out hover:text-[#0a317b] focus:text-[#0a317b] ml-1"
                           >
                             {n.link.text}
                           </a>
@@ -197,7 +197,7 @@ const Notifications = () => {
                 {n.image && (
                   <a
                     href={n.image.src}
-                    className="font-bold text-[hsl(224,21%,14%)] transition-colors duration-200 ease-in-out hover:text-[hsl(219,85%,26%)] focus:text-[hsl(219,85%,26%)]"
+                    className="font-bold text-[#1c202b] transition-colors duration-200 ease-in-out hover:text-[#0a317b] focus:text-[#0a317b]"
                   >
                     <img src={n.image.src} alt={n.image.alt} />
                   </a>

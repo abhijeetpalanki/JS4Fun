@@ -73,7 +73,7 @@ const MysticSquare = () => {
   });
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen font-['Pacifico'] bg-[#64bdb0]">
+    <div className="flex flex-col items-center justify-center h-screen bg-[#64bdb0]">
       <h2 className="py-4 text-xl text-white">Mystic Square</h2>
 
       {/* Board */}

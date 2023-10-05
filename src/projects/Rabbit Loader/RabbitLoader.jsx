@@ -1,18 +1,18 @@
 const RabbitLoader = () => {
   return (
-    <div className="font-['Muli'] bg-[#e25a61] text-white h-screen flex flex-col items-center justify-center">
+    <div className="bg-[#e25a61] text-white h-screen flex flex-col items-center justify-center">
       {/* Container */}
       <div className="h-[31em] w-[31em] relative z-[1] sm:text-[20px]">
         {/* Tail */}
         <div className="absolute bg-white h-[3.4em] w-[3.4em] rounded-full right-[5.93em] top-[15.93em]"></div>
 
-        <span className="font-['Poppins'] font-semibold text-[2em] text-[#4f1f22] rotate-[10deg] absolute animate-snore top-[5.5em] left-[4.5em] delay-[7000ms]">
+        <span className="font-semibold text-[2em] text-[#4f1f22] rotate-[10deg] absolute animate-snore top-[5.5em] left-[4.5em] delay-[7000ms]">
           Z
         </span>
-        <span className="font-['Poppins'] font-semibold text-[2em] text-[#4f1f22] rotate-[10deg] absolute animate-snore top-[7em] left-[3.5em] delay-[1000ms]">
+        <span className="font-semibold text-[2em] text-[#4f1f22] rotate-[10deg] absolute animate-snore top-[7em] left-[3.5em] delay-[1000ms]">
           Z
         </span>
-        <span className="font-['Poppins'] font-semibold text-[2em] text-[#4f1f22] rotate-[10deg] absolute animate-snore top-[5em] left-[6em]">
+        <span className="font-semibold text-[2em] text-[#4f1f22] rotate-[10deg] absolute animate-snore top-[5em] left-[6em]">
           Z
         </span>
 

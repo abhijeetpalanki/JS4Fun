@@ -63,7 +63,7 @@ const MoviesHub = () => {
       <main className="flex flex-wrap items-center justify-center">
         {movies.map((movie, index) => (
           <div
-            className="group w-[300px] m-[1rem] bg-[#373b69] relative overflow-hidden rounded-[3px] [box-shadow:0_4px_5px_rgba(0,0,0,0.2)]"
+            className="group w-[300px] m-[1rem] bg-[#373b69] relative overflow-hidden rounded-[3px] [box-shadow:0_4px_5px_#00000033]"
             key={index}
           >
             <img

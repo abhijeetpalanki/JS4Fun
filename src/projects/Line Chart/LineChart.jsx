@@ -73,14 +73,14 @@ const LineChart = () => {
             {
               label: "Items Delivered",
               data: users.map((user) => user.items_delivered),
-              borderColor: "rgb(255, 99, 132)",
-              backgroundColor: "rgba(255, 99, 132, 0.5)",
+              borderColor: "#ff6384",
+              backgroundColor: "#ff63847f",
             },
             {
               label: "Mles Driven",
               data: users.map((user) => user.miles_driven),
-              borderColor: "rgb(53, 162, 235)",
-              backgroundColor: "rgba(53, 162, 235, 0.5)",
+              borderColor: "#35a2eb",
+              backgroundColor: "#35a2eb7f",
             },
           ],
         }}

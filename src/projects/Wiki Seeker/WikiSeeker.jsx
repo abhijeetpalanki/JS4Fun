@@ -24,13 +24,13 @@ const WikiSeeker = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center font-['Fira_Sans']">
+    <div className="flex flex-col items-center justify-center">
       <header className="flex flex-col items-center mb-8">
         <h1 className="text-[#888] text-[30px] md:text-[42px] uppercase text-center mb-4">
           Wiki Seeker
         </h1>
         <form
-          className="flex items-center justify-center rounded-2xl overflow-hidden w-[240px] md:w-[480px] max-w-[480px] mb-4 duration-[0.4s] focus-within:shadow-[3px_3px_6px_rgba(0,0,0,0.2)]"
+          className="flex items-center justify-center rounded-2xl overflow-hidden w-[240px] md:w-[480px] max-w-[480px] mb-4 duration-[0.4s] focus-within:shadow-[3px_3px_6px_#00000033]"
           onSubmit={handleSearch}
         >
           <input
@@ -55,7 +55,7 @@ const WikiSeeker = () => {
           return (
             <div
               key={index}
-              className="w-full p-4 mb-4 bg-white rounded-2xl duration-[0.4s] hover:shadow-[3px_3px_6px_rgba(0,0,0,0.2)]"
+              className="w-full p-4 mb-4 bg-white rounded-2xl duration-[0.4s] hover:shadow-[3px_3px_6px_#00000033]"
             >
               <h3 className="text-[#aaa] text-[28px] mb-4">{result.title}</h3>
               <p

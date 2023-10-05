@@ -45,7 +45,7 @@ const Meter = ({ password }) => {
 
   return (
     <>
-      <div className="w-full h-3 mt-2 bg-gray-700 rounded-full dark:bg-gray-300">
+      <div className="w-full h-3 mt-2 bg-gray-300 rounded-full">
         <div
           className="h-3 rounded-full progress-bar transition-[width] duration-[0.6s] ease-[cubic-bezier(0.4, 0, 0.2, 1)]"
           style={changePasswordColor()}

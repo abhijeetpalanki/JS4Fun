@@ -41,7 +41,7 @@ const PalindromeChecker = () => {
   };
 
   return (
-    <div className="font-['Poppins'] bg-[#aa57cc] flex items-center justify-center h-screen">
+    <div className="bg-[#aa57cc] flex items-center justify-center h-screen">
       <div className="bg-white max-w-[350px] md:max-w-[500px] rounded-[7px] p-[20px_25px_15px]">
         <header>
           <h1 className="text-[27px] font-medium">Palindrome Checker</h1>
@@ -52,7 +52,7 @@ const PalindromeChecker = () => {
         </header>
         <div className="m-[20px_0_27px]">
           <input
-            className="w-full h-[60px] outline-none border border-[#999] rounded-[5px] text-[19px] p-[0_17px] focus:shadow-[0_3px_6px_rgba(0,0,0,0.15)]"
+            className="w-full h-[60px] outline-none border border-[#999] rounded-[5px] text-[19px] p-[0_17px] focus:shadow-[0_3px_6px_#00000026]"
             type="text"
             placeholder="Enter text or number"
             value={text}

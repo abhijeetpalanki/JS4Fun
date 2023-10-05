@@ -14,7 +14,7 @@ const YoutubeTabAnimation = () => {
   let [activeTab, setActiveTab] = useState(tabs[0].id);
 
   return (
-    <div className="font-['Lato'] flex flex-col items-center justify-center h-screen bg-[#111] text-white p-8">
+    <div className="flex flex-col items-center justify-center h-screen bg-[#111] text-white p-8">
       <div className="w-[min(60rem,100%-2rem)] container">
         <div className="flex items-center gap-6">
           <img

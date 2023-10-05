@@ -75,7 +75,7 @@ const Hangman = () => {
             <p className="m-[10px]">You {status}!</p>
             <p className="m-[10px]">
               The word was{" "}
-              <span className="font-bold text-white font-['Oswald'] tracking-widest">
+              <span className="font-bold tracking-widest text-white">
                 {word}
               </span>
             </p>

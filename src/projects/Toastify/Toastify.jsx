@@ -19,7 +19,7 @@ const Toastify = () => {
   const [theme] = useState(["light", "dark", "colored"]);
 
   return (
-    <div className="font-['Poppins'] flex flex-col gap-2 items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen gap-2">
       <>
         <div className="flex flex-col items-center justify-center gap-2 md:flex-row">
           <div className="w-[350px] md:w-[500px] h-64 px-5 py-10 drop-shadow mt-10 border rounded">

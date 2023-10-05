@@ -82,7 +82,7 @@ const BookHub = () => {
   };
 
   return (
-    <div className="font-['Poppins']">
+    <div>
       <header
         style={{ backgroundImage: `url(${bg})` }}
         className="flex flex-col justify-center items-center h-[250px]"
@@ -113,7 +113,7 @@ const BookHub = () => {
                 {booksWithCovers.slice(0, 30).map((item, index) => {
                   return (
                     <div
-                      className="flex flex-col justify-between py-12 px-8 rounded-md bg-white shadow-[rgba(0,0,0,0.05)_0px_5px_15px_0px] transition hover:shadow-[rgba(0,0,0,0.15)_0px_5px_15px_0px]"
+                      className="flex flex-col justify-between py-12 px-8 rounded-md bg-white shadow-[#000000c_0px_5px_15px_0px] transition hover:shadow-[#00000026_0px_5px_15px_0px]"
                       key={index}
                     >
                       <div>

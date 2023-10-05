@@ -49,7 +49,7 @@ const Musification = () => {
   }, [currentSongIndex]);
 
   return (
-    <div className="h-screen bg-[#ddd] font-['Fira_Sans'] flex items-center justify-center">
+    <div className="h-screen bg-[#ddd] flex items-center justify-center">
       <Player
         currentSongIndex={currentSongIndex}
         setCurrentSongIndex={setCurrentSongIndex}

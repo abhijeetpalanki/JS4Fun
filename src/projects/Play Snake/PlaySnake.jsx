@@ -99,7 +99,7 @@ const PlaySnake = () => {
   }, [snake, food, gameOver]);
 
   return (
-    <div className="bg-[#e3f2fd] font-['Open_Sans'] h-screen flex flex-col justify-center items-center">
+    <div className="bg-[#e3f2fd] h-screen flex flex-col justify-center items-center">
       <div className="bg-[#293447] flex flex-col overflow-hidden rounded-md">
         <div className="text-[#b8c6dc] text-xl font-medium py-5 px-7 flex justify-between">
           <button

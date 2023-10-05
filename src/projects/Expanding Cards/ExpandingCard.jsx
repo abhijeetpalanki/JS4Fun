@@ -13,7 +13,7 @@ const ExpandingCard = () => {
   };
 
   return (
-    <div className="font-['Muli'] flex justify-center items-center h-[80vh] overflow-hidden">
+    <div className="flex justify-center items-center h-[80vh] overflow-hidden">
       <div className="flex w-screen sm:w-full">
         {panels.map((panel) => (
           <div

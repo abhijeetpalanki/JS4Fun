@@ -32,7 +32,7 @@ const Dictionary = () => {
   }, [inputWord]);
 
   return (
-    <div className="font-['Roboto']">
+    <div>
       <Header inputWord={inputWord} setInputWord={setInputWord} />
       <Results loading={loading} wordError={wordError} response={response} />
     </div>

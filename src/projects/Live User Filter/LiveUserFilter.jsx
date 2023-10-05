@@ -27,8 +27,8 @@ const LiveUserFilter = () => {
   }, []);
 
   return (
-    <div className="font-['Roboto'] flex items-center justify-center h-screen">
-      <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-[300px] shadow-[3px_3px_10px_rgba(0,0,0,0.2)]">
+    <div className="flex items-center justify-center h-screen">
+      <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-[300px] shadow-[3px_3px_10px_#00000033]">
         <header className="bg-[#3e57db] text-white text-center py-[30px] px-[20px]">
           <h4 className="m-0 text-[1rem] font-bold">Live User Filter</h4>
           <small className="inline-block opacity-80 mb-[20px] mt-[5px] mx-0">

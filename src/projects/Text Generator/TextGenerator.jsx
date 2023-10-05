@@ -41,7 +41,7 @@ const TextGenerator = () => {
   };
 
   return (
-    <div className="font-['Poppins'] flex flex-col justify-center items-center h-screen leading-[1.6] bg-[#556271]">
+    <div className="flex flex-col justify-center items-center h-screen leading-[1.6] bg-[#556271]">
       <div className="max-w-[400px] md:max-w-[1000px] mx-auto p-[5rem_2rem_0]">
         <div className="rounded-[0.4rem] overflow-hidden">
           {/* Head */}
@@ -61,7 +61,7 @@ const TextGenerator = () => {
 
               <button
                 type="button"
-                className="bg-[#ff6a67] border-none text-white uppercase font-semibold text-[1rem] tracking-[1px] py-[1.1rem] px-[1.2rem] rounded-md transition-all duration-300 ease-in-out hover:shadow-[0_0_7px_0_rgba(0,0,0,0.25)] mr-[1.4rem]"
+                className="bg-[#ff6a67] border-none text-white uppercase font-semibold text-[1rem] tracking-[1px] py-[1.1rem] px-[1.2rem] rounded-md transition-all duration-300 ease-in-out hover:shadow-[0_0_7px_0_#0000003f] mr-[1.4rem]"
                 onClick={getSampleText}
               >
                 Generate
@@ -70,7 +70,7 @@ const TextGenerator = () => {
 
             <button
               type="button"
-              className="bg-[#ff6a67] border-none text-white uppercase font-semibold text-[1rem] tracking-[1px] py-[1.1rem] px-[1.2rem] mt-8 md:mt-0 rounded-md transition-all duration-300 ease-in-out hover:shadow-[0_0_7px_0_rgba(0,0,0,0.25)] flex justify-center items-center"
+              className="bg-[#ff6a67] border-none text-white uppercase font-semibold text-[1rem] tracking-[1px] py-[1.1rem] px-[1.2rem] mt-8 md:mt-0 rounded-md transition-all duration-300 ease-in-out hover:shadow-[0_0_7px_0_#0000003f] flex justify-center items-center"
               onClick={copyToClipboard}
             >
               <span>copy</span>
@@ -79,7 +79,7 @@ const TextGenerator = () => {
           </div>
 
           {/* Body */}
-          <div className="bg-white min-h-[400px] shadow-[0_0_13px_0_rgba(0,0,0,0.25)]">
+          <div className="bg-white min-h-[400px] shadow-[0_0_13px_0_#0000003f]">
             <div className="w-full max-h-[500px] overflow-y-scroll p-[2.8rem] text-[#556271] font-medium leading-[1.8] gen-content">
               {text.split("</p>").map((t, index) => (
                 <div key={index}>

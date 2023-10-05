@@ -39,10 +39,6 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        relaxerBg: "url('~/src/images/relaxer-bg.jpg')",
-        brickWall: "url('~/src/images/brick-wall.jpg')",
-        postItNote: "url('~/src/images/post-it-note.png')",
-        bmiCalculatorBg: "url('https://digitshack.com/codepen/bmical/bg.png')",
       },
     },
   },

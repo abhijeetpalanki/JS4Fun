@@ -2,7 +2,7 @@ import code from "./code.png";
 
 const ServicesCard = () => {
   return (
-    <div className="bg-[#333] font-['Poppins'] flex justify-center items-center h-screen">
+    <div className="bg-[#333] flex justify-center items-center h-screen">
       <div className="flex relative py-0 px-0 md:py-[80px] md:px-[40px] justify-center items-center flex-wrap gap-[80px]">
         <div className="relative w-[350px] h-[180px] bg-white duration-500 hover:h-[450px] card">
           <div className="absolute inset-0 overflow-hidden bg-black before:animate-expand lines"></div>

@@ -27,7 +27,7 @@ const UniversityFinder = () => {
   ]);
 
   return (
-    <div className="h-screen font-['Poppins'] text-black flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center h-screen text-black">
       <input
         className="my-5 p-[10px] text-[20px] outline-none border-none rounded"
         placeholder="Search Name..."

@@ -24,9 +24,9 @@ const UnsplashInfiniteGallery = () => {
   }, []);
 
   return (
-    <div className="font-['Roboto']">
+    <div>
       <header className="max-w-6xl mx-auto text-center">
-        <h1 className="mb-4 font-['Oswald'] text-[2rem] font-bold">Unsplash</h1>
+        <h1 className="mb-4 text-[2rem] font-bold">Unsplash</h1>
         <p>The internet's source of freely usable images.</p>
         <p>Powered by creators everywhere.</p>
       </header>

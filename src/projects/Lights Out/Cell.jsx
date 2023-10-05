@@ -8,7 +8,7 @@ const Cell = ({ rowIndex, colIndex, isOn, toggleLights }) => {
       className={`w-[25px] h-[25px] border-none m-[25px] rounded-full transition-all ${
         isOn
           ? "bg-[#12e7e7] [box-shadow:0_0_25px_#12e7e7,0_0_50px_#12e7e7]"
-          : "bg-[rgb(55,55,55)] "
+          : "bg-[#373737] "
       }`}
       onClick={handleClick}
     ></button>

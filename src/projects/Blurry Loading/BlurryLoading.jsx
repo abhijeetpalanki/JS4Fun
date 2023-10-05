@@ -21,7 +21,7 @@ const BlurryLoading = () => {
   }, 30);
 
   return (
-    <div className="font-['Ubuntu'] w-screen h-screen flex justify-center items-center overflow-hidden m-0">
+    <div className="flex items-center justify-center w-screen h-screen m-0 overflow-hidden">
       <section
         ref={bgRef}
         className="absolute top-0 left-0 z-0 w-screen h-screen blur-none"

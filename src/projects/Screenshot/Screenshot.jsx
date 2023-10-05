@@ -33,7 +33,7 @@ const Screenshot = () => {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-screen overflow-hidden">
       <nav className="w-full bg-[#333] py-5 px-0 flex items-center justify-center">
         <div className="mx-auto my-0">
           <form onSubmit={searchScreenshots}>
@@ -62,7 +62,7 @@ const Screenshot = () => {
                 <img
                   src={img.url}
                   alt="background"
-                  className="object-contain w-full h-full lg:h-[800px]"
+                  className="object-contain w-full h-full lg:max-h-[500px]"
                 />
               </a>
             )}

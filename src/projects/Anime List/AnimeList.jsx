@@ -6,7 +6,7 @@ import Gallery from "./Gallery";
 
 const AnimeList = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-white font-['Inter'] text-[1.2rem] text-[#6c7983]">
+    <div className="flex flex-col items-center justify-center bg-white text-[1.2rem] text-[#6c7983]">
       <AnimeContextProvider>
         <Routes>
           <Route path="/" element={<PopularAnime />} />

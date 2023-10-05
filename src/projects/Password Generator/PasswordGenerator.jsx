@@ -105,8 +105,8 @@ const PasswordGenerator = () => {
   };
 
   return (
-    <div className="text-white font-['Muli'] flex items-center justify-center h-screen p-3">
-      <div className="container flex flex-col items-center justify-center bg-[#23235b] p-[20px] w-[350px] max-w-full shadow-[0_2px_10px_rgba(255,255,255,0.2)] rounded-md">
+    <div className="flex items-center justify-center h-screen p-3 text-white">
+      <div className="container flex flex-col items-center justify-center bg-[#23235b] p-[20px] w-[350px] max-w-full shadow-[0_2px_10px_#ffffff33] rounded-md">
         <h2 className="text-[32px] text-center mx-0 mt-[10px] mb-[20px]">
           Password Generator
         </h2>

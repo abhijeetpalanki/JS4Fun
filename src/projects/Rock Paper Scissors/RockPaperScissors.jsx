@@ -10,10 +10,9 @@ const RockPaperScissors = () => {
 
   return (
     <div
-      className="font-['Barlow_Semi_Condensed'] h-screen flex justify-center text-white text-center"
+      className="flex justify-center h-screen text-center text-white"
       style={{
-        background:
-          "radial-gradient(circle, hsl(214, 47%, 23%),hsl(237, 49%, 15%)",
+        background: "radial-gradient(circle, #1f3756,#141539",
       }}
     >
       <div className="flex flex-col items-center">

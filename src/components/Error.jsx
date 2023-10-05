@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
-    <div className="absolute top-[10%] left-[17%] right-[17%] botton-[10%] flex items-center justify-center bg-white shadow-[0_5px_10px_rgba(0,0,0,0.1)] rounded-3xl error-page">
+    <div className="absolute top-[10%] left-[17%] right-[17%] botton-[10%] flex items-center justify-center bg-white shadow-[0_5px_10px_#00000019] rounded-3xl error-page">
       <div className="max-w-[600px] text-center">
         <h1 className="text-[18vw] leading-[1em]">404</h1>
         <h4 className="mb-[20px] uppercase text-black max-w-[600px] text-[2em]">

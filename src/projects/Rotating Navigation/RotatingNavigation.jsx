@@ -6,7 +6,7 @@ const RotatingNavigation = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="rotating-navigation-body font-['Lato'] text-[#222] overflow-x-hidden m-0">
+    <div className="rotating-navigation-body text-[#222] overflow-x-hidden m-0">
       <div
         className={`container bg-[#fafafa] origin-top-left transition-[transform] duration-[0.5s] ease-linear w-screen min-h-screen p-[50px] ${
           open ? "show-nav" : ""
@@ -56,13 +56,13 @@ const RotatingNavigation = () => {
 
       <nav className="fixed bottom-[40px] left-[40px] z-[100]">
         <ul className="list-none pl-[5px]">
-          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[100%] transition-[transform] duration-[0.4s] ease-in">
+          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[100%] transition-[transform] duration-[400ms] ease-in">
             <FaHome className="text-base mr-[10px] mt-[5px]" /> Home
           </li>
-          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[150%] transition-[transform] duration-[0.4s] ease-in ml-[15px]">
+          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[150%] transition-[transform] duration-[400ms] ease-in ml-[15px]">
             <FaUserAlt className="text-base mr-[10px] mt-[5px]" /> About
           </li>
-          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[200%] transition-[transform] duration-[0.4s] ease-in ml-[30px]">
+          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[200%] transition-[transform] duration-[400ms] ease-in ml-[30px]">
             <FaEnvelope className="text-base mr-[10px] mt-[5px]" /> Contact
           </li>
         </ul>

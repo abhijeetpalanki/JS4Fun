@@ -39,7 +39,7 @@ const GradientGenerator = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen font-['Poppins']">
+    <div className="flex items-center justify-center h-screen">
       <div className="bg-white w-[350px] md:w-[450px] p-[25px] rounded-[7px]">
         <div
           className="w-full h-[220px] rounded-[7px]"

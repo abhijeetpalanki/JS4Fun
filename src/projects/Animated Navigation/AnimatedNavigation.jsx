@@ -100,7 +100,7 @@ const AnimatedNavigation = () => {
   const { projectId } = useParams();
 
   return (
-    <div className="h-screen font-['Poppins']">
+    <div className="h-screen">
       <div className="fixed">
         <button
           className={`bg-[#09090c] border-none w-[2.5rem] h-[2.5rem] rounded-full my-[0.5rem] mx-1 flex justify-center items-center relative after:transition-all after:duration-[0.3s] after:content-[''] after:absolute after:bg-white after:h-[2px] after:w-[1rem] before:content-[''] before:bg-white before:h-[2px] before:w-[1rem] before:absolute before:transition-all before:duration-[0.3s] ${
@@ -243,7 +243,7 @@ const AnimatedNavigation = () => {
             }`}
           >
             <img
-              src="https://picsum.photos/200"
+              src="/logo.png"
               alt="Profile Pic"
               onClick={handleProfileClick}
               className="max-w-[2.5rem] h-10 rounded-full hover:border-2 hover:border-[#a4b2bc] hover:p-[2px]"

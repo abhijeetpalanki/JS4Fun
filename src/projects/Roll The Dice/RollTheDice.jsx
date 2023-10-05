@@ -30,7 +30,7 @@ const RollTheDice = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="flex flex-col items-center w-[300px] md:w-[400px] p-[50px] absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-white rounded-[8px] shadow-[0_15px_35px_rgba(50, 50, 50, 0.2)] font-['Poppins']">
+      <div className="flex flex-col items-center w-[300px] md:w-[400px] p-[50px] absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-white rounded-[8px] shadow-[0_15px_35px_#32323233]">
         <div className="w-[90%] flex justify-around" ref={diceRef}>
           <img
             src={dieOne}

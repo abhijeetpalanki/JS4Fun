@@ -4,7 +4,7 @@ import techBg from "./tech-bg.jpg";
 const TypingAnimations = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen font-['Nunito']"
+      className="flex flex-col items-center justify-center h-screen"
       style={{ background: `url(${techBg}) no-repeat center/cover` }}
     >
       <div className="flex flex-col justify-between px-0 text-white">

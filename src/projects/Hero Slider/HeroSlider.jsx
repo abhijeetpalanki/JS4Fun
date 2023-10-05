@@ -54,30 +54,30 @@ const HeroSlider = () => {
   }, [tl]);
 
   return (
-    <div className="font-['Poppins'] h-screen bg-white">
+    <div className="h-screen bg-white">
       <div
         style={{ visibility: "hidden" }}
         ref={(element) => (mainRef = element)}
       >
         <div className="w-[1440px] min-w-[1440px] mx-auto">
-          <div className="flex items-center justify-between mx-6 h-screen">
+          <div className="flex items-center justify-between h-screen mx-6">
             <div className="w-1/2">
               <div
                 className="w-[400px] mx-auto text-[#323232]"
                 ref={(element) => (contentRef = element)}
               >
-                <h1 className="font-medium text-3xl mb-6">
-                  <div className="m-0 h-11 overflow-hidden">
+                <h1 className="mb-6 text-3xl font-medium">
+                  <div className="m-0 overflow-hidden h-11">
                     <div>As individuals we are strong</div>
                   </div>
-                  <div className="m-0 h-11 overflow-hidden">
+                  <div className="m-0 overflow-hidden h-11">
                     <div>Together,</div>
                   </div>
-                  <div className="m-0 h-11 overflow-hidden">
+                  <div className="m-0 overflow-hidden h-11">
                     <div>We are unstoppable.</div>
                   </div>
                 </h1>
-                <p className="text-sm leading-6 font-light pr-12 mb-14">
+                <p className="pr-12 text-sm font-light leading-6 mb-14">
                   The state of being connected to friends, family, partners, or
                   a 'group' is known as togetherness. This deep bond with people
                   you care about the most imparts a sense of belongingness.
@@ -96,20 +96,20 @@ const HeroSlider = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 h-screen relative">
+            <div className="relative w-1/2 h-screen">
               <div ref={(element) => (imagesRef = element)}>
                 <div className="absolute overflow-hidden top-0 right-0 w-[45%] h-1/2">
                   <img
                     src={bros}
                     alt="couple"
-                    className="absolute top-0 right-0 left-0 bottom-0 w-full"
+                    className="absolute top-0 bottom-0 left-0 right-0 w-full"
                   />
                 </div>
                 <div className="absolute overflow-hidden bottom-6 left-0 w-[52%] h-[65%]">
                   <img
                     src={couple}
                     alt="couple"
-                    className="absolute top-0 right-0 left-0 bottom-0 w-full"
+                    className="absolute top-0 bottom-0 left-0 right-0 w-full"
                   />
                 </div>
               </div>

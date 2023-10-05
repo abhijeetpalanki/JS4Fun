@@ -95,7 +95,7 @@ const Canvas = () => {
   }, [drawCircle, drawLine]);
 
   return (
-    <div className="canvas-body bg-[#f5f5f5] font-['Roboto'] flex flex-col justify-center items-center h-screen">
+    <div className="canvas-body bg-[#f5f5f5] flex flex-col justify-center items-center h-screen">
       <canvas
         id="canvas"
         width="600px"
@@ -105,7 +105,7 @@ const Canvas = () => {
       ></canvas>
       <div className="toolbox bg-[steelblue] flex w-[604px] p-4 border border-[#6a5acd]">
         <button
-          className="bg-white text-black border-none inline-flex items-center justify-center text-xl h-[40px] w-[40px] m-1 p-1"
+          className="inline-flex items-center justify-center w-10 h-10 p-1 m-1 text-xl text-black bg-white border-none"
           id="decrease"
           ref={decreaseRef}
           onClick={decreaseSize}
@@ -113,14 +113,14 @@ const Canvas = () => {
           -
         </button>
         <span
-          className="bg-white text-black border-none inline-flex items-center justify-center text-xl h-[40px] w-[40px] m-1 p-1"
+          className="inline-flex items-center justify-center w-10 h-10 p-1 m-1 text-xl text-black bg-white border-none"
           id="size"
           ref={sizeRef}
         >
           10
         </span>
         <button
-          className="bg-white text-black border-none inline-flex items-center justify-center text-xl h-[40px] w-[40px] m-1 p-1"
+          className="inline-flex items-center justify-center w-10 h-10 p-1 m-1 text-xl text-black bg-white border-none"
           id="increase"
           ref={increaseRef}
           onClick={increaseSize}
@@ -128,14 +128,14 @@ const Canvas = () => {
           +
         </button>
         <input
-          className="bg-white text-black border-none inline-flex items-center justify-center text-xl h-[40px] w-[40px] m-1 p-1"
+          className="inline-flex items-center justify-center w-10 h-10 p-1 m-1 text-xl text-black bg-white border-none"
           type="color"
           id="color"
           ref={colorRef}
           onChange={changeColor}
         />
         <button
-          className="bg-white text-black border-none inline-flex items-center justify-center text-xl h-[40px] w-[40px] m-1 p-1 ml-auto"
+          className="inline-flex items-center justify-center w-10 h-10 p-1 m-1 ml-auto text-xl text-black bg-white border-none"
           id="clear"
           ref={clearRef}
         >

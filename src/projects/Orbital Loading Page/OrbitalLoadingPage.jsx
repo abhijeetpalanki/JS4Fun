@@ -45,7 +45,7 @@ const OrbitalLoadingPage = () => {
   }, []);
 
   return (
-    <div className="bg-[#0f172a] text-white font-['Jost'] overflow-hidden">
+    <div className="bg-[#0f172a] text-white overflow-hidden">
       <div className="h-screen py-[200px] px-[10px]">
         <div
           ref={squareRef}

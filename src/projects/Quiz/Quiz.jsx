@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { decode } from "html-entities";
-import MainMenu from "./components/MainMenu";
-import QuizComp from "./components/QuizComp";
-import EndScreen from "./components/EndScreen";
+import MainMenu from "./MainMenu";
+import QuizComp from "./QuizComp";
+import EndScreen from "./EndScreen";
 
 const Quiz = () => {
   const [gameState, setGameState] = useState("menu");
@@ -48,7 +48,7 @@ const Quiz = () => {
   }, []);
 
   return (
-    <div className="font-['Poppins'] flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen">
       {gameState === "menu" && <MainMenu setGameState={setGameState} />}
       {gameState === "quiz" && (
         <QuizComp

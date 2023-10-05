@@ -49,7 +49,7 @@ const GithubProfiles = () => {
   }, [searchInput]);
 
   return (
-    <div className="font-['Poppins'] text-white flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen text-white">
       <form
         className="w-full max-w-[400px] sm:max-w-3xl"
         id="form"
@@ -57,7 +57,7 @@ const GithubProfiles = () => {
       >
         <input
           type="text"
-          className="w-full block bg-[#4c2885] border-none rounded-[10px] text-white p-4 mb-8 text-base placeholder:text-[#bbb] focus:outline-none shadow-[0_5px_10px_rgba(154,160,185,0.05),0_15px_40px_rgba(0,0,0,0.1)]"
+          className="w-full block bg-[#4c2885] border-none rounded-[10px] text-white p-4 mb-8 text-base placeholder:text-[#bbb] focus:outline-none shadow-[0_5px_10px_#9aa0b9c,0_15px_40px_#00000019]"
           id="search"
           placeholder="Search a Github User"
         />
@@ -65,7 +65,7 @@ const GithubProfiles = () => {
 
       <main>
         {!isError ? (
-          <div className="max-w-3xl bg-[#4c2885] rounded-[20px] flex flex-col md:flex-row items-center justify-center p-2 md:p-12 m-0 md:mx-6 shadow-[0_5px_10px_rgba(154,160,185,0.05),0_15px_40px_rgba(0,0,0,0.1)]">
+          <div className="max-w-3xl bg-[#4c2885] rounded-[20px] flex flex-col md:flex-row items-center justify-center p-2 md:p-12 m-0 md:mx-6 shadow-[0_5px_10px_#9aa0b9c,0_15px_40px_#00000019]">
             <div>
               <img
                 src={userInfo.avatar_url}

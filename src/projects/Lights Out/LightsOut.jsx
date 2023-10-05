@@ -24,8 +24,8 @@ const LightsOut = () => {
   const gameEnds = () => board.every((row) => row.every((cell) => !cell));
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-[rgb(33,33,33)]">
-      <div className="text-[50px] tracking-[2px] mb-[25px] font-['Monoton']">
+    <div className="flex flex-col items-center justify-center h-screen bg-[#212121]">
+      <div className="text-[50px] tracking-[2px] mb-[25px]">
         <span className="text-[#fea501] animate-flicker">Lights</span>
         <span className="text-[#12e7e7] [text-shadow:0_0_25px_#12e7e7,0_0_75px_#12e7e7,0_0_150px_#12e7e7]">
           Out

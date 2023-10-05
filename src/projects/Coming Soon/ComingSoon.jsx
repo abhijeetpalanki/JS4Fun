@@ -5,7 +5,7 @@ import videoBg from "./video-bg.mp4";
 
 const ComingSoon = () => {
   return (
-    <section className="flex flex-col justify-center items-center w-screen h-screen font-['Poppins'] text-white">
+    <section className="flex flex-col items-center justify-center w-screen h-screen text-white">
       <div className="absolute w-full h-full bg-black/70"></div>
 
       <video
@@ -43,7 +43,7 @@ const ComingSoon = () => {
           />
         </div>
 
-        <button className="w-[180px] h-[64px] bg-white text-black text-base font-['Poppins'] uppercase leading-[1px] rounded-lg font-bold">
+        <button className="w-[180px] h-[64px] bg-white text-black text-base uppercase leading-[1px] rounded-lg font-bold">
           Notify Me
         </button>
       </div>

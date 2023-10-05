@@ -22,7 +22,7 @@ const PomodoroMain = () => {
   }, [executing, startAnimate, updateExecute]);
 
   return (
-    <div className="font-['Roboto Mono'] text-[#c9ccea] flex flex-col items-center justify-center min-h-screen bg-[rgb(39,42,85)] bg-gradient-radial from-[#1e2140] to-[#151932]">
+    <div className="text-[#c9ccea] flex flex-col items-center justify-center min-h-screen bg-[#272a55] bg-gradient-radial from-[#1e2140] to-[#151932]">
       <h1 className="text-5xl mb-[0.2rem] leading-normal">Pomodoro</h1>
       <small className="text-xl">Be productive the right way.</small>
 
@@ -67,7 +67,7 @@ const PomodoroMain = () => {
           </ul>
           <Button title="Settings" _callback={settingsBtn} />
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center h-60 w-60 rounded-[7.5rem] text-[#efefef] bg-[#151932] text-[3.5rem] shadow-[1rem_1.5rem_2rem_rgba(0,0,0,0.6)]">
+            <div className="flex items-center justify-center h-60 w-60 rounded-[7.5rem] text-[#efefef] bg-[#151932] text-[3.5rem] shadow-[1rem_1.5rem_2rem_#00000099]">
               <CountdownAnimation
                 keyValue={pomodoro}
                 timer={pomodoro}

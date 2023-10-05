@@ -15,7 +15,7 @@ const MotionActivatedCard = () => {
         className={`w-full [perspective:2000] flex items-center justify-center`}
       >
         <motion.div
-          className="w-[285px] h-[500px] flex flex-col rounded-[25px] [box-shadow:0_2px_7px_1px_rgba(31,31,31,0.2)] bg-[#1d1f21] text-white relative cursor-grab"
+          className="w-[285px] h-[500px] flex flex-col rounded-[25px] [box-shadow:0_2px_7px_1px_#1f1f1f33] bg-[#1d1f21] text-white relative cursor-grab"
           style={{ x, y, rotateX, rotateY, z: 100 }}
           drag
           dragElastic={0.16}

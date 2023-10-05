@@ -41,12 +41,12 @@ const Player = (props) => {
   };
 
   return (
-    <div className="block bg-[#313131] p-[50px] rounded-2xl shadow-[inset_-6px_-6px_12px_rgba(0,0,0,0.8),inset_6px_6px_12px_rgba(255,255,255,0.4)]">
+    <div className="block bg-[#313131] p-[50px] rounded-2xl shadow-[inset_-6px_-6px_12px_#000000cc,inset_6px_6px_12px_#ffffff66]">
       <audio
         src={props.songs[props.currentSongIndex].src}
         ref={audioEl}
       ></audio>
-      <h4 className="text-white text-sm uppercase font-normal text-center">
+      <h4 className="text-sm font-normal text-center text-white uppercase">
         Playing Now
       </h4>
       <PlayerDetails song={props.songs[props.currentSongIndex]} />

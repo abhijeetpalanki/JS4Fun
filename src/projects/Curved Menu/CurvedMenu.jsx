@@ -14,7 +14,7 @@ const CurvedMenu = () => {
   ];
 
   return (
-    <div className="font-['Oswald']">
+    <div>
       {/* Hamburger Button */}
       <div
         onClick={() => {

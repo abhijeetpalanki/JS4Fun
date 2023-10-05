@@ -18,8 +18,8 @@ const SimpleInterestCalculator = () => {
   };
 
   return (
-    <div className="bg-[#0e0e0e] font-['Poppins'] flex justify-center items-center text-center h-screen">
-      <div className="shadow-[0_0_12px_rgb(255,255,255)] bg-[#faf9fa] w-[300px] md:w-[519px] h-[672px] rounded-lg p-12">
+    <div className="bg-[#0e0e0e] flex justify-center items-center text-center h-screen">
+      <div className="shadow-[0_0_12px_#ffffff] bg-[#faf9fa] w-[300px] md:w-[519px] h-[672px] rounded-lg p-12">
         <div className="text-[20px] font-normal">
           <h1 className="text-xl md:text-3xl">Simple Interest Calculator</h1>
           <p className="text-sm md:text-xl pt-[5px]">

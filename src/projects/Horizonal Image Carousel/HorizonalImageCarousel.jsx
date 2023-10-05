@@ -20,9 +20,9 @@ const HorizonalImageCarousel = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-[#f27121] via-[#e94057] to-[#8a2387] font-['Poiret_One']">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-[#f27121] via-[#e94057] to-[#8a2387]">
       <div className="w-[95%] xs:w-[60%] mb-[2vw]">
-        <h1 className="text-[5vw] xs:text-[3vw] font-['Sulphur_Point'] text-center py-0 px-[20px] text-white underline decoration-[#f27121] underline-offset-[0.5vw]">
+        <h1 className="text-[5vw] xs:text-[3vw] text-center py-0 px-[20px] text-white underline decoration-[#f27121] underline-offset-[0.5vw]">
           Horizontal Image Carousel
         </h1>
       </div>
@@ -42,17 +42,17 @@ const HorizonalImageCarousel = () => {
         >
           {images.map((image, index) => (
             <div
-              className="w-[300px] bg-black/0 rounded-2xl backdrop-blur-[20px] py-[30px] px-[20px] shadow-[0_3px_6px_rgba(0,0,0,0.16),0_3px_6px_rgba(0,0,0,0.23)] pointer-events-none ml-[5vw] xs:ml-[1.5vw]"
+              className="w-[300px] bg-black/0 rounded-2xl backdrop-blur-[20px] py-[30px] px-[20px] shadow-[0_3px_6px_#00000028,0_3px_6px_#0000003a] pointer-events-none ml-[5vw] xs:ml-[1.5vw]"
               key={index}
             >
-              <h2 className="text-[10vw] xs:text-[4vw] font-['Sulphur_Point'] leading-none mb-[8vw] xs:mb-[2vw] text-[#eee] relative inline-block after:absolute after:content-[''] after:w-[6vw] xs:after:w-[1.5vw] after:h-[4px] after:bg-[#f27121] after:left-[0.5vw] after:-bottom-[5px]">
+              <h2 className="text-[10vw] xs:text-[4vw] leading-none mb-[8vw] xs:mb-[2vw] text-[#eee] relative inline-block after:absolute after:content-[''] after:w-[6vw] xs:after:w-[1.5vw] after:h-[4px] after:bg-[#f27121] after:left-[0.5vw] after:-bottom-[5px]">
                 0{index + 1}
               </h2>
               <div className="mb-4">
-                <div className="font-['Sulphur_Point'] text-[6vw] xs:text-[1vw] font-bold text-black">
+                <div className="text-[6vw] xs:text-[1vw] font-bold text-black">
                   {image.title}
                 </div>
-                <div className="font-['Sulphur_Point'] text-[5vw] xs:text-[1vw] text-[#eee]">
+                <div className="text-[5vw] xs:text-[1vw] text-[#eee]">
                   Unsplash 0{index + 1}
                 </div>
               </div>

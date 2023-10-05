@@ -69,11 +69,9 @@ import Toastify from "../projects/Toastify/Toastify";
 import BMICalculator from "../projects/BMI Calculator/BMICalculator";
 import PalindromeChecker from "../projects/Palindrome Checker/PalindromeChecker";
 import BookHub from "../projects/Book Hub/BookHub";
-import ChatGPT from "../projects/ChatGPT Bot/ChatGPT";
 import CurrencyConverter from "../projects/Currency Converter/CurrencyConverter";
 import Ranker from "../projects/Ranker/Ranker";
 import MemeGenerator from "../projects/Meme Generator/MemeGenerator";
-import FootballLiveScore from "../projects/Football Live Score/FootballLiveScore";
 import TipCalculator from "../projects/Tip Calculator/TipCalculator";
 import UniversityFinder from "../projects/University Finder/UniversityFinder";
 import Captcha from "../projects/Captcha/Captcha";
@@ -86,7 +84,6 @@ import VideoPlayer from "../projects/Video Player/VideoPlayer";
 import LinkTree from "../projects/Link Tree/LinkTree";
 import OrbitalLoadingPage from "../projects/Orbital Loading Page/OrbitalLoadingPage";
 import GoogleLoginButton from "../projects/Google Login Button/GoogleLoginButton";
-import AIKeywordExtractor from "../projects/AI Keyword Extractor/AIKeywordExtractor";
 import MotionActivatedCard from "../projects/Motion Activated Card/MotionActivatedCard";
 import Connect4 from "../projects/Connect 4/Connect4";
 import MysticSquare from "../projects/Mystic Square/MysticSquare";
@@ -116,7 +113,7 @@ import StopwatchTimer from "../projects/Stopwatch Timer/StopwatchTimer";
 import DynamicInputs from "../projects/Dynamic Inputs/DynamicInputs";
 import AnimeList from "../projects/Anime List/AnimeList";
 import Atmos3D from "../projects/Atmos 3D/Atmos3D";
-import CardHover from "../projects/Card Hover/CardHover";
+import AirpodsCard from "../projects/Airpods Card/AirpodsCard";
 import BetterHealth from "../projects/Better Health/BetterHealth";
 import YoutubeTabAnimation from "../projects/Youtube Tab Animation/YoutubeTabAnimation";
 import ConfettiCelebration from "../projects/Confetti Celebration/ConfettiCelebration";
@@ -1089,22 +1086,6 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 72,
-    title: "ChatGPT Bot",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-      {
-        id: 2,
-        name: "externalpackages",
-      },
-    ],
-    component: <ChatGPT></ChatGPT>,
-    tab: "packages",
-  },
-  {
     id: 73,
     title: "Currency Converter",
     hashtags: [
@@ -1138,18 +1119,6 @@ export const projects = [
       },
     ],
     component: <MemeGenerator></MemeGenerator>,
-    tab: "api",
-  },
-  {
-    id: 76,
-    title: "Football Live Score",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-    ],
-    component: <FootballLiveScore></FootballLiveScore>,
     tab: "api",
   },
   {
@@ -1314,22 +1283,6 @@ export const projects = [
       },
     ],
     component: <GoogleLoginButton></GoogleLoginButton>,
-    tab: "packages",
-  },
-  {
-    id: 89,
-    title: "AI Keyword Extractor",
-    hashtags: [
-      {
-        id: 1,
-        name: "externalpackages",
-      },
-      {
-        id: 2,
-        name: "apidata",
-      },
-    ],
-    component: <AIKeywordExtractor></AIKeywordExtractor>,
     tab: "packages",
   },
   {
@@ -1750,15 +1703,15 @@ export const projects = [
   },
   {
     id: 119,
-    title: "Card Hover",
+    title: "Airpods Card",
     hashtags: [
       {
         id: 1,
-        name: "css",
+        name: "framermotion",
       },
     ],
-    component: <CardHover></CardHover>,
-    tab: "css",
+    component: <AirpodsCard></AirpodsCard>,
+    tab: "framer motion",
   },
   {
     id: 120,

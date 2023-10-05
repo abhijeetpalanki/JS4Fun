@@ -21,7 +21,7 @@ import sound3 from "./sounds/ambient-happy.mp3";
 
 const BetterHealth = () => {
   return (
-    <div className="font-['Oswald'] flex justify-center items-center h-screen bg-black">
+    <div className="flex items-center justify-center h-screen bg-black">
       <header className="bg-transparent flex flex-col items-center justify-center text-[calc(10px+2vmin)] text-white p-10 absolute top-0 right-0 left-0 z-[1] before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[300px] before:bg-[linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0))] before:pointer-events-none before:-z-[1]">
         <img
           className="w-[42px] h-auto pointer-events-none"
@@ -135,7 +135,7 @@ const BetterHealth = () => {
                 <div className="absolute flex flex-wrap items-center justify-center w-full h-screen px-0 py-8 text-center">
                   <div className="flex-[1_0_0%]">
                     <div>
-                      <h1 className="mb-8 text-6xl font-['Italiana'] text-white">
+                      <h1 className="mb-8 text-6xl text-white">
                         Life can be a struggle
                       </h1>
                     </div>
@@ -145,7 +145,7 @@ const BetterHealth = () => {
                 <div className="absolute flex flex-wrap items-center justify-center w-full h-screen top-[100vh] px-0 py-8 text-center">
                   <div className="flex-[1_0_0%]">
                     <div>
-                      <h1 className="mb-8 text-6xl font-['Italiana'] text-white">
+                      <h1 className="mb-8 text-6xl text-white">
                         Sometimes you can feel
                       </h1>
                     </div>
@@ -155,17 +155,11 @@ const BetterHealth = () => {
                 <div className="absolute flex flex-wrap items-center justify-center w-full h-screen top-[200vh] px-0 py-8 text-center">
                   <div className="flex-[1_0_0%]">
                     <div>
-                      <h1 className="mb-8 text-6xl font-['Italiana'] text-white">
-                        Lost
-                      </h1>
+                      <h1 className="mb-8 text-6xl text-white">Lost</h1>
 
-                      <h1 className="mb-8 text-6xl font-['Italiana'] text-white">
-                        Overwhelmed
-                      </h1>
+                      <h1 className="mb-8 text-6xl text-white">Overwhelmed</h1>
 
-                      <h1 className="mb-8 text-6xl font-['Italiana'] text-white">
-                        Empty inside
-                      </h1>
+                      <h1 className="mb-8 text-6xl text-white">Empty inside</h1>
                     </div>
                   </div>
                 </div>
@@ -173,7 +167,7 @@ const BetterHealth = () => {
                 <div className="absolute flex flex-wrap items-center justify-center w-full h-screen top-[300vh] px-0 py-8 text-center">
                   <div className="flex-[1_0_0%]">
                     <div>
-                      <h1 className="mb-8 text-6xl font-['Italiana'] text-white">
+                      <h1 className="mb-8 text-6xl text-white">
                         Drifting through life <br />
                         With no help or guidance
                       </h1>
@@ -184,7 +178,7 @@ const BetterHealth = () => {
                 <div className="absolute flex flex-wrap items-center justify-center w-full h-screen top-[400vh] px-0 py-8 text-center">
                   <div className="flex-[1_0_0%]">
                     <div>
-                      <h1 className="mb-8 text-6xl font-['Italiana'] text-white">
+                      <h1 className="mb-8 text-6xl text-white">
                         But there is hope...
                         <br /> and people who can help
                       </h1>
@@ -195,14 +189,14 @@ const BetterHealth = () => {
                 <div className="absolute flex flex-wrap items-center justify-center w-full h-screen top-[500vh] px-0 py-8 text-center">
                   <div className="flex-[1_0_0%]">
                     <div>
-                      <h1 className="mb-8 text-6xl font-['Italiana'] text-white">
+                      <h1 className="mb-8 text-6xl text-white">
                         It's time to get
                         <br /> the support you need
                       </h1>
-                      <h2 className="mb-[30px] -mt-5 text-[40px] font-['Italiana'] text-white">
+                      <h2 className="mb-[30px] -mt-5 text-[40px] text-white">
                         To get your life back
                       </h2>
-                      <button className="bg-black border border-[#f8f9fa] rounded-md text-[#f8f9fa] text-xs font-normal leading-normal py-[0.375rem] px-3 text-center transition-colors duration-150 ease-in-out shadow-[inset_0_3px_5px_rgba(0,0,0,.125)] hover:bg-[#f8f9fa] hover:border-[#f8f9fa] hover:text-black">
+                      <button className="bg-black border border-[#f8f9fa] rounded-md text-[#f8f9fa] text-xs font-normal leading-normal py-[0.375rem] px-3 text-center transition-colors duration-150 ease-in-out shadow-[inset_0_3px_5px_#0000001f] hover:bg-[#f8f9fa] hover:border-[#f8f9fa] hover:text-black">
                         Get help now
                       </button>
                     </div>

@@ -70,13 +70,13 @@ const Todos = () => {
   };
 
   return (
-    <div className="bg-[#f5f5f5] text-[#444] font-['Poppins'] flex flex-col items-center justify-center h-screen">
+    <div className="bg-[#f5f5f5] text-[#444] flex flex-col items-center justify-center h-screen">
       <h1 className="text-[#b383e2] text-[10rem] text-center opacity-[0.4]">
         todos
       </h1>
 
       <form
-        className="max-w-full w-[400px] [box-shadow:0_4px_10px_rgba(0,0,0,0.1)]"
+        className="max-w-full w-[400px] [box-shadow:0_4px_10px_#00000019]"
         ref={formRef}
       >
         <input

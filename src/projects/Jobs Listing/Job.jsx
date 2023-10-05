@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from "react";
-
 const Job = (props) => {
   const {
     company,
     contract,
     featured,
-    id,
     languages,
     level,
     location,
     logo,
-
     position,
     postedAt,
     role,
@@ -21,7 +17,7 @@ const Job = (props) => {
 
   return (
     <div
-      className={`w-[80vw] md:w-[70vw] bg-white relative flex flex-col md:flex-row items-start md:items-center py-4 md:py-6 px-8 rounded-[5px] mb-8 md:mb-0 my-[1.3rem] shadow-[0_4px_6px_4px_rgba(91,164,164,0.2)] ${
+      className={`w-[80vw] md:w-[70vw] bg-white relative flex flex-col md:flex-row items-start md:items-center py-4 md:py-6 px-8 rounded-[5px] mb-8 md:mb-0 my-[1.3rem] shadow-[0_4px_6px_4px_#5ba4a433] ${
         featured ? "border-l-[5px] border-l-[#5ba4a4]" : ""
       }`}
     >

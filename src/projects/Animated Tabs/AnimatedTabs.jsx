@@ -13,7 +13,7 @@ const AnimatedTabs = () => {
   let [activeTab, setActiveTab] = useState(tabs[0].id);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-t from-gray-900/20 to-gray-900 font-['Lato']">
+    <div className="flex items-center justify-center h-screen bg-gradient-to-t from-gray-900/20 to-gray-900">
       <div className="flex flex-col md:flex-row">
         {tabs.map((tab) => (
           <button

@@ -87,7 +87,7 @@ const MemoryGame = () => {
   }, []);
 
   return (
-    <div className="font-['Oswald'] h-screen text-[1.5em] flex justify-center items-center text-center bg-[#1b1523] text-white">
+    <div className="h-screen text-[1.5em] flex justify-center items-center text-center bg-[#1b1523] text-white">
       <div className="max-w-[860px] py-10">
         <button
           onClick={shuffleCards}

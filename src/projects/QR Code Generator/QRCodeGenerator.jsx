@@ -46,7 +46,7 @@ const QRCodeGenerator = () => {
   };
 
   return (
-    <div className="text-black font-['Poppins'] overflow-x-hidden h-screen">
+    <div className="h-screen overflow-x-hidden text-black">
       <main>
         <div className="flex flex-col-reverse justify-center p-10 m-auto mt-10 align-center md:max-w-4xl md:flex-row">
           <div className="w-full mr-24 md:w-2/3">
@@ -89,7 +89,7 @@ const QRCodeGenerator = () => {
           {/* Spinner */}
           <div ref={spinnerRef} className="hidden" id="spinner" role="status">
             <svg
-              className="inline w-24 h-24 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-pink-600"
+              className="inline w-24 h-24 mr-2 text-gray-200 animate-spin fill-pink-600"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

@@ -26,7 +26,7 @@ const CryptoPriceTracker = () => {
   );
 
   return (
-    <div className="font-['Montserrat'] bg-[#1a1a1c] text-white">
+    <div className="bg-[#1a1a1c] text-white">
       <div className="flex flex-col items-center pt-16">
         <div className="flex flex-col items-center justify-center mb-16">
           <h1 className="mb-8 text-3xl text-center">Search a currency</h1>

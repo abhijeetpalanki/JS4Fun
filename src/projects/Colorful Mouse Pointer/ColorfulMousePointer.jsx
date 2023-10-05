@@ -61,9 +61,9 @@ const ColorfulMousePointer = () => {
   }, []);
 
   return (
-    <div className="mouse-pointer-body h-screen flex justify-center items-center font-['Poppins'] bg-[#222] overflow-hidden">
-      <h2 className="text-white text-[10vw] select-none pointer-events-none drop-shadow-[0_20px_30px_rgba(0,0,0,0.25)] z-[1000]">
-        Mouse Pointer
+    <div className="mouse-pointer-body h-screen flex justify-center items-center bg-[#222] overflow-hidden">
+      <h2 className="text-white text-[8vw] select-none pointer-events-none drop-shadow-[0_20px_30px_#0000003f] z-[1000]">
+        Click for a Colorful Splash
       </h2>
     </div>
   );

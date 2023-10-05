@@ -46,7 +46,7 @@ const JobsListing = () => {
   };
 
   return (
-    <div className="font-['League_Spartan'] text-xs md:text-[15px] h-screen font-medium bg-[#effafa]">
+    <div className="text-xs md:text-[15px] h-screen font-medium bg-[#effafa]">
       <div
         className="w-full h-40 bg-[#5ba4a4]"
         style={{ backgroundImage: `url(${headerDesktop})` }}
@@ -54,7 +54,7 @@ const JobsListing = () => {
 
       {filterKeywords.length > 0 && (
         <div className="flex flex-col items-center mt-[calc(2vw-4rem)]">
-          <ul className="relative w-[80vw] md:w-[70vw] bg-white flex flex-wrap md:flex-nowrap items-start md:items-center py-4 md:py-6 px-8 rounded-[5px] -mb-8 md:mb-0 my-[1.3rem] shadow-[0_4px_6px_4px_rgba(91,164,164,0.2)]">
+          <ul className="relative w-[80vw] md:w-[70vw] bg-white flex flex-wrap md:flex-nowrap items-start md:items-center py-4 md:py-6 px-8 rounded-[5px] -mb-8 md:mb-0 my-[1.3rem] shadow-[0_4px_6px_4px_#5ba4a433]">
             {filterKeywords.map((key, id) => {
               return (
                 <li

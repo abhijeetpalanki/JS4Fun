@@ -25,7 +25,7 @@ const SearchableTable = () => {
 
   return (
     <div
-      className="flex items-center justify-center h-screen font-['Poppins'] bg-center bg-cover"
+      className="flex items-center justify-center h-screen bg-center bg-cover"
       style={{ backgroundImage: `url(${htmlTable})` }}
     >
       {/* Table */}

@@ -1,5 +1,6 @@
 import { useState, useReducer } from "react";
-import "./StickyNotes.css";
+import brickWallImg from "./brick-wall.jpg";
+import postItNoteImg from "./post-it-note.png";
 import { FaPlus, FaTrashAlt } from "react-icons/fa";
 
 const initialNotesState = {
@@ -67,7 +68,8 @@ const StickyNotes = () => {
 
   return (
     <div
-      className="sticky-notes-body font-['Poppins'] h-screen bg-brickWall bg-cover p-[50px] from-black/60 to-black/60"
+      className="sticky-notes-body h-screen bg-cover p-[50px] from-black/60 to-black/60"
+      style={{ backgroundImage: `url('${brickWallImg}')` }}
       onDragOver={dragOver}
     >
       <h1 className="text-white text-[2rem]">
@@ -95,8 +97,11 @@ const StickyNotes = () => {
 
       {notesState.notes.map((note) => (
         <div
-          className="note absolute bg-postItNote bg-cover top-[100px] left-[300px] w-[200px] h-[200px] p-[20px]"
-          style={{ transform: `rotate(${note.rotate}deg)` }}
+          className="note absolute bg-cover top-[100px] left-[300px] w-[200px] h-[200px] p-[20px]"
+          style={{
+            transform: `rotate(${note.rotate}deg)`,
+            backgroundImage: `url('${postItNoteImg}')`,
+          }}
           draggable="true"
           onDragEnd={dropNote}
           key={note.id}

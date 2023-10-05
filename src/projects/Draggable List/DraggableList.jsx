@@ -30,7 +30,7 @@ const DraggableList = () => {
   };
 
   return (
-    <div className="flex flex-col items-center md:justify-center xl:h-screen font-['Poppins'] bg-gradient-to-b from-[rgba(0,73,191,1)] via-[rgba(190,190,255,1)] to-[rgba(0,212,255,1)] text-[#172b4d]">
+    <div className="flex flex-col items-center md:justify-center xl:h-screen bg-gradient-to-b from-[#0049bf] via-[#bebeff] to-[#00d4ff] text-[#172b4d]">
       <DndProvider backend={HTML5Backend}>
         {/* Header */}
         <div className="flex justify-center">

@@ -75,8 +75,8 @@ function Step({ step, currentStep }) {
         variants={{
           inactive: {
             backgroundColor: "#fff",
-            borderColor: "rgb(226,232,240)",
-            color: "rgb(148,163,184)",
+            borderColor: "#e2e8f0",
+            color: "#94a3b8",
           },
           active: {
             backgroundColor: "#fff",

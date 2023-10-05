@@ -14,7 +14,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="font-['Muli'] bg-black h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center h-screen bg-black">
       <h1 className="text-[32px] font-bold text-center text-[#f0f0f0]">
         Frequently Asked Questions
       </h1>

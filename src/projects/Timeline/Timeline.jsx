@@ -22,7 +22,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen font-['Poppins'] bg-white">
+    <div className="flex flex-col items-center justify-center h-screen bg-white">
       <h3 className="py-[1.4rem] w-full font-semibold text-center bg-slate-100">
         📢 Click on given{" "}
         <mark className="px-[0.7rem] py-[0.2rem] bg-yellow-500 rounded-[0.4rem]">

@@ -37,7 +37,7 @@ export const Overlay = () => {
     <Scroll html>
       <div className="w-screen">
         <Section opacity={opacityFirstSection}>
-          <h1 className="font-['Playfair_Display'] text-2xl font-semibold">
+          <h1 className="text-2xl font-semibold">
             Hello, I'm Abhijeet Palanki
           </h1>
           <p className="text-gray-500">
@@ -52,9 +52,7 @@ export const Overlay = () => {
           <p className="mt-6 animate-bounce">↓</p>
         </Section>
         <Section right opacity={opacitySecondSection}>
-          <h1 className="font-['Playfair_Display'] text-2xl font-semibold">
-            Here are my skillsets 🔥
-          </h1>
+          <h1 className="text-2xl font-semibold">Here are my skillsets 🔥</h1>
           <p className="text-gray-500">PS: I never test</p>
           <p className="mt-3">
             <b>Frontend 🚀</b>
@@ -77,9 +75,7 @@ export const Overlay = () => {
           <p className="mt-6 animate-bounce">↓</p>
         </Section>
         <Section opacity={opacityLastSection}>
-          <h1 className="font-['Playfair_Display'] text-2xl font-semibold">
-            🤙 Call me maybe?
-          </h1>
+          <h1 className="text-2xl font-semibold">🤙 Call me maybe?</h1>
           <p className="text-gray-500">
             I'm very expensive but you won't regret it
           </p>

@@ -31,7 +31,7 @@ const Feedback = () => {
   };
 
   return (
-    <div className="text-black font-['Montserrat'] flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen text-black">
       <div className="flex flex-col items-center justify-center">
         {isFeedback ? (
           <div className="flex flex-col items-center justify-center">

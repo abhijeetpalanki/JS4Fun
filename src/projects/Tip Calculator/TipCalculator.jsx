@@ -38,7 +38,7 @@ const TipCalculator = () => {
   }, [bill, tip, split]);
 
   return (
-    <div className="h-screen font-['Poppins'] flex flex-col justify-center items-center bg-[#012] text-white">
+    <div className="h-screen flex flex-col justify-center items-center bg-[#012] text-white">
       <div className="flex flex-col justify-start">
         <label className="block text-sm leading-3 uppercase text-white/70">
           Bill Total

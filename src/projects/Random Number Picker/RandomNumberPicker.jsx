@@ -10,7 +10,7 @@ const RandomNumberPicker = () => {
   };
 
   return (
-    <div className="font-['Muli'] text-white h-screen flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center h-screen text-white">
       <div className="w-full max-w-[400px] m-auto flex flex-col p-[30px] bg-[#04042b]">
         <div className="bg-[#181831] p-[20px] flex justify-between">
           <p>Random Number</p>

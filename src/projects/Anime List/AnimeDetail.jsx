@@ -49,7 +49,7 @@ const AnimeDetail = () => {
         <h1 className="text-5xl text-[#454e56]">Anime Details</h1>
       </header>
       <div className="p-0 md:py-12 md:px-72 bg-[#ededed] max-w-[350px] md:max-w-full">
-        <h1 className="block md:inline-block text-2xl md:text-5xl my-6 text-center md:text-left md:mb-6 cursor-pointer bg-gradient-to-r from-[#a855f7] to-[#27ae60] bg-clip-text text-transparent transition-all duration-[400ms] ease-in-out hover:skew-x-[-3deg]">
+        <h1 className="block md:inline-block text-2xl md:text-5xl my-6 text-center md:text-left md:mb-6 cursor-pointer bg-gradient-to-r from-[#6e7bfb] to-[#9cfcf8] bg-clip-text text-transparent transition-all duration-[400ms] ease-in-out hover:skew-x-[-3deg]">
           {title}
         </h1>
         <div className="bg-white rounded-[20px] p-8 border-[5px] border-[#e5e7eb]">
@@ -109,7 +109,7 @@ const AnimeDetail = () => {
           <p className="mt-8 text-[#6c7983] leading-[1.7rem]">
             {showMore ? synopsis : synopsis?.substring(0, 450)}...
             <button
-              className="bg-transparent border-none outline-none cursor-pointer text-[1.2rem] text-[#27ae60] font-semibold"
+              className="bg-transparent border-none outline-none cursor-pointer text-[1.2rem] text-[#9cfcf8] font-semibold"
               onClick={() => {
                 setShowMore(!showMore);
               }}
@@ -118,7 +118,7 @@ const AnimeDetail = () => {
             </button>
           </p>
         </div>
-        <h3 className="inline-block my-12 text-[2rem] cursor-pointer bg-gradient-to-r from-[#a855f7] to-[#27ae60] bg-clip-text text-transparent">
+        <h3 className="inline-block my-12 text-[2rem] cursor-pointer bg-gradient-to-r from-[#6e7bfb] to-[#9cfcf8] bg-clip-text text-transparent">
           Trailer
         </h3>
         <div className="flex items-center justify-center">
@@ -134,7 +134,7 @@ const AnimeDetail = () => {
             ></iframe>
           )}
         </div>
-        <h3 className="inline-block my-12 text-[2rem] cursor-pointer bg-gradient-to-r from-[#a855f7] to-[#27ae60] bg-clip-text text-transparent">
+        <h3 className="inline-block my-12 text-[2rem] cursor-pointer bg-gradient-to-r from-[#6e7bfb] to-[#9cfcf8] bg-clip-text text-transparent">
           Characters
         </h3>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-8 bg-white p-8 rounded-[20px] border-[5px] border-[#e5e7eb]">
@@ -151,7 +151,7 @@ const AnimeDetail = () => {
                 <div className="py-[0.4rem] px-[0.6rem] rounded-[7px] bg-[#ededed] transition-all duration-[400ms] ease-in-out hover:-translate-y-[5px]">
                   <img src={images?.jpg.image_url} alt="" className="w-full" />
                   <h4 className="py-2 text-[#454e56]">{name}</h4>
-                  <p className="text-[#27ae60]">{role}</p>
+                  <p className="text-[#9cfcf8]">{role}</p>
                 </div>
               </Link>
             );

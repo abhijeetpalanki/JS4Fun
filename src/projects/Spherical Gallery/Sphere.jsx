@@ -91,7 +91,7 @@ const Sphere = (props) => {
   return (
     <div className="max-w-full w-full h-[660px] [perspective:1000] [-webkit-perspective:1000] [perspective-origin:50%_50%] [transform-style:preserve-3d] relative my-0 mx-auto overflow-hidden py-4">
       <div
-        className="absolute top-1/2 left-1/2 [backface-visibility:visible] [transform:translateZ(-1200px)] transition-all duration-[0.25s] ease-out [transform-style:preserve-3d] origin-[50%_50%] cursor-pointer"
+        className="absolute top-1/2 left-1/2 [backface-visibility:visible] [transform:translateZ(-1200px)] transition-all duration-[250ms] ease-out [transform-style:preserve-3d] origin-[50%_50%] cursor-pointer"
         ref={el}
       >
         {props.photos.map((it, index) => (

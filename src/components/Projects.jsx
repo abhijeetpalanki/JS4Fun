@@ -44,9 +44,9 @@ const Projects = () => {
       >
         {search(projects).map((proj) => (
           <Link to={`/projects/${proj.id}`} key={proj.id}>
-            <div className="flex flex-col tracking-widest items-center bg-white border rounded-lg shadow-md h-[200px] max-h-[200px] md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <div className="flex flex-col tracking-widest items-center border rounded-lg shadow-md h-[200px] max-h-[200px] md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700">
               <div className="flex flex-col justify-between p-4 leading-normal">
-                <h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-bold text-white">
                   {proj.id}. {proj.title}
                 </h5>
                 <div className="px-6 pt-4 pb-2">

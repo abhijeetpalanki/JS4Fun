@@ -86,7 +86,7 @@ const MemeGenerator = () => {
   }, [memeIndex, memes]);
 
   return (
-    <div className="font-['Oswald'] h-screen flex flex-col justify-center items-center">
+    <div className="flex items-center justify-center h-screen">
       {generatedUrl.length ? (
         <div>
           <h1 className="mb-10 text-5xl">Your Generated Meme</h1>
@@ -94,7 +94,7 @@ const MemeGenerator = () => {
             <img
               alt="meme"
               src={generatedUrl}
-              className="max-w-sm md:max-w-lg max-h-96 m-auto block rounded-md shadow-[0px_0px_10px_#000] my-5"
+              className="max-w-sm md:max-w-lg max-h-80 m-auto block rounded-md shadow-[0px_0px_10px_#000] my-5"
             />
           )}
           <button
@@ -111,32 +111,36 @@ const MemeGenerator = () => {
               <h1 className="mb-10 text-5xl text-center text-black">
                 Meme Generator
               </h1>
-              <div>
-                <button
-                  onClick={() => setMemeIndex((index) => index + 1)}
-                  className="block cursor-pointer w-96 p-3 m-auto text-white border-none rounded-md bg-[#f0ad4e] uppercase focus-visible:outline-none"
-                >
-                  Skip
-                </button>
-                <img
-                  src={memes[memeIndex].url}
-                  alt={memes[memeIndex].name}
-                  className="max-w-lg max-h-96 m-auto block rounded-md shadow-[0px_0px_10px_#000] my-5"
-                />
-                {captions.map((cap, index) => (
-                  <input
-                    type="text"
-                    key={index}
-                    onChange={(e) => updateCaption(e, index)}
-                    className="block p-3 m-auto mb-4 outline-none w-96"
+              <div className="flex items-center justify-center gap-4">
+                <div className="">
+                  <button
+                    onClick={() => setMemeIndex((index) => index + 1)}
+                    className="block cursor-pointer w-96 p-3 m-auto text-white border-none rounded-md bg-[#f0ad4e] uppercase focus-visible:outline-none"
+                  >
+                    Skip
+                  </button>
+                  <img
+                    src={memes[memeIndex].url}
+                    alt={memes[memeIndex].name}
+                    className="max-w-md max-h-96 m-auto block rounded-md shadow-[0px_0px_10px_#000] my-5"
                   />
-                ))}
-                <button
-                  onClick={generateMeme}
-                  className="block cursor-pointer w-96 p-3 m-auto text-white border-none rounded-md bg-[#0275d8] uppercase focus-visible:outline-none"
-                >
-                  Generate
-                </button>
+                </div>
+                <div className="">
+                  {captions.map((cap, index) => (
+                    <input
+                      type="text"
+                      key={index}
+                      onChange={(e) => updateCaption(e, index)}
+                      className="block p-3 m-auto mb-4 outline-none w-96"
+                    />
+                  ))}
+                  <button
+                    onClick={generateMeme}
+                    className="block cursor-pointer w-96 p-3 m-auto text-white border-none rounded-md bg-[#0275d8] uppercase focus-visible:outline-none"
+                  >
+                    Generate
+                  </button>
+                </div>
               </div>
             </>
           )}
