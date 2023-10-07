@@ -122,6 +122,7 @@ import CurvedMenu from "../projects/Curved Menu/CurvedMenu";
 import Android from "../projects/Android/Android";
 import StaggeredGrid from "../projects/Staggered Grid/StaggeredGrid";
 import Portfolio from "../projects/Portfolio/Portfolio";
+import StaggerVisualizer from "../projects/Stagger Visualizer/StaggerVisualizer";
 
 export const projects = [
   {
@@ -1827,5 +1828,17 @@ export const projects = [
     ],
     component: <Portfolio></Portfolio>,
     tab: "3d",
+  },
+  {
+    id: 126,
+    title: "Stagger Visualizer",
+    hashtags: [
+      {
+        id: 1,
+        name: "anime.js",
+      },
+    ],
+    component: <StaggerVisualizer></StaggerVisualizer>,
+    tab: "anime",
   },
 ];

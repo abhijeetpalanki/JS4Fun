@@ -110,13 +110,11 @@ body::-webkit-scrollbar-thumb {
   width: 500px;
   height: 150px;
   transform: translate(-50%, -50%);
-  background: linear-gradient(
-    transparent,
-    #ff3c7b,
-    #ff3c7b,
-    #ff3c7b,
-    transparent
-  );
+  background: linear-gradient(transparent,
+      #ff3c7b,
+      #ff3c7b,
+      #ff3c7b,
+      transparent);
   animation: imageExpand 6s linear infinite;
   animation-play-state: paused;
 }
@@ -129,6 +127,7 @@ body::-webkit-scrollbar-thumb {
   0% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+
   100% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
@@ -187,9 +186,12 @@ select::-webkit-scrollbar-thumb {
 /* Coming Soon */
 @media (min-width: 1024px) {
   .flip-clock {
-    --fcc-digit-block-width: 80px !important; /* width of digit card */
-    --fcc-digit-block-height: 120px !important; /* height of digit card, highly recommend in even number */
-    --fcc-digit-font-size: 60px !important; /* font size of digit */
+    --fcc-digit-block-width: 80px !important;
+    /* width of digit card */
+    --fcc-digit-block-height: 120px !important;
+    /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 60px !important;
+    /* font size of digit */
   }
 }
 
