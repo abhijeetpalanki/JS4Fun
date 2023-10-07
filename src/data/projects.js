@@ -121,6 +121,7 @@ import Threads from "../projects/Threads/Threads";
 import CurvedMenu from "../projects/Curved Menu/CurvedMenu";
 import Android from "../projects/Android/Android";
 import StaggeredGrid from "../projects/Staggered Grid/StaggeredGrid";
+import Portfolio from "../projects/Portfolio/Portfolio";
 
 export const projects = [
   {
@@ -1810,5 +1811,21 @@ export const projects = [
     ],
     component: <CurvedMenu></CurvedMenu>,
     tab: "framer motion",
+  },
+  {
+    id: 125,
+    title: "Portfolio",
+    hashtags: [
+      {
+        id: 1,
+        name: "three.js",
+      },
+      {
+        id: 2,
+        name: "landingpages",
+      },
+    ],
+    component: <Portfolio></Portfolio>,
+    tab: "3d",
   },
 ];
