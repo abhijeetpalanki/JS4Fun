@@ -123,6 +123,7 @@ import Android from "../projects/Android/Android";
 import StaggeredGrid from "../projects/Staggered Grid/StaggeredGrid";
 import Portfolio from "../projects/Portfolio/Portfolio";
 import StaggerVisualizer from "../projects/Stagger Visualizer/StaggerVisualizer";
+import Fireworks from "../projects/Fireworks/Fireworks";
 
 export const projects = [
   {
@@ -1840,5 +1841,17 @@ export const projects = [
     ],
     component: <StaggerVisualizer></StaggerVisualizer>,
     tab: "anime",
+  },
+  {
+    id: 127,
+    title: "Fireworks",
+    hashtags: [
+      {
+        id: 1,
+        name: "basicjavascript",
+      },
+    ],
+    component: <Fireworks></Fireworks>,
+    tab: "javascript",
   },
 ];
