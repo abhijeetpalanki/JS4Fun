@@ -124,6 +124,7 @@ import StaggeredGrid from "../projects/Staggered Grid/StaggeredGrid";
 import Portfolio from "../projects/Portfolio/Portfolio";
 import StaggerVisualizer from "../projects/Stagger Visualizer/StaggerVisualizer";
 import Fireworks from "../projects/Fireworks/Fireworks";
+import Preloader from "../projects/Preloader/Preloader";
 
 export const projects = [
   {
@@ -1853,5 +1854,17 @@ export const projects = [
     ],
     component: <Fireworks></Fireworks>,
     tab: "javascript",
+  },
+  {
+    id: 128,
+    title: "Preloader",
+    hashtags: [
+      {
+        id: 1,
+        name: "anime.js",
+      },
+    ],
+    component: <Preloader></Preloader>,
+    tab: "anime",
   },
 ];
