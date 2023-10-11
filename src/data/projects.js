@@ -125,6 +125,7 @@ import Portfolio from "../projects/Portfolio/Portfolio";
 import StaggerVisualizer from "../projects/Stagger Visualizer/StaggerVisualizer";
 import Fireworks from "../projects/Fireworks/Fireworks";
 import Preloader from "../projects/Preloader/Preloader";
+import HandwrittenSVGTextAnimation from "../projects/Handwritten SVG Text Animation/HandwrittenSVGTextAnimation";
 
 export const projects = [
   {
@@ -1865,6 +1866,18 @@ export const projects = [
       },
     ],
     component: <Preloader></Preloader>,
+    tab: "anime",
+  },
+  {
+    id: 129,
+    title: "Handwritten SVG Text Animation",
+    hashtags: [
+      {
+        id: 1,
+        name: "anime.js",
+      },
+    ],
+    component: <HandwrittenSVGTextAnimation></HandwrittenSVGTextAnimation>,
     tab: "anime",
   },
 ];
