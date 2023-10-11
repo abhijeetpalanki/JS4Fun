@@ -126,6 +126,7 @@ import StaggerVisualizer from "../projects/Stagger Visualizer/StaggerVisualizer"
 import Fireworks from "../projects/Fireworks/Fireworks";
 import Preloader from "../projects/Preloader/Preloader";
 import HandwrittenSVGTextAnimation from "../projects/Handwritten SVG Text Animation/HandwrittenSVGTextAnimation";
+import LineDrawing from "../projects/Line Drawing/LineDrawing";
 
 export const projects = [
   {
@@ -1878,6 +1879,18 @@ export const projects = [
       },
     ],
     component: <HandwrittenSVGTextAnimation></HandwrittenSVGTextAnimation>,
+    tab: "anime",
+  },
+  {
+    id: 130,
+    title: "Line Drawing",
+    hashtags: [
+      {
+        id: 1,
+        name: "anime.js",
+      },
+    ],
+    component: <LineDrawing></LineDrawing>,
     tab: "anime",
   },
 ];
