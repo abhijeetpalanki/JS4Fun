@@ -127,6 +127,7 @@ import Fireworks from "../projects/Fireworks/Fireworks";
 import Preloader from "../projects/Preloader/Preloader";
 import HandwrittenSVGTextAnimation from "../projects/Handwritten SVG Text Animation/HandwrittenSVGTextAnimation";
 import LineDrawing from "../projects/Line Drawing/LineDrawing";
+import PageTransitions from "../projects/Page Transitions/PageTransitions";
 
 export const projects = [
   {
@@ -1892,5 +1893,21 @@ export const projects = [
     ],
     component: <LineDrawing></LineDrawing>,
     tab: "anime",
+  },
+  {
+    id: 131,
+    title: "Page Transitions",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+      {
+        id: 21,
+        name: "framermotion",
+      },
+    ],
+    component: <PageTransitions></PageTransitions>,
+    tab: "react",
   },
 ];
