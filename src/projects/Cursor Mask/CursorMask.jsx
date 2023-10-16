@@ -1,6 +1,5 @@
 import { useState } from "react";
 import mask from "./mask.svg";
-import "./CursorMask.css";
 import useMousePosition from "./useMousePosition";
 import { motion } from "framer-motion";
 
