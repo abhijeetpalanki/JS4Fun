@@ -128,6 +128,7 @@ import Preloader from "../projects/Preloader/Preloader";
 import HandwrittenSVGTextAnimation from "../projects/Handwritten SVG Text Animation/HandwrittenSVGTextAnimation";
 import LineDrawing from "../projects/Line Drawing/LineDrawing";
 import PageTransitions from "../projects/Page Transitions/PageTransitions";
+import CursorMask from "../projects/Cursor Mask/CursorMask";
 
 export const projects = [
   {
@@ -1909,5 +1910,17 @@ export const projects = [
     ],
     component: <PageTransitions></PageTransitions>,
     tab: "react",
+  },
+  {
+    id: 132,
+    title: "Cursor Mask",
+    hashtags: [
+      {
+        id: 1,
+        name: "framermotion",
+      },
+    ],
+    component: <CursorMask></CursorMask>,
+    tab: "framer motion",
   },
 ];
