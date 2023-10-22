@@ -129,6 +129,7 @@ import HandwrittenSVGTextAnimation from "../projects/Handwritten SVG Text Animat
 import LineDrawing from "../projects/Line Drawing/LineDrawing";
 import PageTransitions from "../projects/Page Transitions/PageTransitions";
 import CursorMask from "../projects/Cursor Mask/CursorMask";
+import MagneticIcons from "../projects/Magnetic Icons/MagneticIcons";
 
 export const projects = [
   {
@@ -1921,6 +1922,18 @@ export const projects = [
       },
     ],
     component: <CursorMask></CursorMask>,
+    tab: "framer motion",
+  },
+  {
+    id: 133,
+    title: "Magnetic Icons",
+    hashtags: [
+      {
+        id: 1,
+        name: "framermotion",
+      },
+    ],
+    component: <MagneticIcons></MagneticIcons>,
     tab: "framer motion",
   },
 ];
