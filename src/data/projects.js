@@ -130,6 +130,7 @@ import LineDrawing from "../projects/Line Drawing/LineDrawing";
 import PageTransitions from "../projects/Page Transitions/PageTransitions";
 import CursorMask from "../projects/Cursor Mask/CursorMask";
 import MagneticIcons from "../projects/Magnetic Icons/MagneticIcons";
+import Floaters from "../projects/Floaters/Floaters";
 
 export const projects = [
   {
@@ -1934,6 +1935,22 @@ export const projects = [
       },
     ],
     component: <MagneticIcons></MagneticIcons>,
+    tab: "framer motion",
+  },
+  {
+    id: 134,
+    title: "Floaters",
+    hashtags: [
+      {
+        id: 1,
+        name: "framermotion",
+      },
+      {
+        id: 2,
+        name: "three.js",
+      },
+    ],
+    component: <Floaters></Floaters>,
     tab: "framer motion",
   },
 ];
