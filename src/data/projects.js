@@ -132,6 +132,7 @@ import CursorMask from "../projects/Cursor Mask/CursorMask";
 import MagneticIcons from "../projects/Magnetic Icons/MagneticIcons";
 import Floaters from "../projects/Floaters/Floaters";
 import CardSlider from "../projects/Card Slider/CardSlider";
+import TextInMotion from "../projects/Text In Motion/TextInMotion";
 
 export const projects = [
   {
@@ -1965,5 +1966,17 @@ export const projects = [
     ],
     component: <CardSlider></CardSlider>,
     tab: "react",
+  },
+  {
+    id: 136,
+    title: "Text In Motion",
+    hashtags: [
+      {
+        id: 1,
+        name: "framermotion",
+      },
+    ],
+    component: <TextInMotion></TextInMotion>,
+    tab: "framer motion",
   },
 ];
