@@ -131,6 +131,7 @@ import PageTransitions from "../projects/Page Transitions/PageTransitions";
 import CursorMask from "../projects/Cursor Mask/CursorMask";
 import MagneticIcons from "../projects/Magnetic Icons/MagneticIcons";
 import Floaters from "../projects/Floaters/Floaters";
+import CardSlider from "../projects/Card Slider/CardSlider";
 
 export const projects = [
   {
@@ -1952,5 +1953,17 @@ export const projects = [
     ],
     component: <Floaters></Floaters>,
     tab: "framer motion",
+  },
+  {
+    id: 135,
+    title: "Card Slider",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+    ],
+    component: <CardSlider></CardSlider>,
+    tab: "react",
   },
 ];
