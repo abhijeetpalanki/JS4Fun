@@ -135,6 +135,7 @@ import CardSlider from "../projects/Card Slider/CardSlider";
 import TextInMotion from "../projects/Text In Motion/TextInMotion";
 import CodeTextEditor from "../projects/Code Text Editor/CodeTextEditor";
 import BringItOn from "../projects/Bring It On/BringItOn";
+import EnhancedImageTransition from "../projects/Enhanced Image Transition/EnhancedImageTransition";
 
 export const projects = [
   {
@@ -2004,5 +2005,17 @@ export const projects = [
     ],
     component: <BringItOn></BringItOn>,
     tab: "react",
+  },
+  {
+    id: 139,
+    title: "Enhanced Image Transition",
+    hashtags: [
+      {
+        id: 1,
+        name: "three.js",
+      },
+    ],
+    component: <EnhancedImageTransition></EnhancedImageTransition>,
+    tab: "3d",
   },
 ];
