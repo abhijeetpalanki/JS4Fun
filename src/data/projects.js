@@ -134,6 +134,7 @@ import Floaters from "../projects/Floaters/Floaters";
 import CardSlider from "../projects/Card Slider/CardSlider";
 import TextInMotion from "../projects/Text In Motion/TextInMotion";
 import CodeTextEditor from "../projects/Code Text Editor/CodeTextEditor";
+import BringItOn from "../projects/Bring It On/BringItOn";
 
 export const projects = [
   {
@@ -1990,6 +1991,18 @@ export const projects = [
       },
     ],
     component: <CodeTextEditor></CodeTextEditor>,
+    tab: "react",
+  },
+  {
+    id: 138,
+    title: "Bring It On",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+    ],
+    component: <BringItOn></BringItOn>,
     tab: "react",
   },
 ];
