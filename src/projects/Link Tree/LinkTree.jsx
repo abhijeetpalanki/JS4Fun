@@ -46,8 +46,8 @@ const LinkTree = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="bg-white rounded-md w-[350px] md:w-full">
+    <div className="flex flex-col items-center justify-center h-screen bg-white">
+      <div className="rounded-md w-[350px] md:w-full">
         <div className="px-2 py-4 text-center">
           <div className="flex items-center justify-center">
             <img

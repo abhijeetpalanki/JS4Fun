@@ -133,6 +133,7 @@ import MagneticIcons from "../projects/Magnetic Icons/MagneticIcons";
 import Floaters from "../projects/Floaters/Floaters";
 import CardSlider from "../projects/Card Slider/CardSlider";
 import TextInMotion from "../projects/Text In Motion/TextInMotion";
+import CodeTextEditor from "../projects/Code Text Editor/CodeTextEditor";
 
 export const projects = [
   {
@@ -1978,5 +1979,17 @@ export const projects = [
     ],
     component: <TextInMotion></TextInMotion>,
     tab: "framer motion",
+  },
+  {
+    id: 137,
+    title: "Code Text Editor",
+    hashtags: [
+      {
+        id: 1,
+        name: "react.js",
+      },
+    ],
+    component: <CodeTextEditor></CodeTextEditor>,
+    tab: "react",
   },
 ];
