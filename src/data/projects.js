@@ -136,6 +136,7 @@ import TextInMotion from "../projects/Text In Motion/TextInMotion";
 import CodeTextEditor from "../projects/Code Text Editor/CodeTextEditor";
 import BringItOn from "../projects/Bring It On/BringItOn";
 import EnhancedImageTransition from "../projects/Enhanced Image Transition/EnhancedImageTransition";
+import FisheyeRoom from "../projects/Fisheye Room/FisheyeRoom";
 
 export const projects = [
   {
@@ -2016,6 +2017,18 @@ export const projects = [
       },
     ],
     component: <EnhancedImageTransition></EnhancedImageTransition>,
+    tab: "3d",
+  },
+  {
+    id: 140,
+    title: "Fisheye Room",
+    hashtags: [
+      {
+        id: 1,
+        name: "three.js",
+      },
+    ],
+    component: <FisheyeRoom></FisheyeRoom>,
     tab: "3d",
   },
 ];
