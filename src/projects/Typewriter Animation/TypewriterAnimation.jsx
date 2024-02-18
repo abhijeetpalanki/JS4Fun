@@ -1,4 +1,4 @@
-import Typed from "react-typed";
+import { Typed } from "react-typed";
 import bg from "./bg.jpg";
 
 const TypewriterAnimation = () => {

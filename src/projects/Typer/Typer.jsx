@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Typer.css";
-import randomWords from "random-words";
+import { generate } from "random-words";
 
 const NUM_OF_WORDS = 200;
 const SECONDS = 60;
@@ -26,7 +26,7 @@ const Typer = () => {
   }, [words]);
 
   const generateWords = () => {
-    return new Array(NUM_OF_WORDS).fill(null).map(() => randomWords());
+    return new Array(NUM_OF_WORDS).fill(null).map(() => generate());
   };
 
   const initTimer = () => {

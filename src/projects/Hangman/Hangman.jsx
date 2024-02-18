@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { alphabets } from "./alphabets";
-import randomWords from "random-words";
+import { generate } from "random-words";
 import Progress from "./Progress";
 
 const Hangman = () => {
@@ -10,7 +10,7 @@ const Hangman = () => {
   const [status, setStatus] = useState("");
 
   const randomizeWord = () => {
-    const words = new Array(200).fill(null).map(() => randomWords());
+    const words = new Array(200).fill(null).map(() => generate());
     return words[Math.floor(Math.random() * words.length)].toUpperCase();
   };
 

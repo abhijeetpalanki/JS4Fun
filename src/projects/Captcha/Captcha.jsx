@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CaptchaTextGenerator from "captcha-text-generator";
+import { CaptchaText } from "captcha-text-generator";
 
 const Captcha = () => {
   const [captchaText, setCaptchaText] = useState("");
@@ -21,7 +21,7 @@ const Captcha = () => {
           <h3 className="mb-5 text-sm font-light text-gray-600">
             Reload page to generate another Captcha
           </h3>
-          <CaptchaTextGenerator
+          <CaptchaText
             result={(res) => setCaptchaText(res)}
             textColor="#8052ec"
             fontFamily="Roboto Mono"
