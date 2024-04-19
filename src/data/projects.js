@@ -137,6 +137,7 @@ import CodeTextEditor from "../projects/Code Text Editor/CodeTextEditor";
 import BringItOn from "../projects/Bring It On/BringItOn";
 import EnhancedImageTransition from "../projects/Enhanced Image Transition/EnhancedImageTransition";
 import FisheyeRoom from "../projects/Fisheye Room/FisheyeRoom";
+import DroneBot from "../projects/Drone Bot/DroneBot";
 
 export const projects = [
   {
@@ -2029,6 +2030,18 @@ export const projects = [
       },
     ],
     component: <FisheyeRoom></FisheyeRoom>,
+    tab: "3d",
+  },
+  {
+    id: 141,
+    title: "Drone Bot",
+    hashtags: [
+      {
+        id: 1,
+        name: "three.js",
+      },
+    ],
+    component: <DroneBot></DroneBot>,
     tab: "3d",
   },
 ];
