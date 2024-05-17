@@ -46,7 +46,7 @@
     "react-leaf-polls": "^1.1.6",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.22.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-toastify": "^10.0.4",
     "react-typed": "^2.0.12",
     "react-typist": "^2.0.5",
