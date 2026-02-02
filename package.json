@@ -9,6 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@formkit/auto-animate": "0.9.0",
     "@iconify/react": "^6.0.2",
@@ -57,7 +60,6 @@
     "react-typed": "^2.0.12",
     "swiper": "^12.1.0",
     "tailwind-scrollbar": "^4.0.2",
-    "tailwindcss": "^4.1.18",
     "tesseract.js": "^7.0.0",
     "three": "^0.161.0",
     "yup": "^1.7.1",
@@ -66,8 +68,8 @@
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@types/react": "^19.2.10",
-    "@types/react-dom": "^19.2.3",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
     "@vitejs/plugin-react": "^5.1.2",
     "autoprefixer": "^10.4.24",
     "eslint": "^9.39.2",
