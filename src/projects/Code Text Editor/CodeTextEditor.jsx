@@ -30,12 +30,22 @@ const CodeTextEditor = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="flex justify-between w-[500px]">
-        <button onClick={() => setFileName("index.html")}>
+      <div className="flex justify-between w-125">
+        <button
+          className="cursor-pointer"
+          onClick={() => setFileName("index.html")}
+        >
           Switch to HTML
         </button>
-        <button onClick={() => setFileName("index.js")}>Switch to JS</button>
-        <button onClick={getEditorValue}>Get Editor Value</button>
+        <button
+          className="cursor-pointer"
+          onClick={() => setFileName("index.js")}
+        >
+          Switch to JS
+        </button>
+        <button className="cursor-pointer" onClick={getEditorValue}>
+          Get Editor Value
+        </button>
       </div>
       <Editor
         height={"500px"}

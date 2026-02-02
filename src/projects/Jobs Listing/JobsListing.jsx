@@ -8,27 +8,26 @@ const JobsListing = () => {
   const [filterKeywords, setFilterKeywords] = useState([]);
   const [filteredData, setfilteredData] = useState([]);
 
-  const modifiedData = () => {
-    if (filterKeywords.length > 0) {
-      const newData = filteredData.filter((d) => {
-        return filterKeywords.every((key) => {
-          return (
-            d.role === key ||
-            d.level === key ||
-            d.languages.includes(key) ||
-            d.tools.includes(key)
-          );
-        });
-      });
-      setfilteredData(newData);
-    } else {
-      setfilteredData(data);
-    }
-  };
-
   useEffect(() => {
+    const modifiedData = () => {
+      if (filterKeywords.length > 0) {
+        const newData = filteredData.filter((d) => {
+          return filterKeywords.every((key) => {
+            return (
+              d.role === key ||
+              d.level === key ||
+              d.languages.includes(key) ||
+              d.tools.includes(key)
+            );
+          });
+        });
+        setfilteredData(newData);
+      } else {
+        setfilteredData(data);
+      }
+    };
     modifiedData();
-  }, [filterKeywords]);
+  }, [filterKeywords, filteredData]);
 
   const addFilteredKeywords = (data) => {
     if (!filterKeywords.includes(data)) {
@@ -46,7 +45,7 @@ const JobsListing = () => {
   };
 
   return (
-    <div className="text-xs md:text-[15px] h-screen font-medium bg-[#effafa]">
+    <div className="text-xs md:text-[15px] font-medium bg-[#effafa]">
       <div
         className="w-full h-40 bg-[#5ba4a4]"
         style={{ backgroundImage: `url(${headerDesktop})` }}

@@ -27,7 +27,7 @@ const CardSlider = () => {
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer">
+            <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-62.5 w-53.75 lg:h-100 lg:w-87.5 overflow-hidden cursor-pointer">
               <div
                 className="absolute inset-0 bg-center bg-cover"
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
@@ -38,7 +38,7 @@ const CardSlider = () => {
                 <h1 className="text-xl lg:text-2xl">{item.title}</h1>
                 <p className="lg:text-lg">{item.content}</p>
               </div>
-              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100" />
+              <RxArrowTopRight className="absolute bottom-5 left-5 w-8.75 h-8.75 text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100" />
             </div>
           </SwiperSlide>
         ))}

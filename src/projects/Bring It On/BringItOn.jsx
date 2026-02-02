@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
 const DATA = [
@@ -62,10 +62,10 @@ const BringItOn = () => {
     }
 
     const storeSourceIndex = stores.findIndex(
-      (store) => store.id === source.droppableId
+      (store) => store.id === source.droppableId,
     );
     const storeDestinationIndex = stores.findIndex(
-      (store) => store.id === destination.droppableId
+      (store) => store.id === destination.droppableId,
     );
     const newSourceItems = [...stores[storeSourceIndex].items];
     const newDestinationItems =
@@ -92,11 +92,11 @@ const BringItOn = () => {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center bg-[#2a385c] bg-[image:linear-gradient(320deg,#1c1e22_0%,#323b49_100%)]">
-      <div className="bg-[image:linear-gradient(0deg,#23282f_0%,#3c4858_100%)] rounded-[3px] shadow-[0_12px_16px_#0000003f] my-12 mx-auto w-[370px] max-w-sm">
+    <div className="h-screen flex justify-center items-center bg-[#2a385c] bg-[linear-gradient(320deg,#1c1e22_0%,#323b49_100%)]">
+      <div className="bg-[linear-gradient(0deg,#23282f_0%,#3c4858_100%)] rounded-[3px] shadow-[0_12px_16px_#0000003f] my-12 mx-auto w-92.5 max-w-sm">
         <div className="p-5 bg-white rounded-[5px]">
           <DragDropContext onDragEnd={handleDragDrop}>
-            <div className="border-b border-b-gray-500 pb-[10px] mb-[5px]">
+            <div className="border-b border-b-gray-500 pb-2.5 mb-1.25">
               <h1 className="text-2xl font-bold">Shopping List</h1>
             </div>
             <Droppable droppableId="root" type="group">
@@ -135,7 +135,7 @@ const StoreList = ({ name, items, id }) => {
     <Droppable droppableId={id}>
       {(provided) => (
         <div {...provided.droppableProps} ref={provided.innerRef}>
-          <div className="text-center p-[5px] bg-[#00f7ff]">
+          <div className="text-center p-1.25 bg-[#00f7ff]">
             <h3 className="font-semibold">{name}</h3>
           </div>
           <div className="text-center">
@@ -146,7 +146,7 @@ const StoreList = ({ name, items, id }) => {
                     {...provided.dragHandleProps}
                     {...provided.draggableProps}
                     ref={provided.innerRef}
-                    className="p-[5px] border-b border-b-gray-500"
+                    className="p-1.25 border-b border-b-gray-500"
                   >
                     <h4 className="font-semibold">{item.name}</h4>
                   </div>

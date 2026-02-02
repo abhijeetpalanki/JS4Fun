@@ -22,9 +22,9 @@ import sound3 from "./sounds/ambient-happy.mp3";
 const BetterHealth = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-black">
-      <header className="bg-transparent flex flex-col items-center justify-center text-[calc(10px+2vmin)] text-white p-10 absolute top-0 right-0 left-0 z-[1] before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[300px] before:bg-[linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0))] before:pointer-events-none before:-z-[1]">
+      <header className="bg-transparent flex flex-col items-center justify-center text-[calc(10px+2vmin)] text-white p-10 absolute top-0 right-0 left-0 z-1 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-75 before:bg-[linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0))] before:pointer-events-none before:-z-1">
         <img
-          className="w-[42px] h-auto pointer-events-none"
+          className="w-10.5 h-auto pointer-events-none"
           src={logo}
           alt="logo"
         />
@@ -193,10 +193,10 @@ const BetterHealth = () => {
                         It's time to get
                         <br /> the support you need
                       </h1>
-                      <h2 className="mb-[30px] -mt-5 text-[40px] text-white">
+                      <h2 className="mb-7.5 -mt-5 text-[40px] text-white">
                         To get your life back
                       </h2>
-                      <button className="bg-black border border-[#f8f9fa] rounded-md text-[#f8f9fa] text-xs font-normal leading-normal py-[0.375rem] px-3 text-center transition-colors duration-150 ease-in-out shadow-[inset_0_3px_5px_#0000001f] hover:bg-[#f8f9fa] hover:border-[#f8f9fa] hover:text-black">
+                      <button className="bg-black border border-[#f8f9fa] rounded-md text-[#f8f9fa] text-xs font-normal leading-normal py-1.5 px-3 text-center transition-colors duration-150 ease-in-out shadow-[inset_0_3px_5px_#0000001f] hover:bg-[#f8f9fa] hover:border-[#f8f9fa] hover:text-black">
                         Get help now
                       </button>
                     </div>

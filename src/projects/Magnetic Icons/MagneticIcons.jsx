@@ -5,7 +5,7 @@ const MagneticIcons = () => {
     <div className="flex items-center justify-center gap-12 h-screen bg-[#0f0f0f]">
       <Framer>
         <svg
-          className="h-[50px] w-[50px] fill-[#c8bdb0] transition-[fill] duration-200 hover:fill-[#ec4e39]"
+          className="h-12.5 w-12.5 fill-[#c8bdb0] transition-[fill] duration-200 hover:fill-[#ec4e39]"
           id="Layer_2"
           data-name="Layer 2"
           xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ const MagneticIcons = () => {
 
       <Framer>
         <svg
-          className="h-[50px] w-[50px] fill-[#c8bdb0] transition-[fill] duration-200 hover:fill-[#ec4e39]"
+          className="h-12.5 w-12.5 fill-[#c8bdb0] transition-[fill] duration-200 hover:fill-[#ec4e39]"
           id="Layer_2"
           data-name="Layer 2"
           xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ const MagneticIcons = () => {
 
       <Framer>
         <svg
-          className="h-[50px] w-[50px] fill-[#c8bdb0] transition-[fill] duration-200 hover:fill-[#ec4e39]"
+          className="h-12.5 w-12.5 fill-[#c8bdb0] transition-[fill] duration-200 hover:fill-[#ec4e39]"
           id="Layer_2"
           data-name="Layer 2"
           xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ const MagneticIcons = () => {
 
       <Framer>
         <svg
-          className="h-[50px] w-[50px] fill-[#c8bdb0] transition-[fill] duration-200 hover:fill-[#ec4e39]"
+          className="h-12.5 w-12.5 fill-[#c8bdb0] transition-[fill] duration-200 hover:fill-[#ec4e39]"
           id="Layer_2"
           data-name="Layer 2"
           xmlns="http://www.w3.org/2000/svg"

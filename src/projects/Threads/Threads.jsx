@@ -1,6 +1,6 @@
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { pointsInner, pointsOuter } from "./utils";
 
 const Threads = () => {

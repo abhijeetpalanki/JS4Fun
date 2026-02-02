@@ -80,7 +80,6 @@ import Timeline from "../projects/Timeline/Timeline";
 import BinaryClock from "../projects/Binary Clock/BinaryClock";
 import AppleMessages from "../projects/Apple Messages/AppleMessages";
 import FormValidator from "../projects/Form Validator/FormValidator";
-import RemoveBg from "../projects/Remove Bg/RemoveBg";
 import TypewriterAnimation from "../projects/Typewriter Animation/TypewriterAnimation";
 import AnimatedTabs from "../projects/Animated Tabs/AnimatedTabs";
 import JobsListing from "../projects/Jobs Listing/JobsListing";
@@ -99,7 +98,6 @@ import CurvedMenu from "../projects/Curved Menu/CurvedMenu";
 import Android from "../projects/Android/Android";
 import Fireworks from "../projects/Fireworks/Fireworks";
 import PageTransitions from "../projects/Page Transitions/PageTransitions";
-import CursorMask from "../projects/Cursor Mask/CursorMask";
 import MagneticIcons from "../projects/Magnetic Icons/MagneticIcons";
 import CardSlider from "../projects/Card Slider/CardSlider";
 import TextInMotion from "../projects/Text In Motion/TextInMotion";
@@ -1215,7 +1213,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 106,
+    id: 81,
     title: "Binary Clock",
     hashtags: [
       {
@@ -1227,7 +1225,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 107,
+    id: 82,
     title: "Apple Messages",
     hashtags: [
       {
@@ -1239,7 +1237,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 108,
+    id: 83,
     title: "Form Validator",
     hashtags: [
       {
@@ -1255,19 +1253,7 @@ export const projects = [
     tab: "packages",
   },
   {
-    id: 109,
-    title: "Remove.bg",
-    hashtags: [
-      {
-        id: 1,
-        name: "react.js",
-      },
-    ],
-    component: <RemoveBg></RemoveBg>,
-    tab: "react",
-  },
-  {
-    id: 110,
+    id: 84,
     title: "Typewriter Animation",
     hashtags: [
       {
@@ -1283,7 +1269,7 @@ export const projects = [
     tab: "packages",
   },
   {
-    id: 111,
+    id: 85,
     title: "Animated Tabs",
     hashtags: [
       {
@@ -1295,7 +1281,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 112,
+    id: 86,
     title: "Jobs Listing",
     hashtags: [
       {
@@ -1307,7 +1293,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 113,
+    id: 87,
     title: "Searchable Table",
     hashtags: [
       {
@@ -1319,7 +1305,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 114,
+    id: 88,
     title: "Brand Slider",
     hashtags: [
       {
@@ -1331,7 +1317,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 115,
+    id: 89,
     title: "Stopwatch Timer",
     hashtags: [
       {
@@ -1343,7 +1329,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 116,
+    id: 90,
     title: "Dynamic Inputs",
     hashtags: [
       {
@@ -1355,7 +1341,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 117,
+    id: 91,
     title: "Anime List",
     hashtags: [
       {
@@ -1371,7 +1357,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 118,
+    id: 92,
     title: "Atmos 3D",
     hashtags: [
       {
@@ -1387,7 +1373,7 @@ export const projects = [
     tab: "3d",
   },
   {
-    id: 119,
+    id: 93,
     title: "Airpods Card",
     hashtags: [
       {
@@ -1399,7 +1385,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 120,
+    id: 94,
     title: "Better Health",
     hashtags: [
       {
@@ -1415,7 +1401,7 @@ export const projects = [
     tab: "3d",
   },
   {
-    id: 121,
+    id: 95,
     title: "Youtube Tab Animation",
     hashtags: [
       {
@@ -1427,7 +1413,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 122,
+    id: 96,
     title: "Confetti Celebration",
     hashtags: [
       {
@@ -1439,7 +1425,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 123,
+    id: 97,
     title: "Threads",
     hashtags: [
       {
@@ -1455,7 +1441,7 @@ export const projects = [
     tab: "3d",
   },
   {
-    id: 124,
+    id: 98,
     title: "Curved Menu",
     hashtags: [
       {
@@ -1467,7 +1453,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 127,
+    id: 99,
     title: "Fireworks",
     hashtags: [
       {
@@ -1479,7 +1465,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 131,
+    id: 100,
     title: "Page Transitions",
     hashtags: [
       {
@@ -1495,19 +1481,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 132,
-    title: "Cursor Mask",
-    hashtags: [
-      {
-        id: 1,
-        name: "framermotion",
-      },
-    ],
-    component: <CursorMask></CursorMask>,
-    tab: "framer motion",
-  },
-  {
-    id: 133,
+    id: 101,
     title: "Magnetic Icons",
     hashtags: [
       {
@@ -1519,7 +1493,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 135,
+    id: 102,
     title: "Card Slider",
     hashtags: [
       {
@@ -1531,7 +1505,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 136,
+    id: 103,
     title: "Text In Motion",
     hashtags: [
       {
@@ -1543,7 +1517,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 137,
+    id: 104,
     title: "Code Text Editor",
     hashtags: [
       {
@@ -1555,7 +1529,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 138,
+    id: 105,
     title: "Bring It On",
     hashtags: [
       {
@@ -1567,7 +1541,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 139,
+    id: 106,
     title: "Enhanced Image Transition",
     hashtags: [
       {
@@ -1579,7 +1553,7 @@ export const projects = [
     tab: "3d",
   },
   {
-    id: 140,
+    id: 107,
     title: "Fisheye Room",
     hashtags: [
       {
@@ -1591,7 +1565,7 @@ export const projects = [
     tab: "3d",
   },
   {
-    id: 141,
+    id: 108,
     title: "Drone Bot",
     hashtags: [
       {

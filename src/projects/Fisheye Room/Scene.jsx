@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { MeshWobbleMaterial, useGLTF } from "@react-three/drei";
-import { useSpring, a } from "@react-spring/three";
+import { useSpring } from "@react-spring/three";
 
 export function Level() {
   const { nodes } = useGLTF("/models/Room.glb");
@@ -20,7 +20,7 @@ export function Sudo() {
   const { nodes } = useGLTF("/models/Room.glb");
   const [spring, api] = useSpring(
     () => ({ rotation: [Math.PI / 2, 0, 0.29], config: { friction: 40 } }),
-    []
+    [],
   );
   useEffect(() => {
     let timeout;
@@ -59,7 +59,7 @@ export function Camera() {
   const { nodes, materials } = useGLTF("/models/Room.glb");
   const [spring, api] = useSpring(
     () => ({ "rotation-z": 0, config: { friction: 40 } }),
-    []
+    [],
   );
   useEffect(() => {
     let timeout;
@@ -100,7 +100,8 @@ export function Box({ scale = 1, ...props }) {
   const [hovered, hover] = useState(false);
   const [clicked, click] = useState(false);
   useFrame(
-    (state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta)
+    (state, delta) =>
+      (ref.current.rotation.x = ref.current.rotation.y += delta),
   );
   return (
     <mesh
@@ -109,7 +110,7 @@ export function Box({ scale = 1, ...props }) {
       scale={(clicked ? 1.5 : 1) * scale}
       onClick={() => click(!clicked)}
       onPointerOver={(event) => (event.stopPropagation(), hover(true))}
-      onPointerOut={(event) => hover(false)}
+      onPointerOut={() => hover(false)}
     >
       <boxGeometry />
       <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />

@@ -26,9 +26,9 @@ const BinaryClock = () => {
   }, []);
 
   return (
-    <div className="flex items-center gap-[5px] justify-center h-screen">
+    <div className="flex items-center gap-1.25 justify-center h-screen">
       {time.map((x, i) => (
-        <div className="binary flex flex-col gap-[5px]" key={i}>
+        <div className="binary flex flex-col gap-1.25" key={i}>
           <span
             className={`block w-8 h-8 rounded-full ${
               x[0] === "1" ? "bg-[#facc15]" : "bg-[#3f4753]"

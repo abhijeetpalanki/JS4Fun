@@ -1,8 +1,10 @@
 import { AnimatePresence } from "framer-motion";
 import { NavLink, Route, Routes, useParams } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
+import {
+  TransitionedHome as Home,
+  TransitionedAbout as About,
+  TransitionedContact as Contact,
+} from "./index";
 
 const PageTransitions = () => {
   return (

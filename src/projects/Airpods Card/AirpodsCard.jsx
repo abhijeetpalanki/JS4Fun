@@ -36,12 +36,12 @@ const AirpodsCard = () => {
 
   return (
     <div className="flex items-center justify-center h-screen font-['Heebo'] bg-white">
-      <div className="w-[290px] h-[580px] flex rounded-[28px] shadow-[0_0_12px_1px_#0f0f0f1e] relative">
+      <div className="w-72.5 h-145 flex rounded-[28px] shadow-[0_0_12px_1px_#0f0f0f1e] relative">
         <motion.div
           initial={{ opacity: 0 }}
           animate={animateAirpodsMax}
           transition={{ type: "tween", duration: 1 }}
-          className="w-auto h-[23em] absolute -top-[2.9em] -right-[1.7em] z-[99]"
+          className="w-auto h-[23em] absolute -top-[2.9em] -right-[1.7em] z-99"
         >
           <img className="w-auto h-full" src={AirpodMaxImg} alt="" />
         </motion.div>
@@ -51,13 +51,13 @@ const AirpodsCard = () => {
           <motion.div
             animate={animate}
             transition={transition}
-            className="flex flex-col-reverse items-center min-w-full min-h-full pb-[3em] z-[100]"
+            className="flex flex-col-reverse items-center min-w-full min-h-full pb-[3em] z-100"
             style={{
               background: `url(${AirpodMaxBackgroundImg}) no-repeat center center/cover`,
             }}
           >
             <button
-              className="py-[15px] px-[2.4em] text-lg outline-none border-none rounded-[28px] text-white font-semibold bg-[#82947e] transition-all duration-300 ease-in-out hover:bg-[#5d7756]"
+              className="py-3.75 px-[2.4em] text-lg outline-none border-none rounded-[28px] text-white font-semibold bg-[#82947e] transition-all duration-300 ease-in-out hover:bg-[#5d7756]"
               onClick={switchToBuy}
             >
               Overview
@@ -99,7 +99,7 @@ const AirpodsCard = () => {
                 </div>
               </div>
 
-              <button className="py-[15px] px-[2.4em] text-lg outline-none border-none rounded-[28px] text-white font-semibold bg-[#82947e] transition-all duration-300 ease-in-out hover:bg-[#5d7756]">
+              <button className="py-3.75 px-[2.4em] text-lg outline-none border-none rounded-[28px] text-white font-semibold bg-[#82947e] transition-all duration-300 ease-in-out hover:bg-[#5d7756]">
                 Buy
               </button>
             </div>

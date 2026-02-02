@@ -51,7 +51,7 @@ const AppleMessages = () => {
 
   return (
     <div className="h-screen bg-black">
-      <div className="flex flex-col w-[400px] px-4 mx-auto">
+      <div className="flex flex-col w-100 px-4 mx-auto">
         <div className="mt-4 text-right">
           <button
             onClick={addMessage}

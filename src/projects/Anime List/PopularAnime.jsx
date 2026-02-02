@@ -19,7 +19,7 @@ const PopularAnime = () => {
                 <Link
                   to={`/projects/${projectId}/anime/${anime.mal_id}`}
                   key={anime.mal_id}
-                  className="h-[500px] rounded-[7px] border-[5px] border-[#e5e7eb]"
+                  className="h-125 rounded-[7px] border-[5px] border-[#e5e7eb]"
                 >
                   <img
                     src={anime.images.jpg.large_image_url}

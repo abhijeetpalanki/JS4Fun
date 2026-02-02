@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 let tabs = [
   { id: "home", label: "home" },
@@ -43,7 +43,7 @@ const YoutubeTabAnimation = () => {
                 activeTab === tab.id
                   ? "text-purple-400"
                   : "hover:text-white/20 hover:after:scale-x-100"
-              } relative ps-4 pe-4 text-xl outline-sky-400 uppercase transition after:content-[''] after:h-[3px] after:absolute after:bg-purple-400 after:w-full after:left-0 after:-bottom-4 after:scale-x-0 after:transition-[scale_250ms]`}
+              } relative cursor-pointer ps-4 pe-4 text-xl outline-sky-400 uppercase transition after:content-[''] after:h-0.75 after:absolute after:bg-purple-400 after:w-full after:left-0 after:-bottom-4 after:scale-x-0 after:transition-[scale_250ms]`}
             >
               {tab.label}
             </button>

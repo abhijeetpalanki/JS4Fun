@@ -24,7 +24,7 @@ const Job = (props) => {
       <div className="absolute flex items-center pr-6 md:static -top-8 md:top-0">
         <img src={logo} alt="" className="w-16 h-auto md:w-full" />
       </div>
-      <div className="flex flex-col flex-grow-0 py-[1.3rem] md:py-0 md:flex-grow">
+      <div className="flex flex-col grow-0 py-[1.3rem] md:py-0 md:grow">
         <div className="company">
           <span className="font-bold text-[#5ba4a4] mr-[0.8rem]">
             {company}

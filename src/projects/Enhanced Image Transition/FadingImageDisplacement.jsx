@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import { shaderMaterial, useTexture } from "@react-three/drei";
 import { extend, useFrame } from "@react-three/fiber";
 import { easing, geometry } from "maath";
-import * as THREE from "three";
 
 export const ImageFadeMaterialDisplacement = shaderMaterial(
   {
@@ -37,7 +36,7 @@ export const ImageFadeMaterialDisplacement = shaderMaterial(
       gl_FragColor = finalTexture;
       #include <tonemapping_fragment>
       #include <encodings_fragment>
-    }`
+    }`,
 );
 
 extend({
@@ -60,8 +59,8 @@ export const FadingImageDisplacement = (props) => {
   return (
     <mesh
       {...props}
-      onPointerOver={(e) => setHover(true)}
-      onPointerOut={(e) => setHover(false)}
+      onPointerOver={() => setHover(true)}
+      onPointerOut={() => setHover(false)}
     >
       <roundedPlaneGeometry args={[2.25, 4]} />
       <imageFadeMaterialDisplacement
