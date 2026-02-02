@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --bg-image-paper: url("/images/paper.svg");
+  --bg-image-rock: url("/images/rock.svg");
+  --bg-image-scissors: url("/images/scissors.svg");
+}
+
 @keyframes snore {
   30% {
     transform: rotate(10deg) translateY(0);

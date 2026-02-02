@@ -9,13 +9,10 @@ import FAQ from "../projects/FAQ Collapse/FAQ";
 import RandomNumberPicker from "../projects/Random Number Picker/RandomNumberPicker";
 import AnimatedNavigation from "../projects/Animated Navigation/AnimatedNavigation";
 import BackgroundImageSlider from "../projects/Background Image Slider/BackgroundImageSlider";
-import RockPaperScissors from "../projects/Rock Paper Scissors/RockPaperScissors";
-import Canvas from "../projects/Canvas/Canvas";
 import DoubleVerticalSlider from "../projects/Double Vertical Slider/DoubleVerticalSlider";
 import GithubProfiles from "../projects/Github Profiles/GithubProfiles";
 import PasswordGenerator from "../projects/Password Generator/PasswordGenerator";
 import StickyNotes from "../projects/Sticky Notes/StickyNotes";
-import Screenshot from "../projects/Screenshot/Screenshot";
 import Pomodoro from "../projects/Pomodoro/PomodoroWrapper";
 import Hoverboard from "../projects/Hoverboard/Hoverboard";
 import Pokedex from "../projects/Pokedex/Pokedex";
@@ -28,20 +25,14 @@ import Relaxer from "../projects/Relaxer/Relaxer";
 import Typer from "../projects/Typer/Typer";
 import Horoscope from "../projects/The Daily Horoscope/Horoscope";
 import QRCodeGenerator from "../projects/QR Code Generator/QRCodeGenerator";
-import AlarmClock from "../projects/Alarm Clock/AlarmClock";
-import WordAssociations from "../projects/Word Associations/WordAssociations";
 import ContactUsForm from "../projects/Contact Us Form/ContactUsForm";
-import UnsplashInfiniteGallery from "../projects/Unsplash Infinite Gallery/UnsplashInfiniteGallery";
 import BasicCalculator from "../projects/Basic Calculator/BasicCalculator";
 import Dictionary from "../projects/Dictionary/Dictionary";
 import PasswordStrengthIndicator from "../projects/Password Strength Indicator/PasswordStrengthIndicator";
-import URLShortener from "../projects/URL Shortener/URLShortener";
 import RollTheDice from "../projects/Roll The Dice/RollTheDice";
 import AgeCalculator from "../projects/Age Calculator/AgeCalculator";
-import TheWeatherChannel from "../projects/The Weather Channel/TheWeatherChannel";
 import Doraemon from "../projects/Doraemon/Doraemon";
 import AnimatedModal from "../projects/Animated Modal/AnimatedModal";
-import HorizonalImageCarousel from "../projects/Horizonal Image Carousel/HorizonalImageCarousel";
 import Image2TextConverter from "../projects/Image 2 Text Converter/Image2TextConverter";
 import DiscordNavbar from "../projects/Discord Navbar/DiscordNavbar";
 import NewsletterLandingPage from "../projects/Newsletter Landing Page/NewsletterLandingPage";
@@ -52,9 +43,7 @@ import ImagePreview from "../projects/Image Preview/ImagePreview";
 import AnimatedLandingPage from "../projects/Animated Landing Page/AnimatedLandingPage";
 import HackerTyper from "../projects/Hacker Typer/HackerTyper";
 import HexGuesser from "../projects/Hex Guesser/HexGuesser";
-import Musification from "../projects/Musification/Musification";
 import MultiStepForm from "../projects/MultiStepForm/MultiStepForm";
-import RabbitLoader from "../projects/Rabbit Loader/RabbitLoader";
 import Focus from "../projects/Focus/Focus";
 import TextGenerator from "../projects/Text Generator/TextGenerator";
 import CryptoPriceTracker from "../projects/Crypto Price Tracker/CryptoPriceTracker";
@@ -62,26 +51,17 @@ import SimpleInterestCalculator from "../projects/Simple Interest Calculator/Sim
 import ServicesCard from "../projects/Services Card/ServicesCard";
 import Notifications from "../projects/Notifications/Notifications";
 import MemoryGame from "../projects/Memory Game/MemoryGame";
-import SphericalGallery from "../projects/Spherical Gallery/SphericalGallery";
 import Toastify from "../projects/Toastify/Toastify";
 import BMICalculator from "../projects/BMI Calculator/BMICalculator";
 import PalindromeChecker from "../projects/Palindrome Checker/PalindromeChecker";
 import BookHub from "../projects/Book Hub/BookHub";
-import CurrencyConverter from "../projects/Currency Converter/CurrencyConverter";
 import Ranker from "../projects/Ranker/Ranker";
-import MemeGenerator from "../projects/Meme Generator/MemeGenerator";
 import TipCalculator from "../projects/Tip Calculator/TipCalculator";
 import UniversityFinder from "../projects/University Finder/UniversityFinder";
-import Captcha from "../projects/Captcha/Captcha";
 import EmotePicker from "../projects/Emote Picker/EmotePicker";
-import HeroSlider from "../projects/Hero Slider/HeroSlider";
 import ColorfulMousePointer from "../projects/Colorful Mouse Pointer/ColorfulMousePointer";
-import PlaySnake from "../projects/Play Snake/PlaySnake";
-import MapsMarker from "../projects/Maps Marker/MapsMarker";
 import VideoPlayer from "../projects/Video Player/VideoPlayer";
 import LinkTree from "../projects/Link Tree/LinkTree";
-import OrbitalLoadingPage from "../projects/Orbital Loading Page/OrbitalLoadingPage";
-import GoogleLoginButton from "../projects/Google Login Button/GoogleLoginButton";
 import MotionActivatedCard from "../projects/Motion Activated Card/MotionActivatedCard";
 import Connect4 from "../projects/Connect 4/Connect4";
 import MysticSquare from "../projects/Mystic Square/MysticSquare";
@@ -271,7 +251,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 13,
+    id: 12,
     title: "Background Image Slider",
     hashtags: [
       {
@@ -283,39 +263,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 14,
-    title: "Rock Paper Scissors",
-    hashtags: [
-      {
-        id: 1,
-        name: "react.js",
-      },
-      {
-        id: 2,
-        name: "onlydesktop",
-      },
-    ],
-    component: <RockPaperScissors></RockPaperScissors>,
-    tab: "desktop",
-  },
-  {
-    id: 15,
-    title: "Canvas",
-    hashtags: [
-      {
-        id: 1,
-        name: "basicjavascript",
-      },
-      {
-        id: 2,
-        name: "onlydesktop",
-      },
-    ],
-    component: <Canvas></Canvas>,
-    tab: "desktop",
-  },
-  {
-    id: 16,
+    id: 13,
     title: "Double Vertical Slider",
     hashtags: [
       {
@@ -327,7 +275,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 17,
+    id: 14,
     title: "Github Profiles",
     hashtags: [
       {
@@ -339,7 +287,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 18,
+    id: 15,
     title: "Password Generator",
     hashtags: [
       {
@@ -351,7 +299,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 19,
+    id: 16,
     title: "Sticky Notes",
     hashtags: [
       {
@@ -371,23 +319,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 20,
-    title: "Screenshot",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-      {
-        id: 2,
-        name: "onlydesktop",
-      },
-    ],
-    component: <Screenshot></Screenshot>,
-    tab: "desktop",
-  },
-  {
-    id: 21,
+    id: 17,
     title: "Hoverboard",
     hashtags: [
       {
@@ -403,7 +335,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 22,
+    id: 18,
     title: "Pokedex",
     hashtags: [
       {
@@ -415,7 +347,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 23,
+    id: 19,
     title: "3D Magic Box",
     hashtags: [
       {
@@ -431,7 +363,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 24,
+    id: 20,
     title: "Live User Filter",
     hashtags: [
       {
@@ -443,7 +375,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 25,
+    id: 21,
     title: "Feedback UI Design",
     hashtags: [
       {
@@ -455,7 +387,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 26,
+    id: 22,
     title: "Quiz",
     hashtags: [
       {
@@ -467,7 +399,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 27,
+    id: 23,
     title: "Todos",
     hashtags: [
       {
@@ -483,7 +415,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 28,
+    id: 24,
     title: "Relaxer",
     hashtags: [
       {
@@ -495,7 +427,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 29,
+    id: 25,
     title: "Typer",
     hashtags: [
       {
@@ -511,7 +443,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 30,
+    id: 26,
     title: "The Daily Horoscope",
     hashtags: [
       {
@@ -523,7 +455,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 31,
+    id: 27,
     title: "QR Code Generator",
     hashtags: [
       {
@@ -535,31 +467,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 32,
-    title: "Alarm Clock",
-    hashtags: [
-      {
-        id: 1,
-        name: "reactcontextapi",
-      },
-    ],
-    component: <AlarmClock></AlarmClock>,
-    tab: "react",
-  },
-  {
-    id: 33,
-    title: "Word Associations",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-    ],
-    component: <WordAssociations></WordAssociations>,
-    tab: "api",
-  },
-  {
-    id: 34,
+    id: 28,
     title: "Contact Us Form",
     hashtags: [
       {
@@ -571,19 +479,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 35,
-    title: "Unsplash Infinite Gallery",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-    ],
-    component: <UnsplashInfiniteGallery></UnsplashInfiniteGallery>,
-    tab: "api",
-  },
-  {
-    id: 36,
+    id: 29,
     title: "Basic Calculator",
     hashtags: [
       {
@@ -599,7 +495,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 37,
+    id: 30,
     title: "Dictionary",
     hashtags: [
       {
@@ -611,7 +507,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 38,
+    id: 31,
     title: "Password Strength Indicator",
     hashtags: [
       {
@@ -627,19 +523,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 39,
-    title: "URL Shortener",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-    ],
-    component: <URLShortener></URLShortener>,
-    tab: "react",
-  },
-  {
-    id: 40,
+    id: 32,
     title: "Roll The Dice",
     hashtags: [
       {
@@ -651,7 +535,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 41,
+    id: 33,
     title: "Age Calculator",
     hashtags: [
       {
@@ -663,19 +547,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 42,
-    title: "The Weather Channel",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-    ],
-    component: <TheWeatherChannel></TheWeatherChannel>,
-    tab: "api",
-  },
-  {
-    id: 43,
+    id: 34,
     title: "Doraemon",
     hashtags: [
       {
@@ -691,7 +563,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 44,
+    id: 35,
     title: "Animated Modal",
     hashtags: [
       {
@@ -707,23 +579,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 45,
-    title: "Horizonal Image Carousel",
-    hashtags: [
-      {
-        id: 1,
-        name: "framermotion",
-      },
-      {
-        id: 2,
-        name: "externalpackages",
-      },
-    ],
-    component: <HorizonalImageCarousel></HorizonalImageCarousel>,
-    tab: "framer motion",
-  },
-  {
-    id: 46,
+    id: 36,
     title: "Image 2 Text Converter",
     hashtags: [
       {
@@ -739,7 +595,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 47,
+    id: 37,
     title: "Discord Navbar",
     hashtags: [
       {
@@ -751,7 +607,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 48,
+    id: 38,
     title: "Newsletter Landing Page",
     hashtags: [
       {
@@ -767,7 +623,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 49,
+    id: 39,
     title: "Wiki Seeker",
     hashtags: [
       {
@@ -779,7 +635,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 50,
+    id: 40,
     title: "Drum Kit",
     hashtags: [
       {
@@ -795,7 +651,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 51,
+    id: 41,
     title: "Color Picker",
     hashtags: [
       {
@@ -811,7 +667,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 53,
+    id: 42,
     title: "Image Preview",
     hashtags: [
       {
@@ -823,7 +679,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 54,
+    id: 43,
     title: "Animated Landing Page",
     hashtags: [
       {
@@ -839,7 +695,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 55,
+    id: 44,
     title: "Hacker Typer",
     hashtags: [
       {
@@ -851,7 +707,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 56,
+    id: 45,
     title: "Hex Guesser",
     hashtags: [
       {
@@ -863,23 +719,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 57,
-    title: "Musification",
-    hashtags: [
-      {
-        id: 1,
-        name: "css",
-      },
-      {
-        id: 2,
-        name: "react.js",
-      },
-    ],
-    component: <Musification></Musification>,
-    tab: "react",
-  },
-  {
-    id: 58,
+    id: 46,
     title: "Multi-Step Form",
     hashtags: [
       {
@@ -895,23 +735,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 59,
-    title: "Rabbit Loader",
-    hashtags: [
-      {
-        id: 1,
-        name: "landingpages",
-      },
-      {
-        id: 2,
-        name: "css",
-      },
-    ],
-    component: <RabbitLoader></RabbitLoader>,
-    tab: "css",
-  },
-  {
-    id: 60,
+    id: 47,
     title: "Focus",
     hashtags: [
       {
@@ -927,7 +751,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 61,
+    id: 48,
     title: "Text Generator",
     hashtags: [
       {
@@ -939,7 +763,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 62,
+    id: 49,
     title: "Crypto Price Tracker",
     hashtags: [
       {
@@ -955,7 +779,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 63,
+    id: 50,
     title: "Simple Interest Calculator",
     hashtags: [
       {
@@ -967,7 +791,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 64,
+    id: 51,
     title: "Services Card",
     hashtags: [
       {
@@ -979,7 +803,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 65,
+    id: 52,
     title: "Notifications",
     hashtags: [
       {
@@ -991,7 +815,7 @@ export const projects = [
     tab: "css",
   },
   {
-    id: 66,
+    id: 53,
     title: "Memory Game",
     hashtags: [
       {
@@ -1003,23 +827,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 67,
-    title: "Spherical Gallery",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-      {
-        id: 2,
-        name: "onlydesktop",
-      },
-    ],
-    component: <SphericalGallery></SphericalGallery>,
-    tab: "desktop",
-  },
-  {
-    id: 68,
+    id: 54,
     title: "Toastify",
     hashtags: [
       {
@@ -1031,7 +839,7 @@ export const projects = [
     tab: "packages",
   },
   {
-    id: 69,
+    id: 55,
     title: "BMI Calculator",
     hashtags: [
       {
@@ -1043,7 +851,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 70,
+    id: 56,
     title: "Palindrome Checker",
     hashtags: [
       {
@@ -1055,7 +863,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 71,
+    id: 57,
     title: "Book Hub",
     hashtags: [
       {
@@ -1067,19 +875,7 @@ export const projects = [
     tab: "api",
   },
   {
-    id: 73,
-    title: "Currency Converter",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-    ],
-    component: <CurrencyConverter></CurrencyConverter>,
-    tab: "api",
-  },
-  {
-    id: 74,
+    id: 58,
     title: "Ranker",
     hashtags: [
       {
@@ -1091,19 +887,7 @@ export const projects = [
     tab: "packages",
   },
   {
-    id: 75,
-    title: "Meme Generator",
-    hashtags: [
-      {
-        id: 1,
-        name: "apidata",
-      },
-    ],
-    component: <MemeGenerator></MemeGenerator>,
-    tab: "api",
-  },
-  {
-    id: 76,
+    id: 59,
     title: "Android",
     hashtags: [
       {
@@ -1119,7 +903,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 77,
+    id: 60,
     title: "Tip Calculator",
     hashtags: [
       {
@@ -1135,7 +919,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 78,
+    id: 61,
     title: "University Finder",
     hashtags: [
       {
@@ -1147,19 +931,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 79,
-    title: "Captcha",
-    hashtags: [
-      {
-        id: 1,
-        name: "externalpackages",
-      },
-    ],
-    component: <Captcha></Captcha>,
-    tab: "packages",
-  },
-  {
-    id: 80,
+    id: 62,
     title: "Emote Picker",
     hashtags: [
       {
@@ -1175,23 +947,7 @@ export const projects = [
     tab: "packages",
   },
   {
-    id: 81,
-    title: "Hero Slider",
-    hashtags: [
-      {
-        id: 1,
-        name: "gsap",
-      },
-      {
-        id: 2,
-        name: "onlydesktop",
-      },
-    ],
-    component: <HeroSlider></HeroSlider>,
-    tab: "desktop",
-  },
-  {
-    id: 82,
+    id: 63,
     title: "Colorful Mouse Pointer",
     hashtags: [
       {
@@ -1207,31 +963,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 83,
-    title: "Play Snake",
-    hashtags: [
-      {
-        id: 1,
-        name: "onlydesktop",
-      },
-    ],
-    component: <PlaySnake></PlaySnake>,
-    tab: "desktop",
-  },
-  {
-    id: 84,
-    title: "Maps Marker",
-    hashtags: [
-      {
-        id: 1,
-        name: "externalpackages",
-      },
-    ],
-    component: <MapsMarker></MapsMarker>,
-    tab: "packages",
-  },
-  {
-    id: 85,
+    id: 64,
     title: "Video Player",
     hashtags: [
       {
@@ -1243,7 +975,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 86,
+    id: 65,
     title: "Link Tree",
     hashtags: [
       {
@@ -1255,35 +987,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 87,
-    title: "Orbital Loading Page",
-    hashtags: [
-      {
-        id: 1,
-        name: "landingpages",
-      },
-    ],
-    component: <OrbitalLoadingPage></OrbitalLoadingPage>,
-    tab: "css",
-  },
-  {
-    id: 88,
-    title: "Google Login Button",
-    hashtags: [
-      {
-        id: 1,
-        name: "react.js",
-      },
-      {
-        id: 2,
-        name: "externalpackages",
-      },
-    ],
-    component: <GoogleLoginButton></GoogleLoginButton>,
-    tab: "packages",
-  },
-  {
-    id: 90,
+    id: 66,
     title: "Motion Activated Card",
     hashtags: [
       {
@@ -1299,7 +1003,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 91,
+    id: 67,
     title: "Connect 4",
     hashtags: [
       {
@@ -1315,7 +1019,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 92,
+    id: 68,
     title: "Mystic Square",
     hashtags: [
       {
@@ -1331,7 +1035,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 93,
+    id: 69,
     title: "Three.js Background Animation",
     hashtags: [
       {
@@ -1347,7 +1051,7 @@ export const projects = [
     tab: "3d",
   },
   {
-    id: 94,
+    id: 70,
     title: "Coming Soon",
     hashtags: [
       {
@@ -1363,7 +1067,7 @@ export const projects = [
     tab: "packages",
   },
   {
-    id: 95,
+    id: 71,
     title: "Hangman",
     hashtags: [
       {
@@ -1375,7 +1079,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 96,
+    id: 72,
     title: "Lights Out",
     hashtags: [
       {
@@ -1387,7 +1091,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 97,
+    id: 73,
     title: "Three Dimension World",
     hashtags: [
       {
@@ -1403,7 +1107,7 @@ export const projects = [
     tab: "3d",
   },
   {
-    id: 99,
+    id: 74,
     title: "Trello's Animated Checklist",
     hashtags: [
       {
@@ -1423,7 +1127,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 100,
+    id: 75,
     title: "Gradient Generator",
     hashtags: [
       {
@@ -1435,7 +1139,7 @@ export const projects = [
     tab: "javascript",
   },
   {
-    id: 101,
+    id: 76,
     title: "Line Chart",
     hashtags: [
       {
@@ -1451,7 +1155,7 @@ export const projects = [
     tab: "framer motion",
   },
   {
-    id: 102,
+    id: 77,
     title: "Custom Calendar",
     hashtags: [
       {
@@ -1467,7 +1171,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 103,
+    id: 78,
     title: "Income Tracker",
     hashtags: [
       {
@@ -1479,7 +1183,7 @@ export const projects = [
     tab: "react",
   },
   {
-    id: 104,
+    id: 79,
     title: "Draggable List",
     hashtags: [
       {
@@ -1495,7 +1199,7 @@ export const projects = [
     tab: "desktop",
   },
   {
-    id: 105,
+    id: 80,
     title: "Timeline",
     hashtags: [
       {

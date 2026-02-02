@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import "./Todos.css";
 
 const Todos = () => {
@@ -7,21 +7,20 @@ const Todos = () => {
   const todosRef = useRef(null);
   const todos = JSON.parse(localStorage.getItem("todos"));
 
-  useEffect(() => {
-    formRef.current.addEventListener("submit", (e) => {
-      e.preventDefault();
+  const updateLS = () => {
+    const todosList = [];
 
-      addTodo();
+    todosRef.current.childNodes.forEach((todoEl) => {
+      todosList.push({
+        text: todoEl.innerText,
+        completed: todoEl.classList.contains("completed"),
+      });
     });
-  }, []);
 
-  useEffect(() => {
-    if (todos) {
-      todos.forEach((todo) => addTodo(todo));
-    }
-  }, [todos]);
+    localStorage.setItem("todos", JSON.stringify(todosList));
+  };
 
-  const addTodo = (todo) => {
+  const addTodo = useCallback((todo) => {
     let todoText = inputRef.current.value;
 
     if (todo) {
@@ -54,20 +53,21 @@ const Todos = () => {
 
       updateLS();
     }
-  };
+  }, []);
 
-  const updateLS = () => {
-    const todosList = [];
+  useEffect(() => {
+    formRef.current.addEventListener("submit", (e) => {
+      e.preventDefault();
 
-    todosRef.current.childNodes.forEach((todoEl) => {
-      todosList.push({
-        text: todoEl.innerText,
-        completed: todoEl.classList.contains("completed"),
-      });
+      addTodo();
     });
+  }, [addTodo]);
 
-    localStorage.setItem("todos", JSON.stringify(todosList));
-  };
+  useEffect(() => {
+    if (todos) {
+      todos.forEach((todo) => addTodo(todo));
+    }
+  }, [addTodo, todos]);
 
   return (
     <div className="bg-[#f5f5f5] text-[#444] flex flex-col items-center justify-center h-screen">
@@ -76,12 +76,12 @@ const Todos = () => {
       </h1>
 
       <form
-        className="max-w-full w-[400px] [box-shadow:0_4px_10px_#00000019]"
+        className="max-w-full w-100 [box-shadow:0_4px_10px_#00000019]"
         ref={formRef}
       >
         <input
           type="text"
-          className="input border-0 text-[#b383e2] text-[2rem] py-[1rem] px-[2rem] block w-full placeholder:text-[#d5d5d5] focus:outline-[#b383e2]"
+          className="input border-0 text-[#b383e2] text-[2rem] py-4 px-8 block w-full placeholder:text-[#d5d5d5] focus:outline-[#b383e2]"
           placeholder="Enter your todo"
           autoComplete="off"
           ref={inputRef}
@@ -90,7 +90,7 @@ const Todos = () => {
         <ul className="p-0 m-0 list-none bg-white todos" ref={todosRef}></ul>
       </form>
 
-      <small className="text-[#b5b5b5] mt-[3rem] text-center">
+      <small className="text-[#b5b5b5] mt-12 text-center">
         Left click to toggle completed <br />
         Right click to delete a todo
       </small>

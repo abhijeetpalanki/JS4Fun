@@ -7,13 +7,13 @@ const Note = ({ note, color }) => {
 
   return color === "white" ? (
     <button
-      className=" w-[60px] h-[200px] bg-white border border-black shadow-[2px_5px] m-[1px] active:bg-[#eee]"
+      className=" w-15 h-50 bg-white border border-black shadow-[2px_5px] m-px active:bg-[#eee]"
       onClick={handleClick}
       value={note}
     ></button>
   ) : (
     <button
-      className="w-[40px] h-[130px] bg-black  border border-black absolute m-[1px] -ml-[20px] active:bg-[#333]"
+      className="w-10 h-32.5 bg-black  border border-black absolute m-px -ml-5 active:bg-[#333]"
       onClick={handleClick}
       value={note}
     ></button>

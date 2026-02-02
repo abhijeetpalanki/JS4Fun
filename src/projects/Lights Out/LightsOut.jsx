@@ -5,7 +5,7 @@ const LightsOut = () => {
   const createGrid = () =>
     new Array(5)
       .fill()
-      .map((r) => new Array(5).fill().map((c) => Math.random() < 0.4));
+      .map(() => new Array(5).fill().map(() => Math.random() < 0.4));
 
   const [board, setBoard] = useState(createGrid());
 
@@ -25,16 +25,16 @@ const LightsOut = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#212121]">
-      <div className="text-[50px] tracking-[2px] mb-[25px]">
+      <div className="text-[50px] tracking-[2px] mb-6.25">
         <span className="text-[#fea501] animate-flicker">Lights</span>
         <span className="text-[#12e7e7] [text-shadow:0_0_25px_#12e7e7,0_0_75px_#12e7e7,0_0_150px_#12e7e7]">
           Out
         </span>
       </div>
 
-      <div className="flex flex-col rounded-[10px] p-[2px] [box-shadow:0_0_2.5px_#000,0_0_12.5px_#fff]">
+      <div className="flex flex-col rounded-[10px] p-0.5 [box-shadow:0_0_2.5px_#000,0_0_12.5px_#fff]">
         {gameEnds() ? (
-          <div className="text-white text-[50px] tracking-[2px] mb-0 px-[25px] [text-shadow:0_0_25px_#12e7e7,0_0_50px_#12e7e7,0_0_100px_#12e7e7]">
+          <div className="text-white text-[50px] tracking-[2px] mb-0 px-6.25 [text-shadow:0_0_25px_#12e7e7,0_0_50px_#12e7e7,0_0_100px_#12e7e7]">
             You won!
           </div>
         ) : (

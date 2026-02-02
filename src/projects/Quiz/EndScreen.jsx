@@ -18,7 +18,7 @@ const EndScreen = ({
         You answered correctly at {score}/{questions.length} questions correctly
       </h3>
       <button
-        className="w-[300px] h-[50px] m-[5px] border-0 rounded-[5px] text-[20px] bg-white text-black"
+        className="w-75 h-12.5 m-1.25 border-0 rounded-[5px] text-[20px] bg-white text-black cursor-pointer"
         onClick={restartQuiz}
       >
         Restart Quiz

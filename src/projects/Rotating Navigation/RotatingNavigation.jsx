@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./RotatingNavigation.css";
 import { FaTimes, FaBars, FaHome, FaUserAlt, FaEnvelope } from "react-icons/fa";
+import "./RotatingNavigation.css";
 
 const RotatingNavigation = () => {
   const [open, setOpen] = useState(false);
@@ -8,21 +8,21 @@ const RotatingNavigation = () => {
   return (
     <div className="rotating-navigation-body text-[#222] overflow-x-hidden m-0">
       <div
-        className={`container bg-[#fafafa] origin-top-left transition-[transform] duration-[0.5s] ease-linear w-screen min-h-screen p-[50px] ${
+        className={`container bg-[#fafafa] origin-top-left transition-[transform] duration-500 ease-linear w-screen min-h-screen p-12.5 ${
           open ? "show-nav" : ""
         }`}
       >
-        <div className="circle-container fixed -top-[100px] -left-[100px]">
-          <div className="circle bg-[#7996fc] h-[200px] w-[200px] rounded-full relative transition-[transform] duration-[0.5s] ease-linear">
+        <div className="circle-container fixed -top-25 -left-25">
+          <div className="circle bg-[#7996fc] h-50 w-50 rounded-full relative transition-[transform] duration-500 ease-linear">
             <button
-              className="absolute top-[60%] left-1/2 h-[100px] bg-transparent border-0 text-[22px] text-white focus:outline-none rotate-[90deg] origin-top-left"
+              className="absolute top-[60%] left-1/2 h-25 bg-transparent border-0 text-[22px] text-white focus:outline-none rotate-90 origin-top-left"
               id="close"
               onClick={() => setOpen(false)}
             >
               <FaTimes />
             </button>
             <button
-              className="absolute top-1/2 left-[60%] h-[100px] bg-transparent border-0 text-[22px] text-white focus:outline-none"
+              className="absolute top-1/2 left-[60%] h-25 bg-transparent border-0 text-[22px] text-white focus:outline-none"
               id="open"
               onClick={() => setOpen(true)}
             >
@@ -30,10 +30,10 @@ const RotatingNavigation = () => {
             </button>
           </div>
         </div>
-        <div className="content max-w-[1000px] my-[50px] m-auto">
+        <div className="content max-w-250 my-12.5 m-auto">
           <h1 className="m-0 text-[32px] font-bold">Amazing Article</h1>
           <small className="text-[#555] italic">Lorem ipsum</small>
-          <p className="text-[#333] leading-[1.5]">
+          <p className="text-[#333] leading-normal">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
             eum ad suscipit facilis dolores nemo praesentium nesciunt provident
             consectetur sunt.
@@ -46,7 +46,7 @@ const RotatingNavigation = () => {
             alt="doggy"
             loading="lazy"
           />
-          <p className="text-[#333] leading-[1.5]">
+          <p className="text-[#333] leading-normal">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit libero
             deleniti rerum quo, incidunt vel consequatur culpa ullam. Magnam
             facere earum unde harum. Ea culpa veritatis magnam at aliquid.
@@ -54,16 +54,16 @@ const RotatingNavigation = () => {
         </div>
       </div>
 
-      <nav className="fixed bottom-[40px] left-[40px] z-[100]">
-        <ul className="list-none pl-[5px]">
-          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[100%] transition-[transform] duration-[400ms] ease-in">
-            <FaHome className="text-base mr-[10px] mt-[5px]" /> Home
+      <nav className="fixed bottom-10 left-10 z-100">
+        <ul className="list-none pl-1.25">
+          <li className="uppercase  text-[#222] my-5 mx-0 -translate-x-full transition-[transform] duration-400 ease-in">
+            <FaHome className="text-base mr-2.5 mt-1.25" /> Home
           </li>
-          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[150%] transition-[transform] duration-[400ms] ease-in ml-[15px]">
-            <FaUserAlt className="text-base mr-[10px] mt-[5px]" /> About
+          <li className="uppercase  text-[#222] my-5 mx-0 -translate-x-[150%] transition-[transform] duration-400 ease-in ml-3.75">
+            <FaUserAlt className="text-base mr-2.5 mt-1.25" /> About
           </li>
-          <li className="uppercase  text-[#222] my-[20px] mx-0 -translate-x-[200%] transition-[transform] duration-[400ms] ease-in ml-[30px]">
-            <FaEnvelope className="text-base mr-[10px] mt-[5px]" /> Contact
+          <li className="uppercase  text-[#222] my-5 mx-0 -translate-x-[200%] transition-[transform] duration-400 ease-in ml-7.5">
+            <FaEnvelope className="text-base mr-2.5 mt-1.25" /> Contact
           </li>
         </ul>
       </nav>

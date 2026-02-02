@@ -38,8 +38,8 @@ const HexGuesser = () => {
     setColor(actualColor);
     setAnswers(
       [actualColor, getRandomColor(), getRandomColor(), getRandomColor()].sort(
-        () => 0.5 - Math.random()
-      )
+        () => 0.5 - Math.random(),
+      ),
     );
   };
 
@@ -59,10 +59,7 @@ const HexGuesser = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="mb-3 text-3xl font-bold md:text-6xl">Hex Guesser</h1>
-      <div
-        className="w-[200px] h-[200px] mb-5"
-        style={{ background: color }}
-      ></div>
+      <div className="w-50 h-50 mb-5" style={{ background: color }}></div>
 
       <div className="flex justify-between mb-5">
         {answers.map((answer) => (

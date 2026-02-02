@@ -18,7 +18,7 @@ const ComingSoon = () => {
 
       <div className="absolute flex flex-col items-center text-center">
         <h1 className="mb-4 text-xl lg:text-7xl">Coming Soon</h1>
-        <h3 className="font-light max-w-[400px] lg:max-w-[600px] mb-12">
+        <h3 className="font-light max-w-100 lg:max-w-150 mb-12">
           Leave your email and we'll let you know once the site goes live.
         </h3>
 
@@ -43,7 +43,7 @@ const ComingSoon = () => {
           />
         </div>
 
-        <button className="w-[180px] h-[64px] bg-white text-black text-base uppercase leading-[1px] rounded-lg font-bold">
+        <button className="w-45 h-16 bg-white text-black text-base uppercase leading-px rounded-lg font-bold">
           Notify Me
         </button>
       </div>

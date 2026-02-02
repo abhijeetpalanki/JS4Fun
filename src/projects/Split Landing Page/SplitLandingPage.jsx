@@ -23,7 +23,7 @@ const SplitLandingPage = () => {
           </h1>
           <a
             href="https://www.playstation.com/en-us/ps5/buy-now/"
-            className="absolute flex items-center justify-center left-1/2 top-[40%] -translate-x-1/2 uppercase text-white border-[0.2rem] text-base font-bold w-[12rem] md:w-[15rem] p-[1.2rem] md:p-6 hover:bg-[hsl(241,80%,63%)] border-[#5754ec]"
+            className="absolute flex items-center justify-center left-1/2 top-[40%] -translate-x-1/2 uppercase text-white border-[0.2rem] text-base font-bold w-48 md:w-60 p-[1.2rem] md:p-6 hover:bg-[hsl(241,80%,63%)] border-[#5754ec]"
             target="_blank"
             rel="noreferrer"
           >
@@ -39,7 +39,7 @@ const SplitLandingPage = () => {
           </h1>
           <a
             href="https://www.xbox.com/en-US/consoles/xbox-series-x"
-            className="absolute flex items-center justify-center left-1/2 top-[40%] -translate-x-1/2 uppercase text-white border-[0.2rem] text-base font-bold w-[12rem] md:w-[15rem] p-[1.2rem] md:p-6 hover:bg-[#1c7a1c] border-[#1c7a1c]"
+            className="absolute flex items-center justify-center left-1/2 top-[40%] -translate-x-1/2 uppercase text-white border-[0.2rem] text-base font-bold w-48 md:w-60 p-[1.2rem] md:p-6 hover:bg-[#1c7a1c] border-[#1c7a1c]"
             target="_blank"
             rel="noreferrer"
           >

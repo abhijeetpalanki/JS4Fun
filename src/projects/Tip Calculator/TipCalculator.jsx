@@ -27,13 +27,12 @@ const TipCalculator = () => {
     setSplit((prevSplit) => prevSplit + 1);
   };
 
-  const calculate = () => {
-    const percentage = 1 + parseInt(tip.replace("%", "")) / 100;
-    const result = ((bill * percentage) / split).toFixed(2);
-    setTotal(result);
-  };
-
   useEffect(() => {
+    const calculate = () => {
+      const percentage = 1 + parseInt(tip.replace("%", "")) / 100;
+      const result = ((bill * percentage) / split).toFixed(2);
+      setTotal(result);
+    };
     calculate();
   }, [bill, tip, split]);
 

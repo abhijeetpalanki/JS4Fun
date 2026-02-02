@@ -40,7 +40,7 @@ const Feedback = () => {
               <br />
               customer support performance?
             </h1>
-            <ul className="flex bg-white rounded-[7px] border-0 p-[35px] items-center justify-center">
+            <ul className="flex bg-white rounded-[7px] border-0 p-8.75 items-center justify-center">
               {emojis.map((emoji) => (
                 <li key={emoji.id} className="p-2 hover:shadow-md">
                   <button
@@ -56,7 +56,7 @@ const Feedback = () => {
             </ul>
           </div>
         ) : (
-          <div className="flex flex-col text-center bg-white rounded-[7px] border-0 p-[35px] items-center justify-center">
+          <div className="flex flex-col text-center bg-white rounded-[7px] border-0 p-8.75 items-center justify-center">
             <div className="h-[10vh]">{loveEmojiUrl}</div>
             <h1>Thank You</h1>
             <p>

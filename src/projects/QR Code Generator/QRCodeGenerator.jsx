@@ -7,6 +7,10 @@ const QRCodeGenerator = () => {
   const [url, setUrl] = useState("");
   const spinnerRef = useRef(null);
 
+  const hideSpinner = () => {
+    spinnerRef.current.style.display = "none";
+  };
+
   const onGenerateSubmit = (e) => {
     e.preventDefault();
 
@@ -39,10 +43,6 @@ const QRCodeGenerator = () => {
 
   const showSpinner = () => {
     spinnerRef.current.style.display = "block";
-  };
-
-  const hideSpinner = () => {
-    spinnerRef.current.style.display = "none";
   };
 
   return (

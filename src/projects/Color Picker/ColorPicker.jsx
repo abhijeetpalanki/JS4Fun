@@ -29,7 +29,7 @@ const ColorPicker = () => {
           />
         )}
         <button
-          className="p-[10px] bg-black/50 text-white"
+          className="p-2.5 bg-black/50 text-white"
           onClick={() => setShowPicker(!showPicker)}
         >
           {showPicker ? "Close " : "Open "}

@@ -32,10 +32,8 @@ const Image2TextConverter = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="max-w-[950px] flex flex-col justify-center items-center text-center z-[1]">
-        <h1 className="font-bold text-[3rem] mt-[4rem]">
-          Image 2 Text Converter
-        </h1>
+      <div className="max-w-237.5 flex flex-col justify-center items-center text-center z-1">
+        <h1 className="font-bold text-[3rem] mt-16">Image 2 Text Converter</h1>
         <p className="text-[#1a1a1a] text-[1.5rem]">
           Extract any image which containing text
         </p>
@@ -43,7 +41,7 @@ const Image2TextConverter = () => {
         {/* Input Wrapper */}
         <div className="relative">
           <label
-            className="inline-block py-[8px] px-[12px] cursor-pointer rounded-[4px] bg-[coral] text-white"
+            className="inline-block py-2 px-3 cursor-pointer rounded-sm bg-[coral] text-white"
             htmlFor="upload"
           >
             Upload Image
@@ -53,12 +51,12 @@ const Image2TextConverter = () => {
             id="upload"
             accept="image/*"
             onChange={handleImageChange}
-            className="absolute left-[30px] top-[6px] text-[15px] text-[#1a1a1a] -z-[1]"
+            className="absolute left-32 top-2.5 text-[15px] text-[#1a1a1a] -z-1"
           />
         </div>
 
         {/* Result */}
-        <div className="mt-[4rem] space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:gap-8 items-center justify-center">
+        <div className="mt-16 space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:gap-8 items-center justify-center">
           {selectedImage && (
             <div className="aspect-w-3 aspect-h-2 sm:aspect-w-4 smaspect-h-2 lg:aspect-w-2 lg:aspect-h-1">
               <img
@@ -69,8 +67,8 @@ const Image2TextConverter = () => {
             </div>
           )}
           {textResult && (
-            <div className="bg-[#ddd] h-full p-[1rem] rounded-lg shadow-lg">
-              <p className="leading-[1.5rem] text-[1rem]">{textResult}</p>
+            <div className="bg-[#ddd] h-full p-4 rounded-lg shadow-lg">
+              <p className="leading-6 text-[1rem]">{textResult}</p>
             </div>
           )}
         </div>

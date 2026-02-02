@@ -1,4 +1,4 @@
-import SettingsContextProvider from "./SettingsContext";
+import SettingsContextProvider from "./SettingsProvider";
 import PomodoroMain from "./PomodoroMain";
 
 const Pomodoro = () => {

@@ -108,11 +108,11 @@ const Connect4 = () => {
 
       <div className="grid place-content-center">
         {/* Dropzone */}
-        <div className="h-[calc(100px*1.5)] relative">
+        <div className="h-37.5 relative">
           {dropped.map((m, i) => (
             <div
               key={i}
-              className={`w-[100px] h-[100px] rounded-full absolute ${
+              className={`w-25 h-25 rounded-full absolute ${
                 m.player === 1
                   ? "bg-[#3483e0]"
                   : m.player === 2 && "bg-[#ec0b07]"
@@ -138,7 +138,7 @@ const Connect4 = () => {
         {/* Board */}
         <div className="grid grid-cols-[repeat(7,100px)] grid-rows-[repeat(6,100px)] relative">
           {board.map((row, i) =>
-            row.map((col, j) => <div key={i + "-" + j} className="clip"></div>)
+            row.map((col, j) => <div key={i + "-" + j} className="clip"></div>),
           )}
         </div>
       </div>

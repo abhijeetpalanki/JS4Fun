@@ -5,7 +5,7 @@ const MultiStepForm = () => {
   const [step, setStep] = useState(1);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-slate-700 to-slate-900">
+    <div className="flex flex-col items-center justify-center h-screen bg-linear-to-br from-slate-700 to-slate-900">
       <div className="w-full max-w-md bg-white h-80 rounded-2xl">
         <div className="flex justify-between p-8 rounded">
           <Step step={1} currentStep={step} />
@@ -51,8 +51,8 @@ function Step({ step, currentStep }) {
     currentStep === step
       ? "active"
       : currentStep < step
-      ? "inactive"
-      : "complete";
+        ? "inactive"
+        : "complete";
 
   return (
     <motion.div animate={status} className="relative">

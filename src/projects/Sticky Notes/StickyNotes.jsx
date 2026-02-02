@@ -68,36 +68,33 @@ const StickyNotes = () => {
 
   return (
     <div
-      className="sticky-notes-body h-screen bg-cover p-[50px] from-black/60 to-black/60"
+      className="sticky-notes-body h-screen bg-cover p-12.5 from-black/60 to-black/60"
       style={{ backgroundImage: `url('${brickWallImg}')` }}
       onDragOver={dragOver}
     >
       <h1 className="text-white text-[2rem]">
         Sticky Notes ({notesState.totalNotes})
-        <span className="block text-white text-[14px] italic h-[14px]">
+        <span className="block text-white text-[14px] italic h-3.5">
           {notesState.totalNotes > 0
             ? `Last Note Created: ${notesState.lastNoteCreated}`
             : ""}
         </span>
       </h1>
-      <form
-        className="note-form flex flex-col w-[200px] mt-[15px]"
-        onSubmit={addNote}
-      >
+      <form className="note-form flex flex-col w-50 mt-3.75" onSubmit={addNote}>
         <textarea
           value={noteInput}
           onChange={(e) => setNoteInput(e.target.value)}
           placeholder="Create a new note..."
-          className="min-w-full h-[100px] p-[10px] outline-none text-black"
+          className="min-w-full h-25 p-2.5 outline-none text-white bg-black/60"
         ></textarea>
-        <button className="add w-full bg-[#fff27f] p-[10px] border-0 outline-none flex justify-center items-center text-black hover:bg-[tomato] hover:text-white">
+        <button className="add w-full bg-[#fff27f] p-2.5 border-0 outline-none flex justify-center items-center text-black hover:bg-[tomato] hover:text-white">
           <FaPlus /> Add
         </button>
       </form>
 
       {notesState.notes.map((note) => (
         <div
-          className="note absolute bg-cover top-[100px] left-[300px] w-[200px] h-[200px] p-[20px]"
+          className="note absolute bg-cover top-25 left-75 w-50 h-50 p-5"
           style={{
             transform: `rotate(${note.rotate}deg)`,
             backgroundImage: `url('${postItNoteImg}')`,
@@ -107,7 +104,7 @@ const StickyNotes = () => {
           key={note.id}
         >
           <div
-            className="h-[15px] w-[15px] text-black absolute right-[15px] top-[15px] transition-[transform] duration-[0.3s] ease-in-out hover:scale-[1.6]"
+            className="h-3.75 w-3.75 text-black absolute right-3.75 top-3.75 transition-[transform] duration-300 ease-in-out hover:scale-[1.6]"
             onClick={() => dispatch({ type: "DELETE_NOTE", payload: note })}
           >
             <FaTrashAlt />

@@ -50,21 +50,21 @@ const Settings = () => {
         <div className="m-6">
           <input
             type="number"
-            className="h-[100px] w-[100px] pl-0 md:pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-4xl"
+            className="h-25 w-25 pl-0 md:pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-4xl"
             name="work"
             onChange={handleChange}
             value={newTimer.work}
           />
           <input
             type="number"
-            className="h-[100px] w-[100px] pl-0 md:pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-4xl"
+            className="h-25 w-25 pl-0 md:pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-4xl"
             name="shortBreak"
             onChange={handleChange}
             value={newTimer.short}
           />
           <input
             type="number"
-            className="h-[100px] w-[100px] pl-0 md:pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-4xl"
+            className="h-25 w-25 pl-0 md:pl-4 bg-[#0c0e1b] text-[#c9ccea] border-none rounded-full mr-[0.3rem] text-center text-4xl"
             name="longBreak"
             onChange={handleChange}
             value={newTimer.long}

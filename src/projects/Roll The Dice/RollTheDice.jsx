@@ -30,7 +30,7 @@ const RollTheDice = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="flex flex-col items-center w-[300px] md:w-[400px] p-[50px] absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-white rounded-[8px] shadow-[0_15px_35px_#32323233]">
+      <div className="flex flex-col items-center w-75 md:w-100 p-12.5 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-white rounded-lg shadow-[0_15px_35px_#32323233]">
         <div className="w-[90%] flex justify-around" ref={diceRef}>
           <img
             src={dieOne}
@@ -45,11 +45,11 @@ const RollTheDice = () => {
             loading="lazy"
           />
         </div>
-        <p className="text-[16px] flex justify-around my-[30px] mx-0 font-[500]">
+        <p className="text-[16px] flex justify-around my-7.5 mx-0 font-medium">
           Your roll total: ({total})
         </p>
         <button
-          className="bg-[#7996fc] border-none outline-none text-white py-[15px] px-0 w-[150px] tracking-[1px] rounded-[5px]"
+          className="bg-[#7996fc] border-none outline-none text-white py-3.75 px-0 w-37.5 tracking-[1px] rounded-[5px]"
           onClick={roll}
         >
           ROLL THE DICE

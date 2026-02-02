@@ -13,19 +13,18 @@ const Horoscope = () => {
     setSelectedTimeFrame("");
   };
 
-  const getSigns = async () => {
-    try {
-      const response = await fetch(
-        "http://sandipbgt.com/theastrologer/api/sunsigns/"
-      );
-      const data = await response.json();
-      setSigns(data);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
   useEffect(() => {
+    const getSigns = async () => {
+      try {
+        const response = await fetch(
+          "http://sandipbgt.com/theastrologer/api/sunsigns/",
+        );
+        const data = await response.json();
+        setSigns(data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
     getSigns();
   }, []);
 
@@ -35,10 +34,10 @@ const Horoscope = () => {
       {!selectedSign ? (
         <>
           <h2 className="text-[20px]">Please select a sign</h2>
-          <div className="grid grid-cols-3 gap-[10px]">
+          <div className="grid grid-cols-3 gap-2.5">
             {signs.map((sign, index) => (
               <button
-                className="p-[10px] text-[20px] bg-white text-black rounded-[10px] hover:bg-black hover:text-white"
+                className="p-2.5 text-[20px] bg-white text-black rounded-[10px] hover:bg-black hover:text-white cursor-pointer"
                 key={index}
                 onClick={() => setSelectedSign(sign)}
               >
@@ -51,10 +50,10 @@ const Horoscope = () => {
         !selectedTimeFrame && (
           <>
             <h2 className="text-[20px]">Please select a timeframe</h2>
-            <div className="grid grid-cols-3 gap-[10px]">
+            <div className="grid grid-cols-3 gap-2.5">
               {timeframes.map((timeframe, index) => (
                 <button
-                  className="p-[10px] text-[20px] bg-white text-black rounded-[10px] hover:bg-black hover:text-white"
+                  className="p-2.5 text-[20px] bg-white text-black rounded-[10px] hover:bg-black hover:text-white cursor-pointer"
                   key={index}
                   onClick={() => setSelectedTimeFrame(timeframe)}
                 >
@@ -70,7 +69,7 @@ const Horoscope = () => {
       )}
       {selectedSign && (
         <button
-          className="p-[10px] text-[20px] bg-black text-white rounded-[10px] mt-[10px] hover:bg-black hover:text-white"
+          className="p-2.5 text-[20px] bg-black text-white rounded-[10px] mt-2.5 hover:bg-black hover:text-white cursor-pointer"
           onClick={restart}
         >
           Restart

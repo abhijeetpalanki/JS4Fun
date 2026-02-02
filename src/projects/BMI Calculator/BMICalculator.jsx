@@ -25,20 +25,15 @@ const BMICalculator = () => {
   };
 
   return (
-    <div
-      className="flex items-center justify-center bg-cover"
-      style={{
-        background: "url('https://digitshack.com/codepen/bmical/bg.png')",
-      }}
-    >
+    <div className="flex items-center justify-center bg-cover">
       <div className="flex items-center justify-center">
-        <div className="w-[350px] md:min-w-[400px] bg-[#fafafa] rounded-[38px] text-center relative z-10 before:absolute before:content-[''] before:h-[109%] before:w-[110%] before:-left-[5%] before:-top-[5%] before:bg-white/30 before:[box-shadow:0px_0px_166px_-31px_#00000026] before:rounded-[60px] before:-z-[1]">
-          <h1 className="text-black font-bold text-4xl py-[30px] px-0">
+        <div className="w-87.5 md:min-w-100 bg-[#fafafa] rounded-[38px] text-center relative z-10 before:absolute before:content-[''] before:h-[109%] before:w-[110%] before:-left-[5%] before:-top-[5%] before:bg-white/30 before:[box-shadow:0px_0px_166px_-31px_#00000026] before:rounded-[60px] before:-z-1">
+          <h1 className="text-black font-bold text-4xl py-7.5 px-0">
             BMI Calculator
           </h1>
-          <form onSubmit={calc} className="py-0 px-[40px]">
-            <div className="bg-white shadow-[0px_0px_95px_-30px_#00000026] rounded-[28px] py-[20px] px-0 mb-[20px]">
-              <label className="block text-lg font-semibold text-black mb-[20px]">
+          <form onSubmit={calc} className="py-0 px-10">
+            <div className="bg-white shadow-[0px_0px_95px_-30px_#00000026] rounded-[28px] py-5 px-0 mb-5">
+              <label className="block text-lg font-semibold text-black mb-5">
                 Height (in)
               </label>
               <input
@@ -48,8 +43,8 @@ const BMICalculator = () => {
                 className="outline-none border-b border-b-[#4f7df9] w-[60%] text-center text-black text-[28px]"
               />
             </div>
-            <div className="bg-white shadow-[0px_0px_95px_-30px_#00000026] rounded-[28px] py-[20px] px-0 mb-[20px]">
-              <label className="block text-lg font-semibold text-black mb-[20px]">
+            <div className="bg-white shadow-[0px_0px_95px_-30px_#00000026] rounded-[28px] py-5 px-0 mb-5">
+              <label className="block text-lg font-semibold text-black mb-5">
                 Weight (lbs)
               </label>
               <input
@@ -61,17 +56,17 @@ const BMICalculator = () => {
             </div>
             <button
               type="submit"
-              className="text-white bg-[#4f7df9] text-base rounded-xl py-[12px] px-0 w-full outline-none border-none hover:bg-[#0044ff] hover:transition-[background] hover:duration-200 hover:ease-in-out"
+              className="text-white bg-[#4f7df9] text-base rounded-xl py-3 px-0 w-full outline-none border-none hover:bg-[#0044ff] hover:transition-[background] hover:duration-200 hover:ease-in-out"
             >
               Calculate
             </button>
           </form>
 
-          <div className="py-[30px] px-[20px]">
-            <p className="font-semibold text-[22px] text-black mb-[15px]">
+          <div className="py-7.5 px-5">
+            <p className="font-semibold text-[22px] text-black mb-3.75">
               Your BMI is:
             </p>
-            <div className="text-[36px] font-black text-[#4f7df9] bg-[#eaeaea] inline-block py-[7px] px-[20px] rounded-[55px] mb-[25px]">
+            <div className="text-[36px] font-black text-[#4f7df9] bg-[#eaeaea] inline-block py-1.75 px-5 rounded-[55px] mb-6.25">
               {bmi}
             </div>
             <p className="text-center text-black">

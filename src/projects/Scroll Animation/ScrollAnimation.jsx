@@ -5,7 +5,7 @@ import { Overlay } from "./Overlay";
 
 const ScrollAnimation = () => {
   return (
-    <div className="h-screen bg-gradient-to-t from-[#d9afd9] to-[#97d9e1]">
+    <div className="h-screen bg-linear-to-t from-[#d9afd9] to-[#97d9e1]">
       <Canvas
         camera={{
           fov: 64,

@@ -29,28 +29,28 @@ const UniversityFinder = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen text-black">
       <input
-        className="my-5 p-[10px] text-[20px] outline-none border-none rounded"
+        className="my-5 p-2.5 text-[20px] outline-none border-none rounded"
         placeholder="Search Name..."
         onChange={(e) => setUserValue(e.target.value.toLowerCase())}
       />
 
-      <table className="w-[350px] md:w-[900px] my-[50px] mx-0 border-spacing-[15px] text-[#444]">
+      <table className="w-87.5 md:w-225 my-12.5 mx-0 border-spacing-3.75 text-[#444]">
         <tbody>
           <tr className="mb-5">
-            <th className="w-[250px] text-xl">Location</th>
-            <th className="w-[250px] text-xl">Name</th>
+            <th className="w-62.5 text-xl">Location</th>
+            <th className="w-62.5 text-xl">Name</th>
           </tr>
           {universities.length > 0 &&
             universities
               .filter((uni) =>
-                uni.name.toLowerCase().includes(userValue.toLowerCase())
+                uni.name.toLowerCase().includes(userValue.toLowerCase()),
               )
               .map((item) => (
                 <tr className="mb-5" key={item.id}>
-                  <td className="w-[250px] text-center text-xl">
+                  <td className="w-62.5 text-center text-xl">
                     {item.location}
                   </td>
-                  <td className="w-[250px] text-center text-xl">{item.name}</td>
+                  <td className="w-62.5 text-center text-xl">{item.name}</td>
                 </tr>
               ))}
         </tbody>

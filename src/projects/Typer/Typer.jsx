@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import "./Typer.css";
 import { generate } from "random-words";
+import "./Typer.css";
 
 const NUM_OF_WORDS = 200;
 const SECONDS = 60;
@@ -17,6 +17,10 @@ const Typer = () => {
   const textInputRef = useRef(null);
   const typingTextRef = useRef(null);
 
+  const generateWords = () => {
+    return new Array(NUM_OF_WORDS).fill(null).map(() => generate());
+  };
+
   useEffect(() => {
     setWords(generateWords());
   }, []);
@@ -24,10 +28,6 @@ const Typer = () => {
   useEffect(() => {
     setText(words.join(" "));
   }, [words]);
-
-  const generateWords = () => {
-    return new Array(NUM_OF_WORDS).fill(null).map(() => generate());
-  };
 
   const initTimer = () => {
     setTimeLeft((prevTimeLeft) => {
@@ -45,7 +45,7 @@ const Typer = () => {
 
     typingTextRef.current
       .querySelectorAll(
-        ".typer-body .wrapper .content-box .typing-text p span"
+        ".typer-body .wrapper .content-box .typing-text p span",
       )[0]
       .classList.add("active");
     let typedChar = textInputRef.current.value.split("")[charIndex];

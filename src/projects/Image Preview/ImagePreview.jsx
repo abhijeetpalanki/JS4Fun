@@ -21,15 +21,15 @@ const ImagePreview = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="m-auto w-[400px] md:w-full max-w-[600px]">
+      <div className="m-auto w-100 md:w-full max-w-150">
         {error && (
-          <p className="text-red-500 text-2xl my-[3px] mx-0">
+          <p className="text-red-500 text-2xl my-0.75 mx-0">
             File Not Supported!
           </p>
         )}
 
         <div
-          className="w-full h-[460px] flex flex-col items-center justify-center text-center text-white rounded-2xl"
+          className="w-full h-115 flex flex-col items-center justify-center text-center text-white rounded-2xl"
           style={{
             background: imagePreview
               ? `url("${imagePreview}") no-repeat center/contain`
@@ -41,7 +41,7 @@ const ImagePreview = () => {
               <p>Add an image</p>
               <label
                 htmlFor="fileUpload"
-                className="text-[#55d6d6] text-xl font-medium py-[6px] px-3 cursor-pointer"
+                className="text-[#55d6d6] text-xl font-medium py-1.5 px-3 cursor-pointer"
               >
                 Choose file
               </label>
@@ -57,7 +57,7 @@ const ImagePreview = () => {
         </div>
         {imagePreview && (
           <button
-            className="border-none outline-none w-full mt-[10px] py-[14px] px-[10px] bg-black text-white text-[17px] font-semibold"
+            className="border-none outline-none w-full mt-2.5 py-3.5 px-2.5 bg-black text-white text-[17px] font-semibold"
             onClick={() => setImagePreview(null)}
           >
             Remove Image

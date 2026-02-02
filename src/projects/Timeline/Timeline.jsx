@@ -31,7 +31,7 @@ const Timeline = () => {
         to see more information
       </h3>
 
-      <div className="max-w-[350px] md:max-w-[1200px] h-[88vh] flex justify-start items-center overflow-y-hidden timeline-wrapper">
+      <div className="max-w-87.5 md:max-w-300 h-[88vh] flex justify-start items-center overflow-y-hidden timeline-wrapper">
         <ul className="h-[0.12rem] flex px-32 py-0 bg-[#888] timeline">
           <li
             data-date="Feb 23rd, 1995"
@@ -51,7 +51,7 @@ const Timeline = () => {
               }}
               className={`group-hover:bg-[#4000ff] group-hover:scale-125 group-hover:cursor-pointer bg-[#888] text-white overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-100 transition-all duration-300 ease-in-out flex flex-col justify-around ${
                 showDetails1
-                  ? "w-[22rem] h-[22rem] rounded-2xl p-4 bg-gradient-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
+                  ? "w-88 h-88 rounded-2xl p-4 bg-linear-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
                   : "w-[1.3rem] h-[1.3rem] rounded-[50%]"
               }`}
             >
@@ -65,7 +65,7 @@ const Timeline = () => {
                 It was such a special childhood getting to look up to you. Now
                 you get to look up at me! Happy birthday old man.
               </p>
-              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-[2rem] text-base">
+              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-4xl text-base">
                 Click To Close
               </span>
             </div>
@@ -89,7 +89,7 @@ const Timeline = () => {
               }}
               className={`group-hover:bg-[#4000ff] group-hover:scale-125 group-hover:cursor-pointer bg-[#888] text-white overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-100 transition-all duration-300 ease-in-out flex flex-col justify-around ${
                 showDetails2
-                  ? "w-[22rem] h-[22rem] rounded-2xl p-4 bg-gradient-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
+                  ? "w-88 h-88 rounded-2xl p-4 bg-linear-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
                   : "w-[1.3rem] h-[1.3rem] rounded-[50%]"
               }`}
             >
@@ -103,7 +103,7 @@ const Timeline = () => {
                 I never would have thought that the day we met each other was
                 the best day of my entire life.
               </p>
-              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-[2rem] text-base">
+              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-4xl text-base">
                 Click To Close
               </span>
             </div>
@@ -127,7 +127,7 @@ const Timeline = () => {
               }}
               className={`group-hover:bg-[#4000ff] group-hover:scale-125 group-hover:cursor-pointer bg-[#888] text-white overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-100 transition-all duration-300 ease-in-out flex flex-col justify-around ${
                 showDetails3
-                  ? "w-[22rem] h-[22rem] rounded-2xl p-4 bg-gradient-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
+                  ? "w-88 h-88 rounded-2xl p-4 bg-linear-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
                   : "w-[1.3rem] h-[1.3rem] rounded-[50%]"
               }`}
             >
@@ -142,7 +142,7 @@ const Timeline = () => {
                 forever grateful. Happy anniversary to the person who makes my
                 heart sing.
               </p>
-              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-[2rem] text-base">
+              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-4xl text-base">
                 Click To Close
               </span>
             </div>
@@ -166,7 +166,7 @@ const Timeline = () => {
               }}
               className={`group-hover:bg-[#4000ff] group-hover:scale-125 group-hover:cursor-pointer bg-[#888] text-white overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-100 transition-all duration-300 ease-in-out flex flex-col justify-around ${
                 showDetails4
-                  ? "w-[22rem] h-[22rem] rounded-2xl p-4 bg-gradient-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
+                  ? "w-88 h-88 rounded-2xl p-4 bg-linear-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
                   : "w-[1.3rem] h-[1.3rem] rounded-[50%]"
               }`}
             >
@@ -179,7 +179,7 @@ const Timeline = () => {
               >
                 I'm the luckiest person to have a dad like you.
               </p>
-              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-[2rem] text-base">
+              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-4xl text-base">
                 Click To Close
               </span>
             </div>
@@ -203,7 +203,7 @@ const Timeline = () => {
               }}
               className={`group-hover:bg-[#4000ff] group-hover:scale-125 group-hover:cursor-pointer bg-[#888] text-white overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-100 transition-all duration-300 ease-in-out flex flex-col justify-around ${
                 showDetails5
-                  ? "w-[22rem] h-[22rem] rounded-2xl p-4 bg-gradient-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
+                  ? "w-88 h-88 rounded-2xl p-4 bg-linear-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
                   : "w-[1.3rem] h-[1.3rem] rounded-[50%]"
               }`}
             >
@@ -216,7 +216,7 @@ const Timeline = () => {
               >
                 It's your special day — get out there and celebrate.
               </p>
-              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-[2rem] text-base">
+              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-4xl text-base">
                 Click To Close
               </span>
             </div>
@@ -240,7 +240,7 @@ const Timeline = () => {
               }}
               className={`group-hover:bg-[#4000ff] group-hover:scale-125 group-hover:cursor-pointer bg-[#888] text-white overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-100 transition-all duration-300 ease-in-out flex flex-col justify-around ${
                 showDetails6
-                  ? "w-[22rem] h-[22rem] rounded-2xl p-4 bg-gradient-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
+                  ? "w-88 h-88 rounded-2xl p-4 bg-linear-to-tr from-[#4000ff] to-pink-500 z-10 shadow-[0_0.1rem_0.4rem_#0004]"
                   : "w-[1.3rem] h-[1.3rem] rounded-[50%]"
               }`}
             >
@@ -254,7 +254,7 @@ const Timeline = () => {
                 Happy Birthday, with heartfelt thanks and lots of love, to my
                 wise, wonderful, one-and-only Mom.
               </p>
-              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-[2rem] text-base">
+              <span className="bg-[#00a1ff] self-start py-2 px-[0.8rem] rounded-4xl text-base">
                 Click To Close
               </span>
             </div>

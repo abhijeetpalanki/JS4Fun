@@ -18,7 +18,7 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 );
 
 const options = {
@@ -51,7 +51,7 @@ const LineChart = () => {
         return {
           ...user,
           items_delivered: (user.items_delivered += Math.floor(
-            Math.random() * 2
+            Math.random() * 2,
           )),
           miles_driven: (user.miles_driven += Math.floor(Math.random() * 5)),
         };
@@ -84,7 +84,7 @@ const LineChart = () => {
             },
           ],
         }}
-        className="md:py-[5rem] md:px-[10rem] p-0"
+        className="md:py-20 md:px-40 p-0"
       />
     </div>
   );

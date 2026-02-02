@@ -17,7 +17,7 @@ const EmotePicker = () => {
       />
 
       {emote != null && (
-        <div className="flex items-center justify-center w-[350px] bg-black text-white rounded-lg px-2 py-4 mt-2">
+        <div className="flex items-center justify-center w-87.5 bg-black text-white rounded-lg px-2 py-4 mt-2">
           <img src={emote.target.currentSrc} alt="emote" />
           <h1 className="">{emote.target.alt}</h1>
         </div>

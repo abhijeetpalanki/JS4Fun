@@ -10,7 +10,7 @@ const Android = () => {
         </h1>
       </div>
       {/* Phone */}
-      <div className="rounded-3xl bg-violet-500 transform-style-3d -rotate-y-[30deg] rotate-x-[15deg]">
+      <div className="rounded-3xl bg-violet-500 transform-style-3d -rotate-y-30 rotate-x-15">
         <motion.div
           initial={{
             transform: "translateZ(8px) translateY(-2px)",
@@ -24,7 +24,7 @@ const Android = () => {
             duration: 2,
             ease: "easeInOut",
           }}
-          className="relative h-96 w-56 rounded-3xl border-2 border-b-4 border-r-4 border-white border-l-neutral-200 border-t-neutral-200 bg-neutral-900 p-1 pl-[3px] pt-[3px]"
+          className="relative h-96 w-56 rounded-3xl border-2 border-b-4 border-r-4 border-white border-l-neutral-200 border-t-neutral-200 bg-neutral-900 p-1 pl-0.75 pt-0.75"
         >
           <HeaderBar />
           <Screen />
@@ -68,7 +68,7 @@ const Screen = () => {
         ></path>
       </svg>
 
-      <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-2 text-sm font-medium text-violet-500 backdrop-blur">
+      <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border bg-white py-2 text-sm font-medium text-violet-500 backdrop-blur">
         Get Started
       </button>
 

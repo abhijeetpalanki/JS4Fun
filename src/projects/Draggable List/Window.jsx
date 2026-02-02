@@ -7,13 +7,13 @@ const Window = ({ show, onClose, item }) => {
     <Modal
       isOpen={show}
       onRequestClose={onClose}
-      className="bg-[#f4f5f7] rounded-sm m-[45px_0_80px] min-h-[450px] w-[800px] outline-none p-5"
+      className="bg-[#f4f5f7] rounded-sm m-[45px_0_80px] min-h-112.5 w-200 outline-none p-5"
       overlayClassName="flex justify-center fixed top-0 left-0 right-0 bottom-0 bg-black/50"
     >
       <div className="flex">
         <h1 className="flex-[1_90%]">{item.title}</h1>
         <button
-          className="h-[40px] w-[35px] text-xl text-[#031d2c] border-none rounded-[25px] hover:bg-[#dcdcdc] outline-none bg-transparent transition-all duration-[800ms] ease-in-out"
+          className="h-10 w-8.75 text-xl text-[#031d2c] border-none rounded-[25px] hover:bg-[#dcdcdc] outline-none bg-transparent transition-all duration-800 ease-in-out"
           onClick={onClose}
         >
           X

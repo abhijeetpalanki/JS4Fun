@@ -47,7 +47,7 @@ const LinkTree = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">
-      <div className="rounded-md w-[350px] md:w-full">
+      <div className="rounded-md w-87.5 md:w-full">
         <div className="px-2 py-4 text-center">
           <div className="flex items-center justify-center">
             <img
@@ -57,7 +57,7 @@ const LinkTree = () => {
             />
             <h1 className="m-2 text-2xl font-bold text-black">{data.name}</h1>
           </div>
-          <div className="flex justify-center items-center text-black w-[300px] md:w-[600px] my-4">
+          <div className="flex justify-center items-center text-black w-75 md:w-150 my-4">
             <p>{data.bio}</p>
           </div>
         </div>
@@ -68,7 +68,7 @@ const LinkTree = () => {
               className="relative h-12 my-2 overflow-hidden text-lg bg-white rounded-lg shadow group w-80"
             >
               <div
-                className="absolute inset-0 w-3 transition-all duration-[250ms] ease-out group-hover:w-full"
+                className="absolute inset-0 w-3 transition-all duration-250 ease-out group-hover:w-full"
                 style={{ backgroundColor: link.color }}
               ></div>
               <div className="flex items-center justify-center">

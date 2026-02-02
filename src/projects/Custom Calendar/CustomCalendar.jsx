@@ -11,7 +11,7 @@ const CustomCalendar = () => {
   const [events, setEvents] = useState(
     localStorage.getItem("events")
       ? JSON.parse(localStorage.getItem("events"))
-      : []
+      : [],
   );
 
   const eventForDate = (date) => events.find((e) => e.date === date);
@@ -24,7 +24,7 @@ const CustomCalendar = () => {
 
   return (
     <div className="flex h-screen justify-center items-center bg-[#fffcff]">
-      <div id="container" className="w-[770px]">
+      <div id="container" className="w-192.5">
         <Header
           dateDisplay={dateDisplay}
           onNext={() => setNav((prev) => prev + 1)}
@@ -35,25 +35,25 @@ const CustomCalendar = () => {
           id="weekdays"
           className="w-full flex justify-between items-center text-lg text-[#247ba0]"
         >
-          <div className="w-[100px] p-[10px] flex justify-start items-center">
+          <div className="w-25 p-2.5 flex justify-start items-center">
             Sunday
           </div>
-          <div className="w-[100px] p-[10px] flex justify-center items-center">
+          <div className="w-25 p-2.5 flex justify-center items-center">
             Monday
           </div>
-          <div className="w-[100px] p-[10px] flex justify-center items-center">
+          <div className="w-25 p-2.5 flex justify-center items-center">
             Tuesday
           </div>
-          <div className="w-[100px] p-[10px] flex justify-center items-center">
+          <div className="w-25 p-2.5 flex justify-center items-center">
             Wednesday
           </div>
-          <div className="w-[100px] p-[10px] flex justify-center items-center">
+          <div className="w-25 p-2.5 flex justify-center items-center">
             Thursday
           </div>
-          <div className="w-[100px] p-[10px] flex justify-center items-center">
+          <div className="w-25 p-2.5 flex justify-center items-center">
             Friday
           </div>
-          <div className="w-[100px] p-[10px] flex justify-end items-center">
+          <div className="w-25 p-2.5 flex justify-end items-center">
             Saturday
           </div>
         </div>

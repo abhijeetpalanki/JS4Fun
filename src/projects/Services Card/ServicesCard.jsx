@@ -3,12 +3,12 @@ import code from "./code.png";
 const ServicesCard = () => {
   return (
     <div className="bg-[#333] flex justify-center items-center h-screen">
-      <div className="flex relative py-0 px-0 md:py-[80px] md:px-[40px] justify-center items-center flex-wrap gap-[80px]">
-        <div className="relative w-[350px] h-[180px] bg-white duration-500 hover:h-[450px] card">
+      <div className="flex relative py-0 px-0 md:py-20 md:px-10 justify-center items-center flex-wrap gap-20">
+        <div className="relative w-87.5 h-45 bg-white duration-500 hover:h-112.5 card">
           <div className="absolute inset-0 overflow-hidden bg-black before:animate-expand lines"></div>
-          <div className="imgBx absolute w-[150px] h-[150px] bg-black duration-500 z-10 overflow-hidden flex justify-center items-center -top-[60px] left-1/2 -translate-x-1/2">
+          <div className="imgBx absolute w-37.5 h-37.5 bg-black duration-500 z-10 overflow-hidden flex justify-center items-center -top-15 left-1/2 -translate-x-1/2">
             <img
-              className="absolute z-[1] invert-[1] opacity-[0.5] w-[100px]"
+              className="absolute z-1 invert-[1] opacity-[0.5] w-25"
               src={code}
               alt=""
             />
@@ -24,7 +24,7 @@ const ServicesCard = () => {
                 dolor praesentium facilis assumenda dicta deleniti commodi
                 rerum? Praesentium ipsa magni assumenda beatae.
               </p>
-              <button className="inline-block p-[8px_15px] bg-[#45f3ff] text-[#292929] mt-[10px] font-medium opacity-0 duration-500">
+              <button className="inline-block p-[8px_15px] bg-[#45f3ff] text-[#292929] mt-2.5 font-medium opacity-0 duration-500">
                 Read More
               </button>
             </div>

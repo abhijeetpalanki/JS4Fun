@@ -1,7 +1,7 @@
 const Tile = ({ number, moveTile }) => (
   <div
     onClick={() => moveTile(number)}
-    className={`absolute w-[100px] h-[100px] flex items-center justify-center  cursor-pointer transition-[left,top] duration-[400ms] ${
+    className={`absolute w-25 h-25 flex items-center justify-center  cursor-pointer transition-[left,top] duration-400 ${
       number.value === number.index + 1 ? "bg-[#6e50b4]" : ""
     } ${
       number.value === 16

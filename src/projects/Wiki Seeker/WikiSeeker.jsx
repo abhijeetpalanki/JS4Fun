@@ -30,7 +30,7 @@ const WikiSeeker = () => {
           Wiki Seeker
         </h1>
         <form
-          className="flex items-center justify-center rounded-2xl overflow-hidden w-[240px] md:w-[480px] max-w-[480px] mb-4 duration-[0.4s] focus-within:shadow-[3px_3px_6px_#00000033]"
+          className="flex items-center justify-center rounded-2xl overflow-hidden w-60 md:w-120 max-w-120 mb-4 duration-[0.4s] focus-within:shadow-[3px_3px_6px_#00000033]"
           onSubmit={handleSearch}
         >
           <input
@@ -48,7 +48,7 @@ const WikiSeeker = () => {
         )}
       </header>
 
-      <div className="max-w-[768px] w-[400px] md:w-[768px] my-0 mx-auto">
+      <div className="max-w-3xl w-100 md:w-3xl my-0 mx-auto">
         {results.map((result, index) => {
           const url = `https://en.wikipedia.org/?curid=${result.pageid}`;
 
@@ -66,7 +66,7 @@ const WikiSeeker = () => {
                 href={url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block py-3 px-4 bg-[#a84fff] text-white font-[700] no-underline rounded-xl duration-[0.4s] hover:bg-[#ff4fa8]"
+                className="inline-block py-3 px-4 bg-[#a84fff] text-white font-bold no-underline rounded-xl duration-[0.4s] hover:bg-[#ff4fa8]"
               >
                 Read More
               </a>

@@ -90,7 +90,7 @@ const AnimatedLandingPage = () => {
             variants={bottle}
             src={juice}
             alt="juice"
-            className="h-[400px] w-[250px] md:h-[550px] md:w-[500px] object-contain"
+            className="h-100 w-62.5 md:h-137.5 md:w-125 object-contain"
           />
         </motion.div>
       </main>

@@ -45,25 +45,25 @@ const IncomeTracker = () => {
   }, [income]);
 
   return (
-    <div className="p-[30px] h-screen bg-[#f8f8f8]">
-      <header className="flex flex-col md:flex-row justify-between p-[15px]">
+    <div className="p-7.5 h-screen bg-[#f8f8f8]">
+      <header className="flex flex-col md:flex-row justify-between p-3.75">
         <h1 className="text-[#888] text-[32px] font-semibold text-left">
           Income Tracker
         </h1>
-        <div className="text-[#888] text-[28px] font-black bg-[#dfdfdf] py-[5px] px-[25px] rounded-lg">
+        <div className="text-[#888] text-[28px] font-black bg-[#dfdfdf] py-1.25 px-6.25 rounded-lg">
           ${totalIncome}
         </div>
       </header>
 
       <form
         onSubmit={addIncome}
-        className="inline-flex md:block m-[15px] relative after:absolute after:content-[''] after:top-0 after:bottom-0 after:left-0 after:right-0 after:z-0 after:bg-gradient-to-r after:from-[#ffce00] after:to-[#fe4880] after:rounded-[10px] after:duration-200 focus-within:after:-top-[3px] focus-within:after:-left-[3px] focus-within:after:-right-[3px] focus-within:after:-bottom-[3px]"
+        className="inline-flex md:block m-3.75 relative after:absolute after:content-[''] after:top-0 after:bottom-0 after:left-0 after:right-0 after:z-0 after:bg-linear-to-r after:from-[#ffce00] after:to-[#fe4880] after:rounded-[10px] after:duration-200 focus-within:after:-top-0.75 focus-within:after:-left-0.75 focus-within:after:-right-0.75 focus-within:after:-bottom-0.75"
       >
-        <div className="relative z-[1] flex flex-col md:flex-row justify-center duration-[400ms] rounded-lg">
+        <div className="relative z-1 flex flex-col md:flex-row justify-center duration-400 rounded-lg">
           <input
             ref={descriptionRef}
             type="text"
-            className="outline-none border-none text-[18px] py-[10px] px-[15px] bg-white rounded-[8px_0_0_8px] flex-[1_1_100%]"
+            className="outline-none border-none text-[18px] py-2.5 px-3.75 bg-white rounded-[8px_0_0_8px] flex-[1_1_100%]"
             name="desc"
             id="desc"
             placeholder="Income Description..."
@@ -71,7 +71,7 @@ const IncomeTracker = () => {
           <input
             ref={priceRef}
             type="number"
-            className="outline-none border-none text-[18px] py-[10px] px-[15px] bg-white rounded-none min-w-[200px]"
+            className="outline-none border-none text-[18px] py-2.5 px-3.75 bg-white rounded-none min-w-50"
             name="price"
             id="price"
             placeholder="Price"
@@ -79,7 +79,7 @@ const IncomeTracker = () => {
           <input
             ref={dateRef}
             type="date"
-            className="outline-none border-none text-[18px] py-[10px] px-[15px] bg-white"
+            className="outline-none border-none text-[18px] py-2.5 px-3.75 bg-white"
             name="date"
             id="date"
             placeholder="Income Date..."
@@ -87,12 +87,12 @@ const IncomeTracker = () => {
           <input
             type="submit"
             value="Add Income"
-            className="outline-none border-none text-[18px] py-[10px] px-[15px] bg-white rounded-[0_8px_8px_0] cursor-pointer bg-gradient-to-r from-[#ffce00] from-50% via-[#ffce00] via-50% to-[#fe4880] bg-[length:200%] bg-[0%] text-[#313131] font-semibold uppercase duration-[400ms] hover:bg-[100%] hover:text-white"
+            className="outline-none border-none text-[18px] py-2.5 px-3.75 bg-white rounded-[0_8px_8px_0] cursor-pointer bg-linear-to-r from-[#ffce00] from-50% via-[#ffce00] via-50% to-[#fe4880] bg-size-[200%] bg-position-[0%] text-[#313131] font-semibold uppercase duration-400 hover:bg-position-[100%] hover:text-white"
           />
         </div>
       </form>
 
-      <div className="p-[15px]">
+      <div className="p-3.75">
         {income.sort(sortByDate).map((value, index) => (
           <IncomeItem
             key={index}

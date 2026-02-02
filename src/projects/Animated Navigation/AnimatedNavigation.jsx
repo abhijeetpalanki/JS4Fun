@@ -103,14 +103,14 @@ const AnimatedNavigation = () => {
     <div className="h-screen">
       <div className="fixed">
         <button
-          className={`bg-[#09090c] border-none w-[2.5rem] h-[2.5rem] rounded-full my-[0.5rem] mx-1 flex justify-center items-center relative after:transition-all after:duration-[0.3s] after:content-[''] after:absolute after:bg-white after:h-[2px] after:w-[1rem] before:content-[''] before:bg-white before:h-[2px] before:w-[1rem] before:absolute before:transition-all before:duration-[0.3s] ${
+          className={`bg-[#09090c] border-none w-10 h-10 rounded-full my-2 mx-1 flex justify-center items-center relative after:transition-all after:duration-300 after:content-[''] after:absolute after:bg-white after:h-0.5 after:w-4 before:content-[''] before:bg-white before:h-0.5 before:w-4 before:absolute before:transition-all before:duration-300 ${
             isClicked
-              ? "before:top-[1.2rem] before:rotate-[135deg] after:-rotate-[135deg] after:top-[1.2rem]"
-              : "before:top-[1rem] before:rotate-[0deg] after:rotate-[0deg] after:top-[1.5rem]"
+              ? "before:top-[1.2rem] before:rotate-135 after:-rotate-135 after:top-[1.2rem]"
+              : "before:top-4 before:rotate-0 after:rotate-0 after:top-6"
           }`}
           onClick={handleClick}
         ></button>
-        <div className="bg-[#09090c] w-[3.5rem] h-[80vh] mt-4 rounded-[0_30px_30px_0] py-4 px-0 flex flex-col items-center justify-between relative">
+        <div className="bg-[#09090c] w-14 h-[80vh] mt-4 rounded-[0_30px_30px_0] py-4 px-0 flex flex-col items-center justify-between relative">
           <div className="w-8">
             <img
               src={logo}
@@ -121,7 +121,7 @@ const AnimatedNavigation = () => {
           </div>
 
           <ul
-            className={`text-white list-none flex flex-col items-center bg-[#09090c] py-8 px-0 absolute top-24 left-0 transition-all duration-[0.5s] rounded-[0_30px_30px_0] ${
+            className={`text-white list-none flex flex-col items-center bg-[#09090c] py-8 px-0 absolute top-24 left-0 transition-all duration-500 rounded-[0_30px_30px_0] ${
               isClicked ? "w-48" : "w-14"
             }`}
           >
@@ -136,7 +136,7 @@ const AnimatedNavigation = () => {
               <img
                 src={HomeLogo}
                 alt="Home"
-                className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%] hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                className="w-[1.2rem] h-auto invert-92 sepia-4 saturate-1033 hue-rotate-169 brightness-78 contrast-85 hover:invert-100 hover:sepia-0 hover:saturate-0 hover:hue-rotate-93 hover:brightness-103 hover:contrast-103"
                 loading="lazy"
               />
               <span
@@ -158,7 +158,7 @@ const AnimatedNavigation = () => {
               <img
                 src={TeamLogo}
                 alt="Team"
-                className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%]  hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                className="w-[1.2rem] h-auto invert-92 sepia-4 saturate-1033 hue-rotate-169 brightness-78 contrast-85  hover:invert-100 hover:sepia-0 hover:saturate-0 hover:hue-rotate-93 hover:brightness-103 hover:contrast-103"
                 loading="lazy"
               />
               <span
@@ -180,7 +180,7 @@ const AnimatedNavigation = () => {
               <img
                 src={CalendarLogo}
                 alt="Calendar"
-                className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%]  hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                className="w-[1.2rem] h-auto invert-92 sepia-4 saturate-1033 hue-rotate-169 brightness-78 contrast-85  hover:invert-100 hover:sepia-0 hover:saturate-0 hover:hue-rotate-93 hover:brightness-103 hover:contrast-103"
                 loading="lazy"
               />
               <span
@@ -202,7 +202,7 @@ const AnimatedNavigation = () => {
               <img
                 src={DocumentsLogo}
                 alt="Documents"
-                className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%]  hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                className="w-[1.2rem] h-auto invert-92 sepia-4 saturate-1033 hue-rotate-169 brightness-78 contrast-85  hover:invert-100 hover:sepia-0 hover:saturate-0 hover:hue-rotate-93 hover:brightness-103 hover:contrast-103"
                 loading="lazy"
               />
               <span
@@ -224,7 +224,7 @@ const AnimatedNavigation = () => {
               <img
                 src={ProjectsLogo}
                 alt="Projects"
-                className="w-[1.2rem] h-auto invert-[92%] sepia-[4%] saturate-[1033%] hue-rotate-[169deg] brightness-[78%] contrast-[85%]  hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                className="w-[1.2rem] h-auto invert-92 sepia-4 saturate-1033 hue-rotate-169 brightness-78 contrast-85  hover:invert-100 hover:sepia-0 hover:saturate-0 hover:hue-rotate-93 hover:brightness-103 hover:contrast-103"
                 loading="lazy"
               />
               <span
@@ -238,7 +238,7 @@ const AnimatedNavigation = () => {
           </ul>
 
           <div
-            className={`h-24 py-2 px-4 flex items-center justify-center bg-[#09090c] text-white transition-all duration-[0.3s] rounded-full ${
+            className={`h-24 py-2 px-4 flex items-center justify-center bg-[#09090c] text-white transition-all duration-300 rounded-full ${
               isProfileClicked ? "w-72 ml-36" : "w-12 ml-0"
             }`}
           >
@@ -246,7 +246,7 @@ const AnimatedNavigation = () => {
               src="/logo.png"
               alt="Profile Pic"
               onClick={handleProfileClick}
-              className="max-w-[2.5rem] h-10 rounded-full hover:border-2 hover:border-[#a4b2bc] hover:p-[2px]"
+              className="max-w-10 h-10 rounded-full hover:border-2 hover:border-[#a4b2bc] hover:p-0.5"
               loading="lazy"
             />
             <div
@@ -268,7 +268,7 @@ const AnimatedNavigation = () => {
                 <img
                   src={PowerOffLogo}
                   alt="logout"
-                  className="w-full h-auto invert-[15%] sepia-[70%] saturate-[6573%] hue-rotate-[2deg] brightness-[100%] contrast-[126%] transition-all duration-[0.3s] hover:border-none hover:p-0 hover:opacity-[0.5] hover:invert-[100%] hover:sepia-[0%] hover:saturate-[0%] hover:hue-rotate-[93deg] hover:brightness-[103%] hover:contrast-[103%]"
+                  className="w-full h-auto invert-15 sepia-70 saturate-6573 hue-rotate-[2deg] brightness-100 contrast-126 transition-all duration-300 hover:border-none hover:p-0 hover:opacity-[0.5] hover:invert-100 hover:sepia-0 hover:saturate-0 hover:hue-rotate-93 hover:brightness-103 hover:contrast-103"
                   loading="lazy"
                 />
               </button>

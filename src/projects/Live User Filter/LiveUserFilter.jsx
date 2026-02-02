@@ -17,7 +17,7 @@ const LiveUserFilter = () => {
         (error) => {
           setIsLoaded(true);
           setError(error);
-        }
+        },
       )
       .catch((err) => console.log(err.message));
   };
@@ -28,41 +28,41 @@ const LiveUserFilter = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-[300px] shadow-[3px_3px_10px_#00000033]">
-        <header className="bg-[#3e57db] text-white text-center py-[30px] px-[20px]">
+      <div className="container flex justify-center flex-col rounded-[5px] overflow-hidden w-75 shadow-[3px_3px_10px_#00000033]">
+        <header className="bg-[#3e57db] text-white text-center py-7.5 px-5">
           <h4 className="m-0 text-[1rem] font-bold">Live User Filter</h4>
-          <small className="inline-block opacity-80 mb-[20px] mt-[5px] mx-0">
+          <small className="inline-block opacity-80 mb-5 mt-1.25 mx-0">
             Search by name and/or location
           </small>
           <input
             type="text"
-            className="bg-black/30 border-0 rounded-[50px] text-white text-sm py-[10px] px-[15px] w-full focus:outline-none"
+            className="bg-black/30 border-0 rounded-[50px] text-white text-sm py-2.5 px-3.75 w-full focus:outline-none"
             placeholder="Search"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
           />
         </header>
 
-        <ul className="bg-white list-none m-0 p-0 max-h-[400px] overflow-y-auto">
+        <ul className="bg-white list-none m-0 p-0 max-h-100 overflow-y-auto">
           {searchInput
             ? users
                 .filter((user) =>
                   user.name.first
                     .toLowerCase()
-                    .includes(searchInput.toLowerCase())
+                    .includes(searchInput.toLowerCase()),
                 )
                 .map((user, index) => (
                   <li
-                    className="flex p-[20px] gap-3 border border-[#eee]"
+                    className="flex p-5 gap-3 border border-[#eee]"
                     key={index}
                   >
                     <img
-                      className="rounded-1/2 object-cover h-[50px] w-[50px]"
+                      className="rounded-1/2 object-cover h-12.5 w-12.5"
                       src={user.picture.large}
                       alt={user.name.first}
                     />
-                    <div className="ml-[10px] text-black">
-                      <h4 className="mb-[10px] mx-0 mt-0 font-bold">
+                    <div className="ml-2.5 text-black">
+                      <h4 className="mb-2.5 mx-0 mt-0 font-bold">
                         {user.name.first} {user.name.last}
                       </h4>
                       <p className="text-[12px]">
@@ -73,17 +73,14 @@ const LiveUserFilter = () => {
                   </li>
                 ))
             : users.map((user, index) => (
-                <li
-                  className="flex p-[20px] gap-3 border border-[#eee]"
-                  key={index}
-                >
+                <li className="flex p-5 gap-3 border border-[#eee]" key={index}>
                   <img
-                    className="rounded-full object-cover h-[50px] w-[50px]"
+                    className="rounded-full object-cover h-12.5 w-12.5"
                     src={user.picture.large}
                     alt={user.name.first}
                   />
                   <div className="text-black user-info">
-                    <h4 className="mb-[10px] mx-0 mt-0 font-bold">
+                    <h4 className="mb-2.5 mx-0 mt-0 font-bold">
                       {user.name.first} {user.name.last}
                     </h4>
                     <p className="text-[12px]">

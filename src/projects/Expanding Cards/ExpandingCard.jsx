@@ -7,7 +7,7 @@ const ExpandingCard = () => {
     const newState = [...panels];
 
     newState.map((item) =>
-      item.id === id ? (item.active = true) : (item.active = false)
+      item.id === id ? (item.active = true) : (item.active = false),
     );
     setPanels(newState);
   };
@@ -18,7 +18,7 @@ const ExpandingCard = () => {
         {panels.map((panel) => (
           <div
             key={panel.id}
-            className={`transition-[flex] duration-700 ease-in bg-cover bg-center bg-no-repeat h-[70vh] rounded-[50px] text-white cursor-pointer flex-[0.5] m-[10px] relative ${
+            className={`transition-[flex] duration-700 ease-in bg-cover bg-center bg-no-repeat h-[70vh] rounded-[50px] text-white cursor-pointer flex-[0.5] m-2.5 relative ${
               panel.active && "flex-[5] group"
             }`}
             style={{

@@ -12,23 +12,23 @@ const MotionActivatedCard = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <div
-        className={`w-full [perspective:2000] flex items-center justify-center`}
+        className={`w-full perspective-[2000] flex items-center justify-center`}
       >
         <motion.div
-          className="w-[285px] h-[500px] flex flex-col rounded-[25px] [box-shadow:0_2px_7px_1px_#1f1f1f33] bg-[#1d1f21] text-white relative cursor-grab"
+          className="w-71.25 h-125 flex flex-col rounded-[25px] [box-shadow:0_2px_7px_1px_#1f1f1f33] bg-[#1d1f21] text-white relative cursor-grab"
           style={{ x, y, rotateX, rotateY, z: 100 }}
           drag
           dragElastic={0.16}
           dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
           whileTap={{ cursor: "grabbing" }}
         >
-          <div className="w-full flex flex-col flex-[1.2] relative items-center justify-end py-[1em] px-[15px]">
+          <div className="w-full flex flex-col flex-[1.2] relative items-center justify-end py-[1em] px-3.75">
             <div className="absolute top-0 left-0 min-w-full min-h-full overflow-hidden rounded-tr-[25px]">
-              <div className="absolute w-[350px] h-[350px] -top-[4.2em] -right-[10em] z-[5] bg-[#fbbe01] rounded-full" />
+              <div className="absolute w-87.5 h-87.5 -top-[4.2em] -right-[10em] z-5 bg-[#fbbe01] rounded-full" />
             </div>
             <div className="absolute flex items-center justify-center w-full h-full">
               <motion.div
-                className="w-auto h-[190px] z-[99] select-none mr-[3em] mt-[4em]"
+                className="w-auto h-47.5 z-99 select-none mr-[3em] mt-[4em]"
                 style={{ x, y, rotateX, rotateY, rotate: "-25deg", z: 100000 }}
                 drag
                 dragElastic={0.12}
@@ -63,12 +63,12 @@ const MotionActivatedCard = () => {
                 <div className="text-lg font-extrabold text-white uppercase">
                   YOUR NEXT SHOES
                 </div>
-                <button className="py-[10px] px-4 bg-[#fbbe01] text-white uppercase text-base font-bold border-[3px] border-transparent outline-none cursor-pointer transition-all duration-[290ms] ease-in-out rounded-lg hover:bg-transparent hover:text-white hover:border-[#fbbe01]">
+                <button className="py-2.5 px-4 bg-[#fbbe01] text-white uppercase text-base font-bold border-[3px] border-transparent outline-none cursor-pointer transition-all duration-290 ease-in-out rounded-lg hover:bg-transparent hover:text-white hover:border-[#fbbe01]">
                   BUY
                 </button>
               </div>
-              <div className="w-full h-[30px] flex items-center justify-center">
-                <img src={NikeImg} alt="NikeImg" className="w-auto h-[13px]" />
+              <div className="w-full h-7.5 flex items-center justify-center">
+                <img src={NikeImg} alt="NikeImg" className="w-auto h-3.25" />
               </div>
             </div>
           </div>

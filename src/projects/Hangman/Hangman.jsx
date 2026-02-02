@@ -48,13 +48,13 @@ const Hangman = () => {
   return (
     <div className="flex flex-col items-center justify-start h-screen text-center bg-pink-300">
       <div>
-        <p className="mb-0 md:mb-[30px] text-[3em] text-[#870849] tracking-widest">
+        <p className="mb-0 md:mb-7.5 text-[3em] text-[#870849] tracking-widest">
           {word
             .split("")
             .map((letter) => (correctLetters.includes(letter) ? letter : "_"))
             .join(" ")}
         </p>
-        <div className="my-0 md:my-[30px] w-[300px] md:w-[600px]">
+        <div className="my-0 md:my-7.5 w-75 md:w-150">
           {alphabets.map((letter, index) => (
             <button
               onClick={() => onGuess(letter)}
@@ -72,8 +72,8 @@ const Hangman = () => {
 
         {!status ? null : (
           <div className="absolute top-[75%] md:top-[60%] right-[60%] bg-[#aa477a64] flex flex-col justify-evenly items-center">
-            <p className="m-[10px]">You {status}!</p>
-            <p className="m-[10px]">
+            <p className="m-2.5">You {status}!</p>
+            <p className="m-2.5">
               The word was{" "}
               <span className="font-bold tracking-widest text-white">
                 {word}

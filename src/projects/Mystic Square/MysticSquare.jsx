@@ -1,7 +1,7 @@
-import "./MysticSquare.css";
 import { useState, useEffect } from "react";
 import Tile from "./Tile";
 import Winner from "./Winner";
+import "./MysticSquare.css";
 
 const Overlay = () =>
   new Array(16)
@@ -9,7 +9,7 @@ const Overlay = () =>
     .map((_, i) => (
       <div
         key={i}
-        className="border-[10px] border-[#55ab9f] pointer-events-none z-[20]"
+        className="border-10 border-[#55ab9f] pointer-events-none z-20"
       ></div>
     ));
 
@@ -78,7 +78,7 @@ const MysticSquare = () => {
 
       {/* Board */}
       <div className="relative">
-        <div className="grid grid-cols-[repeat(4,100px)] grid-rows-[repeat(4,100px)] rounded-[10px] relative overflow-hidden border-[10px] border-[#55ab9f] ">
+        <div className="grid grid-cols-[repeat(4,100px)] grid-rows-[repeat(4,100px)] rounded-[10px] relative overflow-hidden border-10 border-[#55ab9f] ">
           <Overlay />
 
           {numbers.map((x, i) => (
@@ -89,7 +89,7 @@ const MysticSquare = () => {
         <div className="flex justify-center mt-8">
           <button
             onClick={reset}
-            className="border-[0_transparent] bg-[#6e50b4] text-white py-[10px] px-5 text-xl hover:bg-[#342956]"
+            className="border-[0_transparent] bg-[#6e50b4] text-white py-2.5 px-5 text-xl hover:bg-[#342956]"
           >
             New Game
           </button>

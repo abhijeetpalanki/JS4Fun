@@ -40,9 +40,9 @@ const GradientGenerator = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="bg-white w-[350px] md:w-[450px] p-[25px] rounded-[7px]">
+      <div className="bg-white w-87.5 md:w-112.5 p-6.25 rounded-[7px]">
         <div
-          className="w-full h-[220px] rounded-[7px]"
+          className="w-full h-55 rounded-[7px]"
           style={{
             background: `linear-gradient(${details.activeGradientDirection},${details.fromColorInput},${details.toColorInput})`,
           }}
@@ -50,7 +50,7 @@ const GradientGenerator = () => {
         <div className="flex justify-between my-5">
           <div className="w-[calc(100%/2-12px)] direction">
             <p className="text-[1.12rem] text-black mb-2">Direction</p>
-            <div className="text-black border border-[#aaa] py-[10px] px-[15px] rounded-[5px]">
+            <div className="text-black border border-[#aaa] py-2.5 px-3.75 rounded-[5px]">
               <select
                 onChange={changeDirection}
                 className="w-full border-none outline-none bg-none text-[1.12rem]"
@@ -63,17 +63,17 @@ const GradientGenerator = () => {
               </select>
             </div>
           </div>
-          <div className="w-[calc(100%/2-12px)] ml-[60px]">
+          <div className="w-[calc(100%/2-12px)] ml-15">
             <p className="text-[1.12rem] text-black mb-2">Colors</p>
             <div className="flex">
               <input
-                className="h-[41px] w-[calc(100%/2-20px)]"
+                className="h-10.25 w-[calc(100%/2-20px)]"
                 type="color"
                 value={details.fromColorInput}
                 onChange={onChangeFromColorInput}
               />
               <input
-                className="ml-2 h-[41px] w-[calc(100%/2-20px)]"
+                className="ml-2 h-10.25 w-[calc(100%/2-20px)]"
                 type="color"
                 value={details.toColorInput}
                 onChange={onChangeToColorInput}

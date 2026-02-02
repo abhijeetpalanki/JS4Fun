@@ -33,7 +33,7 @@ const Header = ({ inputWord, setInputWord }) => {
           <div className="flex border-2 border-gray-200 rounded">
             <input
               type="text"
-              className="px-4 py-2 outline-none md:w-80"
+              className="px-4 py-2 outline-none md:w-80 text-white"
               placeholder="Search..."
               value={value}
               onChange={handleInputChange}

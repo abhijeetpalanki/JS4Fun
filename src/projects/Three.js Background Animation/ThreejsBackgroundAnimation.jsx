@@ -12,7 +12,7 @@ const ThreejsBackgroundAnimation = () => {
       70,
       window.innerWidth / window.innerHeight,
       0.1,
-      1000
+      1000,
     );
 
     const renderer = new THREE.WebGLRenderer();
@@ -86,7 +86,7 @@ const ThreejsBackgroundAnimation = () => {
         </div>
       </header>
 
-      <div className="absolute text-center top-[50%] md:top-[30%] left-[2rem] md:left-[5rem] w-full md:h-[60%]">
+      <div className="absolute text-center top-[50%] md:top-[30%] left-8 md:left-20 w-full md:h-[60%]">
         <h2 className="text-[30px] md:text-[80px] w-full pt-4">
           Three.js
           <br />

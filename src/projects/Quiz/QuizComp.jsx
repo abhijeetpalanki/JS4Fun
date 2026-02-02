@@ -28,12 +28,12 @@ const QuizComp = ({
 
   return (
     <div className="flex flex-col items-center justify-center text-white">
-      <h1 className="m-[10px] p-[20px] text-center text-black text-2xl">
+      <h1 className="m-2.5 p-5 text-center text-black text-2xl">
         {questions[currentQuestion].question}
       </h1>
       <div className="flex flex-col items-center justify-center w-full options">
         <button
-          className="w-[300px] h-[70px] m-[5px] border-0 rounded-[5px] text-[20px] bg-white text-black"
+          className="w-75 h-17.5 m-1.25 border-0 rounded-[5px] text-[20px] bg-white text-black cursor-pointer"
           onClick={() => {
             setChosenOption(1);
             currentQuestion === questions.length - 1
@@ -44,7 +44,7 @@ const QuizComp = ({
           {questions[currentQuestion].choice1}
         </button>
         <button
-          className="w-[300px] h-[70px] m-[5px] border-0 rounded-[5px] text-[20px] bg-white text-black"
+          className="w-75 h-17.5 m-1.25 border-0 rounded-[5px] text-[20px] bg-white text-black cursor-pointer"
           onClick={() => {
             setChosenOption(2);
             currentQuestion === questions.length - 1
@@ -55,7 +55,7 @@ const QuizComp = ({
           {questions[currentQuestion].choice2}
         </button>
         <button
-          className="w-[300px] h-[70px] m-[5px] border-0 rounded-[5px] text-[20px] bg-white text-black"
+          className="w-75 h-17.5 m-1.25 border-0 rounded-[5px] text-[20px] bg-white text-black cursor-pointer"
           onClick={() => {
             setChosenOption(3);
             currentQuestion === questions.length - 1
@@ -66,7 +66,7 @@ const QuizComp = ({
           {questions[currentQuestion].choice3}
         </button>
         <button
-          className="w-[300px] h-[70px] m-[5px] border-0 rounded-[5px] text-[20px] bg-white text-black"
+          className="w-75 h-17.5 m-1.25 border-0 rounded-[5px] text-[20px] bg-white text-black cursor-pointer"
           onClick={() => {
             setChosenOption(4);
             currentQuestion === questions.length - 1

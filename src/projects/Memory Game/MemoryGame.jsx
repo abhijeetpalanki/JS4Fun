@@ -88,10 +88,10 @@ const MemoryGame = () => {
 
   return (
     <div className="h-screen text-[1.5em] flex justify-center items-center text-center bg-[#1b1523] text-white">
-      <div className="max-w-[860px] py-10">
+      <div className="max-w-215 py-10">
         <button
           onClick={shuffleCards}
-          className="border-[2px] border-white py-[6px] px-[12px] rounded-[4px] text-white font-bold text-[1em] hover:bg-[#c23866] hover:text-white"
+          className="border-2 border-white py-1.5 px-3 rounded-sm text-white font-bold text-[1em] hover:bg-[#c23866] hover:text-white"
         >
           New Game
         </button>
@@ -106,12 +106,12 @@ const MemoryGame = () => {
               <div key={card.id} className="relative card">
                 <div className={flipped ? "flipped delay-200" : ""}>
                   <img
-                    className="w-full block border-[2px] border-white rounded-md absolute transition-all ease-in duration-200 front"
+                    className="w-full block border-2 border-white rounded-md absolute transition-all ease-in duration-200 front"
                     src={card.src}
                     alt="card front"
                   />
                   <img
-                    className="w-full block border-[2px] border-white rounded-md transition-all ease-in duration-200 back"
+                    className="w-full block border-2 border-white rounded-md transition-all ease-in duration-200 back"
                     onClick={() => handleClick(card)}
                     src={fun}
                     alt="card back"

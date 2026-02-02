@@ -22,7 +22,7 @@ const CryptoPriceTracker = () => {
   };
 
   const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase().includes(searchTerm.toLowerCase())
+    coin.name.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   return (
@@ -33,7 +33,7 @@ const CryptoPriceTracker = () => {
           <form>
             <input
               type="text"
-              className="pl-4 w-[300px] h-[50px] rounded-md border-none bg-[linear-gradient(-225deg,#ac32e4_0%,#7910f2_48%,#4a01ff_100%)] text-[#e2e2e2] placeholder:text-[#e2e2e2]"
+              className="pl-4 w-75 h-12.5 rounded-md border-none bg-[linear-gradient(-225deg,#ac32e4_0%,#7910f2_48%,#4a01ff_100%)] text-[#e2e2e2] placeholder:text-[#e2e2e2]"
               placeholder="Search"
               onChange={handleChange}
             />
@@ -43,33 +43,37 @@ const CryptoPriceTracker = () => {
         {filteredCoins.map((coin) => (
           <div key={coin.id} className="flex justify-center">
             {/* Coin Row */}
-            <div className="flex flex-row justify-start items-center h-[80px] border-b-[#d7d7d7] w-[900px]">
+            <div className="flex flex-row justify-start items-center h-20 border-b-[#d7d7d7] w-225">
               {/* Coin */}
-              <div className="flex items-center pr-6 min-w-[300px]">
+              <div className="flex items-center pr-6 min-w-75">
                 <img
-                  className="h-[30px] w-[30px] mr-[10px]"
+                  className="h-7.5 w-7.5 mr-2.5"
                   src={coin.image}
                   alt={coin.name}
                 />
-                <h1 className="text-base w-[150px]">{coin.name}</h1>
+                <h1 className="text-base w-37.5">{coin.name}</h1>
                 <p className="uppercase">{coin.symbol}</p>
               </div>
               {/* Coin Data */}
               <div className="flex justify-between w-full text-center">
-                <p className="w-[110px]">${coin.current_price}</p>
-                <p className="w-[200px]">
-                  ${coin.total_volume.toLocaleString()}
-                </p>
+                <p className="w-27.5">${coin.current_price}</p>
+                <p className="w-50">${coin.total_volume.toLocaleString()}</p>
                 {coin.price_change_percentage_24h < 0 ? (
-                  <p className="w-[80px] text-[#f00606]">
-                    {coin.price_change_percentage_24h.toFixed(2)}%
+                  <p className="w-20 text-[#f00606]">
+                    {(
+                      Math.round(coin.price_change_percentage_24h * 100) / 100
+                    ).toFixed(2)}
+                    %
                   </p>
                 ) : (
-                  <p className="w-[80px] text-[#11d811]">
-                    {coin.price_change_percentage_24h.toFixed(2)}%
+                  <p className="w-20 text-[#11d811]">
+                    {(
+                      Math.round(coin.price_change_percentage_24h * 100) / 100
+                    ).toFixed(2)}
+                    %
                   </p>
                 )}
-                <p className="w-[240px]">
+                <p className="w-60">
                   MKT Cap: ${coin.market_cap.toLocaleString()}
                 </p>
               </div>

@@ -5,7 +5,7 @@ import coverNotFound from "./cover_not_found.jpg";
 
 const Loader = () => (
   <div className="flex justify-center px-0 py-16">
-    <img src={loader} alt="loader" className="w-[120px]" />
+    <img src={loader} alt="loader" className="w-30" />
   </div>
 );
 
@@ -29,7 +29,7 @@ const BookHub = () => {
 
     try {
       const response = await fetch(
-        `http://openlibrary.org/search.json?title=${searchTerm}`
+        `http://openlibrary.org/search.json?title=${searchTerm}`,
       );
       const data = await response.json();
       const { docs } = data;
@@ -85,7 +85,7 @@ const BookHub = () => {
     <div>
       <header
         style={{ backgroundImage: `url(${bg})` }}
-        className="flex flex-col justify-center items-center h-[250px]"
+        className="flex flex-col justify-center items-center h-62.5"
       >
         <h1 className="mb-5 text-3xl text-white">Book Hub</h1>
         <input
@@ -94,7 +94,7 @@ const BookHub = () => {
           onKeyDown={handleKeyDown}
           type="search"
           placeholder="Ex: The Lost World..."
-          className="h-[40px] w-[400px] outline-none p-2 text-black"
+          className="h-10 w-100 outline-none p-2 text-white border border-white"
         />
       </header>
 
@@ -120,7 +120,7 @@ const BookHub = () => {
                         <img
                           src={item.cover_img}
                           alt="cover"
-                          className="max-w-[180px] lg:max-w-[120px] mx-auto"
+                          className="max-w-45 lg:max-w-30 mx-auto"
                         />
                       </div>
                       <div className="mt-8 text-center text-black">

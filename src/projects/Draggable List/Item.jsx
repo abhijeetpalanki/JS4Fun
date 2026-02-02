@@ -58,17 +58,17 @@ const Item = ({ item, index, moveItem, status }) => {
       <div
         ref={ref}
         style={{ opacity: isDragging ? 0 : 1 }}
-        className="text-[15px] mb-[10px] p-[10px] rounded-[5px] z-[1] bg-white hover:cursor-pointer"
+        className="text-[15px] mb-2.5 p-2.5 rounded-[5px] z-1 bg-white hover:cursor-pointer"
         onClick={onOpen}
       >
         <div
-          className="w-[40px] h-[10px] rounded-[5px]"
+          className="w-10 h-2.5 rounded-[5px]"
           style={{ backgroundColor: status.color }}
         ></div>
-        <p className="text-base font-semibold my-[10px] break-words text-left">
+        <p className="text-base font-semibold my-2.5 wrap-break-word text-left">
           {item.content}
         </p>
-        <p className="text-right my-[10px] break-words">{item.icon}</p>
+        <p className="text-right my-2.5 wrap-break-word">{item.icon}</p>
       </div>
 
       <Window item={item} onClose={onClose} show={show} />

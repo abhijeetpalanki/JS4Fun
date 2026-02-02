@@ -5,23 +5,23 @@ import { FaCopy } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 
 const TextGenerator = () => {
-  const [paras, setParas] = useState("4");
+  const [params, setParams] = useState("4");
   const [text, setText] = useState("");
-
-  useEffect(() => {
-    getSampleText();
-  }, []);
 
   const getSampleText = async () => {
     axios
       .get(
-        `https://baconipsum.com/api/?type=meat-and-filler&paras=${paras}&format=html`
+        `https://baconipsum.com/api/?type=meat-and-filler&paras=${params}&format=html`,
       )
       .then((res) => {
         setText(res.data);
       })
       .catch((err) => console.log(err.message));
   };
+
+  useEffect(() => {
+    getSampleText();
+  }, []);
 
   const copyToClipboard = () => {
     const displayText = text
@@ -42,7 +42,7 @@ const TextGenerator = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen leading-[1.6] bg-[#556271]">
-      <div className="max-w-[400px] md:max-w-[1000px] mx-auto p-[5rem_2rem_0]">
+      <div className="max-w-100 md:max-w-250 mx-auto p-[5rem_2rem_0]">
         <div className="rounded-[0.4rem] overflow-hidden">
           {/* Head */}
           <div className="bg-[#f4f6f8] p-[2.8rem] border-[3px] border-[#d3dbe4] flex flex-wrap items-center justify-between md:flex-nowrap">
@@ -54,8 +54,8 @@ const TextGenerator = () => {
                   className="border-[3px] border-[#d3dbe4] rounded-[3px] uppercase font-semibold text-[#556271] outline-none py-[1.1rem] px-[1.2rem] "
                   min={1}
                   max={100}
-                  value={paras}
-                  onChange={(e) => setParas(e.target.value)}
+                  value={params}
+                  onChange={(e) => setParams(e.target.value)}
                 />
               </div>
 
@@ -79,8 +79,8 @@ const TextGenerator = () => {
           </div>
 
           {/* Body */}
-          <div className="bg-white min-h-[400px] shadow-[0_0_13px_0_#0000003f]">
-            <div className="w-full max-h-[500px] overflow-y-scroll p-[2.8rem] text-[#556271] font-medium leading-[1.8] gen-content">
+          <div className="bg-white min-h-100 shadow-[0_0_13px_0_#0000003f]">
+            <div className="w-full max-h-125 overflow-y-scroll p-[2.8rem] text-[#556271] font-medium leading-[1.8] gen-content">
               {text.split("</p>").map((t, index) => (
                 <div key={index}>
                   {t.replace("<p>", `${index + 1}. `)}

@@ -153,13 +153,13 @@ function formatOperand(operand) {
 const BasicCalculator = () => {
   const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(
     reducer,
-    {}
+    {},
   );
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="grid grid-cols-[repeat(4,6rem)] grid-rows-[minmax(7rem,auto)_repeat(5,6rem)] justify-center mt-8">
-        <div className="[grid-column:1/-1] break-words bg-black/75 flex flex-col items-end justify-around p-[0.75rem] break-all">
+        <div className="col-span-full wrap-break-word bg-black/75 flex flex-col items-end justify-around p-3 break-all">
           <div className="previous-operand text-[1.5rem] text-white/75">
             {formatOperand(previousOperand)} {operation}
           </div>
@@ -168,7 +168,7 @@ const BasicCalculator = () => {
           </div>
         </div>
         <button
-          className="[grid-column:span_2] text-4xl text-black outline-none bg-white/75 border border-white hover:bg-white/90 focus:bg-white/90"
+          className="col-[span_2] text-4xl text-black outline-none bg-white/75 border border-white hover:bg-white/90 focus:bg-white/90"
           onClick={() => dispatch({ type: ACTIONS.CLEAR })}
         >
           AC
@@ -195,7 +195,7 @@ const BasicCalculator = () => {
         <DigitButton digit="." dispatch={dispatch} />
         <DigitButton digit="0" dispatch={dispatch} />
         <button
-          className="[grid-column:span_2] text-4xl text-black outline-none bg-white/75 border border-white hover:bg-white/90 focus:bg-white/90"
+          className="col-[span_2] text-4xl text-black outline-none bg-white/75 border border-white hover:bg-white/90 focus:bg-white/90"
           onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
         >
           =

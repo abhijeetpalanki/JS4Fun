@@ -27,14 +27,14 @@ const Modal = ({ handleClose, text }) => {
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="[width:clamp(50%,700px,90%)] [height:min(50%,300px)] m-auto py-0 px-[2rem] rounded-[12px] flex flex-col justify-around items-center [background:linear-gradient(10deg,#9cfcf8,#6e7bfb)]"
+        className="w-[clamp(50%,700px,90%)] h-[min(50%,300px)] m-auto py-0 px-8 rounded-xl flex flex-col justify-around items-center [background:linear-gradient(10deg,#9cfcf8,#6e7bfb)]"
         variants={dropIn}
         initial="hidden"
         animate="visible"
         exit="exit"
       >
         <button
-          className="py-0 px-[2rem] h-[2.5rem] bg-[#101111] text-[#9cfcf8] rounded-[4px] transition-[background] ease-linear duration-[400ms] font-[600] text-[1.25rem] tracking-[1.25px] shadow-[1px_1px_15px_#03030399]"
+          className="py-0 px-8 h-10 bg-[#101111] text-[#9cfcf8] rounded-sm transition-[background] ease-linear duration-400 font-semibold text-[1.25rem] tracking-[1.25px] shadow-[1px_1px_15px_#03030399]"
           onClick={handleClose}
         >
           Close

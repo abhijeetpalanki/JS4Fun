@@ -24,7 +24,7 @@ const GithubProfiles = () => {
   const getRepos = async (username) => {
     try {
       await axios(
-        APIURL + username + "/repos?sort=updated&direction=desc"
+        APIURL + username + "/repos?sort=updated&direction=desc",
       ).then((res) => setRepos(res.data));
     } catch (err) {
       console.log(err.message);
@@ -51,7 +51,7 @@ const GithubProfiles = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen text-white">
       <form
-        className="w-full max-w-[400px] sm:max-w-3xl"
+        className="w-full max-w-100 sm:max-w-3xl"
         id="form"
         onSubmit={submitUser}
       >
@@ -70,7 +70,7 @@ const GithubProfiles = () => {
               <img
                 src={userInfo.avatar_url}
                 alt={userInfo.name}
-                className="rounded-full border-[10px] border-[#2a2a72]"
+                className="rounded-full border-10 border-[#2a2a72]"
                 loading="lazy"
               />
             </div>
@@ -85,7 +85,7 @@ const GithubProfiles = () => {
               >
                 Go To Portfolio
               </a>
-              <ul className="list-none flex justify-between p-0 max-w-[400px] my-[16px] mx-0">
+              <ul className="list-none flex justify-between p-0 max-w-100 my-4 mx-0">
                 <li className="flex items-center mr-4">
                   {userInfo.followers}{" "}
                   <strong className="text-[0.9rem] ml-2">Followers</strong>

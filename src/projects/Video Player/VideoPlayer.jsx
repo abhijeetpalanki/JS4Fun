@@ -46,10 +46,10 @@ const VideoPlayer = () => {
             <img
               src="/logo.png"
               alt="logo"
-              className="mx-auto md:w-auto w-[126px] rounded-full"
+              className="mx-auto md:w-auto w-31.5 rounded-full"
             />
           </header>
-          <div className="relative w-[250px] md:w-[967px]">
+          <div className="relative w-62.5 md:w-241.75">
             <video
               ref={videoRef}
               preload="metadata"
@@ -60,13 +60,13 @@ const VideoPlayer = () => {
               }}
               onTimeUpdate={onTimeUpdate}
               onEnded={() => setIsPlaying(false)}
-              className="w-full max-w-[250px] md:max-w-[967px] h-[500px] mx-auto my-8"
+              className="w-full max-w-62.5 md:max-w-241.75 h-125 mx-auto my-8"
             >
               <source src={video} type="video/mp4" />
             </video>
             <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-end w-full h-full">
               <div>{isLoading && "Calm down and grab a cup of coffee"}</div>
-              <div className="bg-white h-[4px] w-[98%] m-auto mb-[18px]">
+              <div className="w-[98%] m-auto mb-4.5">
                 <div
                   className={`bg-[#ff0000] w-[0%] h-full ${
                     formatTime(currentTime) !== formatTime(videoDuration) &&

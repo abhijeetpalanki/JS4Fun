@@ -14,7 +14,7 @@ const AnimatedModals = () => {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="[background:linear-gradient(10deg,#9cfcf8,#6e7bfb)] text-[#101315] h-[3rem] rounded-[4px] font-[600] text-[1.25rem] tracking-[1.25px] py-0 px-[1rem]"
+          className="[background:linear-gradient(10deg,#9cfcf8,#6e7bfb)] text-[#101315] h-12 rounded-sm font-semibold text-[1.25rem] tracking-[1.25px] py-0 px-4"
           onClick={open}
         >
           Launch modal
@@ -43,7 +43,7 @@ const Header = () => (
 );
 
 const SubHeader = ({ text }) => (
-  <motion.h2 className="my-[1rem] mx-auto text-[#9e9e9e]">{text}</motion.h2>
+  <motion.h2 className="my-4 mx-auto text-[#9e9e9e]">{text}</motion.h2>
 );
 
 const ModalContainer = ({ children }) => (

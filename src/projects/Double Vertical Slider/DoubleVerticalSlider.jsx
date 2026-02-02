@@ -46,29 +46,29 @@ const DoubleVerticalSlider = () => {
         ref={sliderContainerRef}
       >
         <div
-          className="h-full w-[35%] absolute top-0 left-0 transition-[transform] duration-[0.5s] ease-in-out"
+          className="h-full w-[35%] absolute top-0 left-0 transition-[transform] duration-500 ease-in-out"
           ref={slideLeftRef}
         >
           <div className="bg-[#fd3555] flex flex-col items-center justify-center w-full h-full text-white">
-            <h1 className="text-lg md:text-[40px] mb-[10px] -mt-[100px] md:-mt-[30px]">
+            <h1 className="text-lg md:text-[40px] mb-2.5 -mt-25 md:-mt-7.5">
               Nature flower
             </h1>
             <p>All in pink</p>
           </div>
           <div className="bg-[#2A86BA] flex flex-col items-center justify-center w-full h-full text-white">
-            <h1 className="text-lg md:text-[40px] mb-[10px] -mt-[100px] md:-mt-[30px]">
+            <h1 className="text-lg md:text-[40px] mb-2.5 -mt-25 md:-mt-7.5">
               Bluuue Sky
             </h1>
             <p>with it's mountains</p>
           </div>
           <div className="bg-[#252E33] flex flex-col items-center justify-center w-full h-full text-white">
-            <h1 className="text-lg md:text-[40px] mb-[10px] -mt-[100px] md:-mt-[30px]">
+            <h1 className="text-lg md:text-[40px] mb-2.5 -mt-25 md:-mt-7.5">
               Lonely castle
             </h1>
             <p>in the wilderness</p>
           </div>
           <div className="bg-[#FFB866] flex flex-col items-center justify-center w-full h-full text-white">
-            <h1 className="text-lg md:text-[40px] mb-[10px] -mt-[100px] md:-mt-[30px]">
+            <h1 className="text-lg md:text-[40px] mb-2.5 -mt-25 md:-mt-7.5">
               Flying eagle
             </h1>
             <p>in the sunset</p>
@@ -125,13 +125,13 @@ const DoubleVerticalSlider = () => {
         </div>
         <div className="action-buttons">
           <button
-            className="down-button absolute left-[35%] top-1/2 z-[100] bg-white border-0 text-[#aaa] text-[16px] p-[15px] -translate-x-[100%] rounded-tl-[5px] rounded-bl-[5px] hover:text-[#222] focus:outline-none"
+            className="down-button absolute left-[35%] top-1/2 z-100 bg-white border-0 text-[#aaa] text-[16px] p-3.75 -translate-x-full rounded-tl-[5px] rounded-bl-[5px] hover:text-[#222] focus:outline-none"
             onClick={() => changeSlide("down")}
           >
             <FaArrowDown />
           </button>
           <button
-            className="up-button absolute left-[35%] top-1/2 z-[100] bg-white border-0 text-[#aaa] text-[16px] p-[15px] -translate-y-[100%] rounded-tr-[5px] rounded-br-[5px] hover:text-[#222] focus:outline-none"
+            className="up-button absolute left-[35%] top-1/2 z-100 bg-white border-0 text-[#aaa] text-[16px] p-3.75 -translate-y-full rounded-tr-[5px] rounded-br-[5px] hover:text-[#222] focus:outline-none"
             onClick={() => changeSlide("up")}
           >
             <FaArrowUp />

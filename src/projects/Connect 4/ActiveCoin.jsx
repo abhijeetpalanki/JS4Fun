@@ -40,7 +40,7 @@ const ActiveCoin = ({ turn, setTurn, dropped, setDropped }) => {
 
   return (
     <div
-      className={`w-[100px] h-[100px] rounded-full absolute ${
+      className={`w-25 h-25 rounded-full absolute ${
         turn === 1 ? "bg-[#3483e0]" : turn === 2 && "bg-[#ec0b07]"
       } column-${column === undefined ? "-" : column} row-${
         row === undefined ? "-" : row
