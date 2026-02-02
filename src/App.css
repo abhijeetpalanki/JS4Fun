@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar */
+body {
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#9cfcf8, #6e7bfb);
+  border-radius: 4px;
+}
+
+/* Atmos 3D Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff3b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  height: 10%;
+}
+
+/* Hacker Typer */
+.success {
+  color: #10ff00;
+  display: block;
+  animation: accessAnimation 0.5s linear infinite;
+}
+
+.denied {
+  color: red;
+  display: block;
+  animation: accessAnimation 0.5s linear infinite;
+}
+
+@keyframes accessAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Text Generator */
+.gen-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.gen-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #0000004d;
+}
+
+.gen-content::-webkit-scrollbar-thumb {
+  background-color: #ff6467;
+  border-radius: 5px;
+}
+
+/* Services Card */
+.card .lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(transparent, #45f3ff, #45f3ff, transparent);
+  animation-play-state: paused;
+}
+
+.card:hover .lines::before {
+  animation-play-state: running;
+}
+
+.card .lines::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #292929;
+}
+
+.card:hover .imgBx {
+  top: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.card .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(transparent,
+      #ff3c7b,
+      #ff3c7b,
+      #ff3c7b,
+      transparent);
+  animation: imageExpand 6s linear infinite;
+  animation-play-state: paused;
+}
+
+.card:hover .imgBx::before {
+  animation-play-state: running;
+}
+
+@keyframes imageExpand {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.card .imgBx::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #292929;
+}
+
+.card:hover .imgBx img {
+  opacity: 1;
+}
+
+.card .content .details {
+  transform: translateY(145px);
+}
+
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+
+.card:hover .content .details p,
+.card:hover .content .details button {
+  opacity: 1;
+}
+
+/* Memory Game */
+.card .front {
+  transform: rotateY(90deg);
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+/* Alarm Clock */
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+/* Coming Soon */
+@media (min-width: 1024px) {
+  .flip-clock {
+    --fcc-digit-block-width: 80px !important;
+    /* width of digit card */
+    --fcc-digit-block-height: 120px !important;
+    /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 60px !important;
+    /* font size of digit */
+  }
+}
+
+/* Hangman */
+.hangman line,
+.hangman circle {
+  stroke: white;
+  stroke-width: 4;
+  fill: none;
+}
+
+/* Draggable List */
+.item.dragging :where(.details, svg) {
+  opacity: 0;
+}
+
+/* Binary Clock */
+
+.binary:nth-child(2n) {
+  margin-right: 20px;
+}

@@ -1,0 +1,12 @@
+.rotating-navigation-body .container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.rotating-navigation-body .container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+.rotating-navigation-body .container.show-nav .circle {
+  transform: rotate(-70deg);
+}

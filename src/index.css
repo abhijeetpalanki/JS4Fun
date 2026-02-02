@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@keyframes snore {
+  30% {
+    transform: rotate(10deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(10deg) translateY(-7em);
+    opacity: 0.2;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes nod {
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes colorSplash {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  5%,
+  95% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+@keyframes alarm {
+  0%,
+  100% {
+    transform: scale3d(1, 1, 1);
+    text-shadow: 0 0 0 transparent;
+  }
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -6deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, 6deg);
+    text-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, -6deg);
+  }
+}
+
+@keyframes progressBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes orbitalSpin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes diceShake {
+  0% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow:
+      0 0 25px #fea501,
+      0 0 75px #fea501,
+      0 0 150px #fea501;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+@keyframes slideLeft {
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+@keyframes confetti {
+  25% {
+    translate: 0 -25vh;
+  }
+  100% {
+    translate: 0 -25vh;
+  }
+}

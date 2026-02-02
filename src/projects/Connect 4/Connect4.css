@@ -1,0 +1,52 @@
+.clip {
+  background: url("./clip.svg");
+}
+
+.active {
+  transition: all ease-in-out 500ms;
+}
+
+.active.column-0 {
+  margin-left: 0;
+}
+.active.column-1 {
+  margin-left: 100px;
+}
+.active.column-2 {
+  margin-left: 200px;
+}
+.active.column-3 {
+  margin-left: 300px;
+}
+.active.column-4 {
+  margin-left: 400px;
+}
+.active.column-5 {
+  margin-left: 500px;
+}
+.active.column-6 {
+  margin-left: 600px;
+}
+
+.active.row-0 {
+  transform: translateY(150px);
+}
+.active.row-1 {
+  transform: translateY(250px);
+}
+.active.row-2 {
+  transform: translateY(350px);
+}
+.active.row-3 {
+  transform: translateY(450px);
+}
+.active.row-4 {
+  transform: translateY(550px);
+}
+.active.row-5 {
+  transform: translateY(650px);
+}
+
+.active.column--.row-- {
+  transition: none;
+}

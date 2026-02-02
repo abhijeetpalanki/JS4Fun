@@ -1,0 +1,4 @@
+.todos-body form .todos li.completed {
+  color: #e6e6e6;
+  text-decoration: line-through;
+}
