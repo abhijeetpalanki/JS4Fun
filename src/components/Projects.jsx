@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import "../App.css";
 import autoAnimate from "@formkit/auto-animate";
-import { Link } from "react-router-dom";
+
 import { useProjectsContext } from "../context/ProjectsContextProvider";
 import Navbar from "./Navbar";
+import ProjectCard from "./ProjectCard";
+import "../App.css";
 
 const Projects = () => {
   const { results: projects, hashtags } = useProjectsContext();
@@ -16,11 +17,11 @@ const Projects = () => {
     var retval = data.filter((item) =>
       searchTerm !== ""
         ? search_parameters.some((parameter) =>
-            item[parameter].toString().toLowerCase().includes(searchTerm)
+            item[parameter].toString().toLowerCase().includes(searchTerm),
           )
         : activeTag !== "all"
-        ? item.hashtags.find((hashtag) => hashtag.name === activeTag)
-        : search_parameters.flat()
+          ? item.hashtags.find((hashtag) => hashtag.name === activeTag)
+          : search_parameters.flat(),
     );
     return retval;
   };
@@ -38,31 +39,22 @@ const Projects = () => {
         setActiveTag={setActiveTag}
         hashtags={hashtags}
       />
-      <div
-        className="grid grid-cols-1 gap-5 p-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
-        ref={parent}
-      >
-        {search(projects).map((proj) => (
-          <Link to={`/projects/${proj.id}`} key={proj.id}>
-            <div className="flex flex-col tracking-widest items-center border rounded-lg shadow-md h-[200px] max-h-[200px] md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700">
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <h5 className="mb-2 text-2xl font-bold text-white">
-                  {proj.id}. {proj.title}
-                </h5>
-                <div className="px-6 pt-4 pb-2">
-                  {proj.hashtags.map((tag) => (
-                    <span
-                      className="inline-block px-3 py-1 mb-2 mr-2 text-base font-semibold text-gray-700 bg-gray-200 rounded-full"
-                      key={tag.id}
-                    >
-                      #{tag.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </Link>
-        ))}
+      <div className="relative">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(153,113,223,0.15),transparent_70%)] pointer-events-none"></div>
+
+        <div
+          ref={parent}
+          className="max-w-6xl mx-auto px-6 py-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {search(projects).map((proj) => (
+            <ProjectCard
+              key={proj.id}
+              title={proj.title}
+              tags={proj.hashtags.map((t) => t.name)}
+              slug={proj.id}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

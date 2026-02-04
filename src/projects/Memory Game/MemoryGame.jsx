@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { helmet, potion, ring, scroll, shield, sword, fun } from "./images";
+import { helmet, potion, ring, scroll, shield, sword } from "./images";
 
 const items = [
   {
@@ -113,7 +113,7 @@ const MemoryGame = () => {
                   <img
                     className="w-full block border-2 border-white rounded-md transition-all ease-in duration-200 back"
                     onClick={() => handleClick(card)}
-                    src={fun}
+                    src={"/logo.png"}
                     alt="card back"
                   />
                 </div>

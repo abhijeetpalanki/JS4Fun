@@ -5,17 +5,13 @@
 }
 
 /* Scrollbar */
-body {
-  overflow: overlay;
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
-body::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(#9cfcf8, #6e7bfb);
-  border-radius: 4px;
+* {
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Atmos 3D Scrollbar */
@@ -110,11 +106,13 @@ body::-webkit-scrollbar-thumb {
   width: 500px;
   height: 150px;
   transform: translate(-50%, -50%);
-  background: linear-gradient(transparent,
-      #ff3c7b,
-      #ff3c7b,
-      #ff3c7b,
-      transparent);
+  background: linear-gradient(
+    transparent,
+    #ff3c7b,
+    #ff3c7b,
+    #ff3c7b,
+    transparent
+  );
   animation: imageExpand 6s linear infinite;
   animation-play-state: paused;
 }
